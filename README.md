@@ -1,4 +1,4 @@
-Visit **[aairl.com](http://aairl.com)** 🚀
+Visit **[architectural-artificial-intelligence.github.io/aairl-lab-website](https://architectural-artificial-intelligence.github.io/aairl-lab-website)** 🚀
 
 <h1 align="center">Lab Website Template</h1>
 <p align="center">
