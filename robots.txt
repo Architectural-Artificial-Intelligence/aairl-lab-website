@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: /aairl-lab-website/sitemap.xml
