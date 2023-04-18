@@ -5,73 +5,46 @@ nav:
   tooltip: Email, address, and location
 ---
 
-# {% include icon.html icon="fa-regular fa-envelope" %}Contact
+# Contact
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Architectural Artificial Intelligence Research Laboratory (AAIRL) <br />
+Suite 3.3.55, Building 55, School of Architecture,<br />
+Kiriat Hamada 3, Ariel University
+
+
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=35.20582526922227%2C32.10357089190319%2C35.208335816860206%2C32.10530446426251&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/>
+<small><a href="https://www.openstreetmap.org/#map=19/32.10444/35.20708">View Larger Map</a></small>
+
+<!-- Head of the laboratory
+Schedule a consultation
+
+Online or at the lab
+Linkedin
+
+Follow our updates -->
 
 {%
   include button.html
   type="email"
-  text="jane@smith.com"
-  link="jane@smith.com"
+  text="jonathand@ariel.ac.il"
+  link="mailto:jonathand@ariel.ac.il"
 %}
 {%
   include button.html
   type="phone"
-  text="(555) 867-5309"
-  link="+1-555-867-5309"
+  text="+972 (0)74-728-8014"
+  link="+972 (0)74-728-8014"
 %}
 {%
   include button.html
   type="address"
   tooltip="Our location on Google Maps for easy navigation"
-  link="https://www.google.com/maps"
+  link="https://goo.gl/maps/3bpQGMxp6UTNAgDN7"
 %}
 
 {% include section.html %}
 
-{% capture col1 %}
 
-{%
-  include figure.html
-  image="images/photo.jpg"
-  caption="Lorem ipsum"
-%}
 
-{% endcapture %}
 
-{% capture col2 %}
 
-{%
-  include figure.html
-  image="images/photo.jpg"
-  caption="Lorem ipsum"
-%}
-
-{% endcapture %}
-
-{% include cols.html col1=col1 col2=col2 %}
-
-{% include section.html dark=true %}
-
-{% capture col1 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% capture col2 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% capture col3 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% include cols.html col1=col1 col2=col2 col3=col3 %}

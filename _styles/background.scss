@@ -3,10 +3,12 @@
 
 .background {
   position: relative;
-  background: var(--background);
+  background-color: #0093E8;
+  background-image: linear-gradient(150deg, #0093E8 0%, #80D0C8 100%);
   color: var(--text);
   z-index: 1;
 }
+
 
 .background:before {
   content: "";
@@ -16,6 +18,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  opacity: 0.25;
+  // opacity: 0.25;
   z-index: -1;
 }

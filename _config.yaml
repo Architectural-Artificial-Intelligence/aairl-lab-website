@@ -1,18 +1,20 @@
 # site properties and page defaults
-title: Lab Website Template
-subtitle: by the Greene Lab
-description: An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.
-header: images/background.jpg
-footer: images/background.jpg
+title: Architectural AI Reseach Lab
+subtitle: AAIRL
+description: The AAIRL is revolutionizing Architecture and Urban Design by leveraging the power of computation, artificial intelligence, and collective intelligence, we are creating new design methods that will lead to more sustainable and equitable cities for a better future.
+# header: images/AAIRL_Logo.png
+# footer: images/Ariel_U_logo2.jpg
+header-dark: true
+footer-dark: true
 
 # site social media and other links
 links:
-  email: contact@your-lab.com
-  orcid: 0000-0001-8713-9213
-  google-scholar: ETJoidYAAAAJ
-  github: your-lab
-  twitter: YourLabHandle
-  youtube: YourLabChannel
+  email: jonathand@ariel.ac.il
+  orcid: 0000-0002-7464-8526
+  # google-scholar: ETJoidYAAAAJ
+  github: Architectural-Artificial-Intelligence
+  # twitter: YourLabHandle
+  # youtube: YourLabChannel
 
 ### jekyll settings
 
