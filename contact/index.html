@@ -2,10 +2,15 @@
 <html lang="en" data-dark="false">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <!--
-  put your analytics (e.g. Google Analytics) tracking code here
--->
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V7ZV21PQ20"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-V7ZV21PQ20');
+</script>
   <!--
   put your search engine verification (e.g. Google Search Console) tag here
 -->
@@ -39,22 +44,22 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Contact | Lab Website Template</title>
+<title>Contact | Architectural AI Reseach Lab</title>
 
-<link rel="icon" href="/images/icon.png">
+<link rel="icon" href="">
 
 <meta name="title" content="Contact">
-<meta name="description" content="by the Greene Lab. An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.">
+<meta name="description" content="AAIRL. The AAIRL is revolutionizing Architecture and Urban Design by leveraging the power of computation, artificial intelligence, and collective intelligence, we are creating new design methods that will lead to more sustainable and equitable cities for a better future.">
 
 <meta property="og:title" content="Contact">
-<meta property="og:site_title" content="Lab Website Template">
-<meta property="og:description" content="by the Greene Lab. An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.">
+<meta property="og:site_title" content="Architectural AI Reseach Lab">
+<meta property="og:description" content="AAIRL. The AAIRL is revolutionizing Architecture and Urban Design by leveraging the power of computation, artificial intelligence, and collective intelligence, we are creating new design methods that will lead to more sustainable and equitable cities for a better future.">
 <meta property="og:url" content="">
 <meta property="og:image" content="/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
 <meta property="twitter:title" content="Contact">
-<meta property="twitter:description" content="by the Greene Lab. An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.">
+<meta property="twitter:description" content="AAIRL. The AAIRL is revolutionizing Architecture and Urban Design by leveraging the power of computation, artificial intelligence, and collective intelligence, we are creating new design methods that will lead to more sustainable and equitable cities for a better future.">
 <meta property="twitter:url" content="">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:image" content="/images/share.jpg">
@@ -70,11 +75,11 @@
       "@type": "WebSite",
     
     "name": "Contact",
-    "description": "by the Greene Lab. An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.",
+    "description": "AAIRL. The AAIRL is revolutionizing Architecture and Urban Design by leveraging the power of computation, artificial intelligence, and collective intelligence, we are creating new design methods that will lead to more sustainable and equitable cities for a better future.",
     "headline": "Contact",
     "publisher": {
       "@type": "Organization",
-      "logo": { "@type": "ImageObject", "url": "/images/icon.png" }
+      "logo": { "@type": "ImageObject", "url": "" }
     },
     "url": ""
   }
@@ -86,7 +91,7 @@
 <!-- automatically get url from fonts used in theme file -->
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?display=swap&&family=Nunito:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -335,6 +340,19 @@
 
 
 
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/images/favicon/site.webmanifest">
+<link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/images/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#e9e9e9">
+<meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+
   <!-- third party scripts -->
 <script src="https://unpkg.com/@popperjs/core@2" defer></script>
 <script src="https://unpkg.com/tippy.js@6" defer></script>
@@ -367,79 +385,22 @@
 
 
 
-<header class="background" style="--image: url('/images/background.jpg')" data-dark="true">
+<header class="background " data-dark="true">
   <a href="/" class="home">
     
       <span class="logo">
         
-          <svg xmlns="http://www.w3.org/2000/svg" viewbox="-40 -60 80 100">
-  <style>
-    .bubble {
-      animation: float 2s ease-out both infinite var(--delay);
-    }
-    @keyframes float {
-      0% {
-        opacity: 0;
-      }
-      50% {
-        transform: translateY(0);
-        opacity: 0;
-      }
-      75% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-        transform: translateY(-40px);
-      }
-    }
-  </style>
-  <g fill="currentColor" opacity="0.5">
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 0.1s"></circle>
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 0.4s"></circle>
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 1.1s"></circle>
-  </g>
-  <path fill="#38bdf8" d="
-      M 0 -22.5
-      L -19.5 -11.25
-      L -19.5 11.25
-      L 0 22.5
-      L 19.5 11.25
-      L 19.5 -11.25
-      z
-    "></path>
-  <path fill="#bae6fd" d="
-      M 0 -22.5
-      L -19.5 -11.25
-      L 0 0
-      L 19.5 -11.25
-      z
-    "></path>
-  <path fill="none" stroke="currentColor" stroke-width="5" d="
-      M -18 -53
-      L -10 -53
-      L -10 -29.2
-      L -30.3 -17.5
-      L -30.3 17.5
-      L 0 35
-      L 30.3 17.5
-      L 30.3 -17.5
-      L 10 -29.2
-      L 10 -53
-      L 18 -53
-    "></path>
-</svg>
-
+          <img src="/images/logo.png" alt="logo">
         
       </span>
     
     
       <span class="title" data-tooltip="Home">
         
-          <span>Lab Website Template</span>
+          <span>Architectural AI Reseach Lab</span>
         
         
-          <span>by the Greene Lab</span>
+          <span>AAIRL</span>
         
       </span>
     
@@ -451,14 +412,14 @@
     
     
       
-        <a href="/research/" data-tooltip="Published works">
-          Research
+        <a href="/projects/" data-tooltip="Software, datasets, and more">
+          Projects
         </a>
       
     
       
-        <a href="/projects/" data-tooltip="Software, datasets, and more">
-          Projects
+        <a href="/research/" data-tooltip="Published works">
+          Research
         </a>
       
     
@@ -469,8 +430,8 @@
       
     
       
-        <a href="/blog/" data-tooltip="Musings and miscellany">
-          Blog
+        <a href="/blog/" data-tooltip="Latest updates">
+          News
         </a>
       
     
@@ -504,39 +465,41 @@
   
 
   <section class="background" data-size="page">
-    <h1 id="contact">
-<i class="icon fa-regular fa-envelope"></i>Contact</h1>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-<div class="button-wrapper">
-    <a class="button" href="mailto:jane@smith.com" data-tooltip="Email" data-style="" aria-label="Email">
-      <i class="icon fa-solid fa-envelope"></i>
-      
-        <span>jane@smith.com</span>
-      
-    </a>
+    <h1 id="contact">Contact</h1>
+<div itemscope="" itemtype="https://schema.org/Organization" style="display: flex;">
+<div style="padding:10px">
+<p>
+  <strong itemprop="name">Architectural Artificial Intelligence Research Laboratory (AAIRL) </strong>
+</p>
+<div itemprop="address" itemscope="" itemtype="https://schema.org/PostalAddress">
+  <p>
+  Suite 3.3.55, Building 55, School of Architecture<br>
+  Ariel University
+  <span itemprop="streetAddress">Kiriat Hamada 3</span>,
+  <span itemprop="addressLocality">Ariel</span>, 
+  <span itemprop="addressCountry">Israel</span>
+  </p>
+  </div>
   </div>
 
-<div class="button-wrapper">
-    <a class="button" href="tel:+1-555-867-5309" data-tooltip="Phone number" data-style="" aria-label="Phone number">
-      <i class="icon fa-solid fa-phone"></i>
-      
-        <span>(555) 867-5309</span>
-      
-    </a>
-  </div>
+<div style="padding:10px">
+<p>
+  <i class="icon fa-solid fa-phone"></i> Call us: <a itemprop="telephone" href="tel://+972%2003-9066242">+972 (0)74-728-8014</a>
+  </p>
+<p>
+  <i class="icon fa-solid fa-envelope"></i> Email us: <a href="mailto://jonathand@ariel.ac.il">jonathand@ariel.ac.il</a>
+  </p>
+<p>
+  <i class="icon fa-solid fa-calendar"></i> Meet us: <a href="https://outlook.office365.com/owa/calendar/MeetwithDrJonathanDortheimer@arielacil.onmicrosoft.com/bookings/">Schedule a meeting</a>
+  </p>
+<p>
+  <i class="icon fa-brands fa-linkedin"></i> Follow our updates: <a href="https://www.linkedin.com/company/aairl/">Linkedin</a>
+  </p>
+</div>
+  
+</div>
 
-<div class="button-wrapper">
-    <a class="button" href="https://www.google.com/maps" data-tooltip="Our location on Google Maps for easy navigation" data-style="" aria-label="Our location on Google Maps for easy navigation">
-      <i class="icon fa-solid fa-map-location-dot"></i>
-      
-        <span>Address</span>
-      
-    </a>
-  </div>
+<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=35.20582526922227%2C32.10357089190319%2C35.208335816860206%2C32.10530446426251&layer=mapnik" style="border: 0px solid black"></iframe>
   </section>
 
   
@@ -549,85 +512,6 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p
   dark: ;
   size: ;
 -->
-
-<div class="cols" style="--cols: 2">
-  
-    
-    <div>
-<figure class="figure">
-  <a class="figure-image" aria-label="Lorem ipsum">
-    <img src="/images/photo.jpg" style="
-        width: auto;
-        max-height: unset;
-      " alt="Lorem ipsum" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-  </a>
-  
-    <figcaption class="figure-caption">
-      Lorem ipsum
-
-    </figcaption>
-  
-</figure>
-
-</div>
-  
-    
-    <div>
-<figure class="figure">
-  <a class="figure-image" aria-label="Lorem ipsum">
-    <img src="/images/photo.jpg" style="
-        width: auto;
-        max-height: unset;
-      " alt="Lorem ipsum" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-  </a>
-  
-    <figcaption class="figure-caption">
-      Lorem ipsum
-
-    </figcaption>
-  
-</figure>
-
-</div>
-  
-</div>
-  </section>
-
-  
-  
-  
-
-  <section class="background" data-size="1" data-dark="true">
-    <!--
-  background: ;
-  dark: true;
-  size: 1;
--->
-
-<div class="cols" style="--cols: 3">
-  
-    
-    <div>
-<p>Lorem ipsum dolor sit amet<br>
-consectetur adipiscing elit<br>
-sed do eiusmod tempor</p>
-</div>
-  
-    
-    <div>
-<p>Lorem ipsum dolor sit amet<br>
-consectetur adipiscing elit<br>
-sed do eiusmod tempor</p>
-</div>
-  
-    
-    <div>
-<p>Lorem ipsum dolor sit amet<br>
-consectetur adipiscing elit<br>
-sed do eiusmod tempor</p>
-</div>
-  
-</div>
   </section>
 
 
@@ -635,7 +519,7 @@ sed do eiusmod tempor</p>
     
 
 
-<footer class="background" style="--image: url('/images/background.jpg')" data-dark="true" data-size="wide">
+<footer class="background" style="--image: url('')" data-dark="true" data-size="wide">
   <!--
     <div>
       Extra details like contact info or address
@@ -651,7 +535,7 @@ sed do eiusmod tempor</p>
 
 
   <div class="button-wrapper">
-    <a class="button" href="mailto:contact@your-lab.com" data-tooltip="Email" data-style="bare" aria-label="Email">
+    <a class="button" href="mailto:jonathand@ariel.ac.il" data-tooltip="Email" data-style="bare" aria-label="Email">
       <i class="icon fa-solid fa-envelope"></i>
       
     </a>
@@ -666,7 +550,7 @@ sed do eiusmod tempor</p>
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://orcid.org/0000-0001-8713-9213" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
+    <a class="button" href="https://orcid.org/0000-0002-7464-8526" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
       <i class="icon fa-brands fa-orcid"></i>
       
     </a>
@@ -681,53 +565,8 @@ sed do eiusmod tempor</p>
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://scholar.google.com/citations?user=ETJoidYAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
-      <i class="icon fa-brands fa-google"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a class="button" href="https://github.com/your-lab" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
+    <a class="button" href="https://github.com/Architectural-Artificial-Intelligence" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
       <i class="icon fa-brands fa-github"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a class="button" href="https://twitter.com/YourLabHandle" data-tooltip="Twitter" data-style="bare" aria-label="Twitter">
-      <i class="icon fa-brands fa-twitter"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a class="button" href="https://youtube.com/YourLabChannel" data-tooltip="YouTube" data-style="bare" aria-label="YouTube">
-      <i class="icon fa-brands fa-youtube"></i>
       
     </a>
   </div>
@@ -738,7 +577,7 @@ sed do eiusmod tempor</p>
 
   <div>
     © 2023
-    Lab Website Template
+    Architectural AI Reseach Lab
       |   Built with
     <a href="https://github.com/greenelab/lab-website-template">
       Lab Website Template

@@ -89,11 +89,10 @@ nav {
   flex-wrap: wrap;
   gap: 10px;
   font-family: var(--heading);
-  text-transform: uppercase;
 }
 
 nav > a {
-  padding: 5px;
+  font-size: 15px;
 }
 
 nav > a:hover {
@@ -118,29 +117,21 @@ nav > a:hover {
 }
 
 header[data-big] {
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 100px 20px;
   top: unset;
 }
-header[data-big] .home {
-  flex-direction: column;
-  flex-grow: 0;
-}
-header[data-big] .logo {
-  height: 80px;
-}
-header[data-big] .title {
-  flex-direction: column;
-  align-items: center;
+
+header .curve {
+  display: block;
+  clear: both;
+  padding: 200px 0;
+  margin: 0 auto;
+  max-width: 500px;
   text-align: center;
+  text-transform: none;
 }
-header[data-big] .title > *:first-child {
-  font-size: var(--xxl);
-}
-header[data-big] .title > *:last-child {
-  font-size: var(--large);
+
+header.header1 {
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=header.css.map */
