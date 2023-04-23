@@ -5,7 +5,7 @@ nav:
   tooltip: About our team
 ---
 
-# Meet Our Team
+## Meet Our Team
 
 
 {% include section.html %}
