@@ -5,73 +5,43 @@ nav:
   tooltip: Email, address, and location
 ---
 
-# {% include icon.html icon="fa-regular fa-envelope" %}Contact
+# Contact
+<div itemscope itemtype="https://schema.org/Organization" style="display: flex;">
+<div style="padding:10px">
+<p>
+  <strong itemprop="name">Architectural Artificial Intelligence Research Laboratory (AAIRL) </strong>
+</p>
+<div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+  <p>
+  Suite 3.3.55, Building 55, School of Architecture<br />
+  Ariel University
+  <span itemprop="streetAddress">Kiriat Hamada 3</span>,
+  <span itemprop="addressLocality">Ariel</span>, 
+  <span itemprop="addressCountry">Israel</span>
+  </p>
+  </div>
+  </div>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+<div  style="padding:10px">
+<p>
+  {% include icon.html icon="fa-solid fa-phone" %} Call us: <a itemprop="telephone" href="tel://+972%2003-9066242">+972 (0)74-728-8014</a>
+  </p><p>
+  {% include icon.html icon="fa-solid fa-envelope" %} Email us: <a href="mailto://jonathand@ariel.ac.il">jonathand@ariel.ac.il</a>
+  </p><p>
+  {% include icon.html icon="fa-solid fa-calendar" %} Meet us: <a href="https://outlook.office365.com/owa/calendar/MeetwithDrJonathanDortheimer@arielacil.onmicrosoft.com/bookings/">Schedule a meeting</a>
+  </p><p>
+  {% include icon.html icon="fa-brands fa-linkedin" %} Follow our updates: <a href="https://www.linkedin.com/company/aairl/">Linkedin</a>
+  </p>
+</div>
+  
+</div>
 
-{%
-  include button.html
-  type="email"
-  text="jane@smith.com"
-  link="jane@smith.com"
-%}
-{%
-  include button.html
-  type="phone"
-  text="(555) 867-5309"
-  link="+1-555-867-5309"
-%}
-{%
-  include button.html
-  type="address"
-  tooltip="Our location on Google Maps for easy navigation"
-  link="https://www.google.com/maps"
-%}
+<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=35.20582526922227%2C32.10357089190319%2C35.208335816860206%2C32.10530446426251&amp;layer=mapnik" style="border: 0px solid black"></iframe>
+
 
 {% include section.html %}
 
-{% capture col1 %}
 
-{%
-  include figure.html
-  image="images/photo.jpg"
-  caption="Lorem ipsum"
-%}
 
-{% endcapture %}
 
-{% capture col2 %}
 
-{%
-  include figure.html
-  image="images/photo.jpg"
-  caption="Lorem ipsum"
-%}
-
-{% endcapture %}
-
-{% include cols.html col1=col1 col2=col2 %}
-
-{% include section.html dark=true %}
-
-{% capture col1 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% capture col2 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% capture col3 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% include cols.html col1=col1 col2=col2 col3=col3 %}

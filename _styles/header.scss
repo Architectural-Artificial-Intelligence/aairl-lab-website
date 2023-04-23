@@ -103,11 +103,11 @@ nav {
   flex-wrap: wrap;
   gap: 10px;
   font-family: var(--heading);
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 nav > a {
-  padding: 5px;
+  font-size: 15px;
 }
 
 nav > a:hover {
@@ -135,35 +135,48 @@ header:not([data-big]) {
 }
 
 header[data-big] {
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: $big-padding 20px;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   padding: $big-padding 20px;
 
   @if $sticky {
     top: unset;
   }
 
-  .home {
-    flex-direction: column;
-    flex-grow: 0;
-  }
+//   .home {
+//     flex-direction: column;
+//     flex-grow: 0;
+//   }
 
-  .logo {
-    height: $logo-big;
-  }
+//   .logo {
+//     height: $logo-big;
+//   }
 
-  .title {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+//   .title {
+//     flex-direction: column;
+//     align-items: center;
+//     text-align: center;
+//   }
 
-  .title > *:first-child {
-    font-size: var(--xxl);
-  }
+//   .title > *:first-child {
+//     font-size: var(--xxl);
+//   }
 
-  .title > *:last-child {
-    font-size: var(--large);
-  }
+//   .title > *:last-child {
+//     font-size: var(--large);
+//   }
+}
+
+header .curve {
+  display: block;
+  clear: both;
+  padding:200px 0;
+  margin:0 auto;
+  max-width:500px;
+  text-align: center;
+  text-transform:none ;
+}
+header.header1{
+  box-shadow: none;
 }

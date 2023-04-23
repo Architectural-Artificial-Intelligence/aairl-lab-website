@@ -25,12 +25,13 @@
 
 :root {
   // font families
-  --title: "Barlow", sans-serif;
-  --heading: "Barlow", sans-serif;
-  --body: "Barlow", sans-serif;
+  --title: "Nunito", sans-serif;
+  --heading: "Nunito", sans-serif;
+  --body: "Nunito", sans-serif;
   --code: "Roboto Mono", monospace;
 
   // font sizes
+  --small: 0.7rem
   --medium: 1rem;
   --large: 1.2rem;
   --xl: 1.4rem;
@@ -48,4 +49,5 @@
   // effects
   --rounded: 3px;
   --shadow: 0 0 10px 0 var(--overlay);
+  --card-shadow: rgba(22, 22, 22, 0.14) 0px 10px 36px 0px
 }

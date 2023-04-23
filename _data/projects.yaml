@@ -1,47 +1,40 @@
-- title: Cool Dataset
-  subtitle: a subtitle
+- title: Collective Intelligent Architectural Design
+  subtitle: CIAD
   group: featured
-  image: images/photo.jpg
+  image: images/projects/zhr.jpg
   link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  description: This project utilizes a crowdsourcing platform to enable a collaborative professional architectural design process that leverages the collective intelligence of stakeholders to generate high-quality architectural designs.
+  tags:
+    - software
+    - design
+    - collective intelligence
+
+- title: Generative Architectural Artificial Intelligence 
+  subtitle: GAAI
+  group: featured
+  image: images/projects/generative_architecture.png
+  link: https://github.com/
+  description: The project seeks to revolutionize how architects and urban planners design cities, buildings, and other structures by developing AI tools such as machine learning models and expert systems.
   tags:
     - resource
 
-- title: Cool Package
-  subtitle: a subtitle
+- title: Participatory Design Chatbots
+  subtitle:  PDCB
   group: featured
-  image: images/photo.jpg
+  image: images/projects/chatbots.png
   link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  description: This project develops a chatbot system to automate and streamline information exchange between stakeholders and designers, improving design processes and outcomes.
   tags:
-    - resource
+    - artificial intelligence
+    - software
+    - design
 
-- title: Cool Tutorial
-  subtitle: a subtitle
-  image: images/photo.jpg
+- title: Critical Urbanism
+  subtitle: CURB
+  group: featured
+  image: images/projects/critical_urbanism.jpg
   link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  description: The project seeks to create a more equitable, just, and sustainable urban environment by examining the social, economic, and political implications of urban design, urban planning, and smart city policies and engaging the public in dialogue.​
   tags:
     - resource
     - publication
-
-- title: Cool Web App
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - software
-
-- title: Cool Web Server
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - software

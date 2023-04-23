@@ -1,23 +1,26 @@
-- id: doi:10.1371/journal.pcbi.1007128
-  type: paper
-  description: Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  date: 2020-12-4
-  image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
-  buttons:
-    - type: manubot
-      link: https://greenelab.github.io/meta-review/
-    - type: source
-      text: Manuscript Source
-      link: https://github.com/greenelab/meta-review
-    - type: website
-      link: http://manubot.org/
-  tags:
-    - open science
-    - collaboration
-  repo: greenelab/meta-review
+- id: doi:10.3390/buildings13010222 
+  image: images/papers/building.webp
+  # tags:
+  #   - 
+  #   - collaboration
 
-- id: doi:10.1016/j.csbj.2020.05.017
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
+- id: doi:10.1109/AIVR56993.2022.00026 
+  image: images/papers/mann2-p5-mann-large.gif
 
-- id: doi:10.7554/eLife.32822
-  image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp
+- id: doi:10.52842/conf.ecaade.2020.2.155
+  image: images/papers/ecaade_cs.png
+  # tags:
+  #   - open science
+  #   - collaboration
+
+- id: doi:10.3390/math10040539 
+  image: images/papers/mathematics-10-00539-g009.png
+
+- id: doi:10.52842/conf.caadria.2022.1.223 
+  image: images/papers/boim.png
+
+- id: doi:10.13140/RG.2.2.31654.40003
+  image: images/papers/chatbots.png
+
+- id: doi:10.1080/13602365.2020.1758950 
+  image: images/papers/wikihouse.jpg

@@ -14,13 +14,21 @@ phd:
   icon: fa-solid fa-graduation-cap
   description: PhD Student
 
-undergrad:
-  icon: fa-solid fa-user-graduate
-  description: Undergraduate Student
+phd-candidate:
+  icon: fa-solid fa-graduation-cap
+  description: PhD Candidate
 
-programmer:
-  icon: fa-solid fa-code
-  description: Programmer
+assistant:
+  icon: fa-solid fa-user-graduate
+  description: Research Assistant
+
+master:
+  icon: fa-solid fa-user-graduate
+  description: MA Student
+
+research-lead:
+  icon: fa-solid fa-glasses
+  description: Research Leader
 
 mascot:
   icon: fa-solid fa-dog

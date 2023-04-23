@@ -1,113 +1,99 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
-- id: doi:10.1101/2023.01.05.522941
-  title: Hetnet connectivity search provides rapid insights into how two biomedical
-    entities are related
+- id: doi:10.3390/buildings13010222
+  title: 'Conceptual Architectural Design at Scale: A Case Study of Community Participation
+    Using Crowdsourcing'
   authors:
-  - Daniel S. Himmelstein
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Kyle Kloster
-  - Benjamin J. Heil
-  - Faisal Alquaddoomi
-  - Dongbo Hu
-  - David N. Nicholson
-  - Yun Hao
-  - Blair D. Sullivan
-  - Michael W. Nagle
-  - Casey S. Greene
-  publisher: Cold Spring Harbor Laboratory
-  date: '2023-01-07'
-  link: https://doi.org/grmcb9
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1186/s13059-020-02021-3
-  title: Compressing gene expression data using multiple latent space dimensionalities
-    learns complementary biological representations
-  authors:
-  - Gregory P. Way
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Daniel S. Himmelstein
-  - Casey S. Greene
-  publisher: Genome Biology
-  date: '2020-05-11'
-  link: https://doi.org/gg2mjh
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1371/journal.pcbi.1007128
-  title: Open collaborative writing with Manubot
-  authors:
-  - Daniel S. Himmelstein
-  - Vincent Rubinetti
-  - David R. Slochower
-  - Dongbo Hu
-  - Venkat S. Malladi
-  - Casey S. Greene
-  - Anthony Gitter
-  publisher: PLOS Computational Biology
-  date: '2020-12-04'
-  link: https://doi.org/c7np
-  orcid: 0000-0002-4655-3773
+  - Jonathan Dortheimer
+  - Stephen Yang
+  - Qian Yang
+  - Aaron Sprecher
+  publisher: Buildings
+  date: '2023-01-13'
+  link: https://doi.org/gr42ft
+  orcid: 0000-0002-7464-8526
   plugin: sources.py
   file: sources.yaml
-  type: paper
-  description: Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
-  buttons:
-  - type: manubot
-    link: https://greenelab.github.io/meta-review/
-  - type: source
-    text: Manuscript Source
-    link: https://github.com/greenelab/meta-review
-  - type: website
-    link: http://manubot.org/
-  tags:
-  - open science
-  - collaboration
-  repo: greenelab/meta-review
-- id: doi:10.1101/573782
-  title: Sequential compression of gene expression across dimensionalities and methods
-    reveals no single best method or dimensionality
+  image: images/papers/building.webp
+- id: doi:10.3390/math10040539
+  title: Collective Intelligence in Design Crowdsourcing
   authors:
-  - Gregory P. Way
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Daniel S. Himmelstein
-  - Casey S. Greene
-  publisher: Cold Spring Harbor Laboratory
-  date: '2019-03-11'
-  link: https://doi.org/gfxjxf
-  orcid: 0000-0002-4655-3773
+  - Jonathan Dortheimer
+  publisher: Mathematics
+  date: '2022-02-09'
+  link: https://doi.org/gr42fv
+  orcid: 0000-0002-7464-8526
+  plugin: sources.py
+  file: sources.yaml
+  image: images/papers/mathematics-10-00539-g009.png
+- id: eid:2-s2.0-85086718712
+  orcid: 0000-0002-7464-8526
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1016/j.csbj.2020.05.017
-  title: Constructing knowledge graphs and their biomedical applications
+  date: ''
+- id: doi:10.1080/13602365.2020.1758950
+  title: Open-source architecture and questions of intellectual property, tacit knowledge,
+    and liability
   authors:
-  - David N. Nicholson
-  - Casey S. Greene
-  publisher: Computational and Structural Biotechnology Journal
+  - Jonathan Dortheimer
+  - Talia Margalit
+  publisher: The Journal of Architecture
+  date: '2020-04-02'
+  link: https://doi.org/gr42fw
+  orcid: 0000-0002-7464-8526
+  plugin: sources.py
+  file: sources.yaml
+  image: images/papers/wikihouse.jpg
+- id: doi:10.1109/AIVR56993.2022.00026
+  title: Toward a Generative Pipeline for an AR Tour of Contested Heritage Sites
+  authors:
+  - Eytan Mann
+  - Jonathan Dortheimer
+  - Aaron Sprecher
+  publisher: 2022 IEEE International Conference on Artificial Intelligence and Virtual
+    Reality (AIVR)
+  date: '2022-12-01'
+  link: https://doi.org/gr42gx
+  image: images/papers/mann2-p5-mann-large.gif
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.52842/conf.ecaade.2020.2.155
+  title: A Novel Crowdsourcing-based Approach for Collaborative Architectural Design
+  authors:
+  - Jonathan Dortheimer
+  - Eran Neuman
+  - Tova Milo
+  publisher: Proceedings of the 38th International Conference on Education and Research
+    in Computer Aided Architectural Design in Europe (eCAADe) [Volume 2]
   date: '2020-01-01'
-  link: https://doi.org/gg7m48
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
+  link: https://doi.org/gr42gs
+  image: images/papers/ecaade_cs.png
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.7554/eLife.32822
-  title: Sci-Hub provides access to nearly all scholarly literature
+- id: doi:10.52842/conf.caadria.2022.1.223
+  title: A Machine-Learning Approach to Urban Design Interventions In Non-Planned
+    Settlements
   authors:
-  - Daniel S Himmelstein
-  - Ariel Rodriguez Romero
-  - Jacob G Levernier
-  - Thomas Anthony Munro
-  - Stephen Reid McLaughlin
-  - Bastian Greshake Tzovaras
-  - Casey S Greene
-  publisher: eLife
-  date: '2018-03-01'
-  link: https://doi.org/ckcj
-  image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp
+  - Anna Boim
+  - Jonathan Dortheimer
+  - Aaron Sprecher
+  publisher: CAADRIA proceedings
+  date: '2022-01-01'
+  link: https://doi.org/gr42gt
+  image: images/papers/boim.png
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.13140/RG.2.2.31654.40003
+  title: CHATBOTS IN THE DESIGN PROCESS -Automating Design Conversation in Urban Design
+    Projects
+  authors:
+  - Jonathan Dortheimer
+  - Nikolas Martelaro
+  - Gerhard Schubert
+  - Aaron Sprecher
+  publisher: Unpublished
+  date: '2022-01-01'
+  link: https://doi.org/gr42gz
+  image: images/papers/chatbots.png
   plugin: sources.py
   file: sources.yaml
