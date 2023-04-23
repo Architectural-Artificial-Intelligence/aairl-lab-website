@@ -15,6 +15,9 @@
   plugin: sources.py
   file: sources.yaml
   image: images/papers/building.webp
+  tags:
+  - PDCB
+  - CIAD
 - id: doi:10.3390/math10040539
   title: Collective Intelligence in Design Crowdsourcing
   authors:
@@ -26,6 +29,8 @@
   plugin: sources.py
   file: sources.yaml
   image: images/papers/mathematics-10-00539-g009.png
+  tags:
+  - CIAD
 - id: eid:2-s2.0-85086718712
   orcid: 0000-0002-7464-8526
   plugin: orcid.py
@@ -44,6 +49,8 @@
   plugin: sources.py
   file: sources.yaml
   image: images/papers/wikihouse.jpg
+  tags:
+  - CURB
 - id: doi:10.1109/AIVR56993.2022.00026
   title: Toward a Generative Pipeline for an AR Tour of Contested Heritage Sites
   authors:
@@ -68,6 +75,8 @@
   date: '2020-01-01'
   link: https://doi.org/gr42gs
   image: images/papers/ecaade_cs.png
+  tags:
+  - CIAD
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.52842/conf.caadria.2022.1.223
@@ -81,6 +90,8 @@
   date: '2022-01-01'
   link: https://doi.org/gr42gt
   image: images/papers/boim.png
+  tags:
+  - GAAI
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.13140/RG.2.2.31654.40003
@@ -95,5 +106,7 @@
   date: '2022-01-01'
   link: https://doi.org/gr42gz
   image: images/papers/chatbots.png
+  tags:
+  - PDCB
   plugin: sources.py
   file: sources.yaml

@@ -6,6 +6,7 @@ nav:
 ---
 
 # Contact
+
 <div itemscope itemtype="https://schema.org/Organization" style="display: flex;">
 <div style="padding:10px">
 <p>

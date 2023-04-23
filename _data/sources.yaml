@@ -1,26 +1,34 @@
 - id: doi:10.3390/buildings13010222 
   image: images/papers/building.webp
-  # tags:
-  #   - 
-  #   - collaboration
+  tags:
+    - PDCB
+    - CIAD
 
 - id: doi:10.1109/AIVR56993.2022.00026 
   image: images/papers/mann2-p5-mann-large.gif
+  
 
 - id: doi:10.52842/conf.ecaade.2020.2.155
   image: images/papers/ecaade_cs.png
-  # tags:
-  #   - open science
-  #   - collaboration
+  tags:
+    - CIAD
 
 - id: doi:10.3390/math10040539 
   image: images/papers/mathematics-10-00539-g009.png
+  tags:
+     - CIAD
 
 - id: doi:10.52842/conf.caadria.2022.1.223 
   image: images/papers/boim.png
+  tags:
+    - GAAI
 
 - id: doi:10.13140/RG.2.2.31654.40003
   image: images/papers/chatbots.png
+  tags:
+    - PDCB
 
 - id: doi:10.1080/13602365.2020.1758950 
   image: images/papers/wikihouse.jpg
+  tags:
+    - CURB
