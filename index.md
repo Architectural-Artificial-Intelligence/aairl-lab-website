@@ -29,8 +29,11 @@ We want you! We’re always looking for diverse, talented individuals to join ou
 </div>
 </div>
 
-
 {% include section.html %}
+
+## Recent News
+
+{% include list.html data="posts" component="hp-post-excerpt" filters="category:featured" %}
 
 ## Highlights
 
