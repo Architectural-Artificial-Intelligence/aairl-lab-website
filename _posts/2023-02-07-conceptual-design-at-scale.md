@@ -5,7 +5,7 @@ tags:
   - participatory design
   - AI
   - chatbot
-
+category: featured
 ---
 
 We published a new open access research paper.

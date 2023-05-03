@@ -5,14 +5,8 @@ tags:
   - participatory design
   - AI
   - augmented reality
+category: featured
 ---
-
-Thursday, January 19, 2023
-
-Lecture: 14:00 - 15:00
-
-Raab Auditorium, Building 52
-
 
 Imagine a future where architects can design the way they are used
 to today but get additional expert support from computational
@@ -48,3 +42,10 @@ graduated as valedictorian in 2006, and finished his doctoral thesis
 in 2014 with the highest distinction. Since September 2015, he
 has held the position of director of research at the architecture
 department.
+
+
+Thursday, January 19, 2023
+
+Lecture: 14:00 - 15:00
+
+Raab Auditorium, Building 52

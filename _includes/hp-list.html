@@ -1,0 +1,47 @@
+
+{% assign posts = site.posts %}
+
+{% for d in posts %}
+
+{% assign published = d.date | date: "%B %d, %Y" %}
+{% assign member = site.members
+  | where_exp: "member", "member.slug == d.author"
+  | first
+%}
+  <div class="col col-sm-10
+{% if forloop.index==1 %}
+col-lg-6
+{% else %}
+col-lg-3
+{% endif %}
+  ">
+    <div class="blog_item">
+      <a class="item_image" href="{{ d.url }}">
+        <img src="{{ d.image }}" 
+        alt="{{ include.title | default: "feature image" }}"
+        {% include fallback.html %}
+        >
+      </a>
+      <div class="item_content">
+        <ul class="post_meta unordered_list">
+          <li><a href="#!">
+            
+            {% if member %}
+              {{ member.name }} {{ forloop.index }}
+            {% endif %}
+          </a></li>
+          <li>{{ published }}</li>
+        </ul>
+        <h3 class="item_title">
+          <a href="{{ d.url }}">
+            {{ d.title }}
+          </a>
+        </h3>
+        <p class="mb-0">
+          {{ d.caption }}
+        </p>
+      </div>
+    </div>
+  </div>
+
+{% endfor %}

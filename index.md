@@ -1,36 +1,51 @@
 ---
 ---
 
-<div style="display: flex;">
+<section class="banner_section banner_style_3">
+  <div class="container">
+    <div class="row align-items-center justify-content-lg-between">
+      <div class="order-lg-last col col-lg-6">
+        <div class="banner_image_3">
+          <img src="/images/banner/banner_img_5.jpg" alt="Group Study">
+        </div>
+      </div>
+      <div class="col col-lg-5">
+        <div class="banner_content">
+          <h1 class="banner_title">
+            We are Revolutionizing Architecture and Urban Design
+          </h1>
+          <p>
+            By leveraging the power of computation, artificial intelligence, and collective intelligence, we are creating new design methods that will lead to more sustainable and equitable cities for a better future.
+          </p>
+          <a class="btn btn_default" href="about.html">
+            <span>
+              <small>Explore of Projects</small>
+              <small>Explore of Projects</small>
+            </span>
+            <i class="far fa-long-arrow-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div style="flex-grow: 1">
-<img src="images/logo_old.png" />
-</div>
-<div class="" style="flex-grow: 3">
-  <!-- <div class="card-text"> -->
-  <h1>The AAIRL is revolutionizing Architecture and Urban Design</h1>
 
-  <p>By leveraging the power of computation, <b>artificial intelligence</b>, and <b>collective intelligence</b>, we are creating new <b>design methods</b> that will lead to more <b>sustainable</b> and <b>equitable cities</b> for a better future.</p>
-  <!-- </div> -->
-</div>
-</div>
+<section class="blog_section section_space_lg">
+  <div class="container">
+    <div class="section_heading text-center">
+      <h2 class="heading_text mb-0">
+        Latest News & 
+        <span class="heading_focus_text">Publications</span>
+      </h2>
+    </div>
+    <div class="row justify-content-center">
 
+{% include hp-list.html data="posts" %}
+    </div>
+  </div>
+</section>
 
-<div class="card" >
-<div class="card-text" style="text-align:left">
-Are you passionate about improving the design of cities?
-
-We want you! We’re always looking for diverse, talented individuals to join our mission. No matter what your background is, we invite you to apply and become part of our team. Don’t wait – let’s make a difference together!
-{%
-  include button.html
-  text="Join our vision!"
-  link="contact"
-%}
-</div>
-</div>
-
-
-{% include section.html %}
 
 ## Highlights
 
