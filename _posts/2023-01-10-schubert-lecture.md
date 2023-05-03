@@ -7,7 +7,6 @@ tags:
   - augmented reality
 category: featured
 ---
-
 Imagine a future where architects can design the way they are used
 to today but get additional expert support from computational
 systems. Can an integrated digital design assistant support
