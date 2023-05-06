@@ -1,0 +1,91 @@
+---
+layout: default
+---
+
+<!-- Details Section - Start
+================================================== -->
+<section class="details_section course_details_section">
+  <div class="details_content decoration_wrap">
+  <div class="container">
+      <div class="row align-items-center justify-content-lg-between">
+      <div class="col col-lg-6">
+          <div class="content_wrap">
+          <h1 class="details_item_title">
+              {{page.headline}}
+          </h1>
+          <p>
+              {{page.into}}
+          </p>
+          </div>
+      </div>
+      <div class="col col-lg-4">
+          <div class="course_details_video">
+          <img src=" {{page.image}}" alt="{{page.title}}">
+          </div>
+      </div>
+      </div>
+  </div>
+  <div class="deco_item deco_img_1" data-parallax='{"y" : -200, "smoothness": 6}'>
+      <img src="/images/shapes/line_shape_1.png" alt="Line Shape Image">
+  </div>
+  <div class="deco_item deco_img_2" data-parallax='{"y" : 200, "smoothness": 6}'>
+      <img src="/images/shapes/dot_shape_2.png" alt="Line Shape Image">
+  </div>
+  </div>
+  <div class="details_info_tab section_space_lg pt-0">
+  <div class="container">
+      <div class="row justify-content-lg-between">
+      <div class="col col-lg-7">
+          <div class="section_space_lg">
+              <h3 class="details_info_title">Short Overview</h3>
+              {{ page.description }}
+              <h3 class="details_info_title">Benefits</h3>
+              <div class="row">
+              <div class="col col-md-12">
+                  <ul class="icon_list unordered_list_block">
+                  {% for b in page.benefits %}
+                  <li>
+                      <i class="far fa-check"></i>
+                      <span>{{ b }}</span>
+                  </li>
+                  {% endfor %}
+                  </ul>
+              </div>
+              </div>
+          </div>
+      </div>
+      <div class="col col-lg-4">
+          <aside class="sidebar">
+          <div class="widget course_cart_info">
+              <a class="btn btn_warning" href="/contact/">
+              <i class="fas fa-laptop me-1"></i>
+              <span>
+                  <small>Request a Demo</small>
+                  <small>Request a Demo</small>
+              </span>
+              </a>
+              <ul class="cart_info_list unordered_list_block">
+              <li>
+                  <span><i class="far fa-clock me-1"></i> Kind</span>
+                  <span>Turn-key solution</span>
+              </li>
+              <li>
+                  <span><i class="fal fa-file-alt me-1"></i> Adaptability</span>
+                  <span>Tailored to your needs</span>
+              </li>
+              <li>
+                  <span><i class="far fa-user me-1"></i> Operated by</span>
+                  <span>Our team</span>
+              </li>
+              </ul>
+          </div>
+          </aside>
+      </div>
+      </div>
+  </div>
+  </div>
+</section>
+
+
+
+

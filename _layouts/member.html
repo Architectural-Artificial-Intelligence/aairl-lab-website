@@ -2,46 +2,72 @@
 layout: default
 ---
 
-{% capture floatcontent %}
+<section class="page_banner decoration_wrap">
+  <div class="container">
+    <h1 class="page_heading">Our Research Team</h1>
+    <ul class="breadcrumb_nav unordered_list_center">
+      <li><a href="/">Home</a></li>
+      <li>Our Team</li>
+    </ul>
+  </div>
+  <div class="deco_item deco_img_1" data-parallax='{"y" : -200, "smoothness": 6}'>
+    <img src="/images/shapes/line_shape_1.png" alt="Line Shape Image">
+  </div>
+  <div class="deco_item deco_img_2" data-parallax='{"y" : 200, "smoothness": 6}'>
+    <img src="/images/shapes/dot_shape_2.png" alt="Line Shape Image">
+  </div>
+</section>
 
-{% include portrait.html lookup=page.slug %}
+<section class="instructor_section section_space_lg pt-0">
+  <div class="container">
 
-<div>
-  {% for link in page.links %}
-    {% assign key = link[0] %}
-    {% assign value = link[1] %}
-    {% include button.html type=key link=value style="bare" %}<br>
-  {% endfor %}
-</div>
+    <div class="row justify-content-lg-between">
 
-{% endcapture %}
 
-{% include float.html content=floatcontent %}
+      <div class="col col-lg-8">
 
-{{ content }}
+        {{ content }}
 
-{% assign aliases = page.aliases
-  | default: page.name
-  | default: page.title
-  | join: ","
-  | split: ","
-  | array_filter
-%}
+        {% assign aliases = page.aliases
+        | default: page.name
+        | default: page.title
+        | join: ","
+        | split: ","
+        | array_filter
+        %}
 
-{% capture search -%}
-  research/?search={% for alias in aliases %}"{{ alias }}" {% endfor %}
-{%- endcapture %}
+        {% capture search -%}
+        publications/?search={% for alias in aliases %}"{{ alias }}" {% endfor %}
+        {%- endcapture %}
 
-<a href="{{ search | relative_url }}">
-  Search for {{ page.name | default: page.title }}'s papers on the Research page
-</a>
+        <a href="{{ search | relative_url }}">
+          Search for {{ page.name | default: page.title }}'s papers on the Research page
+        </a>
 
-{% capture search -%}
-  blog/?search={{ page.name }}
-{%- endcapture %}
+        {% capture search -%}
+        blog/?search={{ page.name }}
+        {%- endcapture %}
 
-<!-- 
-<a href="{{ search | relative_url }}">
-  See {{ page.name | default: page.title }}'s posts on the Blog page
-</a>
- -->
+
+        {% include list.html data="citations" component="citation" style="rich" showyears="true" %}
+
+      </div>
+
+      <div class="col col-lg-3">
+        {% include portrait.html lookup=page.slug %}
+
+        <div>
+          {% for link in page.links %}
+          {% assign key = link[0] %}
+          {% assign value = link[1] %}
+          {% include button.html type=key link=value style="bare" %}<br>
+          {% endfor %}
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% include join_us.html %}

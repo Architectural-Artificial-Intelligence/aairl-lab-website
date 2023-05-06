@@ -15,7 +15,7 @@
   {% assign data = year.items %}
 
   {% if years.size > 1 %}
-    {{--}}<h3 id="{{ year.name }}">{{ year.name }}</h3>
+    {{--}}<h3>{{ year.name }}</h3>
     {% assign data = data | sort: "date" | reverse %}
   {% endif %}
 
@@ -35,6 +35,7 @@
       height=d.height
       icon=d.icon
       id=d.id
+      kind=include.kind
       image=d.image
       last_modified_at=d.last_modified_at
       link=d.link
@@ -53,6 +54,7 @@
       type=d.type
       url=d.url
       width=d.width
+      itemPos=forloop.index
     %}
   {% endfor %}
 {% endfor %}

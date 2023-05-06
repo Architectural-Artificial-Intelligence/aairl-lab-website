@@ -6,7 +6,7 @@
     <div class="row align-items-center justify-content-lg-between">
       <div class="order-lg-last col col-lg-6">
         <div class="banner_image_3">
-          <img src="/images/banner/banner_img_5.jpg" alt="Group Study">
+          <img src="/images/cityview.jpg" alt="Urban View">
         </div>
       </div>
       <div class="col col-lg-5">
@@ -31,6 +31,49 @@
 </section>
 
 
+<!-- Course Section - Start
+================================================== -->
+<section class="course_section">
+  <div class="container">
+    <div class="section_heading">
+      <div class="row align-items-center">
+        <div class="col col-lg-6">
+          <h2 class="heading_text mb-0">
+            What we 
+            <span class="heading_focus_text">offer</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content">
+        <div class="row">
+
+{% include list.html data="products" kind="Product" component="course_item" %}
+{% include list.html data="projects" kind="Project" component="course_item" %}
+
+
+
+<!-- { include course_item.html title="Participatory Design Chatbot System" kind="Product" }
+{ include course_item.html title="Crowdsourcing Participatory Design System" kind="Product" }
+{ include course_item.html title="Collective Intelligent Architectural Design" kind="Research" }
+{ include course_item.html title="Generative Architectural Artificial Intelligence" kind="Research" }  
+{ include course_item.html title="Participatory Design Chatbots" kind="Research" }        
+{ include course_item.html title="Critical Urbanism" kind="Research" }        
+{ include course_item.html title="Ph.D. Studies" kind="Education" }
+{ include course_item.html title="M.Sc. Studies" kind="Education"  -->
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Course Section - End
+================================================== -->
+
+
+{% include join_us.html %}
+
+
 <section class="blog_section section_space_lg">
   <div class="container">
     <div class="section_heading text-center">
@@ -47,100 +90,4 @@
 </section>
 
 
-## Highlights
-
-{% capture text %}
-
-Stay up to date with our latest research in architecture and AI and access our peer-reviewed publications.
-
-{%
-  include button.html
-  link="research"
-  text="See our publications"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/hp/publications.jpg"
-  link="research"
-  title="Our Research"
-  text=text
-%}
-
-{% capture text %}
-
-Explore the wide range of research projects that our lab has conducted and continues to pursue. Learn more about our work and the impact it has had.
-{%
-  include button.html
-  link="projects"
-  text="Browse our projects"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/hp/projects1.jpg"
-  link="projects"
-  title="Our Projects"
-  flip=true
-  style="bare"
-  text=text
-%}
-
-{% capture text %}
-
-Learn more about our team and their research here.
-
-{%
-  include button.html
-  link="team"
-  text="Meet our team"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/hp/team.jpg"
-  link="team"
-  title="Our Team"
-  text=text
-%}
-
-{% capture text %}
-
-Do you need equipment for a research or studio project? We are happy to help and provide students with professional equipment.
-
-{%
-  include button.html
-  link="https://rentle.store/aairl/shop"
-  text="Browse our projects"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/hp/equipment.jpg"
-  link="https://rentle.store/aairl/shop"
-  title="Lab Equipment"
-  flip=true
-  style="bare"
-  text=text
-%}
 

@@ -6,6 +6,7 @@ tags:
   - AI
   - chatbot
 category: featured
+image: images/papers/building.webp
 ---
 
 We published a new open access research paper.

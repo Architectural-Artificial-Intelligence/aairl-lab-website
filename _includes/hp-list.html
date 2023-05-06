@@ -1,5 +1,5 @@
 
-{% assign posts = site.posts %}
+{% assign posts = site.posts | where: "category", "featured"%}
 
 {% for d in posts %}
 
@@ -24,10 +24,10 @@ col-lg-3
       </a>
       <div class="item_content">
         <ul class="post_meta unordered_list">
-          <li><a href="#!">
+          <li><a href="{{member.url}}">
             
             {% if member %}
-              {{ member.name }} {{ forloop.index }}
+              {{ member.name }}
             {% endif %}
           </a></li>
           <li>{{ published }}</li>

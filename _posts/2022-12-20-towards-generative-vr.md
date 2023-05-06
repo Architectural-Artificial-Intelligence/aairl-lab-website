@@ -1,10 +1,12 @@
 ---
 title: Toward a Generative Pipeline for an AR Tour of Contested Heritage Sites
 author: jonathan-dortheimer
+image: images/papers/vr.gif
 tags:
   - VR
   - AI
   - digital herritage
+category: featured
 ---
 A new conference paper with our partners from the Technion Arc. Eytan Mann and Prof. Aaron Sprecher.
 

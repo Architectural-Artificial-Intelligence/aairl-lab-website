@@ -2,21 +2,99 @@
 layout: default
 ---
 
-<h1 class="center">{{ page.title }}</h1>
 
-{%
-  include post-info.html
-  author=page.author
-  member=page.member
-  published=page.date
-  updated=page.last_modified_at
-  tags=page.tags
-%}
+<section class="page_banner decoration_wrap">
+  <div class="container">
+    <h1 class="page_heading">{{ page.title }}</h1>
+    <ul class="breadcrumb_nav unordered_list_center">
+      <li><a href="/">Home</a></li>
+      <li><a href="/news">News</a></li>
+      <li>Story</li>
+    </ul>
+  </div>
+  <div class="deco_item deco_img_1" data-parallax='{"y" : -200, "smoothness": 6}'>
+    <img src="/images/shapes/line_shape_1.png" alt="Line Shape Image">
+  </div>
+  <div class="deco_item deco_img_2" data-parallax='{"y" : 200, "smoothness": 6}'>
+    <img src="/images/shapes/dot_shape_2.png" alt="Line Shape Image">
+  </div>
+</section>
 
-{% include section.html %}
+<section class="details_section blog_details_section section_space_md pt-0">
+  <div class="container">
+    <div class="row justify-content-lg-between">
 
-{{ content }}
+      <div class="col col-lg-8">
+        <div class="details_image">
+          {% if page.image %}
+          <img src="{{page.image | relative_url}}" alt="{{  page.title }}">
+          {% endif  %}
+        </div>
 
-{% include section.html %}
+        <div class="details_content">
+          {%
+            include post-info.html
+            author=page.author
+            member=page.member
+            published=page.date
+            updated=page.last_modified_at
+            tags=page.tags
+          %}
 
-{% include post-nav.html post=page %}
+          <p>   
+            {{ content }}
+          </p>
+
+          <hr>
+
+          {% include post-nav.html post=page %}
+          
+        </div>
+      </div>
+
+      <div class="col col-lg-3">
+        <aside class="sidebar">
+          <div class="widget category_list">
+            <h3 class="widget_title">Categories</h3>
+            <ul class="unordered_list_block">
+
+              {% assign tags = page.tags
+                | object_items
+                | join: ","
+                | split: ","
+                | array_filter
+                | uniq
+              %}
+              {% assign link = include.link | default: page.dir | absolute_url %}
+
+                
+              {% for tag in tags %}
+              <li> <a
+                  href="/news/?search=&quot;tag: {{ tag }}&quot;">
+                <span>{{ tag }}</span>
+
+                </a>
+              </li>
+              {% endfor %}
+
+            </ul>
+          </div>
+
+          <div class="widget recent_post">
+            <h3 class="widget_title">Latest Stories</h3>
+            <ul class="unordered_list_block">
+
+              {% include list_small.html data="posts" component="post-short" %}
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
