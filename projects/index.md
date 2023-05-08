@@ -29,8 +29,8 @@ nav:
       <div class="row align-items-center">
         <div class="col col-lg-6">
           <h2 class="heading_text mb-0">
-            Our research projects 
-            <span class="heading_focus_text">offer</span>
+            Our research  
+            <span class="heading_focus_text">projects</span>
           </h2>
         </div>
       </div>
@@ -38,7 +38,7 @@ nav:
 
     <div class="tab-content">
         <div class="row">
-{% include list.html component="course_item" data="projects" %}
+{% include list.html data="projects" kind="Project" component="course_item"  %}
       </div>
     </div>
   </div>

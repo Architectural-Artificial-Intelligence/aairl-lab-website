@@ -5,11 +5,15 @@ description: Head of Research, Chair of Architectural Informatics, School of des
 role: pi
 group: partners
 aliases:
-  - schubert
+  - Gerhard Schubert
+tags:
+  PDCB
+  GAAI
 links:
-  home-page: https://www.arc.ed.tum.de/ai/team/gerhard-schubert/
-  orcid: https://orcid.org/0000-0003-1385-5369
-  email: schubert@tum.de
+  "fa-solid fa-house": https://www.arc.ed.tum.de/ai/team/gerhard-schubert/
+  "fa-brands fa-orcid": https://orcid.org/0000-0003-1385-5369
+  "fa-solid fa-envelope": mailto:schubert@tum.de
+  "fa-brands fa-linkedin": https://www.linkedin.com/in/gerhardschubert/
 ---
 
 Dr. - ing. Gerhard Schubert is the head researcher at the [Chair of Architectural Informatics](https://www.arc.ed.tum.de/en/ai/current-affairs/)], School of Engineering and Design, Technical University of Munich, specializing in the interdisciplinary field of architecture, computer science, and perceptual psychology. With his vast knowledge and experience, Gerhard is revolutionizing design by developing and examining new design-integrated approaches for using the computer as a decision-support tool in the creative context.   

@@ -9,14 +9,12 @@
       <img src="{{ member.image | relative_url }}" alt="member portrait" loading="lazy" {% include fallback.html %}>
     </div>
     <div class="item_content">
+    
       <h3 class="instructor_name">
-        <a 
-        {% if page.slug !=member.slug %} 
-        href="{{ member.url | relative_url }}" 
-        {% endif %} 
-        class="portrait"
-          aria-label="{{ member.name | default: " member link" }}">
-          {{ member.name }}</a>
+        
+        <a href="{{ member.url | relative_url }}" class="portrait" aria-label="{{ member.name }}">
+        {{ member.name }}
+        </a>
       </h3>
 
       {% if member.role or member.description %}

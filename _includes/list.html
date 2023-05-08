@@ -15,7 +15,7 @@
   {% assign data = year.items %}
 
   {% if years.size > 1 %}
-    {{--}}<h3>{{ year.name }}</h3>
+    {{--}}<h6>{{ year.name }}</h6>
     {% assign data = data | sort: "date" | reverse %}
   {% endif %}
 

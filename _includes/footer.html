@@ -19,7 +19,7 @@
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/">
+              <a href="https://www.linkedin.com/company/aairl/">
                 <i class="fab fa-linkedin-in"></i>
                 <i class="fab fa-linkedin-in"></i>
               </a>
@@ -34,33 +34,27 @@
         </div>
 
 
-        <div class="col col-lg-3 col-md-6 col-sm-6">
+        <div class="col col-lg-5 col-md-6 col-sm-6">
           <div class="widget">
-            <h3 class="widget_title">Research and Study</h3>
-            <ul class="page_list unordered_list_block">
-              <li><a href="/research_projects">Projects</a></li>
-              <li><a href="/publications">Publications</a></li>
-              <li><a href="/doctoral_studies">Ph.D. Studies</a></li>
-              <li><a href="/master_studies">M.Sc. Studies</a></li>
-              <li><a href="https://rentle.store/aairl/shop">Lab Equipment</a></li>
+            <h3 class="widget_title">Latest News</h3>
+            <ul class="page_list">
+              {% for post in site.posts limit:4 %}
+                    <li><a href="{{ post.url}}">{{ post.title }}</a></li>
+              {% endfor %}
             </ul>
           </div>
         </div>
 
-        <div class="col col-lg-3 col-md-6 col-sm-6">
+        <div class="col col-lg-4 col-md-6 col-sm-6">
           <div class="widget">
-            <h3 class="widget_title">Products and Services</h3>
-            <ul class="page_list unordered_list_block">
-              <li><a href="/news">News</a></li>
-              <li><a href="#!">Team</a></li>
-              <li><a href="#!">Machine Leraning</a></li>
-              <li><a href="#!">Developer Tools</a></li>
-              <li><a href="#!">Web Design</a></li>
+            <h3 class="widget_title">Projects</h3>
+            <ul class="page_list">
+              {% for project in site.projects limit:4%}
+                    <li><a href="{{ project.url}}">{{ project.title }}</a></li>
+              {% endfor %}
             </ul>
           </div>
         </div>
-
-
       </div>
     </div>
   </div>
@@ -70,13 +64,12 @@
   <div class="container">
     <div class="footer_bottom">
       <ul class="page_list unordered_list">
-        <li><a href="#!">Site Map</a></li>
-        <li><a href="#!">Privacy Policy</a></li>
-        <li><a href="#!">Terms & Condition</a></li>
-        <li><a href="#!">Contact Us</a></li>
-        <li><a href="#!">Forums</a></li>
+        <li><a href="/news">News</a></li>
+        <li><a href="https://www.ariel.ac.il/wp/architecture/en/">School of Architecture</a></li>
+        <li><a href="https://ariel.ac.il/">Ariel University</a></li>
+        <li><a href="/contact">Contact Us</a></li>
       </ul>
-      <p class="copyright_text mb-0">© Copyrights 2022 <a href="/">AAIRL</a> All rights reserved.</p>
+      <p class="copyright_text mb-0">© Copyrights 2023 <a href="/">AAIRL</a> All rights reserved.</p>
     </div>
   </div>
 </footer>

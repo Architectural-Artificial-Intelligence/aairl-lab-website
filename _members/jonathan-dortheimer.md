@@ -3,13 +3,19 @@ name: Arc. Jonathan Dortheimer, Ph.D.
 image: images/people/dortheimer.jpg
 role: pi
 group: team
+page: true
 aliases:
-  - J. Dortheimer
-  - J Dortheimer
   - Jonathan Dortheimer
+tags:
+  PDCB
+  GAAI
+  CURB
+  CIAD
 links:
-  home-page: https://dortheimer.com
-  orcid: 0000-0002-7464-8526
+  "fa-solid fa-house":  https://dortheimer.com
+  "fa-brands fa-orcid": https://orcid.org/0000-0002-7464-8526
+  "fa-solid fa-envelope": mailto:jonathand@ariel.ac.il
+  "fa-brands fa-linkedin": https://www.linkedin.com/in/dortheimer/
 ---
 
 Dr. Jonathan Dortheimer is an architect, educator, and innovator passionate about using technology to improve people's lives. With a career spanning over two decades, he has significantly impacted the development of cities, architecture, and digital tools. 

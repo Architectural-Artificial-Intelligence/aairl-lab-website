@@ -5,7 +5,7 @@
                 <li><a class="badge badge_warning" href="#!">New</a></li>
             </ul> -->
             <a class="image_wrap" href="{{include.url}}">
-                <img src="{{include.image}}"
+                <img src="{{include.image | relative_url }}"
                     alt="{{include.title}}"
                     {% include fallback.html %}
                     >
