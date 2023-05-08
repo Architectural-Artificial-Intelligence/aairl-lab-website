@@ -17,7 +17,7 @@
           <p>
             By leveraging the power of computation, artificial intelligence, and collective intelligence, we are creating new design methods that will lead to more sustainable and equitable cities for a better future.
           </p>
-          <a class="btn btn_default" href="about.html">
+          <a class="btn btn_default" href="/projects/">
             <span>
               <small>Explore of Projects</small>
               <small>Explore of Projects</small>
