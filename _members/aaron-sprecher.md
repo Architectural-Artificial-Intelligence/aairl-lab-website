@@ -8,6 +8,8 @@ aliases:
   - Aaron Sprecher
 tags:
   CIAD
+  PDCB
+  GAAI
 links:
   "fa-solid fa-house": https://mtrl.net.technion.ac.il/
   "fa-brands fa-orcid": https://orcid.org/0000-0002-2621-7350
