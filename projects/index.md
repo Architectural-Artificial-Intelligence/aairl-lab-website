@@ -5,12 +5,49 @@ nav:
   tooltip: Software, datasets, and more
 ---
 
-# Projects
+<section class="page_banner decoration_wrap">
+  <div class="container">
+    <h1 class="page_heading">Projects</h1>
+    <ul class="breadcrumb_nav unordered_list_center">
+      <li><a href="index.html">Home</a></li>
+      <li>Projects</li>
+    </ul>
+  </div>
+  <div class="deco_item deco_img_1" data-parallax='{"y" : -200, "smoothness": 6}'>
+    <img src="/images/shapes/line_shape_1.png" alt="Line Shape Image">
+  </div>
+  <div class="deco_item deco_img_2" data-parallax='{"y" : 200, "smoothness": 6}'>
+    <img src="/images/shapes/dot_shape_2.png" alt="Line Shape Image">
+  </div>
+</section>
 
-{% include tags.html tags="publication, resource, website" %}
+<!-- Course Section - Start
+================================================== -->
+<section class="course_section">
+  <div class="container">
+    <div class="section_heading">
+      <div class="row align-items-center">
+        <div class="col col-lg-6">
+          <h2 class="heading_text mb-0">
+            Our research  
+            <span class="heading_focus_text">projects</span>
+          </h2>
+        </div>
+      </div>
+    </div>
 
-{% include search-info.html %}
+    <div class="tab-content">
+        <div class="row">
+{% include list.html data="projects" kind="Project" component="course_item"  %}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Course Section - End
+================================================== -->
 
-{% include section.html %}
 
-{% include list.html component="card" data="projects" %}
+{% include join_us.html %}
+
+
+

@@ -7,8 +7,10 @@ group: partners
 aliases:
   - anidjar
 links:
-  orcid: https://orcid.org/0000-0002-7673-6511
-  email: orhaim@ariel.ac.il
+  "fa-brands fa-orcid": https://orcid.org/0000-0002-7673-6511
+  "fa-solid fa-envelope": mailto:orhaim@ariel.ac.il
+tags:
+  PDCB
 ---
 
 Dr. Or Haim Anidjar is an expert in the field of computer science, specializing in natural language processing, speech recognition, artificial intelligence, and deep learning. He is a lecturer at Ariel University and holds a Ph.D. in Computer Science from Ariel University. 

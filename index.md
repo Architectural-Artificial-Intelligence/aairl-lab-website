@@ -1,134 +1,93 @@
 ---
 ---
 
-<div style="display: flex;">
+<section class="banner_section banner_style_3">
+  <div class="container">
+    <div class="row align-items-center justify-content-lg-between">
+      <div class="order-lg-last col col-lg-6">
+        <div class="banner_image_3">
+          <img src="/images/cityview.jpg" alt="Urban View">
+        </div>
+      </div>
+      <div class="col col-lg-5">
+        <div class="banner_content">
+          <h1 class="banner_title">
+            We are Revolutionizing Architecture and Urban Design
+          </h1>
+          <p>
+            By leveraging the power of computation, artificial intelligence, and collective intelligence, we are creating new design methods that will lead to more sustainable and equitable cities for a better future.
+          </p>
+          <a class="btn btn_default" href="about.html">
+            <span>
+              <small>Explore of Projects</small>
+              <small>Explore of Projects</small>
+            </span>
+            <i class="far fa-long-arrow-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div style="flex-grow: 1">
-<img src="images/logo_old.png" />
-</div>
-<div class="" style="flex-grow: 3">
-  <!-- <div class="card-text"> -->
-  <h1>The AAIRL is revolutionizing Architecture and Urban Design</h1>
 
-  <p>By leveraging the power of computation, <b>artificial intelligence</b>, and <b>collective intelligence</b>, we are creating new <b>design methods</b> that will lead to more <b>sustainable</b> and <b>equitable cities</b> for a better future.</p>
-  <!-- </div> -->
-</div>
-</div>
+<!-- Course Section - Start
+================================================== -->
+<section class="course_section">
+  <div class="container">
+    <div class="section_heading">
+      <div class="row align-items-center">
+        <div class="col col-lg-6">
+          <h2 class="heading_text mb-0">
+            What we 
+            <span class="heading_focus_text">offer</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content">
+        <div class="row">
+
+{% include list.html data="products" kind="Product" component="course_item" %}
+{% include list.html data="projects" kind="Project" component="course_item" %}
 
 
-<div class="card" >
-<div class="card-text" style="text-align:left">
-Are you passionate about improving the design of cities?
 
-We want you! We’re always looking for diverse, talented individuals to join our mission. No matter what your background is, we invite you to apply and become part of our team. Don’t wait – let’s make a difference together!
-{%
-  include button.html
-  text="Join our vision!"
-  link="contact"
-%}
-</div>
-</div>
+<!-- { include course_item.html title="Participatory Design Chatbot System" kind="Product" }
+{ include course_item.html title="Crowdsourcing Participatory Design System" kind="Product" }
+{ include course_item.html title="Collective Intelligent Architectural Design" kind="Research" }
+{ include course_item.html title="Generative Architectural Artificial Intelligence" kind="Research" }  
+{ include course_item.html title="Participatory Design Chatbots" kind="Research" }        
+{ include course_item.html title="Critical Urbanism" kind="Research" }        
+{ include course_item.html title="Ph.D. Studies" kind="Education" }
+{ include course_item.html title="M.Sc. Studies" kind="Education"  -->
 
-{% include section.html %}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Course Section - End
+================================================== -->
 
-## Recent News
 
-{% include list.html data="posts" component="hp-post-excerpt" filters="category:featured" %}
+{% include join_us.html %}
 
-## Highlights
 
-{% capture text %}
+<section class="blog_section section_space_lg">
+  <div class="container">
+    <div class="section_heading text-center">
+      <h2 class="heading_text mb-0">
+        Latest News & 
+        <span class="heading_focus_text">Publications</span>
+      </h2>
+    </div>
+    <div class="row justify-content-center">
 
-Stay up to date with our latest research in architecture and AI and access our peer-reviewed publications.
+{% include hp-list.html data="posts" %}
+    </div>
+  </div>
+</section>
 
-{%
-  include button.html
-  link="research"
-  text="See our publications"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
 
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/hp/publications.jpg"
-  link="research"
-  title="Our Research"
-  text=text
-%}
-
-{% capture text %}
-
-Explore the wide range of research projects that our lab has conducted and continues to pursue. Learn more about our work and the impact it has had.
-{%
-  include button.html
-  link="projects"
-  text="Browse our projects"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/hp/projects1.jpg"
-  link="projects"
-  title="Our Projects"
-  flip=true
-  style="bare"
-  text=text
-%}
-
-{% capture text %}
-
-Learn more about our team and their research here.
-
-{%
-  include button.html
-  link="team"
-  text="Meet our team"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/hp/team.jpg"
-  link="team"
-  title="Our Team"
-  text=text
-%}
-
-{% capture text %}
-
-Do you need equipment for a research or studio project? We are happy to help and provide students with professional equipment.
-
-{%
-  include button.html
-  link="https://rentle.store/aairl/shop"
-  text="Browse our projects"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/hp/equipment.jpg"
-  link="https://rentle.store/aairl/shop"
-  title="Lab Equipment"
-  flip=true
-  style="bare"
-  text=text
-%}
 

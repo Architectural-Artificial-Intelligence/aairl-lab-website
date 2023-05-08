@@ -1,0 +1,42 @@
+{% assign member = site.members
+    | where_exp: "member", "member.slug == include.lookup"
+    | first
+    | default: include
+    %}
+
+<div class="col col-lg-3 col-md-6 col-sm-6">
+{% include portrait.html 
+    author=d.author
+    authors=d.authors
+    buttons=d.buttons
+    caption=d.caption
+    content=d.content
+    date=d.date
+    description=d.description
+    excerpt=d.excerpt
+    height=d.height
+    icon=d.icon
+    id=d.id
+    kind=include.kind
+    image=d.image
+    last_modified_at=d.last_modified_at
+    link=d.link
+    lookup=d.lookup
+    name=d.name
+    publisher=d.publisher
+    repo=d.repo
+    role=d.role
+    slug=d.slug
+    style=style
+    subtitle=d.subtitle
+    tags=d.tags
+    text=d.text
+    title=d.title
+    tooltip=d.tooltip
+    type=d.type
+    url=d.url
+    width=d.width
+    itemPos=forloop.index
+    %}
+</div>
+

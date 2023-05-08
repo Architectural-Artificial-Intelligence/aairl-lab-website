@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<!-- Details Section - Start
+================================================== -->
+<section class="details_section course_details_section">
+    <div class="details_content decoration_wrap">
+        <div class="container">
+            <div class="row align-items-center justify-content-lg-between">
+                <div class="col col-lg-6">
+                    <div class="content_wrap">
+                        <h1 class="details_item_title">
+                            {{page.title}}
+                        </h1>
+                        <p>
+                            {{page.intro}}
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-lg-4">
+                    <div class="course_details_video">
+                        <img src="{{page.image | relative_url}}" alt="{{page.title}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="deco_item deco_img_1" data-parallax='{"y" : -200, "smoothness": 6}'>
+            <img src="/images/shapes/line_shape_1.png" alt="Line Shape Image">
+        </div>
+        <div class="deco_item deco_img_2" data-parallax='{"y" : 200, "smoothness": 6}'>
+            <img src="/images/shapes/dot_shape_2.png" alt="Line Shape Image">
+        </div>
+    </div>
+    <div class="details_info_tab section_space_lg pt-0">
+        <div class="container">
+            <div class="row justify-content-lg-between">
+                <div class="col col-lg-12">
+                    <div class="section_space_lg">
+                        <h3 class="details_info_title">Overview</h3>
+                        <p>{{ page.description }}</p>
+
+                        <h3 class="details_info_title">Relevant Publications</h3>
+                        {% assign filter = page.tag | prepend: "tags: "%}
+                        {% include list.html data="citations" component="citation" filters=filter %}
+    
+
+                       
+
+                        <h3 class="details_info_title">Team</h3>
+                        <div class="row">
+                        {% include list.html data="members" component="team_portrait" filters=filter  %}
+                        </div>
+                        
+                                            </div>
+                </div>
+
+            </div> 
+        </div>
+    </div>
+</section>

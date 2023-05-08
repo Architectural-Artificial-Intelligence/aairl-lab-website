@@ -35,13 +35,25 @@ defaults:
       type: "posts"
     values:
       layout: post
-
+  # markdown files in /_posts
+  - scope:
+      type: "projects"
+    values:
+      layout: projects
+  - scope:
+      type: "products"
+    values:
+      layout: products
 collections:
   # generate page for each member
   members:
     output: true
   # generate page for each post
   posts:
+    output: true
+  products:
+    output: true
+  projects:
     output: true
 
 # jekyll plugins

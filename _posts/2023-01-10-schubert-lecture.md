@@ -1,6 +1,7 @@
 ---
 title: We invite you to a lecture “Mixing Worlds- Mixing Realities” By Dr.-ing. Gerhard Schubert
 author: ela-moyal
+image: images/schubert.png
 tags:
   - participatory design
   - AI
