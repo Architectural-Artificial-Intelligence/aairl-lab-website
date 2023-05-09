@@ -1,5 +1,5 @@
 ---
-name: Or Haim Anijdar, Ph.D.
+name: Dr. Or Haim Anijdar
 image: images/people/anidjar.jpg
 description: Lecturer, School of Computer Science, Ariel University
 role: pi
