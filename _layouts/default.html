@@ -2,10 +2,21 @@
 <html lang="en" data-dark="false">
   {% include head.html %}
   <body>
+    <!-- Body Wrap - Start -->
+    <div class="page_wrapper">
+
+      <!-- Back To Top - Start -->
+      <div class="backtotop">
+        <a href="#" class="scroll">
+          <i class="far fa-arrow-up"></i>
+          <i class="far fa-arrow-up"></i>
+        </a>
+      </div>
     {% include header.html %}
-    <main>
+    <main class="page_content">
       {% include content.html content=content %}
     </main>
     {% include footer.html %}
+  </div>
   </body>
 </html>

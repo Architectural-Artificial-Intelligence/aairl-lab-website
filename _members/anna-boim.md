@@ -1,9 +1,11 @@
 ---
-name: Anna Boim
+name: Arc. Anna Biom
 image: images/people/anna.jpg
 role: phd
 group: team
 aliases:
-  - Boim
+  - Anna Boim
+tags:
+  GAAI
 ---
 

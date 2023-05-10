@@ -1,58 +1,100 @@
-{% assign image = page.header | default: site.header | relative_url %}
-{% assign dark = page.header-dark | is_nil: site.header-dark | is_nil: true %}
+<header class="site_header header_style_3">
+  <div class="header_top text-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col col-lg-9">
+          <ul class="icon_list unordered_list">
+            <li>
+              <a href="/">
+                Architectural Artificial Intelligence Research Laboratoory
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col col-lg-3 d-lg-flex align-items-center justify-content-lg-end justify-content-between">
+          <ul class="social_icon unordered_list">
+            <li>
+              <a href="https://twitter.com/">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/aairl/">
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/">
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="header_bottom">
+      <div class="row align-items-center">
+        <div class="col col-lg-3">
+          <div class="site_logo">
+            <a class="site_link" href="/">
+              <img src="/images/logo/site_logo.png" alt="Architectural Artificial Intelligence Research Lab">
+            </a>
+          </div>
+        </div>
+        <div class="col col-lg-6">
+          <nav class="main_menu navbar navbar-expand-lg">
+            <div class="main_menu_inner collapse navbar-collapse justify-content-center" id="main_menu_dropdown">
+              <ul class="main_menu_list unordered_list_center">
+               <li class="dropdown">
+                  <a class="nav-link" href="#" id="home_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products and Services</a>
+                  <ul class="dropdown-menu" aria-labelledby="home_submenu">
 
-{% assign svg = "images/logo.svg" | file_exists %}
-{% assign png = "images/logo.png" | file_exists %}
-{% assign jpg = "images/logo.jpg" | file_exists %}
-{% assign logo = svg | default: png | default: jpg | default: nil %}
-
-<header
-  class="background {% if page.url == "/" %}header1{% endif %}"
-  {% if dark == true or dark == false %}
-    data-dark="{{ dark }}"
-  {% endif %}
-  {% if page.url == "/" %}
-    data-big
-  {% endif %}
->
-  <a href="{{ "/" | relative_url }}" class="home">
-    {% if logo %}
-      <span class="logo">
-        {% if svg %}
-          {{ svg | file_read }}
-        {% else %}
-          <img src="{{ logo | relative_url }}" alt="logo">
-        {% endif %}
-      </span>
-    {% endif %}
-    {% if site.logo-text != false %}
-      <span class="title" data-tooltip="Home">
-        {% if site.title and site.show-title != false %}
-          <span>{{ site.title }}</span>
-        {% endif %}
-        {% if site.subtitle and site.show-subtitle != false %}
-          <span>{{ site.subtitle }}</span>
-        {% endif %}
-      </span>
-    {% endif %}
-  </a>
-
-  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
-
-  <nav>
-    {% assign pages = site.pages
-      | where_exp: "page", "page.nav"
-      | sort: "nav.order"
-    %}
-    {% for page in pages %}
-      {% if page.nav %}
-        <a
-          href="{{ page.dir | relative_url }}"
-          data-tooltip="{{ page.nav.tooltip }}"
-        >
-          {{ page.title }}
-        </a>
-      {% endif %}
-    {% endfor %}
-  </nav>
+                  {% for product in site.products %}
+                    <li><a href="{{ product.url}}">{{ product.title }}</a></li>
+                  {% endfor %}
+                      <!-- <li><a href="/industry_research">Industry Research</a></li>
+                    <li><a href="/lectures">Lectures</a></li>
+                    <li><a href="/consulting">Consulting</a></li> -->
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="nav-link" href="#" id="home_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Research & Study</a>
+                  <ul class="dropdown-menu" aria-labelledby="home_submenu">
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/publications">Publications</a></li>
+                    <!-- <li><a href="/doctoral_studies">Ph.D. Studies</a></li> -->
+                    <!-- <li><a href="/master_studies">M.Sc. Studies</a></li> -->
+                    <li><a href="https://rentle.store/aairl/shop" target="_blank">Lab Equipment</a></li>
+                  </ul>
+                </li>
+                <li><a class="nav-link" href="/team">Team</a></li> 
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col col-lg-3">
+          <ul class="header_btns_group unordered_list_end">
+            <li>
+              <button data-magnetic data-cursor="-opaque" class="mobile_menu_btn" type="button" data-bs-toggle="collapse" data-bs-target="#main_menu_dropdown" aria-controls="main_menu_dropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="far fa-bars"></i>
+              </button>
+            </li>
+            <li>
+              <a class="btn btn_primary" href="/contact/">
+                <span>
+                  <small>Contact Us</small>
+                  <small>Contact Us</small>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>

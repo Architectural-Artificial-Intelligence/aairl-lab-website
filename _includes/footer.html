@@ -1,42 +1,75 @@
-{% assign image = page.footer | default: site.footer | relative_url %}
-{% assign dark = page.footer-dark | is_nil: site.footer-dark | is_nil: true %}
+<footer class="site_footer">
+  <div class="footer_top">
+    <div class="container">
+      <div class="row justify-content-lg-between">
+        <div class="col col-lg-3 col-md-6 col-sm-6">
+          <div class="site_logo">
+            <a class="site_link" href="https://ariel.ac.il">
+              <img src="/images/ariel_logo_en.svg" alt="AAIRL">
+            </a>
+            <p>
+              School of Architecture,<br /> 
+              Ariel University, Israel </p>
+          </div>
+          <ul class="social_icon unordered_list">
+            <li>
+              <a href="https://twitter.com/">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/aairl/">
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/">
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-<footer
-  class="background"
-  style="--image: url('{{ image }}')"
-  {% if dark == true or dark == false %}
-    data-dark="{{ dark }}"
-  {% endif %}
-  data-size="wide"
->
-  <!--
-    <div>
-      Extra details like contact info or address
+
+        <div class="col col-lg-5 col-md-6 col-sm-6">
+          <div class="widget">
+            <h3 class="widget_title">Latest News</h3>
+            <ul class="page_list">
+              {% for post in site.posts limit:4 %}
+                    <li><a href="{{ post.url}}">{{ post.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+
+        <div class="col col-lg-4 col-md-6 col-sm-6">
+          <div class="widget">
+            <h3 class="widget_title">Projects</h3>
+            <ul class="page_list">
+              {% for project in site.projects limit:4%}
+                    <li><a href="{{ project.url}}">{{ project.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-  -->
-
-  <div>
-    {% for link in site.links %}
-      {% assign key = link[0] %}
-      {% assign value = link[1] %}
-      {% include button.html type=key text="" link=value style="bare" %}
-    {% endfor %}
   </div>
 
-  <div>
-    &copy; {{ site.time | date: "%Y" }}
-    {{ site.title }}
-    &nbsp; | &nbsp; Built with
-    <a href="https://github.com/greenelab/lab-website-template">
-      Lab Website Template
-    </a>
-  </div>
+  
 
-  <input
-    type="checkbox"
-    class="dark-toggle"
-    data-tooltip="Dark mode"
-    aria-label="toggle dark mode"
-    oninput="onDarkToggleChange(event)"
-  >
+  <div class="container">
+    <div class="footer_bottom">
+      <ul class="page_list unordered_list">
+        <li><a href="/news">News</a></li>
+        <li><a href="https://www.ariel.ac.il/wp/architecture/en/">School of Architecture</a></li>
+        <li><a href="https://ariel.ac.il/">Ariel University</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+      <p class="copyright_text mb-0">© Copyrights 2023 <a href="/">AAIRL</a> All rights reserved.</p>
+    </div>
+  </div>
 </footer>

@@ -1,0 +1,20 @@
+{% assign post = site.posts 
+    | where_exp: "post", "post.slug == include.lookup"
+    | first
+    | default: include
+  %}
+  
+{% assign url = post.url %}
+{% assign title = post.title %}
+{% assign published = post.published | date: "%B %d, %Y" %}
+
+<li>
+    <a class="blog_item_small" href="{{url}}">
+      <span class="item_content">
+        <strong class="item_title d-block">
+          {{title}}
+        </strong>
+        <small class="post_date d-block">{{published}}</small>
+      </span>
+    </a>
+  </li>

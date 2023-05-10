@@ -2,46 +2,88 @@
 layout: default
 ---
 
-{% capture floatcontent %}
+<section class="page_banner decoration_wrap">
+  <div class="container">
+    {% if page.group!="partners" %}
+    <h1 class="page_heading">Research Team</h1>
+    {% endif %}
+    {% if page.group=="partners" %}
+    <h1 class="page_heading">Research Partners</h1>
+    {% endif %}
+    <ul class="breadcrumb_nav unordered_list_center">
+      <li><a href="/">Home</a></li>
+      <li><a href="/team">Team</a></li>
+    </ul>
+  </div>
+  <div class="deco_item deco_img_1" data-parallax='{"y" : -200, "smoothness": 6}'>
+    <img src="/images/shapes/line_shape_1.png" alt="Line Shape Image">
+  </div>
+  <div class="deco_item deco_img_2" data-parallax='{"y" : 200, "smoothness": 6}'>
+    <img src="/images/shapes/dot_shape_2.png" alt="Line Shape Image">
+  </div>
+</section>
 
-{% include portrait.html lookup=page.slug %}
+<section class="instructor_section section_space_lg pt-0">
+  <div class="container">
 
-<div>
-  {% for link in page.links %}
-    {% assign key = link[0] %}
-    {% assign value = link[1] %}
-    {% include button.html type=key link=value style="bare" %}<br>
-  {% endfor %}
-</div>
+    <div class="row justify-content-lg-between">
 
-{% endcapture %}
+      <div class="col col-lg-3">
+        
+        <div class=" sidebar_post_admin text-center">
+          <div class="admin_image">
+            <img src="{{ page.image | relative_url }}" alt="member portrait" loading="lazy" {% include fallback.html %}>
+          </div>
+          <h3 class="admin_name">{{page.name}}</h3>
+          <p>
+            {{page.description}}
+          </p>
+          <ul class="social_icon unordered_list_center">
+            {% for link in page.links %}
+            {% assign key = link[0] %}
+            {% assign value = link[1] %}
+            <li>
+              <a href="{{value}}">
+                <i class="{{key}}"></i>
+                <i class="{{key}}"></i>
+              </a>
+            </li>
+            {% endfor %}
+           
+          </ul>
+        </div>
 
-{% include float.html content=floatcontent %}
+        <div>
+          
+        </div>
 
-{{ content }}
+      </div>
 
-{% assign aliases = page.aliases
-  | default: page.name
-  | default: page.title
-  | join: ","
-  | split: ","
-  | array_filter
-%}
+      <div class="col col-lg-8">
 
-{% capture search -%}
-  research/?search={% for alias in aliases %}"{{ alias }}" {% endfor %}
-{%- endcapture %}
+        <h3 class="details_item_title">About</h3>
+        {{ content }}
 
-<a href="{{ search | relative_url }}">
-  Search for {{ page.name | default: page.title }}'s papers on the Research page
-</a>
+        {% assign filter = page.aliases
+        | default: page.name
+        | default: page.title
+        | join: ", authors: "
+        | prepend: "authors: "
+        %}
 
-{% capture search -%}
-  blog/?search={{ page.name }}
-{%- endcapture %}
+        
 
-<!-- 
-<a href="{{ search | relative_url }}">
-  See {{ page.name | default: page.title }}'s posts on the Blog page
-</a>
- -->
+        <h3 class="details_item_title">Publications</h3>
+        {% include list.html data="citations" 
+        component="citation" 
+        filters=filter
+        showyears="true" %}
+
+      </div>
+
+   
+    </div>
+  </div>
+</section>
+
+{% include join_us.html %}

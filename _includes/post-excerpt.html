@@ -4,18 +4,8 @@
   | default: include
 %}
 
-<div class="post-excerpt">
-  {% assign url = post.url %}
-  {% assign title = post.title %}
-  <a href="{{ url | relative_url }}">{{ title }}</a>
-
-  {%
-    include post-info.html
-    author=post.author
-    published=post.date
-    updated=post.last_modified_at
-    tags=post.tags
-  %}
+{% assign url = post.url %}
+{% assign title = post.title %}
 
   {% assign excerpt = post.content
     | default: ""
@@ -29,7 +19,37 @@
     | strip_newlines
     | regex_strip
   %}
-  <p data-search="{{ search }}">
-    {{ excerpt }}
-  </p>
+
+<div class="col
+{% if include.itemPos > 1 %}
+col-md-6 col-sm-6
+{% endif %}
+">
+  <div class="blog_item">
+    {% if post.image %}
+    <a class="item_image" href="{{ url | relative_url }}">
+      <img src="{{post.image | relative_url}}" alt="{{ title }}">
+    </a>
+    {% endif  %}
+    <div class="item_content">
+
+  {%
+    include post-info.html
+    author=post.author
+    published=post.date
+  %}
+      <h3 class="item_title">
+        <a href="{{ url | relative_url }}">
+          {{ title }}
+        </a>
+      </h3>
+      <p>
+        {{excerpt}}
+      </p>
+      <a class="btn_unfill" href="{{ url | relative_url }}">
+        Read More
+        <i class="far fa-angle-double-right"></i>
+      </a>
+    </div>
+  </div>
 </div>

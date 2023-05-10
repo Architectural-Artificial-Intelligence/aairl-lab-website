@@ -5,11 +5,17 @@ description: Head of MTRL, Faculty of Architecture, Technion IIT
 role: pi
 group: partners
 aliases:
-  - sprecher
+  - Aaron Sprecher
+tags:
+  CIAD
+  PDCB
+  GAAI
 links:
-  home-page: https://mtrl.net.technion.ac.il/
-  email: asprecher@technion.ac.il
-  orcid: 0000-0002-2621-7350
+  "fa-solid fa-house": https://mtrl.net.technion.ac.il/
+  "fa-brands fa-orcid": https://orcid.org/0000-0002-2621-7350
+  "fa-solid fa-envelope": mailto:asprecher@technion.ac.il
+  "fa-brands fa-linkedin": https://www.linkedin.com/in/aaron-sprecher-b75758
+
 ---
 
 
