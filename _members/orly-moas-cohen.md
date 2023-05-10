@@ -1,10 +1,10 @@
 ---
-name: Orly Moas Cohen
-image: images/people/orly.jpg
+name: Arc. Orly Moas Cohen
+image: images/people/orly.png
 role: phd
 group: team
 aliases:
-  - Boim
+  - Orly
 ---
 
 Arc. Orly Moas Cohen is a senior urban planner and architect with a wide range of expertise in urban renewal, heritage preservation, public service, and strategic consulting. She holds a B.Arch from Ariel University and an M.Arch from the Technion. 

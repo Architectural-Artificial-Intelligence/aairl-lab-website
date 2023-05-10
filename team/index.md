@@ -24,9 +24,11 @@ nav:
 <section class="instructor_section section_space_lg pt-0">
   <div class="container">
     <div class="instructor_wrapper row">
-{% include list.html data="members" component="team_portrait" filters="group:team , role: pi|research-lead" %}
+{% include list.html data="members" component="team_portrait" filters="group:team , role: pi" %}
+{% include list.html data="members" component="team_portrait" filters="group:team , role: research-lead" %}
 
-{% include list.html data="members" component="team_portrait" filters="group:team ,role: ^(?!pi|research-lead$)" %}
+{% include list.html data="members" component="team_portrait" filters="group:team ,role: phd" %}
+{% include list.html data="members" component="team_portrait" filters="group:team ,role: assistant" %}
     </div>
   </div>
 </section>
