@@ -1,7 +1,7 @@
 ---
-name: Arc. Anna Biom, M.Sc.
+name: Arc. Anna Boim
 image: images/people/anna.jpg
-role: phd-candidate
+role: phd
 group: team
 aliases:
   - Anna Boim
