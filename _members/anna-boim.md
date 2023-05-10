@@ -1,7 +1,7 @@
 ---
-name: Anna Biom
+name: Anna Boim
 image: images/people/anna.jpg
-role: phd-candidate
+role: phd
 group: team
 aliases:
   - Boim
