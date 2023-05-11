@@ -1,5 +1,5 @@
 ---
-name: Arc. Orly Moas Cohen
+name: Arc. Orly Moas-Cohen
 image: images/people/orly.png
 role: phd
 group: team
@@ -7,7 +7,7 @@ aliases:
   - Orly
 ---
 
-Arc. Orly Moas Cohen is a senior urban planner and architect with a wide range of expertise in urban renewal, heritage preservation, public service, and strategic consulting. She holds a B.Arch from Ariel University and an M.Arch from the Technion. 
+Arc. Orly Moas-Cohen is a senior urban planner and architect with a wide range of expertise in urban renewal, heritage preservation, public service, and strategic consulting. She holds a B.Arch from Ariel University and an M.Arch from the Technion. 
 
 For over a decade, Orly has played a central role in urban planning and development. She has led numerous planning teams and promoted large-scale urban projects. In her position as a member of various planning committees, such as the Tel Aviv District Planning and Building Committee, she has contributed to the urban landscape of Israel.
 

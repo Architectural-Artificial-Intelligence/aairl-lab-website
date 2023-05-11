@@ -38,7 +38,7 @@ nav:
         <div class="about_item">
           <div class="item_content">
             <h3 class="item_title">
-              We specifically look for:
+              We look for:
             </h3>
             <p class="mb-0">
               <ul>
@@ -53,7 +53,7 @@ nav:
         <div class="about_item">
           <div class="item_content">
             <h3 class="item_title">
-              Our offer:
+              We offer:
             </h3>
             <p class="mb-0">
               <ul>
@@ -76,7 +76,7 @@ nav:
       <div class="row justify-content-center">
         <div class="col col-lg-9">
           <div class="contact_form_wrapper">
-            <h2 class="contact_title text-center">Send Us a Mess</h2>
+            <h2 class="contact_title text-center">Send message</h2>
             <form action="https://formspree.io/f/mlekzlpa"
               method="POST"
               enctype="multipart/form-data">
