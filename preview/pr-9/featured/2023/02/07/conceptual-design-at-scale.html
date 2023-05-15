@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V7ZV21PQ20"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V7ZV21PQ20');
+</script>
+  <!--
+  put your search engine verification (e.g. Google Search Console) tag here
+-->
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Conceptual Architectural Design at Scale - A Case Study of Community Participation Using Crowdsourcing | Architectural AI Reseach Lab</title>
+
+<link rel="icon" href="">
+
+<meta name="title" content="Conceptual Architectural Design at Scale - A Case Study of Community Participation Using Crowdsourcing">
+<meta name="description" content="AAIRL. The AAIRL is revolutionizing Architecture and Urban Design by leveraging the power of computation, artificial intelligence, and collective intelligence, we are creating new design methods that will lead to more sustainable and equitable cities for a better future.">
+
+<meta property="og:title" content="Conceptual Architectural Design at Scale - A Case Study of Community Participation Using Crowdsourcing">
+<meta property="og:site_title" content="Architectural AI Reseach Lab">
+<meta property="og:description" content="AAIRL. The AAIRL is revolutionizing Architecture and Urban Design by leveraging the power of computation, artificial intelligence, and collective intelligence, we are creating new design methods that will lead to more sustainable and equitable cities for a better future.">
+<meta property="og:url" content="">
+<meta property="og:image" content="/preview/pr-9/images/share.png">
+<meta property="og:locale" content="en_US">
+
+<meta property="twitter:title" content="Conceptual Architectural Design at Scale - A Case Study of Community Participation Using Crowdsourcing">
+<meta property="twitter:description" content="AAIRL. The AAIRL is revolutionizing Architecture and Urban Design by leveraging the power of computation, artificial intelligence, and collective intelligence, we are creating new design methods that will lead to more sustainable and equitable cities for a better future.">
+<meta property="twitter:url" content="">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:image" content="/preview/pr-9/images/share.png">
+
+
+  <meta name="author" content="ela-moyal">
+  <meta property="og:type" content="article">
+  <meta property="og:updated_time" content="2023-05-15T08:41:48+00:00">
+  <meta property="article:published_time" content="2023-02-07T00:00:00+00:00">
+  <meta property="article:modified_time" content="2023-05-15T08:41:48+00:00">
+  <meta name="revised" content="2023-05-15T08:41:48+00:00">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "BlogPosting",
+      "author": { "@type": "Person", "name": "Conceptual Architectural Design at Scale - A Case Study of Community Participation Using Crowdsourcing" },
+      "datePublished": "2023-02-07T00:00:00+00:00",
+      "dateModified": "2023-05-15T08:41:48+00:00",
+    
+    "name": "Conceptual Architectural Design at Scale - A Case Study of Community Participation Using Crowdsourcing",
+    "description": "AAIRL. The AAIRL is revolutionizing Architecture and Urban Design by leveraging the power of computation, artificial intelligence, and collective intelligence, we are creating new design methods that will lead to more sustainable and equitable cities for a better future.",
+    "headline": "Conceptual Architectural Design at Scale - A Case Study of Community Participation Using Crowdsourcing",
+    "publisher": {
+      "@type": "Organization",
+      "logo": { "@type": "ImageObject", "url": "" }
+    },
+    "url": ""
+  }
+</script>
+
+<link rel="alternate" type="application/rss+xml" href="/preview/pr-9/feed.xml">
+
+  <!-- Google Fonts -->
+<!-- automatically get url from fonts used in theme file -->
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?display=swap&&family=Nunito:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+
+<!-- Font Awesome icons (load asynchronously due to size) -->
+
+<link href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" rel="preload" as="style" onload="this.onload = null; this.rel = 'stylesheet';">
+<noscript>
+  <link href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" rel="stylesheet">
+</noscript>
+
+  <!-- third party styles -->
+<!-- https://stylishthemes.github.io/Syntax-Themes/pygments/ -->
+<link href="https://cdn.jsdelivr.net/gh/StylishThemes/Syntax-Themes/pygments/css-github/pygments-tomorrow-night-eighties.css" rel="stylesheet">
+
+<!-- include all sass in styles folder -->
+
+
+  
+    <link href="/preview/pr-9/_styles/-theme.css" rel="stylesheet">
+  
+
+
+<!-- include all css in styles folder -->
+
+
+  <link href="/preview/pr-9/_styles/animate.css" rel="stylesheet">
+
+  <link href="/preview/pr-9/_styles/bootstrap.min.css" rel="stylesheet">
+
+  <link href="/preview/pr-9/_styles/fontawesome.css" rel="stylesheet">
+
+  <link href="/preview/pr-9/_styles/magnific-popup.css" rel="stylesheet">
+
+  <link href="/preview/pr-9/_styles/slick.css" rel="stylesheet">
+
+  <link href="/preview/pr-9/_styles/style.css" rel="stylesheet">
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/images/favicon/site.webmanifest">
+<link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/images/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#e9e9e9">
+<meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+
+  <!-- third party scripts -->
+<script src="https://unpkg.com/@popperjs/core@2" defer></script>
+<script src="https://unpkg.com/tippy.js@6" defer></script>
+<script src="https://unpkg.com/mark.js@8" defer></script>
+
+<!-- include all js in scripts folder -->
+
+
+  <script src="/preview/pr-9/_scripts/0_jquery.min.js"></script>
+
+  <script src="/preview/pr-9/_scripts/1_bootstrap.min.js"></script>
+
+  <script src="/preview/pr-9/_scripts/anchors.js"></script>
+
+  <script src="/preview/pr-9/_scripts/bootstrap-dropdown-ml-hack.js"></script>
+
+  <script src="/preview/pr-9/_scripts/counterup.min.js"></script>
+
+  <script src="/preview/pr-9/_scripts/cursor.js"></script>
+
+  <script src="/preview/pr-9/_scripts/dark-mode.js"></script>
+
+  <script src="/preview/pr-9/_scripts/fetch-tags.js"></script>
+
+  <script src="/preview/pr-9/_scripts/magnific-popup.min.js"></script>
+
+  <script src="/preview/pr-9/_scripts/parallax-scroll.js"></script>
+
+  <script src="/preview/pr-9/_scripts/parallax.min.js"></script>
+
+  <script src="/preview/pr-9/_scripts/popper.min.js"></script>
+
+  <script src="/preview/pr-9/_scripts/search.js"></script>
+
+  <script src="/preview/pr-9/_scripts/site-search.js"></script>
+
+  <script src="/preview/pr-9/_scripts/slick.min.js"></script>
+
+  <script src="/preview/pr-9/_scripts/submit.js"></script>
+
+  <script src="/preview/pr-9/_scripts/tilt.min.js"></script>
+
+  <script src="/preview/pr-9/_scripts/tooltip.js"></script>
+
+  <script src="/preview/pr-9/_scripts/waypoint.js"></script>
+
+  <script src="/preview/pr-9/_scripts/wow.min.js"></script>
+
+  <script src="/preview/pr-9/_scripts/zzz_main.js"></script>
+
+
+</head>
+
+  <body>
+    <!-- Body Wrap - Start -->
+    <div class="page_wrapper">
+
+      <!-- Back To Top - Start -->
+      <div class="backtotop">
+        <a href="#" class="scroll">
+          <i class="far fa-arrow-up"></i>
+          <i class="far fa-arrow-up"></i>
+        </a>
+      </div>
+    <header class="site_header header_style_3">
+  <div class="header_top text-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col col-lg-9">
+          <ul class="icon_list unordered_list">
+            <li>
+              <a href="/">
+                Architectural Artificial Intelligence Research Laboratoory
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col col-lg-3 d-lg-flex align-items-center justify-content-lg-end justify-content-between">
+          <ul class="social_icon unordered_list">
+            <li>
+              <a href="https://twitter.com/">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/aairl/">
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/">
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="header_bottom">
+      <div class="row align-items-center">
+        <div class="col col-lg-3">
+          <div class="site_logo">
+            <a class="site_link" href="/">
+              <img src="/images/logo/site_logo.png" alt="Architectural Artificial Intelligence Research Lab">
+            </a>
+          </div>
+        </div>
+        <div class="col col-lg-6">
+          <nav class="main_menu navbar navbar-expand-lg">
+            <div class="main_menu_inner collapse navbar-collapse justify-content-center" id="main_menu_dropdown">
+              <ul class="main_menu_list unordered_list_center">
+               <li class="dropdown">
+                  <a class="nav-link" href="#" id="home_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products and Services</a>
+                  <ul class="dropdown-menu" aria-labelledby="home_submenu">
+
+                  
+                    <li><a href="/products/chatbot_participatory_design_system.html">Chatbot Participatory Design Software</a></li>
+                  
+                    <li><a href="/products/crowdsourcing-participatory-design-system.html">Crowdsourcing Participatory Design Software</a></li>
+                  
+                      <!-- <li><a href="/industry_research">Industry Research</a></li>
+                    <li><a href="/lectures">Lectures</a></li>
+                    <li><a href="/consulting">Consulting</a></li> -->
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="nav-link" href="#" id="home_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Research &amp; Study</a>
+                  <ul class="dropdown-menu" aria-labelledby="home_submenu">
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/publications">Publications</a></li>
+                    <!-- <li><a href="/doctoral_studies">Ph.D. Studies</a></li> -->
+                    <!-- <li><a href="/master_studies">M.Sc. Studies</a></li> -->
+                    <li><a href="https://rentle.store/aairl/shop" target="_blank">Lab Equipment</a></li>
+                  </ul>
+                </li>
+                <li><a class="nav-link" href="/team">Team</a></li> 
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col col-lg-3">
+          <ul class="header_btns_group unordered_list_end">
+            <li>
+              <button data-magnetic data-cursor="-opaque" class="mobile_menu_btn" type="button" data-bs-toggle="collapse" data-bs-target="#main_menu_dropdown" aria-controls="main_menu_dropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="far fa-bars"></i>
+              </button>
+            </li>
+            <li>
+              <a class="btn btn_primary" href="/contact/">
+                <span>
+                  <small>Contact Us</small>
+                  <small>Contact Us</small>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="page_content">
+      <!--
+  modify main content of page:
+  - add section breaks
+  - attach section properties
+  - wrap each table in div to allow for scrolling
+  - filter out blank sections
+-->
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <section class="page_banner decoration_wrap">
+  <div class="container">
+    <h1 class="page_heading">Conceptual Architectural Design at Scale - A Case Study of Community Participation Using Crowdsourcing</h1>
+    <ul class="breadcrumb_nav unordered_list_center">
+      <li><a href="/">Home</a></li>
+      <li><a href="/news">News</a></li>
+      <li>Story</li>
+    </ul>
+  </div>
+  <div class="deco_item deco_img_1" data-parallax='{"y" : -200, "smoothness": 6}'>
+    <img src="/images/shapes/line_shape_1.png" alt="Line Shape Image">
+  </div>
+  <div class="deco_item deco_img_2" data-parallax='{"y" : 200, "smoothness": 6}'>
+    <img src="/images/shapes/dot_shape_2.png" alt="Line Shape Image">
+  </div>
+</section>
+
+<section class="details_section blog_details_section section_space_md pt-0">
+  <div class="container">
+    <div class="row justify-content-lg-between">
+
+      <div class="col col-lg-8">
+        <div class="details_image">
+          
+          <img src="/preview/pr-9/images/papers/system.png" alt="Conceptual Architectural Design at Scale - A Case Study of Community Participation Using Crowdsourcing">
+          
+        </div>
+
+        <div class="details_content">
+          
+
+
+
+
+<ul class="post_meta unordered_list">
+  <li>Ela Moyal</li>
+  <li>February 07, 2023</li>
+</ul>
+
+
+          <p>   
+            </p>
+<p>We published a new open access research paper.</p>
+
+<p>Architectural design decisions are primarily made through an interaction between an architect and a client during the conceptual design phase. However, in larger-scale public architecture projects, the client is frequently represented by a community that embraces numerous stakeholders. The scale, social diversity, and political layers of such collective clients make their interaction with architects challenging. A solution to address this challenge is using new information technologies that automate design interactions on an urban scale through crowdsourcing and artificial intelligence technologies. However, since such technologies have not yet been applied and tested in field conditions, it remains unknown how communities interact with such systems and whether useful concept designs can be produced in this way. To fill this gap in the literature, this paper reports the results of a case study architecture project where a novel crowdsourcing system was used to automate interactions with a community. The results of both quantitative and qualitative analyses revealed the effectiveness of our approach, which resulted in high-level stakeholder satisfaction and yielded conceptual designs that better reflect stakeholders’ preferences. Along with identifying opportunities for using advanced technologies to automate design interactions in the concept design phase, we also highlight the challenges of such technologies, thus warranting future research.</p>
+
+<p><a href="https://www.mdpi.com/2075-5309/13/1/222">Read the full paper</a></p>
+
+          
+
+          <hr>
+
+          
+<div class="other_post_nav">
+  
+  <a href="/preview/pr-9/featured/2023/01/10/schubert-lecture.html">
+    <span><i class="far fa-angle-left me-1"></i> Previous</span>
+    <strong>
+      We invite you to a lecture “Mixing Worlds- Mixing Realities” By Dr.-ing. Gerhard Schubert
+    </strong>
+  </a>
+  
+  
+  <span></span>
+  
+</div>
+          
+        </div>
+      </div>
+
+      <div class="col col-lg-3">
+        <aside class="sidebar">
+          <div class="widget category_list">
+            <h3 class="widget_title">Categories</h3>
+            <ul class="unordered_list_block">
+
+              
+              
+
+                
+              
+              <li> <a href="/news/?search=%22tag:%20participatory%20design%22">
+                <span>participatory design</span>
+
+                </a>
+              </li>
+              
+              <li> <a href="/news/?search=%22tag:%20AI%22">
+                <span>AI</span>
+
+                </a>
+              </li>
+              
+              <li> <a href="/news/?search=%22tag:%20chatbot%22">
+                <span>chatbot</span>
+
+                </a>
+              </li>
+              
+
+            </ul>
+          </div>
+
+          <div class="widget recent_post">
+            <h3 class="widget_title">Latest Stories</h3>
+            <ul class="unordered_list_block">
+
+              
+
+
+
+  
+
+  
+  
+
+
+
+
+<li>
+    <a class="blog_item_small" href="/featured/2023/02/07/conceptual-design-at-scale.html">
+      <span class="item_content">
+        <strong class="item_title d-block">
+          Conceptual Architectural Design at Scale - A Case Study of Community Participation Using Crowdsourcing
+        </strong>
+        <small class="post_date d-block"></small>
+      </span>
+    </a>
+  </li>
+
+  
+
+  
+  
+
+
+
+
+<li>
+    <a class="blog_item_small" href="/featured/2023/01/10/schubert-lecture.html">
+      <span class="item_content">
+        <strong class="item_title d-block">
+          We invite you to a lecture “Mixing Worlds- Mixing Realities” By Dr.-ing. Gerhard Schubert
+        </strong>
+        <small class="post_date d-block"></small>
+      </span>
+    </a>
+  </li>
+
+  
+
+  
+  
+
+
+
+
+<li>
+    <a class="blog_item_small" href="/featured/2022/12/20/towards-generative-vr.html">
+      <span class="item_content">
+        <strong class="item_title d-block">
+          Toward a Generative Pipeline for an AR Tour of Contested Heritage Sites
+        </strong>
+        <small class="post_date d-block"></small>
+      </span>
+    </a>
+  </li>
+
+  
+
+  
+  
+
+
+
+
+<li>
+    <a class="blog_item_small" href="/2022/11/29/new-ci-paper.html">
+      <span class="item_content">
+        <strong class="item_title d-block">
+          New open-access research paper - Collective Intelligence in Design Crowdsourcing
+        </strong>
+        <small class="post_date d-block"></small>
+      </span>
+    </a>
+  </li>
+
+  
+
+  
+  
+
+
+
+
+<li>
+    <a class="blog_item_small" href="/2022/11/29/CI-paper.html">
+      <span class="item_content">
+        <strong class="item_title d-block">
+          New open-access research paper- Collective Intelligence in Design Crowdsourcing
+        </strong>
+        <small class="post_date d-block"></small>
+      </span>
+    </a>
+  </li>
+
+  
+
+  
+  
+
+
+
+
+<li>
+    <a class="blog_item_small" href="/2022/11/28/urbanism-conference.html">
+      <span class="item_content">
+        <strong class="item_title d-block">
+          Conference presentation “Automating Community Design Conversations in Urban Design using Chatbots and Machine Learning
+        </strong>
+        <small class="post_date d-block"></small>
+      </span>
+    </a>
+  </li>
+
+  
+
+  
+  
+
+
+
+
+<li>
+    <a class="blog_item_small" href="/2022/01/01/architasker.html">
+      <span class="item_content">
+        <strong class="item_title d-block">
+          A Novel Crowdsourcing-based Approach for Collaborative Architectural Design
+        </strong>
+        <small class="post_date d-block"></small>
+      </span>
+    </a>
+  </li>
+
+
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+    </div>
+  </div>
+</section>
+  </section>
+
+
+    </main>
+    <footer class="site_footer">
+  <div class="footer_top">
+    <div class="container">
+      <div class="row justify-content-lg-between">
+        <div class="col col-lg-3 col-md-6 col-sm-6">
+          <div class="site_logo">
+            <a class="site_link" href="https://ariel.ac.il">
+              <img src="/images/ariel_logo_en.svg" alt="AAIRL">
+            </a>
+            <p>
+              School of Architecture,<br> 
+              Ariel University, Israel </p>
+          </div>
+          <ul class="social_icon unordered_list">
+            <li>
+              <a href="https://twitter.com/">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/aairl/">
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/">
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="col col-lg-5 col-md-6 col-sm-6">
+          <div class="widget">
+            <h3 class="widget_title">Latest News</h3>
+            <ul class="page_list">
+              
+                    <li><a href="/featured/2023/02/07/conceptual-design-at-scale.html">Conceptual Architectural Design at Scale - A Case Study of Community Participation Using Crowdsourcing</a></li>
+              
+                    <li><a href="/featured/2023/01/10/schubert-lecture.html">We invite you to a lecture “Mixing Worlds- Mixing Realities” By Dr.-ing. Gerhard Schubert</a></li>
+              
+                    <li><a href="/featured/2022/12/20/towards-generative-vr.html">Toward a Generative Pipeline for an AR Tour of Contested Heritage Sites</a></li>
+              
+                    <li><a href="/2022/11/29/new-ci-paper.html">New open-access research paper - Collective Intelligence in Design Crowdsourcing</a></li>
+              
+            </ul>
+          </div>
+        </div>
+
+        <div class="col col-lg-4 col-md-6 col-sm-6">
+          <div class="widget">
+            <h3 class="widget_title">Projects</h3>
+            <ul class="page_list">
+              
+                    <li><a href="/projects/collective-intelligent-architectural-design.html">Collective Intelligent Architectural Design</a></li>
+              
+                    <li><a href="/projects/critical-urbanism.html">Critical Urbanism</a></li>
+              
+                    <li><a href="/projects/generative-architectural-architectural-design.html">Generative Architectural Artificial Intelligence</a></li>
+              
+                    <li><a href="/projects/participatory-design-chatbots.html">Participatory Design Chatbots</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="container">
+    <div class="footer_bottom">
+      <ul class="page_list unordered_list">
+        <li><a href="/news">News</a></li>
+        <li><a href="https://www.ariel.ac.il/wp/architecture/en/">School of Architecture</a></li>
+        <li><a href="https://ariel.ac.il/">Ariel University</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+      <p class="copyright_text mb-0">© Copyrights 2023 <a href="/">AAIRL</a> All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+  </div>
+  </body>
+</html>
