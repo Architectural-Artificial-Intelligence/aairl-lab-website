@@ -24,18 +24,18 @@ Before joining the AAIRL Michelle headed the Urban Futures lab at Bar-Ilan Unive
 
 Dr. Oren has a background in social and political sciences, law and environmental studies. She earned her doctorate in Urban Planning, from the Faculty of Architecture and Town Planning at the Technion–Israel Institute of Technology. Her dissertation is a world spanning exploration of Housing rights analyzing substantive and procedural rules from a human rights law perspective and housing related idiomatic expressions and aspirational terminology in constitutional law. She is fluent in English, Spanish, French and German.
 
-### Oublications
+### Publications
     
-* Michelle, Oren. Position paper cited In: Goldschmidt Roy "Reducing the Digital Divide – Making Technology-Based Technologies and Services Accessible to People with Disabilities". Document written in advance of a discussion in the Knesset Science and Technology Committee on areas affecting the urban and domestic spaces: automation and use of artificial intelligence; hoarding, analyzing the use of information and big data; and "Internet of Things" – connecting a variety of objects and sensors to the Internet (In Hebrew).  September 10th 2020: [https://fs.knesset.gov.il/globaldocs/MMM/621e614b-94d4-ea11-8118-00155d0af32a/2_621e614b-94d4-ea11-8118-00155d0af32a_11_16310.pdf] Also referred to by the Israeli accessibility forum [https://www.aisrael.org/?CategoryID=647&ArticleID=67274]
+* Michelle, Oren. Position paper cited In: Goldschmidt Roy "Reducing the Digital Divide – Making Technology-Based Technologies and Services Accessible to People with Disabilities". Document written in advance of a discussion in the Knesset Science and Technology Committee on areas affecting the urban and domestic spaces: automation and use of artificial intelligence; hoarding, analyzing the use of information and big data; and "Internet of Things" – connecting a variety of objects and sensors to the Internet (In Hebrew).  September 10th 2020: <https://fs.knesset.gov.il/globaldocs/MMM/621e614b-94d4-ea11-8118-00155d0af32a/2_621e614b-94d4-ea11-8118-00155d0af32a_11_16310.pdf> Also referred to by the Israeli accessibility forum <https://www.aisrael.org/?CategoryID=647&ArticleID=67274>
 
-* Oren, Michelle. ‘Cidades inteligentes: desnecessário big data quando o favorecimento governa’. Geocracia.  16 of Abril, 2023. [https://shorturl.at/qwO25] (published in portuguese) ( translated:‘Smart cities: unnecessary big data when favoritism rules’)
+* Oren, Michelle. ‘Cidades inteligentes: desnecessário big data quando o favorecimento governa’. Geocracia.  16 of Abril, 2023. <https://shorturl.at/qwO25> (published in portuguese) ( translated:‘Smart cities: unnecessary big data when favoritism rules’)
                
 
-* Oren, Michelle. ‘Cidades inteligentes premiadas na América Latina focam em reduzir pobreza’. Geocracia.  23 of Abril, 2023. [https://shorturl.at/htwOZ]  (published in portuguese)
+* Oren, Michelle. ‘Cidades inteligentes premiadas na América Latina focam em reduzir pobreza’. Geocracia.  23 of Abril, 2023. <https://shorturl.at/htwOZ>  (published in portuguese)
                (translated:‘Award-winning smart cities in Latin America focus on reducing poverty’)
 
 * Oren, Michelle and Alterman, Rachelle. “The Right to Adequate Housing Around the Globe: Analysis and Evaluation of National Constitutions”. Chapter in: The Practice of "Rights to the City" and Canadian Cities. Ed. Sandeep Agrawal, U of Alberta Press. 2022
-[https://www.uap.ualberta.ca/titles/1041-9781772126266-rights-and-the-city]
+<https://www.uap.ualberta.ca/titles/1041-9781772126266-rights-and-the-city>
 
 
 ### NEWSPAPER articles (HEBREW)
@@ -47,9 +47,9 @@ Dr. Oren has a background in social and political sciences, law and environmenta
 
 * 27.07.2019      [Google made City: The woman trying to decipher the future of living](https://www.themarker.com/realestate/.premium-1.7573453)  The Marker
 
-* 10.05.2019      [The underground future of Israel’s Real Estate](https://www.themarker.com/realestate/.premium-MAGAZINE-1.7213431) The Marker 
+* 10.05.2019 [The underground future of Israel’s Real Estate](https://www.themarker.com/realestate/.premium-MAGAZINE-1.7213431) The Marker 
 
-* 24.04.2019      [The spring of rooftops: from forgotten to attractive](https://www.themarker.com/realestate/.premium-MAGAZINE-1.7105967] The Marker
+* 24.04.2019 [The spring of rooftops: from forgotten to attractive](https://www.themarker.com/realestate/.premium-MAGAZINE-1.7105967) The Marker
 
 
 ## TV INTERVIEWS
