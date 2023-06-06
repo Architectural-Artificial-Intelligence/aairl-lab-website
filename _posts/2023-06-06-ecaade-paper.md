@@ -9,7 +9,7 @@ tags:
   - architectural design
   - workshop
 category: featured
-image: images\news\graz.PNG
+image: images\news\Graz_Kunsthaus_vom_Schlossberg_20061126.jpg
 ---
 
 The AAIRL is so happy to announce that our paper “Think AI-side the Box” has been accepted to the 41st eCAADe conference in Graz, Austria!
@@ -20,3 +20,5 @@ Our paper, which was written with the help from our dear friends Agata Dalach an
 We`d like to warmly thank our architecture students for their creativity and passion for the field. If not for them, we wouldn’t’ve had our paper.
 
 Graz- here we come! 
+
+Image Credit- Marion Schneider & Christoph Aistleitner
