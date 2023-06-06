@@ -9,7 +9,7 @@ tags:
   - architectural design
   - workshop
 category: featured
-image: images\news\Graz_Kunsthaus_vom_Schlossberg_20061126.jpg
+image: images/news/Graz_Kunsthaus_vom_Schlossberg_20061126.jpg
 ---
 
 The AAIRL is so happy to announce that our paper “Think AI-side the Box” has been accepted to the 41st eCAADe conference in Graz, Austria!

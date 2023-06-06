@@ -7,7 +7,7 @@ tags:
   - geoinformation
   - big data
 category: featured
-image: images\news\MICHELLEOREN.PNG
+image: images/news/MICHELLEOREN.PNG
 ---
 
 Our very own Dr. Michelle L. Oren has been mentioned in the Brazilian journal "Geocracia”- a geo-legal magazine for lawyers. During an interview, Michelle makes a 360-degree analysis of smart cities, their virtues and limitations, especially political and social ones.
