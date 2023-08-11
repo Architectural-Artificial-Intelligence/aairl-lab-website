@@ -6,7 +6,6 @@ tags:
   - participatory design
   - AI
   - augmented reality
-category: featured
 ---
 Imagine a future where architects can design the way they are used
 to today but get additional expert support from computational

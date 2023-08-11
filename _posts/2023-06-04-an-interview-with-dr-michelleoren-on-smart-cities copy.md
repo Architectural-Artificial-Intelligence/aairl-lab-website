@@ -6,7 +6,6 @@ tags:
   - AI
   - geoinformation
   - big data
-category: featured
 image: images/news/MICHELLEOREN.PNG
 ---
 

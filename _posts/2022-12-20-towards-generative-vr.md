@@ -5,8 +5,7 @@ image: images/papers/vr.gif
 tags:
   - VR
   - AI
-  - digital herritage
-category: featured
+  - digital heritage
 ---
 A new conference paper with our partners from the Technion Arc. Eytan Mann and Prof. Aaron Sprecher.
 
