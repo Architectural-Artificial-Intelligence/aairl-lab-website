@@ -14,7 +14,7 @@
   orcid: 0000-0002-7464-8526
   plugin: sources.py
   file: sources.yaml
-  image: images/papers/conceptual_crowdsourcing.png
+  image: images/papers/building.webp
   tags:
   - PDCB
   - CIAD
@@ -108,20 +108,5 @@
   image: images/papers/chatbots.png
   tags:
   - PDCB
-  plugin: sources.py
-  file: sources.yaml
-
-- id: doi:10.52842/conf.caadria.2023.1.373
-  title: OF STONES AND WORDS - Computational Framework for Multifaceted Historical Narration of Wadi Salib
-  authors:
-  - Eytan Mann
-  - Jonathan Dortheimer
-  - Alona Nitzan-Shiftan
-  - Aaron Sprecher
-  publisher: Proceedings of the 28th International Conference of the Association for Computer-Aided Architectural Design Research in Asia (CAADRIA) 2023
-  date: '2023-03-18'
-  link: https://papers.cumincad.org/data/works/att/caadria2023_134.pdf
-  image: images/papers/stones_and_words.png
-  tags:
   plugin: sources.py
   file: sources.yaml
