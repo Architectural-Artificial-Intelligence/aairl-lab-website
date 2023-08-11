@@ -5,9 +5,9 @@ image: images/news/charli.webp
 category: featured
 
 tags:
-  - urban studies
-  - conference
-  - smart cities
+ - chatbots
+ - AI
+ - participatory design
 ---
 
 
