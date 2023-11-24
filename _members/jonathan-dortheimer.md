@@ -1,7 +1,7 @@
 ---
 name: Dr. Jonathan Dortheimer
 image: images/people/dortheimer.jpg
-description: Head of Laboratory. Senior Lecturer, School of Architecture, Ariel University
+description: Head of Laboratory.
 role: pi
 group: team
 page: true
