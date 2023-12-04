@@ -2,7 +2,6 @@
 title: The AAIRL team will be presenting new research at the Israeli Urban Community conference
 author: lielle-brenner
 image: images/news/urban_studies_2023.jpg
-category: featured
 
 tags:
   - urban studies

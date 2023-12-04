@@ -22,3 +22,5 @@ We`d like to warmly thank our architecture students for their creativity and pas
 Graz- here we come! 
 
 Image Credit- Marion Schneider & Christoph Aistleitner
+
+[Read the full paper here](https://cdp.ai.ed.tum.de/publications/ecaade_2023_think_ai-side_the_box.pdf)
