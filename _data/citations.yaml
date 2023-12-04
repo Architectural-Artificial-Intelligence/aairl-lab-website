@@ -110,18 +110,3 @@
   - PDCB
   plugin: sources.py
   file: sources.yaml
-- id: ecaade2023_145
-  title: Think AI-side the Box! Exploring the Usability of text-to-image generators for architecture students
-  authors:
-  - Jonathan Dortheimer
-  - Gerhard Schubert
-  - Agata Dalach
-  - Lielle Brenner
-  - Nikolas Martelaro
-  publisher: Digital Design Reconsidered - Proceedings of the 41st Conference on Education and Research in Computer Aided Architectural Design in Europe (eCAADe 2023) - Volume 2, Graz, 20-22 September 2023, pp. 567–576
-  date: '2023-01-01'
-  link: https://papers.cumincad.org/data/works/att/ecaade2023_145.pdf
-  tags:
-  - GAAI
-  plugin: sources.py
-  file: sources.yaml
