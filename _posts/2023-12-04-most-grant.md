@@ -5,7 +5,7 @@ image: images/grants/most2023.png
 category: featured
 
 tags:
-  - grant
+  - funding
   - urban planning
   - artificial intelligence
 ---
