@@ -6,9 +6,6 @@ role: pi
 group: partners
 aliases:
   - Gerhard Schubert
-tags:
-  PDCB
-  GAAI
 links:
   "fa-solid fa-house": https://www.arc.ed.tum.de/ai/team/gerhard-schubert/
   "fa-brands fa-orcid": https://orcid.org/0000-0003-1385-5369

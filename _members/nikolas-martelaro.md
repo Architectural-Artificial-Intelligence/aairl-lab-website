@@ -6,9 +6,6 @@ role: pi
 group: partners
 aliases:
   - Nikolas Martelaro
-tags:
-  PDCB
-  GAAI
 links:
   "fa-solid fa-house": http://nikmartelaro.com/
   "fa-brands fa-orcid": https://orcid.org/0000-0002-1824-0243

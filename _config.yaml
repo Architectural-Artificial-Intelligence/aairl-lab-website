@@ -45,6 +45,10 @@ defaults:
       type: "products"
     values:
       layout: products
+  - scope:
+      type: "study"
+    values:
+      layout: study
 collections:
   # generate page for each member
   members:
@@ -55,6 +59,8 @@ collections:
   products:
     output: true
   projects:
+    output: true
+  study:
     output: true
 
 # jekyll plugins
