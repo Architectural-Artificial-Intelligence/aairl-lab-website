@@ -39,6 +39,10 @@ nav:
 
 {% include list.html data="members" component="team_portrait" filters="group:partner" %}
 
+      <h3 class="">Alumni</h3>
+
+      {% include list.html data="members" component="team_portrait" filters="group:alumni" %}
+
     </div>
   </div>
 </section>
