@@ -1,6 +1,6 @@
 ---
 title: Master Studies in AI for Architecture
-headline: Master's Degree in Sustainable Architecture and Urbanism
+headline: Innovate with AI - Explore Our Master's in Sustainable Architecture and Urbanism
 into: Join the lab as a master student.
 application: Students that are interested in writing a thesis need to be accepted to the master program in sustainable architecture and urbanism and send a short motivation letter.
 focus:
