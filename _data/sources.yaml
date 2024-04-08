@@ -1,34 +1,64 @@
 - id: doi:10.3390/buildings13010222 
   image: images/papers/building.webp
   tags:
-    - PDCB
-    - CIAD
+   - Collective Intelligence Design
+   - Chatbots for Participatory Design
 
 - id: doi:10.1109/AIVR56993.2022.00026 
   image: images/papers/mann2-p5-mann-large.gif
+  tags:
+   - VR
+   - Digital Heritage
   
 
 - id: doi:10.52842/conf.ecaade.2020.2.155
   image: images/papers/ecaade_cs.png
   tags:
-    - CIAD
+   - Collective Intelligence Design
 
 - id: doi:10.3390/math10040539 
   image: images/papers/mathematics-10-00539-g009.png
   tags:
-     - CIAD
+   - Collective Intelligence Design
 
 - id: doi:10.52842/conf.caadria.2022.1.223 
   image: images/papers/boim.png
   tags:
-    - GAAI
+   - AI for Design
 
 - id: doi:10.13140/RG.2.2.31654.40003
   image: images/papers/chatbots.png
   tags:
-    - PDCB
+   - Chatbots for Participatory Design
 
 - id: doi:10.1080/13602365.2020.1758950 
   image: images/papers/wikihouse.jpg
   tags:
-    - CURB
+   - Open Source
+
+- id: doi:10.1017/S0890060424000027
+  title: Evaluating Large-Language-Model Chatbots to Engage Communities in Large-Scale Design Projects
+  image: images/papers/llm_prompt.png
+  tags:
+   - Chatbots for Participatory Design
+
+- id: doi:10.3390/buildings13010222
+  image: images/papers/buildings.png
+  tags:
+   - Chatbots for Participatory Design
+
+- id: doi:10.52842/conf.ecaade.2023.2.567
+  type: paper
+  title: Think AI-side the Box! Exploring the Usability of Text-to-Image Generators for Architecture Students
+  url: https://papers.cumincad.org/data/works/att/ecaade2023_145.pdf
+  image: images/papers/outside.png
+  tags:
+   - AI for Design
+
+- id: doi:10.52842/conf.caadria.2023.1.373
+  image: images/papers/stones.png
+  tags:
+   - VR
+   - Digital Heritage
+
+# ...another source
