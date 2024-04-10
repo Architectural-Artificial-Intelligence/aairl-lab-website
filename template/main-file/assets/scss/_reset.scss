@@ -1,0 +1,155 @@
+/* 1.2 - Template Global Reset - Start
+================================================== */
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.75;
+	font-style: normal;
+	color: $color_body;
+	font-family: $font_body;
+	text-rendering: optimizelegibility;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+.page_wrapper {
+	overflow: hidden;
+	position: relative;
+}
+
+iframe {
+	width: 100%;
+	border: none;
+	height: auto;
+	min-height: 500px;
+}
+
+a:focus,
+a:active,
+input,
+input:hover,
+input:focus,
+input:active,
+textarea,
+textarea:hover,
+textarea:focus,
+textarea:active {
+	outline: none;
+}
+
+img:not([draggable]),
+embed,
+object,
+video {
+	height: auto;
+	max-width: 100%;
+}
+
+img {
+	border: none;
+	user-select: none;
+	vertical-align: middle;
+}
+
+a {
+	outline: none;
+	display: inline-block;
+	text-decoration: none;
+	transition: $transition;
+	&:active,
+	&:focus,
+	&:hover,
+	&:visited {
+		outline: 0;
+		text-decoration: none;
+	}
+}
+
+button {
+	padding: 0px;
+	border: none;
+	outline: none;
+	background: none;
+	display: inline-block;
+	transition: $transition;
+	&:focus {
+		outline: none;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.3;
+	font-weight: bold;
+	color: $color_dark;
+	font-family: $font_heading;
+}
+
+hr {
+	opacity: 1;
+	margin: 25px 0;
+	background-color: $color_border;
+}
+
+blockquote {
+	margin: 60px auto 60px;
+	padding: 40px 60px 40px 70px;
+	background-color: rgb(255, 255, 255);
+	border-left: 6px solid $color_primary;
+	box-shadow: 0px 0px 59px 0px rgba(0, 0, 0, 0.08);
+	.quote_icon {
+		max-width: 60px;
+		margin-bottom: 30px;
+		display: inline-block;
+	}
+	.blockquote_comment {
+		font-size: 20px;
+		line-height: 1.8;
+		color: $color_dark;
+		font-family: $font_secondary;
+	}
+	cite {
+		display: block;
+		font-size: 16px;
+		font-weight: 500;
+		padding-top: 20px;
+		font-style: normal;
+		color: $color_primary;
+	}
+}
+
+.fa {
+	font-family: 'Font Awesome 5 Brands';
+}
+
+.dropdown-menu {
+	padding: 30px;
+	margin-top: 20px;
+	border-radius: 10px;
+	background-color: #ffffff;
+	border: 1px solid $color_info;
+	box-shadow: 0 16px 50px 0 rgba(16, 18, 19, 0.1);
+	// animation: 0.3s ease-in-out 0s normal none 1 running fadeInUp;
+
+	&:before {
+		left: 0;
+		right: 0;
+		top: -20px;
+		content: '';
+		height: 20px;
+		display: block;
+		position: absolute;
+	}
+}
+.dropdown-toggle::after {
+	margin: 0;
+	border: none;
+	line-height: 1;
+	content: '\f107';
+	font-weight: 400;
+	color: $color_body;
+	font-family: 'Font Awesome 5 Pro';
+}
+/* 1.2 - Template Global Reset - End
+================================================== */

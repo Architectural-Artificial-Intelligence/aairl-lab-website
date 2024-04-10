@@ -1,0 +1,51 @@
+/* Accordion - Start
+================================================== */
+.faq_accordion {
+	.accordion-item {
+		border: none;
+		border-radius: 0;
+		.accordion-button {
+			border: none;
+			border-radius: 0;
+		}
+	}
+
+	.accordion-button {
+		font-size: 16px;
+		font-weight: 700;
+		position: relative;
+		padding: 12px 30px 12px 65px;
+	}
+
+	.accordion-button:not(.collapsed) {
+		color: #ffffff;
+		box-shadow: none;
+		background-color: $color_primary;
+	}
+
+	.accordion-button::after {
+		top: 17px;
+		margin: 0;
+		left: 15px;
+		width: auto;
+		height: auto;
+		line-height: 1;
+		font-weight: 700;
+		content: '\f067';
+		position: absolute;
+		background-size: 24px;
+		background-image: none;
+		color: $color_secondary;
+		font-family: 'Font Awesome 5 Pro';
+	}
+	.accordion-button:not(.collapsed)::after {
+		color: #ffffff;
+		content: '\f068';
+	}
+
+	.accordion-body {
+		padding: 25px 0 0 65px;
+	}
+}
+/* Accordion - End
+================================================== */

@@ -1,0 +1,142 @@
+/* Courses Card - Start
+================================================== */
+.course_item_small {
+	display: flex;
+	max-width: 330px;
+	align-items: center;
+	.item_image {
+		width: 100px;
+		flex: 0 0 100px;
+		overflow: hidden;
+		margin-right: 20px;
+		border-radius: 10px;
+		img {
+			transition: $transition;
+		}
+	}
+	.item_title {
+		display: block;
+		font-size: 16px;
+		color: $color_dark;
+		font-weight: bold;
+		line-height: 1.375;
+		margin-bottom: 10px;
+		transition: $transition;
+		font-family: $font_heading;
+		&:hover {
+			color: $color_primary;
+		}
+	}
+	.item_price {
+		display: block;
+		line-height: 1;
+		font-size: 16px;
+		font-weight: bold;
+		color: $color_primary;
+	}
+	&:hover {
+		.item_image {
+			img {
+				transform: scale(1.08);
+			}
+		}
+		.item_title {
+			text-decoration: underline;
+		}
+	}
+}
+
+.course_item_list {
+	>li {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+			border-bottom: 1px solid $color_border;
+		}
+	}
+}
+
+.course_item {
+	transition: $transition;
+	background-color: $color_white;
+	border: 1px solid $color_border;
+	.item_image {
+		position: relative;
+		transition: $transition;
+	}
+	.badge_group {
+		top: 18px;
+		left: 18px;
+		z-index: 3;
+		position: absolute;
+	}
+	.image_wrap {
+		display: block;
+		overflow: hidden;
+		position: relative;
+		&:before {
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			opacity: 0;
+			content: '';
+			position: absolute;
+			transition: $transition;
+			background-image: linear-gradient(0deg, $color_primary, transparent);
+		}
+		&:after {
+			left: 0;
+			right: 0;
+			top: 50%;
+			opacity: 0;
+			font-size: 44px;
+			content: '\f178';
+			font-weight: 400;
+			text-align: center;
+			position: absolute;
+			padding-right: 30px;
+			color: $color_white;
+			transition: $transition;
+			transform: translateY(-50%);
+			font-family: 'Font Awesome 5 Pro';
+		}
+	}
+	.item_content {
+		padding: 22px 30px;
+	}
+	.course_instructor {
+		line-height: 1;
+		font-size: 12px;
+		font-weight: 600;
+		margin-bottom: 10px;
+		color: $color_primary;
+		&:before {
+			background-color: $color_primary;
+		}
+	}
+	.item_title {
+		font-size: 18px;
+		line-height: 1.333;
+		margin-bottom: 20px;
+		a {
+			color: $color_dark;
+		}
+	}
+
+	&:hover {
+		transform: translateY(-8px);
+		box-shadow: 0 30px 50px 0 rgba(16, 18, 19, 0.08);
+		.image_wrap {
+			&:before {
+				opacity: 1;
+			}
+			&:after {
+				opacity: 1;
+				padding-right: 0;
+			}
+		}
+	}
+}
+/* Courses Card - End
+================================================== */

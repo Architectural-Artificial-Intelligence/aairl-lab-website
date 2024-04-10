@@ -1,0 +1,38 @@
+/* Work Process - Start
+================================================== */
+
+.work_process_item {
+	text-align: center;
+	margin-bottom: 75px;
+	.item_icon {
+		width: 118px;
+		height: 118px;
+		color: #9199AC;
+		font-size: 36px;
+		line-height: 0.7;
+		margin-bottom: 30px;
+		align-items: center;
+		display: inline-flex;
+		justify-content: center;
+		background-position: 100%;
+		background-repeat: no-repeat;
+		background-position: center center;
+		i {
+			margin-top: 5px;
+			margin-left: 20px;
+		}
+	}
+
+	.item_ttile {
+		line-height: 1;
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	p {
+		color: #CBD2E2;
+		margin-bottom: 0;
+	}
+}
+
+/* Work Process - End
+================================================== */

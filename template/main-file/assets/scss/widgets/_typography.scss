@@ -1,0 +1,27 @@
+/* Typography - Start
+================================================== */
+
+// Section Heading - Start
+.section_heading {
+	margin-bottom: 60px;
+	.heading_text {
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
+	.heading_focus_text {
+		background-position: center bottom 2px;
+		background-image: linear-gradient(0deg, #fdd5a1 36%, transparent 0%);
+	}
+}
+// Section Heading - End
+
+// Widget Title - Start
+.widget_title {
+	line-height: 1;
+	font-size: 20px;
+	margin-bottom: 44px;
+}
+// Widget Title - End
+
+/* Typography - End
+================================================== */

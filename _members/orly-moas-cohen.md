@@ -5,6 +5,9 @@ role: phd
 group: team
 aliases:
   - Orly
+tags:
+  - Chatbots for Design
+  - Critical Urbanism
 ---
 
 Orly Cohen-Moas is an experienced urban planner and senior architect with a wealth of knowledge in leading complex planning processes, urban and industrial renewal, preservation of built heritage, management and public service, and strategic consulting. She holds an M.Arch from the Technion and a B.Arch degree from Ariel University. 

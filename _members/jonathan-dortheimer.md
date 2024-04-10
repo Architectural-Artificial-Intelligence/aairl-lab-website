@@ -8,10 +8,10 @@ page: true
 aliases:
   - Jonathan Dortheimer
 tags:
-  PDCB
-  GAAI
-  CURB
-  CIAD
+  - AI for Design
+  - Chatbots for Design
+  - Collective Intelligence Design
+  - Critical Urbanism
 links:
   "fa-solid fa-house":  https://dortheimer.com
   "fa-brands fa-orcid": https://orcid.org/0000-0002-7464-8526

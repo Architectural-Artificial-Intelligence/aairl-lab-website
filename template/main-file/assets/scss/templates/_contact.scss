@@ -1,0 +1,58 @@
+/* Contact Page - Start
+================================================== */
+.contact_info_box {
+	padding: 30px;
+	text-align: center;
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	.inner_wrap {
+		padding: 45px 30px;
+		transition: $transition;
+		background-color: $color_white;
+		border: 1px solid $color_border;
+		&:hover {
+			box-shadow: 0 11px 21px 0 rgba(16, 18, 19, 0.10), 0 31px 31px 0 rgba(16, 18, 19, 0.11);
+		}
+	}
+	.item_icon {
+		height: 80px;
+		display: flex;
+		align-items: center;
+		margin-bottom: 32px;
+		justify-content: center;
+	}
+	.item_title {
+		line-height: 1;
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+	.icon_list {
+		>li {
+			font-size: 15px;
+			font-weight: 500;
+			&:not(:last-child) {
+				margin-bottom: 3px;
+			}
+			>a {
+				color: $color_body;
+				&:hover {
+					color: $color_primary;
+				}
+			}
+		}
+	}
+}
+
+.contact_form_wrapper {
+	padding: 100px;
+	border-radius: 30px;
+	background-image: linear-gradient(0deg, transparent, $color_info);
+	.contact_title {
+		line-height: 1;
+		font-size: 36px;
+		margin-bottom: 60px;
+	}
+}
+/* Contact Page - End
+================================================== */

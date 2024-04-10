@@ -1,3 +1,4 @@
+
 <header class="site_header header_style_3">
   <div class="header_top text-center">
     <div class="container">
@@ -38,11 +39,12 @@
           <nav class="main_menu navbar navbar-expand-lg">
             <div class="main_menu_inner collapse navbar-collapse justify-content-center" id="main_menu_dropdown">
               <ul class="main_menu_list unordered_list_center">
-               <li class="dropdown">
-                  <a class="nav-link" href="#" id="home_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products and Services</a>
+
+                <li class="dropdown">
+                  <a class="nav-link" href="#" id="home_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
                   <ul class="dropdown-menu" aria-labelledby="home_submenu">
 
-                  {% for product in site.products %}
+                  {% for product in site.projects %}
                     <li><a href="{{ product.url}}">{{ product.title }}</a></li>
                   {% endfor %}
                       <!-- <li><a href="/industry_research">Industry Research</a></li>
@@ -53,13 +55,12 @@
                 <li class="dropdown">
                   <a class="nav-link" href="#" id="home_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Research & Study</a>
                   <ul class="dropdown-menu" aria-labelledby="home_submenu">
-                    <li><a href="/projects">Projects</a></li>
-                    <li><a href="/publications">Publications</a></li>
-                    <!-- <li><a href="/doctoral_studies">Ph.D. Studies</a></li> -->
                     <li><a href="/study/master">M.Sc. Studies</a></li>
-                    <li><a href="https://rentle.store/aairl/shop" target="_blank">Lab Equipment</a></li>
+                    <li><a href="/doctoral_studies">Ph.D. Studies</a></li>
+                    <li><a href="/doctoral_studies">Postdoc</a></li>
                   </ul>
                 </li>
+                <li><a class="nav-link" href="/publications/">Publications</a></li> 
                 <li><a class="nav-link" href="/team">Team</a></li> 
                 <li><a class="nav-link" href="/contact">Contact</a></li> 
               </ul>

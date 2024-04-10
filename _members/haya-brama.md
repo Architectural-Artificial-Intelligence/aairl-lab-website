@@ -4,7 +4,7 @@ image: images/people/haya.jpeg
 role: research-lead
 group: team
 tags:
-    GAAI
+    - AI for Design
 ---
 
 

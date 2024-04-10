@@ -1,0 +1,81 @@
+/* Social Media - Start
+================================================== */
+.social_icon {
+	margin: -3px;
+	>li {
+		padding: 3px;
+	}
+	a {
+		z-index: 1;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		font-size: 16px;
+		overflow: hidden;
+		color: $color_body;
+		position: relative;
+		border-radius: 100%;
+		align-items: center;
+		justify-content: center;
+		transition-duration: 0.3s;
+		&:before {
+			top: 90%;
+			left: -110%;
+			z-index: -1;
+			content: '';
+			width: 120%;
+			height: 120%;
+			position: absolute;
+			transition: all 0.35s;
+			transform: rotate(45deg);
+			background-color: $color_warning;
+			transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+		}
+		i {
+			left: 50%;
+			position: absolute;
+			transition: $transition;
+			transform: translateX(-50%);
+			&:nth-child(1) {
+				top: 50%;
+				transform: translate(-50%, -50%);
+			}
+			&:nth-child(2) {
+				top: 100%;
+				opacity: 0;
+			}
+		}
+		&:hover {
+			color: $color_dark;
+			box-shadow: 0 0 30px 0 rgba(250, 203, 59, 0.4);
+			&:before {
+				top: -10%;
+				left: -10%;
+			}
+			i {
+				&:nth-child(1) {
+					top: -100%;
+					opacity: 0;
+					transform: translateX(-50%);
+				}
+				&:nth-child(2) {
+					top: 50%;
+					opacity: 1;
+					transform: translate(-50%, -50%);
+				}
+			}
+		}
+
+	}
+	a[class*="bg_"] {
+		color: $color_white;
+		&:before {
+			display: none;
+		}
+		&:hover {
+			box-shadow: none;
+		}
+	}
+}
+/* Social Media - End
+================================================== */

@@ -1,0 +1,75 @@
+/* Membership - Start
+================================================== */
+.membership_content_box {
+	overflow: hidden;
+	padding: 110px 30px 120px;
+	background-color: $color_info;
+	.title_text {
+		font-size: 42px;
+		line-height: 1.429;
+		margin-bottom: 38px;
+	}
+	.deco_img_1 {
+		top: 176px;
+		left: 48px;
+	}
+	.deco_img_2 {
+		right: 93px;
+		bottom: 183px;
+	}
+	.deco_img_3 {
+		top: -70px;
+		right: 32%;
+	}
+}
+
+.promembership_section {
+	padding: 72px 0;
+	overflow: hidden;
+	background-color: $color_light;
+	.item_image {
+		z-index: 1;
+		position: relative;
+		.deco_img_1 {
+			top: 70px;
+			left: 70px;
+			z-index: -1;
+		}
+		.image_wrap {
+			width: 236px;
+			height: 236px;
+			overflow: hidden;
+			border-radius: 100%;
+		}
+	}
+	.deco_img_2 {
+		top: 110px;
+		right: -300px;
+	}
+	.title_text {
+		font-size: 42px;
+		margin-bottom: 0;
+		line-height: 1.429;
+	}
+}
+
+.promembership_section:has(.boxed) {
+	padding: 0;
+	background-color: transparent;
+	.boxed {
+		overflow: hidden;
+		border-radius: 5px;
+		padding: 75px 50px;
+		background-color: $color_primary;
+	}
+
+	.deco_img_2 {
+		top: 170px;
+		right: -372px;
+	}
+	.title_text {
+		color: $color_white;
+	}
+}
+/* Membership - End
+================================================== */

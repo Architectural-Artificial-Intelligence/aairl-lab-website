@@ -2,7 +2,7 @@
   image: images/papers/building.webp
   tags:
    - Collective Intelligence Design
-   - Chatbots for Participatory Design
+   - Chatbots for Design
 
 - id: doi:10.1109/AIVR56993.2022.00026 
   image: images/papers/mann2-p5-mann-large.gif
@@ -29,26 +29,33 @@
 - id: doi:10.13140/RG.2.2.31654.40003
   image: images/papers/chatbots.png
   tags:
-   - Chatbots for Participatory Design
+   - Chatbots for Design
 
 - id: doi:10.1080/13602365.2020.1758950 
   image: images/papers/wikihouse.jpg
   tags:
-   - Open Source
+   - Critical Urbanism
 
 - id: doi:10.1017/S0890060424000027
   title: Evaluating Large-Language-Model Chatbots to Engage Communities in Large-Scale Design Projects
   image: images/papers/llm_prompt.png
   tags:
-   - Chatbots for Participatory Design
+   - Chatbots for Design
+
+- id: doi:10.13140/RG.2.2.13031.11682
+  tags:
+    - Collective Intelligence Design
+
+- id: doi:10.13140/RG.2.2.30538.57285
+  tags:
+   - Critical Urbanism
 
 - id: doi:10.3390/buildings13010222
   image: images/papers/buildings.png
   tags:
-   - Chatbots for Participatory Design
+   - Chatbots for Design
 
 - id: doi:10.52842/conf.ecaade.2023.2.567
-  type: paper
   title: Think AI-side the Box! Exploring the Usability of Text-to-Image Generators for Architecture Students
   url: https://papers.cumincad.org/data/works/att/ecaade2023_145.pdf
   image: images/papers/outside.png

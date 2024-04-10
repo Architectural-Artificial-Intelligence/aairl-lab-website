@@ -1,0 +1,63 @@
+/* Policy - Start
+================================================== */
+.policy_section {
+	padding: 70px 0;
+	background-color: $color_warning;
+	.deco_img_1 {
+		top: 60px;
+		left: -100px;
+	}
+	.deco_img_2 {
+		top: 170px;
+		right: -20px;
+	}
+	.deco_img_3 {
+		top: -27px;
+		right: 224px;
+	}
+}
+
+.policy_item {
+	display: flex;
+	line-height: 1;
+	align-items: center;
+	.item_icon {
+		width: 70px;
+		height: 70px;
+		flex: 0 0 70px;
+		margin-right: 32px;
+		align-items: center;
+		display: inline-flex;
+		justify-content: center;
+	}
+	.item_title {
+		line-height: 1;
+		font-size: 24px;
+		margin-bottom: 12px;
+	}
+	p {
+		font-size: 18px;
+		color: $color_dark;
+	}
+}
+
+.policy_item.style_2 {
+	z-index: 1;
+	padding: 28px 30px;
+	position: relative;
+	border-radius: 8px;
+	transition: $transition;
+	border: 1px solid $color_info;
+	.item_title {
+		font-size: 22px;
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 16px;
+	}
+	&:hover {
+		box-shadow: 0 30px 40px 0 rgba(16, 18, 19, 0.1);
+	}
+}
+/* Policy - End
+================================================== */

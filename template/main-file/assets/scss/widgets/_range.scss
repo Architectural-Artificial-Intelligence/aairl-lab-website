@@ -1,0 +1,50 @@
+/* 2.15 - Pricing Range - start
+================================================== */
+.price-range-area {
+  padding-top: 7px;
+}
+.price-range-area .slider-range {
+  height: 6px;
+  border: none;
+  border-radius: 45px;
+  background-color: #eaeaea;
+}
+.price-range-area .ui-slider-range {
+  border: none;
+  border-radius: 45px;
+  background-color: $color_danger;
+}
+.price-range-area .ui-state-default {
+  top: -7px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 100%;
+  border: 6px solid #ffffff;
+  background-color: $color_danger;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.price-range-area .price-text {
+	margin-bottom: 15px;
+}
+.price-range-area .price-text span {
+  float: left;
+  margin-right: 5px;
+}
+.price-range-area .price-text input {
+  border: none;
+  display: inline-block;
+  background-color: transparent;
+}
+.price-range-area .price_filter_btn {
+  color: #ffffff;
+  font-size: 15px;
+  margin-top: 30px;
+  padding: 5px 19px;
+  border-radius: 2px;
+  background-color: $color_danger;
+}
+/* 2.15 - Pricing Range - end
+================================================== */

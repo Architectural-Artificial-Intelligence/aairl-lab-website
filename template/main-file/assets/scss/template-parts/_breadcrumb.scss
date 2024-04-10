@@ -1,0 +1,59 @@
+/* Breadcrumb Section - Start
+================================================== */
+.page_banner {
+	display: flex;
+	padding: 185px 0;
+	min-height: 530px;
+	text-align: center;
+	align-items: flex-end;
+	background: linear-gradient(0deg, transparent, $color_light, $color_light);
+	box-shadow: 0 -2px 2px 0 rgba(16, 18, 19, 0.1);
+
+	.deco_img_1 {
+		bottom: 0;
+		left: -70px;
+	}
+	.deco_img_2 {
+		top: 145px;
+		right: -70px;
+	}
+
+	p {
+		font-size: 20px;
+	}
+}
+
+.page_heading {
+	font-size: 42px;
+	line-height: 1.25;
+	margin-bottom: 20px;
+}
+
+.breadcrumb_nav {
+	>li {
+		line-height: 1;
+		font-size: 18px;
+		font-weight: 500;
+		color: $color_body;
+		position: relative;
+		&:not(:last-child) {
+			margin-right: 20px;
+			padding-right: 20px;
+			&:after {
+				top: 1px;
+				right: -4px;
+				content: '/';
+				position: absolute;
+			}
+		}
+		>a {
+			display: block;
+			color: $color_body;
+			&:hover {
+				color: $color_primary;
+			}
+		}
+	}
+}
+/* Breadcrumb Section - End
+================================================== */

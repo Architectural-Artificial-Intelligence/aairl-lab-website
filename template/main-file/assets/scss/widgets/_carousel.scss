@@ -1,0 +1,109 @@
+/* Carousel Style Reset - Start
+================================================== */
+
+// Carousel Slick Dots - Start
+.slick-dots {
+	margin: 0;
+	display: flex;
+	position: static;
+	padding-top: 40px;
+	align-items: center;
+	justify-content: center;
+	li {
+		width: auto;
+		height: auto;
+		margin: 0 5px;
+		display: inline-block;
+		&:not(:last-child) {
+		}
+		button {
+			margin: 0;
+			padding: 0;
+			opacity: .3;
+			width: 10px;
+			height: 10px;
+			display: block;
+			border-radius: 100%;
+			background-color: $color_primary;
+			transition: $transition;
+			&:before {
+				display: none;
+			}
+		}
+		&:hover,
+		&.slick-active {
+			button {
+				opacity: 1;
+			}
+		}
+	}
+}
+.slick-dotted.slick-slider {
+	margin-bottom: 0;
+}
+// Carousel Slick Dots - End
+
+// Carousel Arrow - Start
+.carousel_arrow {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	button {
+		width: 32px;
+		height: 32px;
+		font-size: 21px;
+		align-items: center;
+		border-radius: 100%;
+		display: inline-flex;
+		color: $color_secondary;
+		justify-content: center;
+		&:hover {
+			color: #ffffff;
+			background-color: $color_primary;
+		}
+		&:not(:last-child) {
+			margin-right: 5px;
+		}
+		&:first-child {
+			i {
+				margin-right: 2px;
+			}
+		}
+		&:last-child {
+			i {
+				margin-left: 2px;
+			}
+		}
+	}
+}
+
+.arrow_top_right {
+	position: relative;
+	.carousel_arrow {
+		right: 0;
+		top: -61px;
+		z-index: 1;
+		position: absolute;
+	}
+}
+
+.arrow_right_left {
+	position: relative;
+	.carousel_arrow {
+		button {
+			top: 50%;
+			position: absolute;
+			transform: translateY(-50%);
+			&:nth-child(1) {
+				left: 0;
+			}
+			&:nth-child(2) {
+				right: 0;
+			}
+		}
+	}
+}
+// Carousel Arrow - End
+
+/* Carousel Style Reset - End
+================================================== */

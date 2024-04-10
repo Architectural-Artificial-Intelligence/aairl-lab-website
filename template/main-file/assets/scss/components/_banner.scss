@@ -1,0 +1,358 @@
+/* Banner/Hero Section - Start
+================================================== */
+
+// Advertisement Banner - Start
+.advertisement_banner {
+	overflow: hidden;
+	&:hover {
+		box-shadow: 0 20px 30px 0 rgba(16, 18, 19, 0.3);
+	}
+}
+// Advertisement Banner - End
+
+// Banner Section - Start
+.banner_section {
+	.banner_title {
+		font-size: 72px;
+		line-height: 1.25;
+		margin: 0 -50px 32px 0;
+		.focus_text {
+			background-position: center bottom 9px;
+			background-image: linear-gradient(0deg, #fdd5a1 38%, transparent 0%);
+		}
+	}
+	p {
+		font-size: 22px;
+		line-height: 1.636;
+		margin-bottom: 44px;
+	}
+	.form_item {
+		input {
+			height: 84px;
+			font-size: 20px;
+			font-weight: 500;
+			padding: 0 80px 0 30px;
+		}
+		.submit_icon {
+			top: 30px;
+			right: 30px;
+		}
+	}
+}
+
+.banner_image_1 {
+	margin: auto;
+	max-width: 600px;
+	position: relative;
+	padding: 40px 13px 55px 23px;
+	.image_wrap {
+		z-index: 1;
+		overflow: hidden;
+		text-align: center;
+		position: relative;
+		&:before {
+			left: 0;
+			bottom: 0;
+			height: 80%;
+			z-index: -1;
+			content: '';
+			width: 100%;
+			position: absolute;
+			border-radius: 17px;
+			background-color: $color_info;
+		}
+	}
+	.image_1 {
+		max-width: 305px;
+		margin: auto 0 auto auto;
+		&:before {
+			background-color: #faac3b;
+		}
+	}
+	.image_2 {
+		top: 0;
+		left: 0;
+		max-width: 232px;
+		position: absolute;
+		&:before {
+			background-color: #66c4ff;
+		}
+	}
+	.image_3 {
+		left: 0;
+		bottom: 0;
+		max-width: 250px;
+		position: absolute;
+		&:before {
+			background-color: #f966ff;
+		}
+	}
+}
+
+.banner_image_2 {
+	max-width: 550px;
+	text-align: right;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	img {
+		max-width: 425px;
+		margin-right: -30px;
+		display: inline-block;
+	}
+}
+
+.banner_image_3 {
+	img {
+		box-shadow: 0 30px 50px 0 rgba(16, 18, 19, 0.2);
+		animation: radiusAnimation 5s ease-in-out infinite;
+	}
+}
+
+.banner_funfact_list {
+	>ul {
+		margin: -10px -25px;
+		>li {
+			padding: 10px 25px;
+			align-items: center;
+			display: inline-flex;
+		}
+	}
+
+	.item_icon {
+		width: 36px;
+		height: 36px;
+		display: flex;
+		flex: 0 0 36px;
+		margin-right: 10px;
+		align-items: center;
+		justify-content: center;
+		img {
+			max-height: 100%;
+		}
+	}
+	.item_content {
+		font-size: 15px;
+		font-weight: bold;
+		color: $color_dark;
+	}
+}
+// Banner Section - End
+
+// Banner Style 1 - Start
+.banner_section.banner_style_1 {
+	padding: 150px 0 210px;
+	background-color: $color_light;
+	box-shadow: 0 -2px 4px 0 rgba(16, 18, 19, 0.1);
+
+	.deco_img_1 {
+		left: -84px;
+		bottom: 276px;
+	}
+	.deco_img_2 {
+		top: 145px;
+		right: -40px;
+	}
+}
+// Banner Style 1 - End
+
+// Banner Style 2 - Start
+.banner_section.banner_style_2 {
+	padding: 64px 0 154px;
+	background-color: $color_info;
+}
+// Banner Style 2 - End
+
+// Banner Style 3 - Start
+.banner_section.banner_style_3 {
+	padding: 250px 0 300px;
+	background: linear-gradient(0deg, transparent 5%, rgba(141, 239, 255, 0.5), rgba(255, 175, 251, 0.7));
+	p {
+		color: $color_dark_2;
+	}
+}
+// Banner Style 3 - End
+
+// Banner Style 4 - Start
+.banner_section.banner_style_4 {
+	padding: 0 15px;
+	.decoration_wrap {
+		margin: auto;
+		display: flex;
+		overflow: hidden;
+		max-width: 1700px;
+		min-height: 816px;
+		align-items: center;
+		padding: 100px 30px;
+		border-radius: 30px;
+		background-size: auto;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-color: $color_secondary;
+	}
+	.banner_title {
+		font-size: 48px;
+		line-height: 1.25;
+		margin: 0 0 63px 0;
+		color: $color_white;
+	}
+
+	.form_item {
+		input {
+			height: 80px;
+			padding: 0 70px 0 50px;
+		}
+	}
+
+	.deco_img_1 {
+		z-index: 1;
+		top: 113px;
+		left: 75px;
+	}
+	.deco_img_2 {
+		top: 191px;
+		left: 176px;
+		max-width: 138px;
+	}
+	.deco_img_3 {
+		top: 171px;
+		z-index: 1;
+		right: 67px;
+	}
+	.deco_img_4 {
+		top: 100px;
+		right: 198px;
+	}
+	.deco_img_5 {
+		bottom: 0;
+		left: -29px;
+	}
+	.deco_img_6 {
+		right: -359px;
+		bottom: -359px;
+	}
+}
+// Banner Style 4 - End
+
+// Banner Style 5 - Start
+.banner_style_5 {
+	.container {
+		max-width: 1700px;
+	}
+
+	& + .intro_video_section {
+		z-index: 2;
+		position: relative;
+		margin-top: -200px;
+	}
+
+	.content_box {
+		z-index: 1;
+		position: relative;
+		border-radius: 25px;
+		padding: 280px 30px 300px;
+		background: linear-gradient(0deg, transparent, $color_light, $color_light);
+	}
+
+	.banner_title {
+		line-height: 1.1;
+		margin: 0 0 32px 0;
+	}
+
+	p {
+		padding: 0 50px;
+	}
+
+	.big_text {
+		left: 0;
+		right: 0;
+		top: 100px;
+		z-index: -1;
+		line-height: 1;
+		font-size: 400px;
+		position: absolute;
+		letter-spacing: -30px;
+		font-family: $font_secondary;
+		background: -webkit-linear-gradient($color_white, transparent);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.form_item {
+		margin-bottom: 60px;
+		input {
+			height: 74px;
+			box-shadow: 0 30px 50px 0 rgba(16, 18, 19, 0.16);
+		}
+		.submit_icon {
+			top: 25px;
+		}
+	}
+
+	.deco_item_1 {
+		top: 150px;
+		left: -50px;
+		max-width: 120px;
+	}
+	.deco_item_2 {
+		top: 80px;
+		right: -50px;
+		max-width: 120px;
+	}
+	.deco_item_3 {
+		top: 45%;
+		left: 250px;
+		max-width: 130px;
+	}
+	.deco_item_4 {
+		top: 35%;
+		right: 200px;
+		max-width: 120px;
+	}
+	.deco_item_5 {
+		left: 120px;
+		bottom: 150px;
+		max-width: 100px;
+	}
+	.deco_item_6 {
+		right: 372px;
+		bottom: 375px;
+		max-width: 154px;
+	}
+	.deco_item_7 {
+		right: 90px;
+		bottom: 80px;
+		max-width: 120px;
+	}
+}
+
+.intro_video_wrap {
+	z-index: 1;
+	position: relative;
+	.image_wrap {
+		overflow: hidden;
+		border-radius: 25px;
+		background-color: $color_dark;
+		box-shadow: 0 30px 90px 0 rgba(16, 18, 19, 0.4);
+	}
+	.video_play_btn {
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		transform: translate(-50%, -50%);
+	}
+	.deco_img_1 {
+		top: 35%;
+		left: -170px;
+		max-width: 200px;
+	}
+	.deco_img_2 {
+		bottom: 60px;
+		right: -145px;
+		max-width: 120px;
+	}
+}
+
+
+/* Banner/Hero Section - End
+================================================== */

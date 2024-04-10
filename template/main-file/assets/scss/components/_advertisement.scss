@@ -1,0 +1,27 @@
+/* Advertisement Section - Start
+================================================== */
+
+/* Advertisement Layout 1 - Start */
+.advertisement_layout_1 {
+	display: flex;
+	padding: 40px;
+	align-items: center;
+	justify-content: space-between;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100%;
+	h2 {
+		font-size: 36px;
+		max-width: 484px;
+		margin-bottom: 0;
+		line-height: 46px;
+	}
+	img {
+		max-width: 410px;
+		margin-top: -170px;
+	}
+}
+/* Advertisement Layout 1 - End */
+
+/* Advertisement Section - End
+================================================== */

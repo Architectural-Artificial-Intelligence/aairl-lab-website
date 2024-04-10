@@ -1,0 +1,102 @@
+/* Table Of Content - start
+================================================== */
+/* 
+* Project Name   :  Udemo - Education, Online Course, LMS Creative Site Template
+* File           :  CSS Base
+* Version        :  1.0.0
+* Last change    :  14 October 2022, Friday
+* Author         :  FroxTheme (https://themeforest.net/user/froxtheme)
+* Developer			 :	webrok (https://www.fiverr.com/webrok?up_rollout=true)
+
+==================================================
+
+1 - Template Global Settings
+	1.1 - Template Fonts
+	1.2 - Template Global Reset
+
+2 - Template Elements
+
+3 - Template Components
+
+4 - Responsive For Mobile & Tablet Devices
+
+*/
+/* Table Of Content - end
+================================================== */
+
+// Template Global Settings
+@import 'variable';
+@import 'fonts';
+@import 'mixin';
+@import 'reset';
+
+// Template Elements
+// @import 'widgets/preloader';
+@import 'widgets/backtotop';
+@import 'widgets/decoration';
+@import 'widgets/animation';
+@import 'widgets/space';
+@import 'widgets/color';
+@import 'widgets/typography';
+@import 'widgets/button';
+@import 'widgets/badge';
+@import 'widgets/list';
+// @import 'widgets/carousel';
+@import 'widgets/form';
+@import 'widgets/tab';
+@import 'widgets/meta';
+@import 'widgets/social';
+// @import 'widgets/search';
+@import 'widgets/cart';
+// @import 'widgets/counter';
+// @import 'widgets/rating';
+// @import 'widgets/progressbar';
+@import 'widgets/pagination';
+// @import 'widgets/range';
+@import 'widgets/comment';
+// @import 'widgets/offcanvas';
+@import 'widgets/category';
+
+// Template Parts
+@import 'template-parts/header';
+@import 'template-parts/footer';
+@import 'template-parts/breadcrumb';
+@import 'template-parts/sidebar';
+
+// Template Components
+@import 'components/banner';
+@import 'components/course';
+@import 'components/membership';
+@import 'components/counter';
+@import 'components/sponsors';
+@import 'components/testimonial';
+@import 'components/getstart';
+@import 'components/policy';
+@import 'components/event';
+@import 'components/funfact';
+@import 'components/instructor';
+// @import 'components/instagram';
+// @import 'components/brands';
+// @import 'components/register';
+// @import 'components/accordion';
+// @import 'components/category';
+// @import 'components/washing';
+// @import 'components/service';
+// @import 'components/workprocess';
+// @import 'components/shop';
+// @import 'components/newsletter';
+// @import 'components/portfolio';
+// @import 'components/advertisement';
+// @import 'components/brand';
+// @import 'components/pricing';
+// @import 'components/error';
+
+// Template Pages
+@import 'templates/about';
+@import 'templates/blog';
+@import 'templates/details';
+@import 'templates/contact';
+@import 'templates/register';
+
+// Template Responsive For Small Devices
+@import 'responsive';

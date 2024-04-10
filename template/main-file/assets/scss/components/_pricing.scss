@@ -1,0 +1,84 @@
+/* Pricing Table - Start
+================================================== */
+.pricing_table {
+	padding: 30px;
+	margin-top: 30px;
+	transition: $transition;
+	border: 1px solid #E8EBF2;
+	background-color: #ffffff;
+
+	.item_heading {
+		line-height: 1;
+		color: #9199ac;
+		font-size: 18px;
+		font-weight: 500;
+		margin-bottom: 5px;
+		font-family: $body_font;
+	}
+
+	.item_price {
+		span {
+			font-size: 36px;
+			font-weight: 800;
+			color: $color_black;
+			font-family: $heading_font;
+		}
+		sub {
+			bottom: -8px;
+			font-size: 15px;
+		}
+	}
+
+	.info_list {
+		padding: 30px 0;
+		>li {
+			font-size: 16px;
+			color: $color_black;
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+
+		i {
+			color: $color_danger;
+			margin-right: 10px;
+		}
+
+		del {
+			color: $color_body;
+			text-decoration: none;
+			i {
+				color: $color_body;
+			}
+		}
+	}
+
+	.btn {
+		padding: 16px 25px 15px;
+	}
+
+	&:hover {
+		border-color: $color_danger;
+		background-color: $color_danger;
+
+		.btn {
+			color: $color_danger;
+			background-color: #ffffff;
+		}
+
+		.item_heading,
+		.item_price span,
+		.item_price sub,
+		.info_list > li,
+		.info_list i {
+			color: #ffffff;
+		}
+
+		.info_list del,
+		.info_list del i {
+			color: $color_black;
+		}
+	}
+}
+/* Pricing Table - End
+================================================== */

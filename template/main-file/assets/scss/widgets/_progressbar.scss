@@ -1,0 +1,103 @@
+/* Progress Bar - Start
+================================================== */
+.progress_item {
+	position: relative;
+	&:not(:last-child) {
+		margin-bottom: 25px;
+	}
+}
+
+.progress_item {
+	.item_title {
+		line-height: 1;
+		font-size: 16px;
+		font-weight: 500;
+		color: $color_body;
+		font-family: $body_font;
+	}
+
+	.progress {
+		width: 100%;
+		height: 5px;
+		margin-top: 10px;
+		overflow: visible;
+		border-radius: 13px;
+		background-color: #FFECEC;
+	}
+	.progress_bar {
+		height: 5px;
+		position: relative;
+		border-radius: 13px;
+		background-color: $color_danger;
+		span {
+			right: 0;
+			top: -28px;
+			z-index: 1;
+			font-size: 16px;
+			font-weight: 500;
+			position: absolute;
+		}
+	}
+}
+
+@keyframes Rx_width_70 {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 70%;
+	}
+}
+.Rx_width_70 {
+	-webkit-animation-name: Rx_width_70;
+	animation-name: Rx_width_70;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+@keyframes Rx_width_80 {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 80%;
+	}
+}
+.Rx_width_80 {
+	-webkit-animation-name: Rx_width_80;
+	animation-name: Rx_width_80;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+@keyframes Rx_width_90 {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 90%;
+	}
+}
+.Rx_width_90 {
+	-webkit-animation-name: Rx_width_90;
+	animation-name: Rx_width_90;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+@keyframes Rx_width_95 {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 95%;
+	}
+}
+.Rx_width_95 {
+	-webkit-animation-name: Rx_width_95;
+	animation-name: Rx_width_95;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+/* Progress Bar - End
+================================================== */

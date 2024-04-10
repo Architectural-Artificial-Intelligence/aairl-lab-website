@@ -1,0 +1,158 @@
+/* 2.4 - Order & Unorder List - Start
+================================================== */
+
+// List Default Style - Start
+.unordered_list,
+.unordered_list_end,
+.unordered_list_center {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  >li {
+    float: left;
+    list-style: none;
+    display: inline-block;
+  }
+}
+
+.unordered_list {
+  justify-content: flex-start;
+}
+.unordered_list_center {
+  justify-content: center;
+}
+.unordered_list_end {
+  justify-content: flex-end;
+}
+
+.unordered_list_block {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  >li {
+    display: block;
+    list-style: none;
+  }
+}
+// List Default Style - End
+
+// Page List - Start
+.page_list {
+  >li {
+    font-size: 15px;
+    font-family: "Roboto";
+  }
+  &.unordered_list_block {
+    >li {
+      line-height: 2.857;
+    }
+  }
+  &.unordered_list {
+    margin: -5px -17px;
+    >li {
+      padding: 5px 17px;
+      line-height: 1.286;
+    }
+  }
+}
+// Page List - End
+
+// Icon List - Start
+.icon_list {
+  >li {
+    font-size: 15px;
+    color: $color_body;
+    display: inline-flex;
+    >a {
+      color: $color_body;
+      align-items: center;
+      display: inline-flex;
+      &:hover {
+        color: $color_primary;
+      }
+    }
+  }
+  span {
+    display: inline-block;
+  }
+  strong {
+    margin-right: 5px;
+    color: $color_dark;
+  }
+  i {
+    font-size: 18px;
+    margin-right: 8px;
+    color: $color_primary;
+  }
+
+  &.unordered_list {
+    >li {
+      &:not(:last-child) {
+        margin-right: 26px;
+      }
+    }
+  }
+  &.unordered_list_block {
+    >li {
+      display: block;
+    }
+  }
+}
+// Icon List - End
+
+// Category List - Start
+.category_list {
+  li {
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+  a {
+    display: flex;
+    font-size: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: $color_dark;
+    align-items: center;
+    padding: 12px 18px 11px;
+    border-radius: $border_radius;
+    justify-content: space-between;
+    border: 1px solid $color_border;
+    &:hover {
+      color: $color_primary;
+      border-color: $color_info;
+      background-color: $color_info;
+    }
+  }
+}
+// Category List - End
+
+// Tag List - Start
+.tags_list {
+  &.unordered_list {
+    margin: -4px;
+    li {
+      padding: 4px;
+    }
+  }
+  a {
+    line-height: 1;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 9px 22px;
+    color: $color_dark;
+    border-radius: 5px;
+    background-color: $color_info;
+    &:hover {
+      color: $color_dark;
+      background-color: $color_warning;
+    }
+  }
+}
+// Tag List - End
+
+/* 2.4 - Order & Unorder List - End
+================================================== */

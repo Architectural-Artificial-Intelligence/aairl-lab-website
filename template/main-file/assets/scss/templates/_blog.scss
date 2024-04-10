@@ -1,0 +1,141 @@
+/* Blog Page - Start
+================================================== */
+.blog_item_small {
+	display: flex;
+	align-items: center;
+	.item_image {
+		width: 70px;
+		flex: 0 0 70px;
+		overflow: hidden;
+		margin-right: 15px;
+	}
+	.item_title {
+		font-size: 15px;
+		color: $color_dark;
+		font-weight: bold;
+		line-height: 1.143;
+		margin-bottom: 10px;
+		transition: $transition;
+		font-family: $font_heading;
+	}
+	.post_date {
+		line-height: 1;
+		font-size: 12px;
+		font-weight: 500;
+		color: $color_body;
+	}
+
+	&:hover {
+		.item_title {
+			color: $color_primary;
+			text-decoration: underline;
+		}
+	}
+}
+
+.recent_post {
+	li {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.blog_item {
+	.item_image {
+		display: block;
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 34px;
+		img {
+			width: 100%;
+			display: block;
+			transition: $transition;
+		}
+		&:has(.video_play_btn) {
+			background-color: $color_dark;
+			img {
+				opacity: .6;
+			}
+		}
+	}
+
+	.video_play_btn {
+		top: 50%;
+		left: 50%;
+		width: 210px;
+		height: 210px;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		span {
+			width: 150px;
+			height: 150px;
+		}
+		small {
+			width: 90px;
+			height: 90px;
+		}
+	}
+
+	.item_content {
+		padding-right: 40px;
+	}
+
+	.post_meta {
+		margin-bottom: 13px;
+	}
+
+	.item_title {
+		font-size: 24px;
+		line-height: 1.5;
+		margin-bottom: 10px;
+		a {
+			color: $color_dark;
+		}
+	}
+
+	p {
+		color: #333333;
+		line-height: 1.714;
+		font-family: $font_secondary;
+	}
+
+	&:hover {
+		.item_image {
+			img {
+				transform: scale(1.08);
+			}
+		}
+		.item_title {
+			a {
+				color: $color_primary;
+			}
+		}
+	}
+
+	&:has(.quote_icon) {
+		padding: 70px 60px 61px;
+		background-color: $color_light;
+	}
+
+	.quote_icon {
+		width: 74px;
+		height: 74px;
+		align-items: center;
+		border-radius: 100%;
+		margin-bottom: 40px;
+		display: inline-flex;
+		justify-content: center;
+		background: $color_white;
+		box-shadow: 0 1px 2px 0 rgba(16, 18, 19, 0.3);
+		path {
+			fill: $color_primary;
+		}
+	}
+
+	.video_frame {
+		margin-bottom: 24px;
+	}
+}
+/* Blog Page - End
+================================================== */

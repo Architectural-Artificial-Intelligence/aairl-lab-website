@@ -1,0 +1,43 @@
+/* Counter Section - Start
+================================================== */
+.counter_section {
+	padding: 62px 0;
+	background-color: $color_primary;
+	.area_title {
+		margin: 0;
+		font-size: 36px;
+		line-height: 1.333;
+	}
+
+	.shape_1 {
+		top: 42%;
+		left: 5%;
+	}
+	.shape_2 {
+		top: 35%;
+		left: 35%;
+	}
+	.shape_3 {
+		top: 14%;
+		right: 28%;
+	}
+	.shape_4 {
+		top: 32%;
+		right: 6%;
+	}
+}
+
+.counter_item {
+	.counter_value {
+		font-size: 44px;
+		line-height: 0.909;
+		margin-bottom: 10px;
+	}
+	.counter_title {
+		line-height: 1;
+		font-size: 24px;
+	}
+}
+
+/* Counter Section - End
+================================================== */

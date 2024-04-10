@@ -1,0 +1,87 @@
+/* Search - Start
+================================================== */
+
+/* Advance Search 1 - Start */
+.advance_search_1 {
+	z-index: 1;
+	margin-top: -115px;
+	position: relative;
+	.search_form {
+		padding: 30px;
+		background-color: $color_danger;
+	}
+	.row {
+		margin: -15px;
+	}
+	.col {
+		padding: 15px;
+	}
+	.form_item,
+	.select_option {
+		margin-bottom: 0;
+	}
+	.btn {
+		display: block;
+		min-width: 100%;
+	}
+}
+/* Advance Search 1 - End */
+
+/* Advance Search 2 - Start */
+.advance_search_2 {
+	.section_title {
+		margin-bottom: 60px;
+	}
+
+	.form_item {
+		input {
+			color: #ffffff;
+			border-radius: 2px;
+			border-color: #454765;
+			background-color: #454765;
+			&:focus {
+				border-color: #ffffff;
+			}
+		}
+	}
+
+	.select_option {
+		.nice-select {
+			color: #ffffff;
+			border-radius: 2px;
+			border-color: #454765;
+			background-color: #454765;
+			&:hover {
+				border-color: #ffffff;
+			}
+			.list > li:hover,
+			.list > li.selected {
+				color: $color_success;
+			}
+		}
+	}
+
+	.circle_1,
+	.circle_2 {
+		opacity: 0.07;
+		border-radius: 100%;
+		background-color: #fff;
+	}
+	.circle_1 {
+		top: 55%;
+		left: 146px;
+		width: 356px;
+		height: 356px;
+		transform: translateY(-55%);
+	}
+	.circle_2 {
+		top: -235px;
+		right: -235px;
+		width: 682px;
+		height: 682px;
+	}
+}
+/* Advance Search 2 - End */
+
+/* Search - End
+================================================== */

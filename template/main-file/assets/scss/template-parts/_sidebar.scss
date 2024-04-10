@@ -1,0 +1,51 @@
+/* Template Sidebar - Start
+================================================== */
+.sidebar {
+	margin-left: -30px;
+	.widget {
+		&:not(:last-child) {
+			margin-bottom: 60px;
+		}
+		.widget_title {
+			line-height: 1;
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+	}
+
+	.form_item .submit_icon {
+		top: 18px;
+		right: 18px;
+		max-width: 18px;
+	}
+}
+
+.sidebar_post_admin {
+	padding: 50px 40px;
+	border-radius: $border_radius;
+	border: 1px solid $color_border;
+	.admin_image {
+		width: 120px;
+		height: 120px;
+		overflow: hidden;
+		border-radius: 100%;
+		margin-bottom: 20px;
+		display: inline-block;
+	}
+	.admin_name {
+		line-height: 1;
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+	.social_icon a {
+		width: 34px;
+		height: 34px;
+		font-size: 14px;
+	}
+}
+/* Template Sidebar - End
+================================================== */

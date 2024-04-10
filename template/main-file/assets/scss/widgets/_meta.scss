@@ -1,0 +1,89 @@
+/* Post Meta - Start
+================================================== */
+
+// Post Meta List - Start
+.post_meta {
+  li {
+    color: #9c9c9c;
+    line-height: 1;
+    font-size: 13px;
+    font-weight: 500;
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 15px;
+      padding-right: 15px;
+      &:after {
+        top: 5px;
+        right: -3px;
+        width: 4px;
+        height: 4px;
+        content: '';
+        position: absolute;
+        border-radius: 100%;
+        background-color: #9c9c9c;
+      }
+    }
+    &:first-child {
+      a {
+        color: $color_primary;
+      }
+    }
+  }
+  a {
+    color: #9c9c9c;
+    &:hover {
+      color: $color_primary;
+    }
+  }
+
+  i {
+    margin-right: 5px;
+    color: $color_primary;
+  }
+
+  .date_text {
+    text-align: center;
+    &:not(:last-child) {
+      &:after {
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 100%;
+        border-radius: 0;
+        background-color: #e1e1e1;
+      }
+    }
+    strong {
+      line-height: 1;
+      font-size: 36px;
+      color: $color_primary;
+      font-family: $font_heading;
+    }
+    small {
+      font-size: 13px;
+      color: $color_body;
+    }
+  }
+}
+// Post Meta List - End
+
+// Course Meta - Start
+.course_meta {
+  >li {
+    font-size: 13px;
+    color: $color_dark;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+    >a {
+      color: $color_dark;
+      &:hover {
+        color: $color_primary;
+      }
+    }
+  }
+}
+// Course Meta - End
+
+/* Post Meta - End
+================================================== */

@@ -1,0 +1,78 @@
+/* Site Footer - Start
+================================================== */
+
+// Footer Common Style - Start
+.site_footer {
+	background-color: #090e23;
+	.site_logo {
+		margin-bottom: 44px;
+	}
+	.footer_top {
+		padding: 77px 0 66px;
+	}
+	.footer_bottom {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 32px 0;
+		align-items: center;
+		justify-content: space-between;
+		border-top: 1px solid rgba(255, 255, 255, 0.2)
+	}
+
+	p {
+		line-height: 2;
+		font-size: 15px;
+		margin-bottom: 32px;
+		font-family: $font_secondary;
+		color: rgba(255, 255, 255, 0.702);
+	}
+
+	.page_list {
+		a {
+			color: rgba(255, 255, 255, 0.702);
+			&:hover {
+				color: $color_white;
+			}
+		}
+	}
+
+	.widget_title {
+		color: $color_white;
+	}
+
+	.copyright_text {
+		a {
+			text-decoration: underline;
+			color: rgba(255, 255, 255, 0.702);
+			&:hover {
+				color: $color_warning;
+			}
+		}
+	}
+}
+
+.store_btns {
+	margin: -7px;
+	>li {
+		padding: 7px;
+	}
+	a {
+		z-index: 1;
+		height: 54px;
+		max-width: 180px;
+		padding: 5px 26px;
+		border-radius: 8px;
+		align-items: center;
+		display: inline-flex;
+		background: linear-gradient(180deg, $color_white, $color_info);
+		box-shadow: 0 1px 0 $color_dark, 0 2px 4px rgba(16, 18, 19, 0.6);
+		&:hover {
+			transform: translateY(-4px);
+			box-shadow: 0 1px 0 $color_dark, 0 6px 12px rgba(16, 18, 19, 0.4);
+		}
+	}
+}
+// Footer Common Style - End
+
+/* Site Footer - End
+================================================== */

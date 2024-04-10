@@ -1,0 +1,53 @@
+/* Instructor - Start
+================================================== */
+.instructor_wrapper {
+	margin: -25px -15px;
+	>.col {
+		padding: 25px 15px;
+	}
+}
+.instructor_item {
+	text-align: center;
+	background-size: auto;
+	padding: 0 30px 30px 0;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	.inner_wrap {
+		padding: 30px;
+		transition: $transition;
+		background-color: $color_white;
+		border: 1px solid $color_border;
+		&:hover {
+			box-shadow: 0 11px 21px 0 rgba(16, 18, 19, 0.10), 0 31px 31px 0 rgba(16, 18, 19, 0.11);
+		}
+	}
+	.item_image {
+		width: 120px;
+		height: 120px;
+		overflow: hidden;
+		margin-bottom: 16px;
+		border-radius: 100%;
+		display: inline-block;
+	}
+	.instructor_name {
+		line-height: 1;
+		font-size: 24px;
+		margin-bottom: 8px;
+	}
+	.instructor_designation {
+		line-height: 1;
+		font-size: 16px;
+		font-weight: 400;
+		color: $color_body;
+		margin-bottom: 14px;
+		font-family: $font_body;
+	}
+	.social_icon a {
+		width: 30px;
+		height: 30px;
+		font-size: 14px;
+		color: $color_dark;
+	}
+}
+/* Instructor - End
+================================================== */

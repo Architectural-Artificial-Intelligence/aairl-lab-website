@@ -1,0 +1,39 @@
+/* Event - Start
+================================================== */
+.event_item {
+
+	.item_image {
+		display: block;
+		overflow: hidden;
+		margin-bottom: 30px;
+		img {
+			width: 100%;
+			display: block;
+			transition: $transition;
+		}
+	}
+	.post_meta {
+		margin-bottom: 22px;
+	}
+	.item_title {
+		font-size: 24px;
+		line-height: 1.25;
+		a {
+			color: $color_dark;
+		}
+	}
+	&:hover {
+		.item_image {
+			img {
+				transform: scale(1.08);
+			}
+		}
+		.item_title {
+			a {
+				color: $color_primary;
+			}
+		}
+	}
+}
+/* Event - End
+================================================== */

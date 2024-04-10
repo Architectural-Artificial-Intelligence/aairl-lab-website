@@ -16,6 +16,28 @@ layout: default
                         <p>
                             {{page.intro}}
                         </p>
+                        {% assign filter = page.tag | prepend: "group:team, tags: "%}
+
+                        {% assign filter3 = page.tag | prepend: "group:partner,tags: "%}
+
+                        Team
+                        <ul class="course_meta_info unordered_list">
+                            <li>
+                                    {% include list.html data="members" component="team_mini_portrait" filters=filter %}
+                            </li>
+                        </ul>
+
+                        Partners
+                        <ul class="course_meta_info unordered_list">
+                            <li>
+                                {% include list.html data="members" component="team_mini_portrait" filters=filter3 %}
+                            </li>
+                        </ul>
+
+                        
+
+
+
                     </div>
                 </div>
                 <div class="col col-lg-4">
@@ -35,27 +57,24 @@ layout: default
     <div class="details_info_tab section_space_lg pt-0">
         <div class="container">
             <div class="row justify-content-lg-between">
-                <div class="col col-lg-12">
+                <div class="col col-lg-8">
                     <div class="section_space_lg">
-                        <h3 class="details_info_title">Overview</h3>
-                        <p>{{ page.description }}</p>
 
-                        <h3 class="details_info_title">Relevant Publications</h3>
-                        {% assign filter = page.tag | prepend: "tags: "%}
-                        {% include list.html data="citations" component="citation" filters=filter %}
-    
+                        {{ content }}
 
-                       
-
-                        <h3 class="details_info_title">Team</h3>
-                        <div class="row">
-                        {% include list.html data="members" component="team_portrait" filters=filter  %}
-                        </div>
-                        
-                                            </div>
+                    </div>
                 </div>
+                <div class="col col-lg-4">
+                    <aside class="sidebar">
+                        <div class="widget course_cart_info">
+                            <h3 class="details_info_title">Publications</h3>
+                            {% assign filter = page.tag | prepend: "tags: "%}
+                            {% include list.html data="citations" component="citation" filters=filter %}
+                        </div>
+                    </aside>
+                </div>
+            </div>
 
-            </div> 
         </div>
     </div>
 </section>

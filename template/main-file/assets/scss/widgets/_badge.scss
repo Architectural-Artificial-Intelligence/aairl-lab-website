@@ -1,0 +1,40 @@
+/* Badge Style - Start
+================================================== */
+.badge_group {
+	margin: -2px;
+	>li {
+		padding: 2px;
+		display: inline-flex;
+		>.badge {
+			display: block;
+		}
+	}
+}
+
+.badge {
+	line-height: 1;
+	font-size: 14px;
+	border-radius: 0;
+	font-weight: bold;
+	color: $color_white;
+	padding: 5px 8px 3px 8px;
+	text-transform: uppercase;
+	font-family: $font_secondary;
+	box-shadow: 4px 4px 0 0 #101213;
+}
+
+.badge_primary {
+	background-color: $color_primary;
+}
+.badge_danger {
+	background-color: $color_danger;
+}
+.badge_warning {
+	color: $color_dark;
+	background-color: $color_warning;
+}
+.badge_success {
+	background-color: $color_success;
+}
+/* Badge Style - End
+================================================== */

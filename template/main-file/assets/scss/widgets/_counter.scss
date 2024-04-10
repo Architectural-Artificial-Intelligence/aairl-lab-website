@@ -1,0 +1,29 @@
+/* Counter Style - Start
+================================================== */
+.counter_lists_wrap {
+	>ul {
+		margin: -15px -30px;
+		>li {
+			padding: 15px 30px;
+		}
+	}
+
+	span {
+		display: block;
+		line-height: 1;
+	}
+	.counter_value {
+		font-size: 36px;
+		font-weight: 600;
+		margin-bottom: 2px;
+		color: $color_primary;
+	}
+	.counter_title {
+		font-size: 12px;
+		font-weight: 600;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+}
+/* Counter Style - End
+================================================== */

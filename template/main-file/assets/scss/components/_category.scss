@@ -1,0 +1,27 @@
+/* Category Style - Start
+================================================== */
+
+/* Category List - Start */
+.category_list {
+	li {
+		&:not(:last-child) {
+			margin-bottom: 17.75px;
+		}
+	}
+	a {
+		display: block;
+		line-height: 1;
+		font-size: 16px;
+		color: $color_black;
+		span {
+			float: right;
+		}
+		&:hover {
+			color: $color_success;
+		}
+	}
+}
+/* Category List - End */
+
+/* Category Style - End
+================================================== */

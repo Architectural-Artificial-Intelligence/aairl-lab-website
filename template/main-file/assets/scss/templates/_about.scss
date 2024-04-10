@@ -1,0 +1,45 @@
+/* About Page - Start
+================================================== */
+.about_section {
+
+	.about_image {
+		z-index: 1;
+		position: relative;
+		background-size: auto;
+		padding: 0 54px 44px 0;
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		.image_wrap {
+			overflow: hidden;
+			border: 1px solid $color_dark;
+		}
+	}
+	.about_content {
+		padding-right: 110px;
+	}
+	.about_title {
+		font-size: 42px;
+		line-height: 1.429;
+		margin-bottom: 14px;
+	}
+	p {
+		margin-bottom: 32px;
+	}
+}
+
+.about_item {
+	.item_image {
+		margin-bottom: 27px;
+	}
+	.item_title {
+		line-height: 1;
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 15px;
+		font-family: $font_secondary;
+	}
+}
+/* About Page - End
+================================================== */

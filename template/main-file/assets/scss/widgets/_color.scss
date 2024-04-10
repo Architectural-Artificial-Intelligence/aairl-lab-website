@@ -1,0 +1,48 @@
+/* Color Classes - Start
+================================================== */
+.bg_light {
+	background-color: $color_light;
+}
+.bg_info {
+	background-color: $color_info;
+}
+.bg_primary {
+	background-color: $color_primary;
+}
+.bg_secondary {
+	background-color: $color_secondary;
+}
+.bg_success {
+	background-color: $color_success;
+}
+.bg_danger {
+	background-color: $color_danger;
+}
+.bg_warning {
+	background-color: $color_warning;
+}
+
+.bg_facebook {
+	background-color: #3b5998;
+}
+.bg_twitter {
+	background-color: #1da1f2;
+}
+.bg_instagram {
+	background-color: #c32aa3;
+}
+.bg_linkedin {
+	background-color: #0a66c2;
+}
+.bg_youtube {
+	background-color: #ff0000;
+}
+.bg_google {
+	background-color: #DB4437;
+}
+
+.bg_gradient_info {
+	background-image: linear-gradient(0deg, $color_info, transparent);
+}
+/* Color Classes - End
+================================================== */

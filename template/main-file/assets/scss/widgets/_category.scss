@@ -1,0 +1,193 @@
+/* Category Items - Start
+================================================== */
+.category_items_wrapper {
+  margin: -25px -15px;
+  >.col {
+    padding: 25px 15px;
+  }
+}
+
+.category_item {
+  background-size: auto;
+  padding: 0 30px 30px 0;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  >a,span,strong,small {
+    display: block;
+  }
+  >a {
+    padding: 35px 30px 31px;
+    background-color: $color_white;
+    border: 1px solid $color_border;
+    &:hover {
+      box-shadow: 0 11px 21px 0 rgba(16, 18, 19, 0.1), 0 31px 31px 0 rgba(16, 18, 19, 0.11);
+      .item_icon {
+        &:before {
+          opacity: 1;
+          transform: scale(1);
+        }
+        img {
+          transition-delay: .1s;
+          transform: scale(0.6);
+        }
+      }
+    }
+  }
+
+  .item_icon {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    align-items: center;
+    margin-bottom: 26px;
+    display: inline-flex;
+    justify-content: center;
+    &:before {
+      top: 0;
+      left: 0;
+      opacity: 0;
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      border-radius: 100%;
+      transform: scale(1.5);
+      background-color: $color_light;
+      transition: .3s cubic-bezier(.34,1.56,.64,1);
+    }
+    img {
+      z-index: 1;
+      position: relative;
+      transition: .3s cubic-bezier(.34,1.56,.64,1);
+    }
+  }
+
+  .item_title {
+    line-height: 1;
+    font-size: 24px;
+    font-weight: bold;
+    color: $color_dark;
+    margin-bottom: 5px;
+    font-family: $font_heading;
+  }
+
+  .item_counter {
+    font-weight: 500;
+    color: $color_body;
+    font-family: $font_secondary;
+  }
+}
+
+.category_item_2 {
+  z-index: 1;
+  position: relative;
+  border-radius: 10px;
+  transition: $transition;
+  background-color: $color_white;
+  border-bottom: 2px solid transparent;
+  box-shadow: 0px 33px 73px 0px rgba(0, 0, 0, 0.04);
+  &:hover {
+    border-color: $color_primary;
+    transform: translateY(-14px);
+    box-shadow: 0px 33px 73px 0px rgba(0, 0, 0, 0.12);
+  }
+  >a {
+    display: flex;
+    padding: 20px 22px;
+    align-items: center;
+  }
+  .item_icon {
+    width: 70px;
+    height: 70px;
+    flex: 0 0 70px;
+    margin-right: 20px;
+    align-items: center;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    background-color: $color_info;
+    img {
+      max-width: 40px;
+    }
+  }
+
+  .item_title {
+    line-height: 1;
+    font-size: 24px;
+    font-weight: bold;
+    color: $color_dark;
+    margin-bottom: 6px;
+  }
+  .item_counter {
+    line-height: 1;
+    font-size: 16px;
+    color: $color_body;
+  }
+}
+
+.category_item_3 {
+  position: relative;
+  padding: 0 20px 20px 0;
+  &:before {
+    top: 20px;
+    left: 20px;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    content: '';
+    border-radius: 4px;
+    position: absolute;
+    background-image: linear-gradient(-45deg, rgba(188, 228, 233, 0.4), transparent, transparent);
+  }
+  >a {
+    z-index: 1;
+    display: block;
+    position: relative;
+    text-align: center;
+    border-radius: 4px;
+    background-size: cover;
+    padding: 49px 30px 45px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .item_image {
+    width: 152px;
+    height: 152px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    border-radius: 100%;
+    display: inline-block;
+    box-shadow: 0 10px 20px 0 rgba(16, 18, 19, 0.3);
+  }
+  .item_content {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.091;
+    color: $color_dark;
+    font-family: $font_heading;
+  }
+
+  .bg_primary {
+    &:hover {
+      box-shadow: 0 20px 30px 0 $color_primary;
+    }
+  }
+  .bg_success {
+    &:hover {
+      box-shadow: 0 20px 30px 0 $color_success;
+    }
+  }
+  .bg_danger {
+    &:hover {
+      box-shadow: 0 20px 30px 0 $color_danger;
+    }
+  }
+  .bg_warning {
+    &:hover {
+      box-shadow: 0 20px 30px 0 $color_warning;
+    }
+  }
+}
+/* Category Items - End
+================================================== */

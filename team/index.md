@@ -37,7 +37,7 @@ nav:
     <div class="instructor_wrapper row">
       <h2 class="">Our Partners</h2>
 
-{% include list.html data="members" component="team_portrait" filters="group:partner" %}
+      {% include list.html data="members" component="team_portrait" filters="group:partner" %}
 
       <h3 class="">Alumni</h3>
 
