@@ -1,5 +1,20 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1177/14780771241253440
+  title: 'When design workshops meet chatbots: Meaningful participation at scale?'
+  authors:
+  - Stephen Yang
+  - Jonathan Dortheimer
+  - Aaron Sprecher
+  - Qian Yang
+  publisher: International Journal of Architectural Computing
+  date: '2024-05-30'
+  link: https://doi.org/gtw9fj
+  orcid: 0000-0002-7464-8526
+  plugin: sources.py
+  file: sources.yaml
+  tags:
+  - Chatbots for Design
 - id: doi:10.1017/S0890060424000027
   title: Evaluating Large-Language-Model Chatbots to Engage Communities in Large-Scale
     Design Projects
