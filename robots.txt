@@ -1,1 +1,1 @@
-Sitemap: https://aairl.com/aairl-lab-website/sitemap.xml
+Sitemap: https://aairl.com/sitemap.xml
