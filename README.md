@@ -1,4 +1,4 @@
-Visit **[aairl.com](http://aairl.com)** 🚀
+Visit **[aairl.com](https://aairl.com)** 🚀
 
 <h1 align="center">Lab Website Template</h1>
 <p align="center">
