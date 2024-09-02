@@ -1,12 +1,15 @@
 ---
-title: Urban Renewal AI: Architectural AI Research Lab Partners with Green Group for Urban Renewal Innovation
+title: "Urban Renewal AI: We Partner with Green Group for Urban Renewal Innovation"
 author: jonathan-dortheimer
 category: featured
-
+caption: We are thrilled to announce a groundbreaking research agreement between the Architectural AI Research Lab (AAIRL) and Green Group, a leading urban renewal project company in Israel. This collaboration marks a significant step in developing a novel AI tool to revolutionize decision-making in urban renewal projects at the city level.
 tags:
   - funding
   - urban planning
   - artificial intelligence
+image: /images/news/greengroup.png
+
+project: UrbanAI
 ---
 
 

@@ -32,6 +32,21 @@
 ================================================== */
 /* 1.2 - Template Global Reset - Start
 ================================================== */
+.section_wrapper {
+  margin: 60px 0 20px 0;
+}
+.section_wrapper .details_info_title {
+  color: #3a10e5;
+  padding: 34px 0 6px;
+  border-bottom: 1px solid #ebebeb;
+}
+.paper {
+  margin-bottom: 20px;
+}
+a.paper_link {
+  color:#101213;
+  text-decoration: underline;
+}
 body {
   margin: 0;
   padding: 0;
@@ -2176,8 +2191,8 @@ input[type=search]::-webkit-search-results-decoration {
   border: 1px solid #ebebeb;
 }
 .sidebar_post_admin .admin_image {
-  width: 170px;
-  height: 170px;
+  width: 120px;
+  height: 120px;
   overflow: hidden;
   border-radius: 100%;
   margin-bottom: 20px;
@@ -3685,15 +3700,15 @@ input[type=search]::-webkit-search-results-decoration {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .course_cart_info .cart_info_list > li:not(:last-child) {
   border-bottom: 1px solid #ebebeb;
 }
 .course_cart_info .cart_info_list > li span:last-child {
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #101213;
 }
 
@@ -4494,6 +4509,7 @@ Responsive For Mobile & Tablet Devices
     padding-top: 60px;
     padding-bottom: 60px;
   }
+ 
   .section_heading {
     margin-bottom: 30px;
   }

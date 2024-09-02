@@ -1,5 +1,5 @@
 ---
-name: Dr. -ing. Gerhard Schubert
+name: Gerhard Schubert
 image: images/people/schubert.jpeg
 description: Head of Research, Chair of Architectural Informatics, School of design and Engineering, TU Munich
 role: pi
@@ -7,8 +7,8 @@ group: partners
 aliases:
   - Gerhard Schubert
 tags:
-  - Chatbots for Design
-  - AI for Design
+  - UrbanAI
+  - PD
 links:
   "fa-solid fa-house": https://www.arc.ed.tum.de/ai/team/gerhard-schubert/
   "fa-brands fa-orcid": https://orcid.org/0000-0003-1385-5369

@@ -1,0 +1,80 @@
+{% assign citation = site.data.citations
+| where_exp: "citation",
+"citation.id == include.lookup or citation.title contains include.lookup"
+| first
+| default: include
+%}
+
+{% if citation.title %}
+
+<div class="col col-lg-4 col-md-6 col-sm-6">
+  <div class="course_item">
+    <div class="item_image">
+
+      <a class="image_wrap" {% if citation.link %} href="{{ citation.link | relative_url }}" {% endif %}
+        class="citation-image" aria-label="{{ citation.title | default: " citation link" }}">
+        <img src="{{ citation.image | relative_url }}" alt="{{ citation.title | default: " citation image" }}"
+          loading="lazy" {% include fallback.html %}>
+      </a>
+    </div>
+    <div class="item_content">
+      <span class="course_instructor btn_unfill">
+        {{
+        citation.authors
+        | join: ","
+        | split: ","
+        | array_carve: 5
+        | join: ", "
+        | default: "[no author info]"
+        }}
+      </span>
+      {% assign type = site.data.types[citation.type] %}
+      {% include icon.html icon=type.icon %}
+      <h3 class="item_title">
+        <a {% if citation.link %} href="{{ citation.link | relative_url }}" {% endif %} class="citation-title">
+          {{ citation.title | default: "[no title info]" }}
+        </a>
+      </h3>
+
+
+      <div class="citation-details">
+        {{ citation.publisher | default: "[no publisher info]" }}
+        &nbsp; · &nbsp;
+        {{ citation.date | default: "[no date info]" | date: "%d %b %Y" }}
+       
+      </div>
+
+      {% if citation.description %}
+      <div class="citation-description">
+        {{
+        citation.description
+        | markdownify
+        | remove: "<p>"
+          | remove: "</p>"
+        }}
+      </div>
+
+      {% if citation.buttons.size > 0 %}
+      <div class="citation-buttons">
+        {% for button in citation.buttons %}
+        {%
+        include button.html
+        type=button.type
+        icon=button.icon
+        text=button.text
+        link=button.link
+        style="bare"
+        %}
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      {% if citation.tags.size > 0 or citation.repo %}
+      {% include tags.html tags=citation.tags repo=citation.repo %}
+      {% endif %}
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% endif %}

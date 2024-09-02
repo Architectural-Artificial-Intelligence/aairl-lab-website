@@ -8,10 +8,6 @@ nav:
 <section class="page_banner decoration_wrap">
   <div class="container">
     <h1 class="page_heading">Contact Us</h1>
-    <ul class="breadcrumb_nav unordered_list_center">
-      <li><a href="index.html">Home</a></li>
-      <li>Contact Us</li>
-    </ul>
   </div>
   <div class="deco_item deco_img_1" data-parallax='{"y" : -200, "smoothness": 6}'>
     <img src="/images/shapes/line_shape_1.png" alt="Line Shape Image">
@@ -23,63 +19,11 @@ nav:
 
 <section class="contact_section section_space_lg pt-0">
   <div class="container">
-    <div class="section_space_lg pt-0">
-      <div class="row justify-content-center">
-        <div class="col col-lg-4">
-          <div class="contact_info_box" style="background-image: url('/images/shapes/dot_shape_3.png');">
-            <div class="inner_wrap tilt">
-              <div class="item_icon">
-                {% include icon.html icon="fa-solid fa-phone  fa-2xl" %} 
-              </div>
-              <div class="item_content">
-                <h3 class="item_title">Our Telephone</h3>
-                <ul class="icon_list unordered_list_block">
-                  <li><a href="tel: +972747288014">+972 (0)74-728-8014</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col col-lg-4">
-          <div class="contact_info_box" style="background-image: url('/images/shapes/dot_shape_3.png');">
-            <div class="inner_wrap tilt">
-              <div class="item_icon">
-                {% include icon.html icon="fa-solid fa-envelope  fa-2xl" %}
-              </div>
-              <div class="item_content">
-                <h3 class="item_title">Send us mail</h3>
-                <ul class="icon_list unordered_list_block">
-                  <li><a href="mailto:jonathand@ariel.ac.il">jonathand@ariel.ac.il</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col col-lg-4">
-          <div class="contact_info_box" style="background-image: url('/images/shapes/dot_shape_3.png');">
-            <div class="inner_wrap tilt">
-              <div class="item_icon">
-                {% include icon.html icon="fa-solid fa-location-dot fa-2xl" %}
-              </div>
-              <div class="item_content">
-                <h3 class="item_title">Address</h3>
-                <ul class="icon_list unordered_list_block">
-                  <li><a href="https://www.openstreetmap.org/way/186036853">
-                    Suite 3.3.55, Building 55<br />
-                    School of Architecture<br />
-                    Ariel University, Israel
-                  </a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-center">
+  <div class="section_space_lg pt-0">
+  <div class="row justify-content-center">
       <div class="col col-lg-9">
         <div class="contact_form_wrapper">
-          <h2 class="contact_title text-center">Send us a message</h2>
+          <!-- <h2 class="contact_title text-center">Send us a message</h2> -->
           <form action="https://formspree.io/f/xqkonkpn" method="POST">
             <div class="row">
               <div class="col col-md-6">
@@ -90,6 +34,16 @@ nav:
               <div class="col col-md-6">
                 <div class="form_item m-0">
                   <input required type="email" name="email" placeholder="Your Email">
+                </div>
+              </div>
+              <div class="col">
+                <div class="form_item m-0">
+                  <select>
+                  <option>What is it about?</option>
+                  <option>Collaboration</option>
+                  <option>Working at the lab</option>
+                  <option>Somethiong else</option>
+                  </select>
                 </div>
               </div>
               <div class="col">
@@ -111,6 +65,70 @@ nav:
         </div>
       </div>
     </div>
+    <div class="row justify-content-center">
+    <div class="col col-sm-4">
+          <img src="/images/lab/lab1.png" alt="Image of our lab" class="img-fluid" />
+          <p>AAIRL's working space</p>
+</div>
+    <div class="col col-sm-4">
+    <img src="/images/lab/lab2.png" alt="Another image of our lab" class="img-fluid" />
+    <p>AAIRL's meeting and seminar space</p>
+    </div>  
+    </div>
+      <div class="row justify-content-center">
+        <div class="col col-lg-4">
+          <div class="contact_info_box" style="background-image: url('/images/shapes/dot_shape_3.png');">
+            <div class="inner_wrap tilt">
+              <div class="item_icon">
+                {% include icon.html icon="fa-solid fa-phone  fa-2xl" %} 
+              </div>
+              <div class="item_content">
+                <h3 class="item_title">Phone us</h3>
+                <ul class="icon_list unordered_list_block">
+                  <li><a href="tel: +972747288014">+972 (0)74-728-8014</a></li>
+                  <li>+972 (0)54-457-7442</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-4">
+          <div class="contact_info_box" style="background-image: url('/images/shapes/dot_shape_3.png');">
+            <div class="inner_wrap tilt">
+              <div class="item_icon">
+                {% include icon.html icon="fa-solid fa-envelope  fa-2xl" %}
+              </div>
+              <div class="item_content">
+                <h3 class="item_title">Email us</h3>
+                <ul class="icon_list unordered_list_block">
+                  <li><a href="mailto:jonathand@ariel.ac.il">jonathand@ariel.ac.il</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-4">
+          <div class="contact_info_box" style="background-image: url('/images/shapes/dot_shape_3.png');">
+            <div class="inner_wrap tilt">
+              <div class="item_icon">
+                {% include icon.html icon="fa-solid fa-location-dot fa-2xl" %}
+              </div>
+              <div class="item_content">
+                <h3 class="item_title">Visit us</h3>
+                <ul class="icon_list unordered_list_block">
+                  <li><a href="https://www.openstreetmap.org/way/186036853">
+                    Suite 3.3.55, Building 55<br />
+                    School of Architecture<br />
+                    Ariel University, Israel
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </div>
 </section>
 

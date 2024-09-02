@@ -6,12 +6,13 @@
 
 <div class="post_admin d-flex align-items-center">
     <span class="thumbnail_wrap">
-        <img src="{{ member.image | relative_url }}" alt="member portrait" loading="lazy" {% include fallback.html %}>
+        <img src="{{ member.image | relative_url }}" alt="member portrait"  {% include fallback.html %}>
     </span>
     <span class="meta_info">
         <a href="{{ member.url | relative_url }}"><span class="d-block">{{ member.name }}</span>
             <small class="d-block">
                 {% assign type = site.data.types[member.role] %}
+                {{ type.description }}
             </small></a>
     </span>
 </div>

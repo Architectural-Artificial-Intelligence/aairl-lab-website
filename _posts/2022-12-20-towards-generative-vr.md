@@ -1,7 +1,7 @@
 ---
 title: Toward a Generative Pipeline for an AR Tour of Contested Heritage Sites
 author: jonathan-dortheimer
-image: images/papers/vr.gif
+image: /images/papers/vr.gif
 tags:
   - VR
   - AI

@@ -1,5 +1,5 @@
 ---
-name: Dr. Jonathan Dortheimer
+name: Jonathan Dortheimer
 image: images/people/dortheimer.jpg
 description: Head of Laboratory.
 role: pi
@@ -8,10 +8,10 @@ page: true
 aliases:
   - Jonathan Dortheimer
 tags:
-  - AI for Design
-  - Chatbots for Design
-  - Collective Intelligence Design
-  - Critical Urbanism
+  - UrbanAI
+  - PD
+  - AID
+  - CUB
 links:
   "fa-solid fa-house":  https://dortheimer.com
   "fa-brands fa-orcid": https://orcid.org/0000-0002-7464-8526

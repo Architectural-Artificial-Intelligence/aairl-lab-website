@@ -1,0 +1,46 @@
+{% assign post = site.posts
+| where_exp: "post", "post.slug == include.lookup"
+| first
+| default: include
+%}
+
+{% assign url = post.url %}
+{% assign title = post.title %}
+
+{% assign excerpt = post.content
+| default: ""
+| regex_scan: "<!-- excerpt start -->(.*)<!-- excerpt end -->", true
+| default: post.excerpt
+| default: ""
+| strip_html
+%}
+{% assign search = post.content
+| strip_html
+| strip_newlines
+| regex_strip
+%}
+
+<div class="col col-lg-4 col-sm-6">
+  <div class="course_item">
+      <div class="item_image">
+          <!-- <ul class="badge_group unordered_list">
+              <li><a class="badge badge_warning" href="#!">New</a></li>
+          </ul> -->
+          <a class="image_wrap" href="{{include.url  | relative_url}}">
+              <img src="{{include.image | relative_url }}"
+                  alt="{{include.title}}"
+                  {% include fallback.html %}
+                  >
+          </a>
+      </div>
+      <div class="item_content">
+          <a class="course_instructor btn_unfill" href="{{include.url  | relative_url}}">Post</a>
+          <h3 class="item_title">
+              <a href="{{include.url  | relative_url}}">
+                  {{include.title}}
+              </a>
+          </h3>
+         
+      </div>
+  </div>
+</div>

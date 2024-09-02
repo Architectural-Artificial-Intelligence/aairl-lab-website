@@ -1,0 +1,38 @@
+
+{% assign posts = site.posts | where: "category", "featured"%}
+
+{% for d in posts %}
+
+{% assign published = d.date | date: "%B %d, %Y" %}
+{% assign member = site.members
+  | where_exp: "member", "member.slug == d.author"
+  | first
+%}
+    <div class="blog_item">
+      <a class="item_image" href="{{ d.url  | relative_url  }}">
+        <img src="{{ d.image |  relative_url }}" 
+        alt="{{ include.title | default: "feature image" }}"
+        {% include fallback.html %}
+        >
+      </a>
+      <div class="item_content">
+        
+          <a href="{{ d.url }}">
+            {{ d.title }}
+          </a>
+        <p class="mb-0">
+          {{ d.caption }}
+        </p>
+        <ul class="post_meta unordered_list">
+          <li><a href="{{member.url}}">
+            
+            {% if member %}
+              {{ member.name }}
+            {% endif %}
+          </a></li>
+          <li>{{ published }}</li>
+        </ul>
+      </div>
+    </div>
+
+{% endfor %}

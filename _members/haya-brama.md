@@ -1,10 +1,11 @@
 ---
-name: Dr. Haya Brama
+name: Haya Brama
 image: images/people/haya.jpeg
 role: research-lead
 group: team
 tags:
-    - AI for Design
+    - UrbanAI
+    - AID
 ---
 
 

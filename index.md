@@ -40,7 +40,7 @@
         <div class="col col-lg-6">
           <h2 class="heading_text mb-0">
             Research and
-            <span class="heading_focus_text">products</span>
+            <span class="heading_focus_text">Projects</span>
           </h2>
         </div>
       </div>
@@ -48,20 +48,7 @@
 
     <div class="tab-content">
         <div class="row">
-
-{% include list.html data="products" kind="Product" component="course_item" %}
 {% include list.html data="projects" kind="Project" component="course_item" %}
-
-
-
-<!-- { include course_item.html title="Participatory Design Chatbot System" kind="Product" }
-{ include course_item.html title="Crowdsourcing Participatory Design System" kind="Product" }
-{ include course_item.html title="Collective Intelligent Architectural Design" kind="Research" }
-{ include course_item.html title="Generative Architectural Artificial Intelligence" kind="Research" }  
-{ include course_item.html title="Participatory Design Chatbots" kind="Research" }        
-{ include course_item.html title="Critical Urbanism" kind="Research" }        
-{ include course_item.html title="Ph.D. Studies" kind="Education" }
-{ include course_item.html title="M.Sc. Studies" kind="Education"  -->
 
       </div>
     </div>

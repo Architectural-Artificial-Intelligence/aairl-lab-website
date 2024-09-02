@@ -1,11 +1,14 @@
 ---
-name: Prof. Tal Grinshpoun
+name: Tal Grinshpoun
 image: images/people/tal.jpg
 description: .....
 role: pi
 group: partners
 aliases:
   - Tal Grinshpoun
+tags:
+  - AID
+  - UrbanAI
 links:
   "fa-solid fa-house": https://mtrl.net.technion.ac.il/
   "fa-brands fa-orcid": https://orcid.org/0000-0002-2621-7350
@@ -15,16 +18,4 @@ links:
 ---
 
 
-		
-
-
-Research and Professional Interests: 
-- Computational and generative design
-- Architectural robotics
-- Additive manufacturing
-- New materials
-- Large-scale manufacturing
-- Landscape robotics
-- Virtual and augmented realities
-- Digital humanities			
 

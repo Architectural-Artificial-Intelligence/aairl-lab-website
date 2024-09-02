@@ -35,9 +35,6 @@ nav:
 <section class="instructor_section section_space_lg pt-0">
   <div class="container">
     <div class="instructor_wrapper row">
-      <h2 class="">Our Partners</h2>
-
-      {% include list.html data="members" component="team_portrait" filters="group:partner" %}
 
       <h3 class="">Alumni</h3>
 

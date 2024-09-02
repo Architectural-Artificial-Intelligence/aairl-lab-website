@@ -40,26 +40,8 @@
             <div class="main_menu_inner collapse navbar-collapse justify-content-center" id="main_menu_dropdown">
               <ul class="main_menu_list unordered_list_center">
 
-                <li class="dropdown">
-                  <a class="nav-link" href="#" id="home_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
-                  <ul class="dropdown-menu" aria-labelledby="home_submenu">
-
-                  {% for product in site.projects %}
-                    <li><a href="{{ product.url}}">{{ product.title }}</a></li>
-                  {% endfor %}
-                      <!-- <li><a href="/industry_research">Industry Research</a></li>
-                    <li><a href="/lectures">Lectures</a></li>
-                    <li><a href="/consulting">Consulting</a></li> -->
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a class="nav-link" href="#" id="home_submenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Research & Study</a>
-                  <ul class="dropdown-menu" aria-labelledby="home_submenu">
-                    <li><a href="/study/master">M.Sc. Studies</a></li>
-                    <!-- <li><a href="/study/phd">Ph.D. Studies</a></li>
-                    <li><a href="/study/postdoc">Postdoc</a></li> -->
-                  </ul>
-                </li>
+                <li><a class="nav-link" href="/projects/">Projects</a></li>
+                <li><a class="nav-link" href="/study/master.html">Study</a></li>
                 <li><a class="nav-link" href="/publications/">Publications</a></li> 
                 <li><a class="nav-link" href="/team">Team</a></li> 
                 <li><a class="nav-link" href="/contact">Contact</a></li> 

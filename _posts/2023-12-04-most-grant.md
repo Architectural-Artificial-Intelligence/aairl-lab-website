@@ -1,9 +1,9 @@
 ---
 title: Our Lab Secures Significant Grant for Groundbreaking Urban Renewal Project
 author: jonathan-dortheimer
-image: images/grants/most2023.png
+image: /images/grants/most2023.png
 category: featured
-
+project: UrbanAI
 tags:
   - funding
   - urban planning

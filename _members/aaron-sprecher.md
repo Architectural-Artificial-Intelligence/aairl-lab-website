@@ -1,5 +1,5 @@
 ---
-name: Prof. Aaron Sprecher
+name: Aaron Sprecher
 image: images/people/sprecher.jpg
 description: Head of MTRL, Faculty of Architecture, Technion IIT
 role: pi
@@ -7,7 +7,7 @@ group: partners
 aliases:
   - Aaron Sprecher
 tags:
-  - Chatbots for Design
+  - PD
 links:
   "fa-solid fa-house": https://mtrl.net.technion.ac.il/
   "fa-brands fa-orcid": https://orcid.org/0000-0002-2621-7350

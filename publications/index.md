@@ -30,9 +30,10 @@ nav:
 
 <section class="blog_section pt-0">
   <div class="container">
-
     <div class="row">
-    {% include list.html data="citations" component="citation" style="rich" showyears="true" %}
+      <div class="col col-md-8">
+    {% include list.html data="citations" component="citation" showyears="true" %}
+    </div>
     </div>
   </div>
 </section>

@@ -2,9 +2,10 @@
 title: A Novel Crowdsourcing-based Approach for Collaborative Architectural Design
 author: jonathan-dortheimer
 tags:
-  - crowdsourcing
+  - PD
   - ecaade
   - participatory design
+project: PD
 ---
 
 

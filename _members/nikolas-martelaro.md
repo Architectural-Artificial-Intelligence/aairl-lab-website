@@ -1,5 +1,5 @@
 ---
-name: Prof. Nikolas Martelaro
+name: Nikolas Martelaro
 image: /images/people/Nik.jpeg
 description: Assistant Professor, Human-Computer Interaction Institute,  Carnegie Mellon University
 role: pi
@@ -7,8 +7,7 @@ group: partners
 aliases:
   - Nikolas Martelaro
 tags:
-  - Chatbots for Design
-  - AI for Design
+  - PD
 links:
   "fa-solid fa-house": http://nikmartelaro.com/
   "fa-brands fa-orcid": https://orcid.org/0000-0002-1824-0243

@@ -1,11 +1,12 @@
 ---
 title: We invite you to a lecture “Mixing Worlds- Mixing Realities” By Dr.-ing. Gerhard Schubert
 author: ela-moyal
-image: images/schubert.png
+image: /images/schubert.png
 tags:
   - participatory design
   - AI
   - augmented reality
+project: UrbanAI
 ---
 Imagine a future where architects can design the way they are used
 to today but get additional expert support from computational

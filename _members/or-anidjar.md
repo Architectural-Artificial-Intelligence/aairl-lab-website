@@ -1,5 +1,5 @@
 ---
-name: Dr. Or Haim Anijdar
+name: Or Haim Anijdar
 image: images/people/anidjar.jpg
 description: Lecturer, School of Computer Science, Ariel University
 role: pi
@@ -7,7 +7,7 @@ group: partners
 aliases:
   - anidjar
 tags:
-  - Chatbots for Design
+  - PD
 links:
   "fa-brands fa-orcid": https://orcid.org/0000-0002-7673-6511
   "fa-solid fa-envelope": mailto:orhaim@ariel.ac.il
