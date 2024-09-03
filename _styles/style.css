@@ -1844,11 +1844,11 @@ input[type=search]::-webkit-search-results-decoration {
           animation: 0.2s dropDown;
 }
 
-.header_btns_group > li:nth-child(2) {
+/* .header_btns_group > li:nth-child(2) {
   margin-right: 12px;
   padding-right: 12px;
   border-right: 1px solid #dedfe0;
-}
+} */
 .header_btns_group a:not(.btn), .header_btns_group button:not(.btn) {
   color: #818c91;
   font-weight: 500;
