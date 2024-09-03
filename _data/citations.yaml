@@ -14,7 +14,7 @@
   plugin: sources.py
   file: sources.yaml
   tags:
-  - Chatbots for Design
+  - PD
 - id: doi:10.1017/S0890060424000027
   title: Evaluating Large-Language-Model Chatbots to Engage Communities in Large-Scale
     Design Projects
@@ -31,7 +31,7 @@
   file: sources.yaml
   image: images/papers/llm_prompt.png
   tags:
-  - Chatbots for Design
+  - PD
 - id: doi:10.3390/buildings13010222
   title: 'Conceptual Architectural Design at Scale: A Case Study of Community Participation
     Using Crowdsourcing'
@@ -48,7 +48,7 @@
   file: sources.yaml
   image: images/papers/buildings.png
   tags:
-  - Chatbots for Design
+  - PD
 - id: doi:10.3390/math10040539
   title: Collective Intelligence in Design Crowdsourcing
   authors:
@@ -61,7 +61,7 @@
   file: sources.yaml
   image: images/papers/mathematics-10-00539-g009.png
   tags:
-  - Collective Intelligence Design
+  - PD
 - id: eid:2-s2.0-85086718712
   orcid: 0000-0002-7464-8526
   plugin: orcid.py
@@ -81,7 +81,7 @@
   file: sources.yaml
   image: images/papers/wikihouse.jpg
   tags:
-  - Critical Urbanism
+  - CUB
 - id: doi:10.1109/AIVR56993.2022.00026
   title: Toward a Generative Pipeline for an AR Tour of Contested Heritage Sites
   authors:
@@ -110,7 +110,7 @@
   link: https://doi.org/gr42gs
   image: images/papers/ecaade_cs.png
   tags:
-  - Collective Intelligence Design
+  - PD
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.52842/conf.caadria.2022.1.223
@@ -125,7 +125,7 @@
   link: https://doi.org/gr42gt
   image: images/papers/boim.png
   tags:
-  - AI for Design
+  - UrbanAI
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.13140/RG.2.2.31654.40003
@@ -141,7 +141,7 @@
   link: https://doi.org/gr42gz
   image: images/papers/chatbots.png
   tags:
-  - Chatbots for Design
+  - PD
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.13140/RG.2.2.13031.11682
@@ -164,7 +164,7 @@
   date: '2016-01-01'
   link: https://doi.org/gtqk7v
   tags:
-  - Critical Urbanism
+  - CUB
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.52842/conf.ecaade.2023.2.567
@@ -182,7 +182,7 @@
   url: https://papers.cumincad.org/data/works/att/ecaade2023_145.pdf
   image: images/papers/outside.png
   tags:
-  - AI for Design
+  - UrbanAI
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.52842/conf.caadria.2023.1.373
