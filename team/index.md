@@ -28,6 +28,7 @@ nav:
 {% include list.html data="members" component="team_portrait" filters="group:team , role: research-lead" %}
 
 {% include list.html data="members" component="team_portrait" filters="group:team ,role: phd" %}
+{% include list.html data="members" component="team_portrait" filters="group:team ,role: master" %}
 {% include list.html data="members" component="team_portrait" filters="group:team ,role: assistant" %}
     </div>
   </div>
