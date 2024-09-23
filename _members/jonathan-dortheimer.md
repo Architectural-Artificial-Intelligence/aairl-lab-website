@@ -1,7 +1,7 @@
 ---
 name: Jonathan Dortheimer
 image: images/people/dortheimer.jpg
-description: Head of Laboratory.
+description: Head of Lab
 role: pi
 group: team
 page: true
