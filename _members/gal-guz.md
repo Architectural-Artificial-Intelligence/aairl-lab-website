@@ -5,6 +5,8 @@ role: assistant
 group: team
 tags:
     - UrbanAI
+links:
+  "fa-brands fa-linkedin": https://www.linkedin.com/in/gal-guz-88769a1a7/
 ---
 
 Gal Guz is a fifth-year architecture student, UX/UI designer, and research assistant at the AAIRL at Ariel University. He specializes in designing and developing complex systems, guiding projects from user requirements and operational concept development through user testing, design language creation, and the final handoff to development, including ongoing implementation support.
