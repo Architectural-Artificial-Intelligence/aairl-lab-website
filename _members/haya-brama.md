@@ -6,6 +6,9 @@ group: team
 tags:
     - UrbanAI
     - AID
+links:
+  "fa-solid fa-envelope": mailto:hayabr@ariel.ac.il
+---
 ---
 
 
