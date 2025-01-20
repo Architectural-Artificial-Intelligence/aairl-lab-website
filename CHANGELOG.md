@@ -2,6 +2,97 @@
 
 Reference: common-changelog.org
 
+## 1.3.2 - 2025-01-06
+
+### Changed
+
+- Misc enhancements and bug fixes.
+
+## 1.3.1 - 2024-11-11
+
+### Changed
+
+- Update and improve workflows for building site and citations.
+- Escape user inputs better in rare edge cases.
+
+## 1.3.0 - 2024-08-16
+
+### Changed
+
+- List component `filters` parameter changed to `filter` and now takes any Ruby expression instead of the existing custom syntax.
+  Example: `filters="publisher: bioRxiv, date: ^2020"` becomes `filter="publisher == 'bioRxiv' and date =~ /^2020/"`.
+  See docs for more info.
+- Fix rare bug where data (e.g. a paper title) containing certain characters (e.g. a double quote) can mess up HTML rendering.
+- Fix "first time setup" workflow bug.
+- Tweak GitHub Actions debugging/logging.
+
+### Added
+
+- Styling for `<details>` HTML element.
+
+## 1.2.2 - 2024-06-05
+
+### Added
+
+- Add `affiliation` member portrait field.
+
+### Changed
+
+- Change order and type of preferred ids from ORCID API.
+- Expand list of supported Manubot identifiers and thus keep ORCID API details less often.
+- Simplify portrait component under-the-hood.
+- Make tag component de-duplication consistent with search plugin de-duplication.
+
+## 1.2.1 - 2024-04-01
+
+### Changed
+
+- Minor bug fixes in cite process and sitemap generation.
+
+## 1.2.0 - 2024-03-08
+
+### Changed
+
+- Update all GitHub Actions to fix "Node v16 deprecated" warnings.
+- Sources that Manubot doesn't know how to cite (e.g. wosuid:12345) are now ignored by default if they're from metasources.
+- Fix bug where passing tags to tags component manually doesn't work.
+- Fix bug in citation (and other) components when `lookup` is blank.
+- Fix nested tables bug.
+- Dark mode tweaks.
+- Various CSS tweaks and fixes.
+
+### Added
+
+- Add `image` param to support blog post thumbnails.
+- Add `html-proofer` plugin that checks for broken images/links/etc.
+- Add `remove` flag to remove a source from a metasource.
+
+## 1.1.6 - 2023-10-06
+
+### Changed
+
+- Use latest minor versions of Python packages in auto-cite script.
+
+## 1.1.5 - 2023-05-19
+
+### Changed
+
+- Fix ORCID plugin bug and other cite process tweaks.
+
+## 1.1.4 - 2023-04-28
+
+### Changed
+
+- Fix ORCID plugin and other cite process bugs.
+
+## 1.1.3 - 2023-04-20
+
+### Changed
+
+- Fix first-time-setup mv bug.
+- Fix citation, float, and portrait component CSS.
+- Filter and trim citation info fields.
+
 ## 1.1.2 - 2023-04-11
 
 ### Changed

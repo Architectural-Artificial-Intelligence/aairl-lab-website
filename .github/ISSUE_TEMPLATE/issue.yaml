@@ -13,8 +13,10 @@ body:
     id: repo
     attributes:
       label: Link to your website repo
-      description: "**Strongly recommended** so we can help troubleshoot your issue."
+      description: "In almost all cases, **we cannot help you if you don't provide this**."
       placeholder: ex. https://github.com/greenelab/greenelab.com
+    validations:
+      required: true
 
   - type: input
     id: version
@@ -22,6 +24,8 @@ body:
       label: Version of Lab Website Template you are using
       description: See your `CITATION.cff` file.
       placeholder: ex. 1.0.0
+    validations:
+      required: true
 
   - type: textarea
     id: description
