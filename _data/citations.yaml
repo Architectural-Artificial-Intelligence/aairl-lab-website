@@ -62,11 +62,6 @@
   image: images/papers/mathematics-10-00539-g009.png
   tags:
   - PD
-- id: eid:2-s2.0-85086718712
-  orcid: 0000-0002-7464-8526
-  plugin: orcid.py
-  file: orcid.yaml
-  date: ''
 - id: doi:10.1080/13602365.2020.1758950
   title: Open-source architecture and questions of intellectual property, tacit knowledge,
     and liability
@@ -104,8 +99,7 @@
   - Jonathan Dortheimer
   - Eran Neuman
   - Tova Milo
-  publisher: Proceedings of the 38th International Conference on Education and Research
-    in Computer Aided Architectural Design in Europe (eCAADe) [Volume 2]
+  publisher: eCAADe proceedings
   date: '2020-01-01'
   link: https://doi.org/gr42gs
   image: images/papers/ecaade_cs.png
@@ -153,7 +147,7 @@
   date: '2021-01-01'
   link: https://doi.org/gtqk7s
   tags:
-  - Collective Intelligence Design
+  - DesignAI
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.13140/RG.2.2.30538.57285
@@ -182,7 +176,7 @@
   url: https://papers.cumincad.org/data/works/att/ecaade2023_145.pdf
   image: images/papers/outside.png
   tags:
-  - UrbanAI
+  - DesignAI
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.52842/conf.caadria.2023.1.373
@@ -200,5 +194,34 @@
   tags:
   - VR
   - Digital Heritage
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.2139/ssrn.5036299
+  title: Challenges in the Evaluation of Machine Learning Techniques in Generative
+    Design
+  authors:
+  - Haya Brama
+  - Tal Grinshpoun
+  - Agata Dalach
+  - Jonathan Dortheimer
+  publisher: Elsevier BV
+  date: '2024-01-01'
+  link: https://doi.org/g82f9d
+  tags:
+  - UrbanAI
+  plugin: sources.py
+  file: sources.yaml
+- id: 10.52842/conf.ecaade.2024.1.529
+  title: Towards a Robust Evaluation Framework for Generative Urban Design
+  authors:
+  - Haya Brama
+  - Agata Dalach
+  - Tal Grinshpoun
+  - Jonathan Dortheimer
+  publisher: eCAADe proceedings
+  date: '2024-01-01'
+  link: https://doi.org/g86bmn
+  tags:
+  - UrbanAI
   plugin: sources.py
   file: sources.yaml
