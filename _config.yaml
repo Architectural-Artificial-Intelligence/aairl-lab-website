@@ -89,6 +89,7 @@ include:
 # force jekyll to exclude certain files/folders
 exclude:
   - README.md
+  - template
   - LICENSE.md
   - CITATION.cff
   - .history

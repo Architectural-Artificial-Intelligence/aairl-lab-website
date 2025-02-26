@@ -8,13 +8,7 @@
   | where_exp: "member", "member.slug == d.author"
   | first
 %}
-  <div class="col col-sm-10
-{% if forloop.index==1 %}
-col-lg-6
-{% else %}
-col-lg-3
-{% endif %}
-  ">
+  <div class="col col--3">
     <div class="blog_item">
       <a class="item_image" href="{{ d.url }}">
         <img src="{{ d.image }}" 

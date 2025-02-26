@@ -23,6 +23,7 @@ nav:
 
 <section class="blog_section section_space_md pt-0">
   <div class="container">
+
   {% include search-box.html %}
   {% include search-info.html %}
   </div>
@@ -32,6 +33,7 @@ nav:
   <div class="container">
     <div class="row">
       <div class="col col-md-8">
+      
     {% include list.html data="citations" component="citation" showyears="true" %}
     </div>
     </div>

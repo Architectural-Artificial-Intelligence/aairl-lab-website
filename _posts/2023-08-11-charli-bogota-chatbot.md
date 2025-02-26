@@ -7,7 +7,7 @@ project: PD
 tags:
  - chatbots
  - AI
- - participatory design
+ - PD
 ---
 
 

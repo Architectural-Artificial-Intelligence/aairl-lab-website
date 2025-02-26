@@ -2,9 +2,8 @@
 {% assign data = site.data[include.data]
   | default: site[include.data]
   | default: emptyarray
-  | data_filter: include.filters
+  | data_filter: include.filter
 %}
-
 {% assign years = data
   | group_by_exp: "d", "d.date | date: '%Y'"
   | sort: "name"
@@ -14,8 +13,8 @@
 {% for year in years %}
   {% assign data = year.items %}
 
-  {% if include.year!="false" && years.size > 1 %}
-    {{--}}<h6>{{ year.name }}</h6>
+  {% if years.size > 1 %}
+    {{--}}<h6 id="{{ year.name }}">{{ year.name }}</h6>
     {% assign data = data | sort: "date" | reverse %}
   {% endif %}
 
@@ -24,6 +23,7 @@
 
     {%
       include {{ include.component | append: ".html" }}
+      affiliation=d.affiliation
       author=d.author
       authors=d.authors
       buttons=d.buttons
@@ -35,7 +35,6 @@
       height=d.height
       icon=d.icon
       id=d.id
-      kind=include.kind
       image=d.image
       last_modified_at=d.last_modified_at
       link=d.link
@@ -54,7 +53,6 @@
       type=d.type
       url=d.url
       width=d.width
-      itemPos=forloop.index
     %}
   {% endfor %}
 {% endfor %}

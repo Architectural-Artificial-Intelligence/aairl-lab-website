@@ -24,12 +24,12 @@ nav:
 <section class="instructor_section section_space_lg pt-0">
   <div class="container">
     <div class="instructor_wrapper row">
-{% include list.html data="members" component="team_portrait" filters="group:team , role: pi" %}
-{% include list.html data="members" component="team_portrait" filters="group:team , role: research-lead" %}
+{% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'pi'" %}
+{% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'research-lead'" %}
 
-{% include list.html data="members" component="team_portrait" filters="group:team ,role: phd" %}
-{% include list.html data="members" component="team_portrait" filters="group:team ,role: master" %}
-{% include list.html data="members" component="team_portrait" filters="group:team ,role: assistant" %}
+{% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'phd'" %}
+{% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'master'" %}
+{% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'assistant'" %}
     </div>
   </div>
 </section>
@@ -39,7 +39,7 @@ nav:
 
       <h3 class="">Alumni</h3>
 
-      {% include list.html data="members" component="team_portrait" filters="group:alumni" %}
+      {% include list.html data="members" component="team_portrait" filter="group == 'alumni'" %}
 
     </div>
   </div>

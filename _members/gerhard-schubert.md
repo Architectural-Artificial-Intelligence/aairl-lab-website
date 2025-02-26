@@ -8,6 +8,7 @@ aliases:
   - Gerhard Schubert
 tags:
   - UrbanAI
+  - DesignAI
   - PD
 links:
   "fa-solid fa-house": https://www.arc.ed.tum.de/ai/team/gerhard-schubert/

@@ -5,7 +5,7 @@
 */
 {
   // elements to filter
-  const elementSelector = ".card, .citation, .post-excerpt";
+  const elementSelector = ".paper";
   // search box element
   const searchBoxSelector = ".search-box";
   // results info box element
@@ -75,7 +75,6 @@
   // loop through elements, hide/show based on query, and return results info
   const filterElements = (parts) => {
     let elements = document.querySelectorAll(elementSelector);
-
     // results info
     let x = 0;
     let n = elements.length;

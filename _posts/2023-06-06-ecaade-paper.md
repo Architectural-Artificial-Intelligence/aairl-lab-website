@@ -3,7 +3,7 @@ title: Our Paper has been Accepted to eCAADE!
 author: lielle-brenner
 tags:
   - ecaade 
-  - AI
+  - DesignAI
   - Graz 
   - Austria
   - architectural design

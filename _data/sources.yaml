@@ -41,10 +41,11 @@
   image: images/papers/llm_prompt.png
   tags:
    - PD
+   - DesignAI
 
 - id: doi:10.13140/RG.2.2.13031.11682
   tags:
-    - Collective Intelligence Design
+    - DesignAI
 
 - id: doi:10.13140/RG.2.2.30538.57285
   tags:
@@ -60,7 +61,7 @@
   url: https://papers.cumincad.org/data/works/att/ecaade2023_145.pdf
   image: images/papers/outside.png
   tags:
-   - UrbanAI
+   - DesignAI
 
 - id: doi:10.52842/conf.caadria.2023.1.373
   image: images/papers/stones.png
@@ -77,5 +78,12 @@
   tags:
    - UrbanAI
 
+- id: doi:10.1017/S0890060424000027
+  tags:
+   - PD 
+
+- id: 10.52842/conf.ecaade.2024.1.529
+  tags:
+   - UrbanAI
 
 # ...another source

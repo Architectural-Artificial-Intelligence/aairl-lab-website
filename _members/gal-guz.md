@@ -5,6 +5,7 @@ role: assistant
 group: team
 tags:
     - UrbanAI
+    - DesignAI
 links:
   "fa-brands fa-linkedin": https://www.linkedin.com/in/gal-guz-88769a1a7/
 ---

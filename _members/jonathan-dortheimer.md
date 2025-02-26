@@ -12,6 +12,7 @@ tags:
   - PD
   - AID
   - CUB
+  - DesignAI
 links:
   "fa-solid fa-house":  https://dortheimer.com
   "fa-brands fa-orcid": https://orcid.org/0000-0002-7464-8526

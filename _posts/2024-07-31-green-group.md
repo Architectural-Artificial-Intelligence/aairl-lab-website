@@ -7,6 +7,7 @@ tags:
   - funding
   - urban planning
   - artificial intelligence
+  - UrbanAI
 image: /images/news/greengroup.png
 
 project: UrbanAI

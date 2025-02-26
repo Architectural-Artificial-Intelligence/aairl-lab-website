@@ -25,11 +25,8 @@ layout: default
 
 <section class="instructor_section section_space_lg pt-0">
   <div class="container">
-
     <div class="row justify-content-lg-between">
-
       <div class="col col-lg-3">
-        
         <div class=" sidebar_post_admin text-center">
           <div class="admin_image">
             <img src="{{ page.image | relative_url }}" alt="member portrait" loading="lazy" {% include fallback.html %}>
@@ -49,39 +46,35 @@ layout: default
               </a>
             </li>
             {% endfor %}
-           
           </ul>
         </div>
-
-        <div>
-          
-        </div>
-
       </div>
-
       <div class="col col-lg-8">
-
         <h3 class="details_item_title">About</h3>
         {{ content }}
 
-        {% assign filter = page.aliases
-        | default: page.name
-        | default: page.title
-        | join: ", authors: "
-        | prepend: "authors: "
+        {% assign aliases = page.aliases
+          | default: page.name
+          | default: page.title
+          | join: ","
+          | split: ","
+          | array_filter
+      
         %}
 
-        
-
-        <h3 class="details_item_title">Publications</h3>
-        {% include list.html data="citations" 
-        component="citation" 
-        filters=filter
-        showyears="true" %}
+        {% capture search -%}
+        publications/?search={% for alias in aliases %}"{{ alias }}" {% endfor %}
+      {%- endcapture %}
+      
+      <p class="center">
+        <a href="{{ search | relative_url | uri_escape }}">
+          Search for {{ page.name | default: page.title }}'s papers on the Research page
+        </a>
+      </p>
 
       </div>
 
-   
+
     </div>
   </div>
 </section>

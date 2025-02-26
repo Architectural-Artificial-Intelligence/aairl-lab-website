@@ -6,7 +6,6 @@ group: team
 aliases:
   - Orly
 tags:
-  - PD
   - AID
 ---
 

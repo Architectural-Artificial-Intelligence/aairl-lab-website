@@ -8,6 +8,7 @@ tags:
   - funding
   - urban planning
   - artificial intelligence
+  - UrbanAI
 ---
 
 Ariel University's Artificial Intelligence in Architecture Research Lab (AAIRL), under the leadership of Dr. Jonathan Dortheimer, has been awarded a substantial grant from the Ministry of Science and Technology. This funding, set to span over three years, will be instrumental in developing a pioneering machine learning model to predict and evaluate the socio-economic impacts of urban renewal projects across Israel.

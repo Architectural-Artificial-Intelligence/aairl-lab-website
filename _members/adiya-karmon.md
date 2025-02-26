@@ -4,7 +4,7 @@ image: images/people/adiya.jpg
 role: master
 group: team
 tags:
-    - UrbanAI
+    - DesignAI
 ---
 
 Adiya Karmon is an architecture student at Ariel University.

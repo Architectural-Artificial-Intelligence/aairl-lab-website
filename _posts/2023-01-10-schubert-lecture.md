@@ -3,8 +3,8 @@ title: We invite you to a lecture “Mixing Worlds- Mixing Realities” By Dr.-i
 author: ela-moyal
 image: /images/schubert.png
 tags:
-  - participatory design
-  - AI
+  - PD
+  - UrbanAI
   - augmented reality
 project: UrbanAI
 ---

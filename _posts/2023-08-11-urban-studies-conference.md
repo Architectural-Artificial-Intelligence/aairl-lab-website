@@ -7,6 +7,8 @@ tags:
   - urban studies
   - conference
   - smart cities
+  - AID
+  - CUB
 project: CUB
 ---
 

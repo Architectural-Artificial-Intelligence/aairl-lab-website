@@ -4,7 +4,7 @@ image: images/people/hila-david.jpg
 role: master
 group: team
 tags:
-    - PDCB
+    - PD
 ---
 
 
