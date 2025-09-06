@@ -29,44 +29,11 @@
     </div>
   </div>
 </section>
-
-
-<!-- Course Section - Start
-================================================== -->
-<section class="course_section">
-  <div class="container">
-    <div class="section_heading">
-      <div class="row align-items-center">
-        <div class="col col-lg-6">
-          <h2 class="heading_text mb-0">
-            Research and
-            <span class="heading_focus_text">Projects</span>
-          </h2>
-        </div>
-      </div>
-    </div>
-
-    <div class="tab-content">
-        <div class="row">
-{% include list.html data="projects" kind="Project" component="course_item" %}
-
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Course Section - End
-================================================== -->
-
-
-{% include join_us.html %}
-
-
 <section class="blog_section section_space_lg">
   <div class="container">
     <div class="section_heading text-center">
       <h2 class="heading_text mb-0">
-        Latest News & 
-        <span class="heading_focus_text">Publications</span>
+        Latest News
       </h2>
     </div>
     <div class="row justify-content-center">
@@ -75,4 +42,8 @@
     </div>
   </div>
 </section>
+{% include join_us.html %}
+
+
+
 

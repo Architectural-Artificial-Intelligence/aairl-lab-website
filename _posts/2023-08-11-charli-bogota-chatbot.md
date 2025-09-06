@@ -2,7 +2,6 @@
 title: Meet Charli - Bogotá's Participatory Design Chatbot
 author: lielle-brenner
 image: /images/news/charli.webp
-category: featured
 project: PD
 tags:
  - chatbots

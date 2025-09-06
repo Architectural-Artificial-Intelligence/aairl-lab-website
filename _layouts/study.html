@@ -37,30 +37,7 @@ layout: default
             <div class="row justify-content-lg-between">
                 <div class="col col-lg-8">
                     <div class="section_space_lg">
-                        <p>{{ page.content }}</p>
-
-
-                        <h6>Focus Areas</h6>
-                        <ul class="icon_list unordered_list_block">
-                            {% for b in page.focus %}
-                            <li>
-                                <i class="far fa-check"></i>
-                                <span>{{ b }}</span>
-                            </li>
-                            {% endfor %}
-                        </ul>
-
-                        <h6>Benefits</h6>
-                        <ul class="icon_list unordered_list_block">
-                            {% for b in page.benefits %}
-                            <li>
-                                <i class="far fa-check"></i>
-                                <span>{{ b }}</span>
-                            </li>
-                            {% endfor %}
-                       </ul>
-
-
+                        <p>{{ page.content | markdownify}}</p>
                     </div>
                 </div>
                 <div class="col col-lg-4">
@@ -69,7 +46,7 @@ layout: default
                         <a class="btn btn_warning" href="/contact/">
                         <i class="fas fa-file-alt  me-1"></i>
                         <span>
-                            <small>Apply</small>
+                            <small>Contact</small>
                             <small>Apply</small>
                         </span>
                         </a>

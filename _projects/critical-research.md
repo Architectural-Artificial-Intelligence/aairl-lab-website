@@ -2,7 +2,7 @@
 title: "Critical Urban Research"
 # subtitle: CURB
 group: featured
-image: images/projects/critical_urbanism.png
+# image: images/projects/critical_urbanism.png
 tag: CUB
 intro: "We need a better understanding of urban life to build new design tools."
 description: The project seeks to create a more equitable, just, and sustainable urban environment by examining the social, economic, and political implications of urban design, urban planning, and smart city policies and engaging the public in dialogue.​

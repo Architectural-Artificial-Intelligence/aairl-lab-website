@@ -2,7 +2,7 @@
 title: "AI for Urban Defense and Resilience"
 # subtitle: CURB
 group: featured
-image: images/projects/critical_urbanism.jpg
+# image: images/projects/critical_urbanism.jpg
 tag: AID
 intro: "Natural disasters and conflicts annually devastate cities. How can we better protect, enhance resilience, and rebuild cities?"
 
