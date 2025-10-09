@@ -2,7 +2,7 @@
 name: Gal Guz
 image: images/people/gal.jpg
 role: assistant
-group: team
+group: alumni
 tags:
     - UrbanAI
     - DesignAI

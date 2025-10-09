@@ -4,8 +4,7 @@ author: lielle-brenner
 image: /images/news/urban_studies_2023.jpg
 
 tags:
-  - urban studies
-  - conference
+  - confernecees
   - smart cities
   - AID
   - CUB
