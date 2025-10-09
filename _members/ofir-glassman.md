@@ -1,7 +1,6 @@
 ---
 name: Ofir Glassman
 image: images/people/ofir.jpg
-description: Head of MTRL, Faculty of Architecture, Technion IIT
 role: assistant
 group: team
 aliases:
