@@ -2191,8 +2191,8 @@ input[type=search]::-webkit-search-results-decoration {
   border: 1px solid #ebebeb;
 }
 .sidebar_post_admin .admin_image {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   overflow: hidden;
   border-radius: 100%;
   margin-bottom: 20px;
