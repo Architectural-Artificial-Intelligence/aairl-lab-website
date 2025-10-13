@@ -1,0 +1,39 @@
+- name: Israel Science Foundation
+  icon: /images/partners/isf.png
+  url: https://isf.org.il
+  kind: Research funding agency
+
+- name: Ministery of Science and Technology
+  icon: /images/partners/most.jpg
+  url: https://most.gov.il
+  kind: Research funding agency
+
+- name: Ministry of Construction and Housing
+  icon: /images/partners/moh.png
+  url: https://moch.gov.il
+  kind: Government partner
+
+- name: Israel Planning Administration
+  icon: /images/partners/planningauthority.jpg
+  url: https://www.gov.il/en/departments/iplan/govil-landing-page
+  kind: Government partner
+
+- name: Green Group Ltd.
+  icon: /images/partners/grengroup.jpeg
+  url: https://www.green-group.co.il/
+  kind: Industry partner
+
+- name: Tel Aviv Municipality
+  icon: /images/partners/tel_aviv.png
+  url: https://www.tel-aviv.gov.il/en
+  kind: Research collaboration
+
+- name: Rehovot Municipality
+  icon: /images/partners/rehovot.png
+  url: https://www.tel-aviv.gov.il/en
+  kind: Research collaboration
+
+- name: Hadera Economy Development Company
+  icon: /images/partners/calcalit_hadera.png
+  url: https://www.hakal.co.il/
+  kind: Research collaboration

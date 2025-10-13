@@ -33,7 +33,6 @@ nav:
   <div class="container">
     <div class="row">
       <div class="col col-md-8">
-      
     {% include list.html data="citations" component="citation" showyears="true" %}
     </div>
     </div>

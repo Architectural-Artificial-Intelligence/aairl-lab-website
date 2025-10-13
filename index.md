@@ -42,6 +42,47 @@
     </div>
   </div>
 </section>
+
+
+
+<section class="course_section section_space_lg bg_info">
+  <div class="container">
+    <div class="section_heading">
+      <div class="row align-items-center">
+        <div class="col col-lg-6">
+          <h2 class="heading_text mb-0">
+            Collaborations and  
+            <span class="heading_focus_text">Partners</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+    {% for partner in site.data.partners %}
+      <div class="col col-lg-3 col-md-6 col-sm-6">
+        <div class="course_item">
+          <div class="item_image">
+            <a class="image_wrap" href="{{ partner.url }}">
+              <img src="{{ partner.icon }}" alt="{{ partner.name }}" />
+            </a>
+          </div>
+          <div class="item_content">
+            <h3 class="item_title">
+              <a href="{{ partner.url }}">
+                {{ partner.name }}
+              </a>
+            </h3>
+            <ul class="course_meta unordered_list">
+              <li><a href="{{ partner.url }}"><i class="fal fa-bars me-1"></i>{{ partner.kind }}</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 {% include join_us.html %}
 
 
