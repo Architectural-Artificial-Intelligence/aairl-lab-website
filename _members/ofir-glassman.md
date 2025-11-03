@@ -3,16 +3,11 @@ name: Ofir Glassman
 image: images/people/ofir.jpg
 role: assistant
 group: team
-aliases:
-  - Aaron Sprecher
 tags:
-  - UrbanAI
+  - synthetic
 
 ---
 
+Ofir Glasman is a passionate student at the Ariel School of Architecture, recognized for both her academic excellence and creativity. Her dedication to her studies is reflected in consistent placement on the Dean’s List and twice being honored for outstanding achievement in architectural design studios.
 
-
-
-Ofir is a third-year architecture student at the Ariel School of Architecture. She has distinguished herself both academically and creatively, earning a place on the Dean’s List and receiving recognition twice for outstanding achievement in architectural design studios.
-
-Her current research explores the potential of AI tools to replicate human behavior within built environments in order to evaluate and analyze spatial metrics.
+Deeply interested in the intersection of technology and design, Ofir’s current research focuses on harnessing AI to simulate human behavior within built environments. This pioneering work aims to evaluate and analyze spatial metrics, helping designers and planners create spaces that are more responsive to real human needs and interactions.
