@@ -211,7 +211,7 @@
   - UrbanAI
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.52842/conf.ecaade.2024.1.529
+- id: 10.52842/conf.ecaade.2024.1.529
   title: Towards a Robust Evaluation Framework for Generative Urban Design
   authors:
   - Haya Brama
@@ -223,46 +223,5 @@
   link: https://doi.org/g86bmn
   tags:
   - UrbanAI
-  plugin: sources.py
-  file: sources.yaml
-- id: doi:10.25442/hku.29350478
-  title: 'Quantifying Architectural Experience Using Visual Language Models: Does
-    AI Dream of Rendered Spaces?'
-  authors:
-  - Gal Guz
-  - Nikolas Martelaro
-  - Gerhard Schubert
-  - Jonathan Dortheimer
-  publisher: "CAAD Futures 2025 \u2013 Catalytic Interfaces"
-  date: '2025-01-01'
-  link: https://doi.org/10.25442/hku.29350478
-  tags:
-  - DesignAI
-  plugin: sources.py
-  file: sources.yaml
-- id: CAADRIA_95
-  title: AI-Driven Recommendations for Strategic Urban Renewal
-  authors:
-  - Haya Brama
-  - Tal Grinshpoun
-  - Oded Landau
-  - Jonathan Dortheimer
-  date: '2025-01-01'
-  publisher: CAADRIA 2025
-  link: https://papers.cumincad.org/data/works/att/caadria2025_95.pdf
-  tags:
-  - UrbanAI
-  plugin: sources.py
-  file: sources.yaml
-- id: CAADRIA_51
-  title: Addressing Religious Architectural Restrictions with Computer Code
-  authors:
-  - Jonathan Dortheimer
-  - Gaya Bitman
-  date: '2025-01-01'
-  publisher: CAADRIA 2025
-  link: https://papers.cumincad.org/data/works/att/caadria2025_51.pdf
-  tags:
-  - DesignAI
   plugin: sources.py
   file: sources.yaml
