@@ -51,8 +51,8 @@
       <div class="row align-items-center">
         <div class="col col-lg-6">
           <h2 class="heading_text mb-0">
-            Collaborations and  
-            <span class="heading_focus_text">Partners</span>
+            Funding Agencies, Partners and  
+            <span class="heading_focus_text">Friends</span>
           </h2>
         </div>
       </div>
