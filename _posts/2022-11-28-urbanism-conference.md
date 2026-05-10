@@ -3,7 +3,7 @@ title: Conference presentation “Automating Community Design Conversations in U
 author: jonathan-dortheimer
 tags:
   - PD
-  - chatbots
+  - chatbot
   - AI
   - participatory design
 project: PD

@@ -26,25 +26,26 @@ defaults:
       path: ""
     values:
       layout: default
-  # markdown files in /_members
   - scope:
       type: "members"
     values:
       layout: member
-  # markdown files in /_posts
   - scope:
       type: "posts"
     values:
       layout: post
-  # markdown files in /_posts
+  - scope:
+      type: "topics"
+    values:
+      layout: topic
+    scope:
+      type: "jobs"
+    values:
+      layout: jobs
   - scope:
       type: "projects"
     values:
-      layout: projects
-  - scope:
-      type: "products"
-    values:
-      layout: products
+      layout: project
 
 collections:
   # generate page for each member
@@ -53,11 +54,14 @@ collections:
   # generate page for each post
   posts:
     output: true
-  products:
+  topics:
+    output: true
+  jobs:
     output: true
   projects:
     output: true
-
+  products:
+    output: true
 # jekyll plugins
 plugins:
   - jekyll-spaceship
@@ -65,6 +69,12 @@ plugins:
   - jekyll-redirect-from
   - jekyll-feed
   - jekyll-last-modified-at
+  - jekyll-scholar
+
+scholar:
+  style: apa
+  sort_by: year
+  order: descending
 
 # code block syntax highlighting
 highlighter: rouge

@@ -52,11 +52,11 @@
             <div class="main_menu_inner collapse navbar-collapse justify-content-center" id="main_menu_dropdown">
               <ul class="main_menu_list unordered_list_center">
 
-                <li><a class="nav-link" href="/projects/">Projects</a></li>
-                <li><a class="nav-link" href="/news/">News</a></li>
-                <li><a class="nav-link" href="/publications/">Publications</a></li> 
-                <li><a class="nav-link" href="/team/">Team</a></li> 
-                <li><a class="nav-link" href="/join/">Join</a></li>
+                <li><a class="nav-link {% if page.url == '/topics/' or page.collection == 'topics' or page.collection == 'projects' %}active{% endif %}" href="/topics/">Research</a></li>
+                <li><a class="nav-link {% if page.url contains '/news/' or page.collection == 'posts' %}active{% endif %}" href="/news/">News</a></li>
+                <li><a class="nav-link {% if page.url == '/publications/' %}active{% endif %}" href="/publications/">Publications</a></li>
+                <li><a class="nav-link {% if page.url == '/team/' or page.collection == 'members' %}active{% endif %}" href="/team/">Team</a></li>
+                <li><a class="nav-link {% if page.url == '/jobs/' or page.collection == 'jobs' %}active{% endif %}" href="/jobs/">Jobs</a></li>
               </ul>
             </div>
           </nav>
@@ -69,7 +69,7 @@
               </button>
             </li>
             <li>
-              <a class="btn btn_primary" href="/contact/">
+              <a class="btn btn_primary header_contact_btn" href="/contact/">
                 <span>
                   <small>Contact Us</small>
                   <small>Contact Us</small>

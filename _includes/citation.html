@@ -5,42 +5,63 @@
 | default: include
 %}
 
+{% if include.lookup and citation.id == nil %}
+  {% assign citation = site.data.papers
+  | where_exp: "paper",
+  "paper.id == include.lookup or paper.title contains include.lookup"
+  | first
+  | default: include
+  %}
+{% endif %}
 
 
-<div class="paper">
 
-  <span class="citation-authors" {% if citation.authors.size> 10 %}
-    data-tooltip="{{ citation.authors | join: ", " }} "
+<article class="paper publication_item" {% if citation.id %}id="{{ citation.id }}"{% endif %}>
+  <div class="paper_year">
+    <span class="badge badge_primary">{{ citation.date | default: "[no date info]" | date: "%Y" }}</span>
+    <small>{{ citation.type | default: "Publication" | capitalize }}</small>
+  </div>
+
+  <div class="paper_body">
+    <h3 class="item_title paper_title">{{ citation.title | default: "[no title info]" }}</h3>
+    <div class="paper_authors" {% if citation.authors.size> 10 %}
+      data-tooltip="{{ citation.authors | join: ", " }} "
+      {% endif %}
+      tabindex="0"
+      >
+      {{
+      citation.authors
+      | join: ","
+      | split: ","
+      | array_carve: 5
+      | join: ", "
+      | default: "[no author info]"
+      }}
+    </div>
+
+    <ul class="paper_meta">
+      <li>
+        <span class="paper_meta_label">Venue</span>
+        <span>{{ citation.publisher | default: "[no publisher info]" }}</span>
+      </li>
+    </ul>
+
+    {% if citation.tags.size > 0 %}
+      <ul class="tags_list unordered_list paper_tags">
+        {% for tag in citation.tags %}
+          {% assign tag_label = site.data.tag_labels[tag] | default: tag %}
+          <li><span>{{ tag_label }}</span></li>
+        {% endfor %}
+      </ul>
     {% endif %}
-    tabindex="0"
-    >
-    {{
-    citation.authors
-    | join: ","
-    | split: ","
-    | array_carve: 5
-    | join: ", "
-    | default: "[no author info]"
-    }}
-  </span>
-  <span>
-    ({{ citation.date | default: "[no date info]" | date: "%Y" }}).
-  </span>
+  </div>
 
-  <span class="citation-text">
-    {% assign type = site.data.types[citation.type] %}
-
-    <strong class="citation-title">
-      {{ citation.title | default: "[no title info]" }}.
-    </strong>
-
-
-
-      <em>{{ citation.publisher | default: "[no publisher info]" }}</em>
-
-      <a class="paper_link" {% if citation.link %} href="{{ citation.link | relative_url }}" {% endif %}>
-
-      {{ citation.id | default: "[no id info]" }}</a>
-
-  </span>
-</div>
+  {% if citation.link %}
+    <div class="paper_action">
+      <a class="paper_link" href="{{ citation.link }}" aria-label="Open {{ citation.title | default: "paper" }}">
+        Open paper
+        <i class="far fa-long-arrow-right"></i>
+      </a>
+    </div>
+  {% endif %}
+</article>

@@ -3,7 +3,7 @@ title: Two papers accepted to CAADRIA 2025 in Tokyo
 author: jonathan-dortheimer
 category: featured
 
-caption: Celebrating Innovation. AAIRL's groundbreaking research on AI-driven urban renewal and genetic algorithm-based architectural design heads to CAADRIA 2025 in Tokyo. Join us as we redefine the future of urban landscapes and architectural challenges!
+caption: AAIRL research on AI-driven urban renewal and genetic algorithm-based architectural design will be presented at CAADRIA 2025 in Tokyo.
 
 tags:
   - confernecees 
@@ -15,15 +15,15 @@ project: UrbanAI
 image: /images/news/uni_tokyo.png
 ---
 
-**Exciting News from AAIRL: Two Groundbreaking Papers Accepted at CAADRIA 2025 in Tokyo!**
+**Two AAIRL Papers Accepted at CAADRIA 2025 in Tokyo**
 
-We are thrilled to share that two innovative papers from the AAIRL have been accepted for presentation at the prestigious CAADRIA 2025 conference in Tokyo. This recognition underscores our commitment to pushing the boundaries of architectural research and integrating cutting-edge technology into urban planning and design.
+Two papers from AAIRL have been accepted for presentation at CAADRIA 2025 in Tokyo. The papers reflect two active strands of the lab's work: AI-supported urban renewal and computational methods for architectural design.
 
 ### AI-Driven Recommendations for Strategic Urban Renewal
 
-Authored by Dr. Haya Brama, Dr. Jonathan Dortheimer, Prof. Tal Grinshpoun, and our industry partner, Oded Landau, this paper introduces a revolutionary approach to urban renewal planning. The team has developed a decision support system that leverages advanced algorithms and machine learning techniques to reimagine urban landscapes. By allowing municipal stakeholders to explore new parcel combinations, the system transcends the limitations of existing urban layouts.
+Authored by Dr. Haya Brama, Dr. Jonathan Dortheimer, Prof. Tal Grinshpoun, and our industry partner, Oded Landau, this paper introduces a decision-support approach for urban renewal planning. The team has developed a system that uses algorithmic and machine-learning methods to help municipal stakeholders explore alternative parcel combinations beyond the constraints of existing urban layouts.
 
-The core of this system is its modular plugin architecture, which guarantees flexibility and transparency in decision-making. Custom-designed algorithmic solutions within these plugins address urban renewal's specific and nuanced requirements. Moreover, deep learning techniques are employed to predict the potential of future projects based on historical data, a feature particularly beneficial for peripheral regions with low-profit margins. Successful renewal in these areas can catalyze further growth and development, making this model a powerful tool for urban planners.
+The core of this system is its modular plugin architecture, which supports flexibility and transparency in decision-making. Custom-designed algorithmic solutions within these plugins address urban renewal's specific and nuanced requirements. Moreover, deep learning techniques are employed to predict the potential of future projects based on historical data, a feature particularly relevant for peripheral regions with low-profit margins. Successful renewal in these areas can catalyze further growth and development, making this model a useful tool for urban planners.
 
 
 ### Addressing Religious Code with Computer Code: A Genetic Algorithm Approach to Sukkah Architecture

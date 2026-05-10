@@ -3,9 +3,7 @@ title: We invite you to a lecture “Mixing Worlds- Mixing Realities” By Dr.-i
 author: ela-moyal
 image: /images/schubert.png
 tags:
-  - PD
-  - UrbanAI
-  - augmented reality
+  - designAI
 project: UrbanAI
 ---
 Imagine a future where architects can design the way they are used

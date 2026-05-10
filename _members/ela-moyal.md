@@ -4,7 +4,9 @@ image: images/people/moyal.jpeg
 role: assistant
 group: alumni
 tags:
-    CURB
+    - urban
 ---
 
-Ela Moyal is a third-year architecture student at the Ariel School of Architecture, where she has earned a spot on the Dean's List twice. Her current research focuses on urban renewal policies in Israel, and their implications for urban design. In her free time, Ela enjoys exploring the world of specialty coffee.
+Ela Moyal is an architecture student at the Ariel School of Architecture and an alumna of AAIRL. Her research examined urban renewal policy in Israel and its implications for urban design, planning practice, and the everyday experience of city residents.
+
+Her work contributed to the lab's broader interest in understanding how planning policies, development mechanisms, and urban technologies shape the built environment.

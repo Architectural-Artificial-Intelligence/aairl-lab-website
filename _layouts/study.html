@@ -2,62 +2,37 @@
 layout: default
 ---
 
-<!-- Details Section - Start
-================================================== -->
-<section class="details_section course_details_section">
-    <div class="details_content decoration_wrap">
-        <div class="container">
-            <div class="row align-items-center justify-content-lg-between">
-                <div class="col col-lg-6">
-                    <div class="content_wrap">
-                        <h1 class="details_item_title">
-                            {{page.headline}}
-                        </h1>
-                        <p>
-                            {{page.into}}
-                        </p>
-                    </div>
-                </div>
-                <!-- <div class="col col-lg-4">
-          <div class="course_details_video">
-          <img src=" {{page.image}}" alt="{{page.title}}">
-          </div>
-      </div> -->
-            </div>
-        </div>
-        <div class="deco_item deco_img_1" data-parallax='{"y" : -200, "smoothness": 6}'>
-            <img src="/images/shapes/line_shape_1.png" alt="Line Shape Image">
-        </div>
-        <div class="deco_item deco_img_2" data-parallax='{"y" : 200, "smoothness": 6}'>
-            <img src="/images/shapes/dot_shape_2.png" alt="Line Shape Image">
-        </div>
-    </div>
-    <div class="details_info_tab section_space_lg pt-0">
-        <div class="container">
-            <div class="row justify-content-lg-between">
-                <div class="col col-lg-8">
-                    <div class="section_space_lg">
-                        <p>{{ page.content | markdownify}}</p>
-                    </div>
-                </div>
-                <div class="col col-lg-4">
-                    <aside class="sidebar">
-                    <div class="widget course_cart_info">
-                        <a class="btn btn_warning" href="/contact/">
-                        <i class="fas fa-file-alt  me-1"></i>
-                        <span>
-                            <small>Contact</small>
-                            <small>Apply</small>
-                        </span>
-                        </a>
-                        {{page.application}}
-      
-                       
-                        </ul>
-                    </div>
-                    </aside>
-                </div>
 
+<section class="page_banner jobs_banner decoration_wrap">
+    <div class="container">
+        <h1 class="page_heading">Advance Your Career at the Lab</h1>
+        <p>We welcome applicants interested in research degrees (MSc, PhD), and postdoctoral positions.</p>
+        <!-- <ul class="breadcrumb_nav unordered_list_center">
+      <li><a href="index.html">Home</a></li>
+      <li>Projects</li>
+    </ul> -->
+    </div>
+    <div class="deco_item deco_img_1" data-parallax='{"y" : -200, "smoothness": 6}'>
+        <img src="/images/shapes/line_shape_1.png" alt="Line Shape Image">
+    </div>
+    <div class="deco_item deco_img_2" data-parallax='{"y" : 200, "smoothness": 6}'>
+        <img src="/images/shapes/dot_shape_2.png" alt="Line Shape Image">
+    </div>
+</section>
+
+
+<!-- Course Section - Start
+================================================== -->
+<section class="course_section jobs_landing_section section_space_lg">
+    <div class="container">
+        <div class="team_section_heading">
+            <span class="publication_eyebrow">Opportunities</span>
+            <h2>Open Research Paths</h2>
+            <p>Choose the route that matches your stage, research goals, and desired level of independence.</p>
+        </div>
+        <div class="tab-content">
+            <div class="row">
+                {% include list.html data="jobs" component="course_item" %}
             </div>
         </div>
     </div>

@@ -6,13 +6,13 @@ group: team
 aliases:
   - Orly
 tags:
-  - AID
+  - resilience
 ---
 
-Orly Cohen-Moas is an experienced urban planner and senior architect with a wealth of knowledge in leading complex planning processes, urban and industrial renewal, preservation of built heritage, management and public service, and strategic consulting. She holds an M.Arch from the Technion and a B.Arch degree from Ariel University. 
+Orly Moas-Cohen is an architect, urban planner, and Ph.D. researcher at AAIRL. She brings extensive experience in complex planning processes, urban and industrial renewal, heritage preservation, public service, management, and strategic consulting.
 
-For two decades, Orly has been a driving force in urban planning and development. She has led numerous planning teams and has been involved in promoting large-scale urban projects. As a member of various planning committees, such as the national council and the district committee for planning and construction in Tel Aviv, she has had a significant impact on the urban landscape in Israel.   
+She holds an M.Arch. from the Technion and a B.Arch. from Ariel University. Over two decades of professional practice, Orly has led planning teams, advanced large-scale urban projects, and served on planning committees, including national and district-level committees in Israel.
 
-Orly teaches architecture at Ariel University and lectures on architecture, urban renewal, heritage preservation, and strategic planning at several academies, including Ono Academic Collage and the College of Management. Additionally, she has provided lectures to many decision-makers in various planning and construction committees.
+Orly teaches architecture at Ariel University and lectures on architecture, urban renewal, heritage preservation, and strategic planning. Her research connects professional planning knowledge with the lab's interest in resilient, socially aware, and evidence-based urban development.
 
-In her work, Orly strongly emphasizes understanding people and improving the quality of urban life. She is passionate about promoting urban planning and development through her research and professional practice. As a professional planner, she is dedicated to creating livable cities that are socially and environmentally sustainable.
+Across her work, Orly emphasizes human-centered planning, urban quality of life, and the long-term social and environmental consequences of planning decisions.

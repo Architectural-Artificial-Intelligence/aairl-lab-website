@@ -20,7 +20,9 @@
     | regex_strip
   %}
 
-<div class="col col-md-6">
+{% assign column_class = include.column_class | default: "col col-md-6" %}
+
+<div class="{{ column_class }}">
   <div class="blog_item">
     {% if post.image %}
     <a class="item_image" href="{{ url | relative_url }}">

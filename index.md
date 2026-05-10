@@ -12,15 +12,15 @@
       <div class="col col-lg-5">
         <div class="banner_content">
           <h1 class="banner_title">
-            Revolutionizing Architecture and Urban Design
+            AI Research for Architecture and Urban Planning
           </h1>
           <p>
-            By leveraging the power of computation, artificial intelligence, and collective intelligence, we are creating new design methods that will lead to more sustainable and equitable cities for a better future.
+            The Architectural Artificial Intelligence Research Lab develops and evaluates computational methods for design, urban analytics, and participatory planning. Our work combines artificial intelligence, human-computer interaction, and urban research to support more transparent, inclusive, and evidence-based planning processes.
           </p>
-          <a class="btn btn_default" href="/projects/">
+          <a class="btn btn_default" href="/topics/">
             <span>
-              <small>Explore Projects</small>
-              <small>Explore Projects</small>
+              <small>Explore research topics</small>
+              <small>Explore research topics</small>
             </span>
             <i class="far fa-long-arrow-right ms-1"></i>
           </a>
@@ -29,15 +29,59 @@
     </div>
   </div>
 </section>
-<section class="blog_section section_space_lg">
+
+<section class="category_section research_topics_template section_space_md pb-0">
   <div class="container">
     <div class="section_heading text-center">
       <h2 class="heading_text mb-0">
-        Latest News
+        Research
+        <span class="heading_focus_text">Topics</span>
       </h2>
     </div>
-    <div class="row justify-content-center">
+    <div class="category2_items_wrapper row justify-content-center">
+      {% for topic in site.topics %}
+      <div class="col col-lg-4 col-md-6 col-sm-6">
+        <div class="category_item_2 topic_with_projects">
+          <a href="{{ topic.url }}">
+            <span class="item_icon">
+              <i class="far fa-project-diagram"></i>
+            </span>
+            <span class="item_content">
+              <strong class="item_title d-block">{{ topic.title }}</strong>
+              {% assign topic_project_count = topic.projects | size %}
+              <small class="item_counter d-block">{% if topic_project_count > 0 %}{{ topic_project_count }} projects{% else %}Research topic{% endif %}</small>
+              {% if topic_project_count > 0 %}
+              <span class="topic_project_list">
+                {% for project_tag in topic.projects %}
+                  {% assign topic_project = site.projects | where: "tag", project_tag | first %}
+                  {% if topic_project %}
+                  <span>{{ topic_project.title }}</span>
+                  {% endif %}
+                {% endfor %}
+              </span>
+              {% endif %}
+            </span>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
+<section class="blog_section section_space_lg">
+  <div class="container">
+    <div class="section_heading">
+      <div class="row align-items-center">
+        <div class="col col-lg-6">
+          <h2 class="heading_text mb-0">
+            Latest Lab
+            <span class="heading_focus_text">News</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
 {% include hp-list.html data="posts" %}
     </div>
   </div>
@@ -51,8 +95,8 @@
       <div class="row align-items-center">
         <div class="col col-lg-6">
           <h2 class="heading_text mb-0">
-            Funding Agencies, Partners and  
-            <span class="heading_focus_text">Friends</span>
+            Funding Agencies and
+            <span class="heading_focus_text">Partners</span>
           </h2>
         </div>
       </div>
@@ -84,7 +128,3 @@
 </section>
 
 {% include join_us.html %}
-
-
-
-

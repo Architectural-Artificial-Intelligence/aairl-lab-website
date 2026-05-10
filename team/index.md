@@ -5,13 +5,10 @@ nav:
   tooltip: About our team
 ---
 
-<section class="page_banner decoration_wrap">
+<section class="page_banner team_banner decoration_wrap">
   <div class="container">
     <h1 class="page_heading">Our Research Team</h1>
-    <ul class="breadcrumb_nav unordered_list_center">
-      <li><a href="/">Home</a></li>
-      <li>Our Team</li>
-    </ul>
+    <p>Researchers, students, designers, and engineers working on AI for architecture, cities, and participatory planning.</p>
   </div>
   <div class="deco_item deco_img_1" data-parallax='{"y" : -200, "smoothness": 6}'>
     <img src="/images/shapes/line_shape_1.png" alt="Line Shape Image">
@@ -21,10 +18,17 @@ nav:
   </div>
 </section>
 
-<section class="instructor_section section_space_lg pt-0">
+<section class="instructor_section team_section section_space_lg pt-0">
   <div class="container">
+    <div class="team_section_heading">
+      <span class="publication_eyebrow">People</span>
+      <h2>Current Team</h2>
+    </div>
     <div class="instructor_wrapper row">
 {% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'pi'" %}
+{% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'lab-manager'" %}
+{% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'postdoc'" %}
+
 {% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'research-lead'" %}
 
 {% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'phd'" %}
@@ -33,14 +37,15 @@ nav:
     </div>
   </div>
 </section>
-<section class="instructor_section section_space_lg pt-0">
+<section class="instructor_section team_section team_alumni_section section_space_lg pt-0">
   <div class="container">
+    <div class="team_section_heading">
+      <span class="publication_eyebrow">Network</span>
+      <h2>Alumni</h2>
+    </div>
+
     <div class="instructor_wrapper row">
-
-      <h3 class="">Alumni</h3>
-
       {% include list.html data="members" component="team_portrait" filter="group == 'alumni'" %}
-
     </div>
   </div>
 </section>

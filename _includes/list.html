@@ -13,7 +13,7 @@
 {% for year in years %}
   {% assign data = year.items %}
 
-  {% if years.size > 1 %}
+  {% if years.size > 1 and include.showyears != false %}
     {{--}}<h6 id="{{ year.name }}">{{ year.name }}</h6>
     {% assign data = data | sort: "date" | reverse %}
   {% endif %}
@@ -28,6 +28,7 @@
       authors=d.authors
       buttons=d.buttons
       caption=d.caption
+      column_class=include.column_class
       content=d.content
       date=d.date
       description=d.description

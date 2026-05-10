@@ -1,5 +1,5 @@
 <div class="col col-lg-3 col-md-6 col-sm-6">
-    <div class="course_item">
+    <div class="course_item{% if include.url contains '/projects/' %} project_course_item{% endif %}{% if include.url contains '/jobs/' %} job_course_item{% endif %}">
         <div class="item_image">
             <!-- <ul class="badge_group unordered_list">
                 <li><a class="badge badge_warning" href="#!">New</a></li>
@@ -12,7 +12,9 @@
             </a>
         </div>
         <div class="item_content">
+            {% if include.kind %}
             <a class="course_instructor btn_unfill" href="{{include.url}}">{{ include.kind }}</a>
+            {% endif %}
             <h3 class="item_title">
                 <a href="{{include.url}}">
                     {{include.title}}

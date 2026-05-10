@@ -1,9 +1,9 @@
 ---
 title: Crowdsourcing Participatory Design Software
-headline: Architasker builds a community arround your architecture project!
+headline: Architasker supports structured community participation in design
 into: Get residents engaged, leverage the collective intelligence, and invest in a community.
 image: /images/papers/architasker.jpg
-description: 
+layout: products
 benefits: 
     - Improved public participation in planning decisions.
     - Increased collaboration between the community and the planners
@@ -15,10 +15,10 @@ benefits:
     - Reduced bureaucracy and costs associated with public participation
 ---
 
-Architasker is an innovative design management software that uses artificial intelligence to interact with the community and engages residents in the architecture and urban design process. 
+Architasker is a design management and participation platform for architecture and urban design projects. It helps project teams organize stakeholder input, design alternatives, and feedback loops across different stages of a participatory process.
 
-The software enables the community to navigate and express their opinion on various planning proposals. Finally, through this valuable communication, a plan is developed that the community supports 100%. The software allows for greater access to information and reduces the barriers of language, cultural and religious differences. 
+The software enables community members to review proposals, respond to focused design questions, and contribute ideas that can be translated into design requirements. It is intended to broaden access to information and reduce barriers related to language, professional knowledge, and participation logistics.
 
-By providing a platform for open dialogue and ongoing feedback, the software encourages a more democratic planning process. This can help ensure that all voices are represented in the planning process, leading to decisions more reflective of the community’s needs and desires. 
+By providing a platform for dialogue and ongoing feedback, Architasker supports more transparent planning processes. It helps design teams document how stakeholder input is collected, interpreted, and considered during decision-making.
 
-In addition, the software also helps to increase public trust in the planning process, as it allows the public to see their input being used in the decision-making process. This can lead to greater engagement and trust in the future.
+The platform is part of the lab's broader research on collective intelligence in architectural design: how many partial contributions, evaluations, and discussions can be organized into useful design knowledge.

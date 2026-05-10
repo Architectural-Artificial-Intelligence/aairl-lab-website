@@ -69,9 +69,10 @@ layout: default
 
                 
               {% for tag in tags %}
+              {% assign tag_label = site.data.tag_labels[tag] | default: tag %}
               <li> <a
                   href="/news/?search=&quot;tag: {{ tag }}&quot;">
-                <span>{{ tag }}</span>
+                <span>{{ tag_label }}</span>
 
                 </a>
               </li>
@@ -93,7 +94,6 @@ layout: default
     </div>
   </div>
 </section>
-
 
 
 

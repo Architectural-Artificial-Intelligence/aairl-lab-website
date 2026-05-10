@@ -2,12 +2,8 @@
 title: Our Paper has been Accepted to eCAADE!
 author: lielle-brenner
 tags:
-  - confernecees 
-  - DesignAI
-  - Graz 
-  - Austria
-  - architectural design
-  - workshop
+  - designAI
+
 project: UrbanAI
 image: /images/news/Graz_Kunsthaus_vom_Schlossberg_20061126.jpg
 ---

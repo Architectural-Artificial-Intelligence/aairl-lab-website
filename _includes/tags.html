@@ -17,12 +17,13 @@
     {% endif %}
   >
     {% for tag in tags %}
+      {% assign tag_label = site.data.tag_labels[tag] | default: tag %}
       <a
         href="{{ link }}?search=&quot;tag: {{ tag }}&quot;"
         class="tag"
-        data-tooltip="Show items with the tag &quot;{{ tag }}&quot;"
+        data-tooltip="Show items with the tag &quot;{{ tag_label }}&quot;"
       >
-        {{ tag }}
+        {{ tag_label }}
       </a>
     {% endfor %}
   </div>

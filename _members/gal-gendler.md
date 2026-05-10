@@ -1,20 +1,18 @@
 ---
-name: Gal Gendeler
+name: Gal Gendler
 image: images/people/galg.jpg
 role: research-lead
-group: team
+group: alumni
 tags:
-    - UrbanAI
+    - UDT
+    - urban
+    - urbanAI
 links:
   "fa-solid fa-envelope": mailto:galge@ariel.ac.il
 ---
----
 
-Gal Gendler is a multidisciplinary professional with expertise in software engineering and city planning. With a B.Sc. in Computer Science, an M.A. in Public Policy, and an M.Sc. with distinction from UCL in Transport and City Planning, Gal brings a unique blend of technical and urban planning knowledge to their work.
+Gal Gendler is a multidisciplinary researcher with expertise in software engineering, public policy, and city planning. He holds a B.Sc. in Computer Science, an M.A. in Public Policy, and an M.Sc. with distinction from UCL in Transport and City Planning.
 
-Gal has previously worked in the high-tech sector as a software engineer, specializing in geographic information systems, big data, and transport planning. This practical experience complements their academic background and provides valuable industry perspective.
+Before joining AAIRL, Gal worked in the technology sector as a software engineer, specializing in geographic information systems, big data, and transport planning. This background informs his research on urban AI platforms, spatial data infrastructure, and planning decision-support systems.
 
-Currently, Gal's research focuses on urban renewal policies and the development of an urban AI platform designed to host machine learning models for the built environment. This innovative work aims to leverage AI technologies to address complex urban challenges and improve city planning processes.
-
-Gal's diverse educational background and professional experience position them at the intersection of technology and urban development, where they work to create data-driven solutions for more efficient, sustainable, and livable cities.
-
+Gal's work at AAIRL focused on urban renewal policy and the development of an urban AI platform for hosting machine-learning models for the built environment. His research contributed to the lab's broader effort to make urban analytics more interoperable, transparent, and useful for planning practice.
