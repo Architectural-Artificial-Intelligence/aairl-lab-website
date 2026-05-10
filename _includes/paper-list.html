@@ -1,0 +1,85 @@
+{% assign source_papers = include.papers | default: site.data.papers %}
+{% assign page_tag = include.tag | default: page.tag %}
+{% assign page_tags = include.tags | default: page.tags %}
+{% assign explicit_papers = include.ids | default: page.papers %}
+{% assign match_mode = include.match | default: page.collection %}
+{% assign show_tag_matches = true %}
+{% if include.show_tag_matches == false %}
+  {% assign show_tag_matches = false %}
+{% endif %}
+
+{% capture explicit_lookup %}|{% endcapture %}
+{% for paper_id in explicit_papers %}
+  {% capture explicit_lookup %}{{ explicit_lookup }}{{ paper_id | downcase }}|{% endcapture %}
+{% endfor %}
+
+{% capture author_lookup %}|{{ page.name | downcase }}|{% endcapture %}
+{% for alias in page.aliases %}
+  {% capture author_lookup %}{{ author_lookup }}{{ alias | downcase }}|{% endcapture %}
+{% endfor %}
+
+{% capture papers_html %}
+  {% for paper in source_papers %}
+    {% assign include_paper = false %}
+    {% capture paper_key %}|{{ paper.id | downcase }}|{% endcapture %}
+
+    {% if match_mode == "all" %}
+      {% assign include_paper = true %}
+    {% endif %}
+
+    {% if explicit_lookup contains paper_key %}
+      {% assign include_paper = true %}
+    {% endif %}
+
+    {% if include_paper == false and match_mode == "members" %}
+      {% for author in paper.authors %}
+        {% capture author_key %}|{{ author | downcase }}|{% endcapture %}
+        {% if author_lookup contains author_key %}
+          {% assign include_paper = true %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% if include_paper == false and show_tag_matches and page_tag and paper.tags %}
+      {% assign normalized_page_tag = page_tag | downcase %}
+      {% for paper_tag in paper.tags %}
+        {% assign normalized_paper_tag = paper_tag | downcase %}
+        {% if normalized_page_tag == normalized_paper_tag %}
+          {% assign include_paper = true %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% if include_paper == false and show_tag_matches and page_tags and paper.tags %}
+      {% for page_tag in page_tags %}
+        {% assign normalized_page_tag = page_tag | downcase %}
+        {% for paper_tag in paper.tags %}
+          {% assign normalized_paper_tag = paper_tag | downcase %}
+          {% if normalized_page_tag == normalized_paper_tag %}
+            {% assign include_paper = true %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    {% endif %}
+
+    {% if include_paper %}
+      {% include citation.html lookup=paper.id %}
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+
+{% assign papers_html = papers_html | strip %}
+{% if papers_html != "" %}
+<div class="details_section section_wrapper paper_list_section">
+  {% if include.show_heading != false %}
+    {% if include.heading %}
+      <h4 class="details_info_title">{{ include.heading }}</h4>
+    {% else %}
+      <h4 class="details_info_title">Papers</h4>
+    {% endif %}
+  {% endif %}
+  <div class="paper_list">
+    {{ papers_html }}
+  </div>
+</div>
+{% endif %}

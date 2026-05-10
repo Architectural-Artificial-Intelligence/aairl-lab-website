@@ -1,0 +1,128 @@
+---
+layout: default
+---
+
+<!-- Details Section - Start
+================================================== -->
+<section class="details_section course_details_section job_detail_section">
+    <div class="details_content job_detail_hero decoration_wrap">
+        <div class="container">
+            <div class="row align-items-center justify-content-lg-between">
+                <div class="col col-lg-7">
+                    <div class="content_wrap">
+                        <h1 class="details_item_title">
+                            {{page.title}}
+                        </h1>
+                        <p>
+                            {{page.intro}}
+                        </p>
+                    </div>
+                </div>
+                <div class="col col-lg-4">
+                    <div class="course_details_video">
+                        <img src="{{page.image | relative_url}}" alt="{{page.title}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="deco_item deco_img_1" data-parallax='{"y" : -200, "smoothness": 6}'>
+            <img src="/images/shapes/line_shape_1.png" alt="Line Shape Image">
+        </div>
+        <div class="deco_item deco_img_2" data-parallax='{"y" : 200, "smoothness": 6}'>
+            <img src="/images/shapes/dot_shape_2.png" alt="Line Shape Image">
+        </div>
+    </div>
+    <div class="details_section details_info_tab job_detail_body section_space_lg pt-0">
+        <div class="container">
+            <div class="row justify-content-lg-between">
+                <div class="col col-lg-8">
+
+                    <div class="details_section section_wrapper">
+                        <h4 class="details_info_title">About this position</h4>
+                        <div class="row">
+                            <div>
+                                <ul class="icon_list unordered_list_block">
+                                    {% for item in page.about %}
+                                    <li><i class="far fa-check"></i> {{ item }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="details_section section_wrapper">
+                            <h4 class="details_info_title">What We Do</h4>
+                            <div>
+                                AAIRL focuses on concrete problems in urban design and planning where AI can augment human capabilities. Our core research directions include:
+                                <ul class="icon_list unordered_list_block">
+
+                                    <li><i class="far fa-check"></i>Human-AI interaction in design</li>
+                                    <li><i class="far fa-check"></i>Generative architectural and urban design</li>
+                                    <li><i class="far fa-check"></i>Built-environment analysis</li>
+                                    <li><i class="far fa-check"></i>Built-environment simulations</li>
+
+
+                                </ul>
+                                Much of our work is conducted with industry and government partners, so research is tested against real constraints: incomplete data, conflicting objectives, regulations, and implementation realities.
+                            </div>
+                        </div>
+                        {% if page.look %}
+                        <div class="details_section section_wrapper">
+                            <h4 class="details_info_title">What We Look For</h4>
+                            <div>
+                                <ul>
+                                    {% for item in page.look %}
+                                    <li>{{ item }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% if page.funding %}
+                        <div class="details_section section_wrapper">
+                            <h4 class="details_info_title">Funding Opportunities</h4>
+                            <div>
+                                <ul>
+                                    {% for item in page.funding %}
+                                    <li>
+                                        <a href="{{ item.url | escape }}">{{ item.name }}</a>
+                                        {% if item.note %} — {{ item.note }}{% endif %}
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                        {% endif %}
+                        <div class="details_section section_wrapper">
+                            <h4 class="details_info_title">Applying for This Position</h4>
+                            {{ content }}
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col col-lg-4">
+                    <aside class="sidebar">
+                        <div class="widget course_cart_info">
+                            <h3>Contact Information</h3>
+                            <h6>Architectural AI Research Laboratory</h6>
+                            <ul class="cart_info_list unordered_list_block">
+                                <li>
+                                    <span><i class="fal fa-map-marker  me-1"></i></span>
+                                    <span>Suite 3.3.55,
+                                        Ariel University</span>
+                                </li>
+
+                                <li>
+                                    <span><i class="far fa-envelope me-1"></i></span>
+                                    <span><a href="mailto:hayab@ariel.ac.il">Dr. Haya Brama</a></span>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,249 @@
+- id: Goz2025
+  title: "Quantifying Architectural Experience using VLMs: Does AI Dream of Rendered Spaces?"
+  authors:
+    - Gal Guz
+    - Nikolas Martelaro
+    - Gerhard Schubert
+    - Jonathan Dortheimer
+  date: "2025-01-01"
+  publisher: "CAAD Futures 2025"
+  link: https://doi.org/10.25442/hku.29350478
+  tags:
+    - designAI
+    - synthetic
+  project: synthetic-humans
+
+- id: Brama2025
+  title: "AI-Driven Recommendations for Strategic Urban Renewal"
+  authors:
+    - Haya Brama
+    - Tal Grinshpoun
+    - Oded Landau
+    - Jonathan Dortheimer
+  date: "2025-01-01"
+  publisher: "CAADRIA 2025"
+  link: https://papers.cumincad.org/data/works/att/caadria2025_95.pdf
+  tags:
+    - urbanAI
+    - socialPrediction
+  project: urban-social-predition
+
+- id: Dortheimer025
+  title: "Addressing Religious Architectural Restrictions with Computer Code: A Genetic Algorithm Approach"
+  authors:
+    - Jonathan Dortheimer
+    - Gaya Bitman
+  date: "2025-01-01"
+  publisher: "CAADRIA 2025"
+  link: https://papers.cumincad.org/data/works/att/caadria2025_51.pdf
+  tags:
+    - designAI
+    - urban
+  project: computational-design-methods
+
+- id: dortheimer2025
+  title: "Power and Ethical Concerns in the Integration of Smart City Technologies: A Case Study of Parking Payment Applications in Israel"
+  authors:
+    - Jonathan Dortheimer
+    - Gilad Chalfon
+  date: "2025-01-01"
+  publisher: "Journal of Urban Technology"
+  tags:
+    - urban
+    - UDT
+  project: urban-digital-twin
+
+- id: Brama2024
+  title: "Towards a Robust Evaluation Framework for Generative Urban Design"
+  authors:
+    - Haya Brama
+    - Agata Dalach
+    - Tal Grinshpoun
+    - Jonathan Dortheimer
+  date: "2024-01-01"
+  publisher: "eCAADe 2024"
+  link: https://doi.org/10.2139/ssrn.5036299
+  tags:
+    - urbanAI
+    - socialPrediction
+    - designAI
+  project: urban-social-predition
+
+- id: dortheimer2024
+  title: "Evaluating large-language-model chatbots to engage communities in large-scale design projects"
+  authors:
+    - Jonathan Dortheimer
+    - Nik Martelaro
+    - Aaron Sprecher
+    - Gerhard Schubert
+  date: "2024-01-01"
+  publisher: "Artificial Intelligence for Engineering Design, Analysis and Manufacturing"
+  link: https://doi.org/10.1017/S0890060424000027
+  tags:
+    - chatbot
+    - designAI
+  project: chatbots
+
+- id: yang2024
+  title: "When design workshops meet chatbots: Meaningful participation at scale?"
+  authors:
+    - Stephen Yang
+    - Jonathan Dortheimer
+    - Aaron Sprecher
+    - Qian Yang
+  date: "2024-01-01"
+  publisher: "International Journal of Architectural Computing"
+  link: https://doi.org/10.1177/14780771241253440
+  tags:
+    - chatbot
+    - designAI
+  project: chatbots
+
+- id: Dortheimer2023
+  title: "Think AI-side the Box! Exploring the Usability of Text-to-Image Generators for Architecture Students"
+  authors:
+    - Jonathan Dortheimer
+    - Gerhard Schubert
+    - Agata Dalach
+    - Lielle Brenner
+    - Nikolas Martelaro
+  date: "2023-01-01"
+  publisher: "eCAADe 2023"
+  link: https://papers.cumincad.org/data/works/att/ecaade2023_145.pdf
+  tags:
+    - designAI
+    - chatbot
+  project: computational-design-methods
+
+- id: buildings13010222
+  title: "Conceptual Architectural Design at Scale: A Case Study of Community Participation Using Crowdsourcing"
+  authors:
+    - Jonathan Dortheimer
+    - Stephen Yang
+    - Qian Yang
+    - Aaron Sprecher
+  date: "2023-01-01"
+  publisher: "Buildings"
+  link: https://doi.org/10.3390/buildings13010222
+  tags:
+    - collectiveIntelligence
+    - designAI
+  project: collective-intelligence-design
+
+- id: mann2022a
+  title: "Of Stones and Words - Computational Framework for Multifaceted Historical Narration of Wadi Salib"
+  authors:
+    - Eytan Mann
+    - Jonathan Dortheimer
+    - Alona Nitzan-Shiftan
+    - Aaron Sprecher
+  date: "2022-01-01"
+  publisher: "CAADRIA 2023"
+  tags:
+    - urban
+    - designAI
+  project: computational-design-methods
+
+- id: mann2022
+  title: "Toward a Generative Pipeline for an AR Tour of Contested Heritage Sites"
+  authors:
+    - Eytan Mann
+    - Jonathan Dortheimer
+    - Aaron Sprecher
+  date: "2022-01-01"
+  publisher: "IEEE International Conference on Artificial Intelligence and Virtual Reality"
+  link: https://doi.org/10.1109/AIVR56993.2022.00026
+  tags:
+    - urban
+    - designAI
+  project: computational-design-methods
+
+- id: math10040539
+  title: "Collective Intelligence in Design Crowdsourcing"
+  authors:
+    - Jonathan Dortheimer
+  date: "2022-01-01"
+  publisher: "Mathematics"
+  link: https://doi.org/10.3390/math10040539
+  tags:
+    - collectiveIntelligence
+    - designAI
+  project: collective-intelligence-design
+
+- id: Boim2021
+  title: "A machine learning approach to urban design interventions in non-planned settlements"
+  authors:
+    - Anna Boim
+    - Jonathan Dortheimer
+    - Aaron Sprecher
+  date: "2022-01-01"
+  publisher: "CAADRIA 2022"
+  link: https://doi.org/10.52842/conf.caadria.2022.1.223
+  tags:
+    - urbanAI
+    - urban
+  project: urban-social-predition
+
+- id: Dortheimer2022b
+  title: "Poster: Chatbots in the Design Process - Automating Design Conversation in Urban Design Projects"
+  authors:
+    - Jonathan Dortheimer
+    - Nikolas Martelaro
+    - Gerhard Schubert
+    - Aaron Sprecher
+  date: "2022-01-01"
+  publisher: "Design Computing and Cognition 2022"
+  link: https://doi.org/10.13140/RG.2.2.31654.40003
+  tags:
+    - chatbot
+    - designAI
+  project: chatbots
+
+- id: Dortheimer2021
+  title: "A Crowdsourcing Method for Architecture - Towards a Collaborative and Participatory Architectural Design Praxis"
+  authors:
+    - Jonathan Dortheimer
+  date: "2021-01-01"
+  publisher: "Tel Aviv University"
+  link: https://doi.org/10.13140/RG.2.2.13031.11682
+  tags:
+    - collectiveIntelligence
+    - designAI
+  project: collective-intelligence-design
+
+- id: Dortheimer2020b
+  title: "A Novel Crowdsourcing-based Approach for Collaborative Architectural Design"
+  authors:
+    - Jonathan Dortheimer
+    - Eran Neuman
+    - Tova Milo
+  date: "2020-01-01"
+  publisher: "eCAADe 2020"
+  link: https://doi.org/10.52842/conf.ecaade.2020.2.155
+  tags:
+    - collectiveIntelligence
+    - designAI
+  project: collective-intelligence-design
+
+- id: Dortheimer2020
+  title: "Open-source architecture and questions of intellectual property, tacit knowledge and liability"
+  authors:
+    - Jonathan Dortheimer
+    - Talia Margalit
+  date: "2020-01-01"
+  publisher: "The Journal of Architecture"
+  link: https://doi.org/10.1080/13602365.2020.1758950
+  tags:
+    - urban
+  project: critical-urban-technologies
+
+- id: Dortheimer2017
+  title: "Open Source Architecture: Challenges and opportunities"
+  authors:
+    - Jonathan Dortheimer
+  date: "2017-01-01"
+  publisher: "Tel Aviv University"
+  link: https://doi.org/10.13140/RG.2.2.30538.57285
+  tags:
+    - urban
+  project: critical-urban-technologies

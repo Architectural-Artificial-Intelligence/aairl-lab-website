@@ -1,0 +1,115 @@
+- id: doi:10.3390/buildings13010222 
+  image: images/papers/building.webp
+  tags:
+   - designAI
+   - chatbot
+
+- id: doi:10.1109/AIVR56993.2022.00026 
+  image: images/papers/mann2-p5-mann-large.gif
+  
+
+- id: doi:10.52842/conf.ecaade.2020.2.155
+  image: images/papers/ecaade_cs.png
+  tags:
+   - chatbot
+
+- id: doi:10.3390/math10040539 
+  image: images/papers/mathematics-10-00539-g009.png
+  tags:
+   - chatbot
+
+- id: doi:10.52842/conf.caadria.2022.1.223 
+  image: images/papers/boim.png
+  tags:
+   - urbanAI
+
+- id: doi:10.13140/RG.2.2.31654.40003
+  image: images/papers/chatbots.png
+  tags:
+   - chatbot
+
+- id: doi:10.1080/13602365.2020.1758950 
+  image: images/papers/wikihouse.jpg
+  tags:
+   - urban
+
+- id: doi:10.1017/S0890060424000027
+  title: Evaluating Large-Language-Model Chatbots to Engage Communities in Large-Scale Design Projects
+  image: images/papers/llm_prompt.png
+  tags:
+   - chatbot
+   - designAI
+
+- id: doi:10.13140/RG.2.2.13031.11682
+  tags:
+    - DesignAI
+
+- id: doi:10.13140/RG.2.2.30538.57285
+  tags:
+   - urban
+
+
+- id: doi:10.52842/conf.ecaade.2023.2.567
+  url: https://papers.cumincad.org/data/works/att/ecaade2023_145.pdf
+  image: images/papers/outside.png
+  tags:
+   - designAI
+
+- id: doi:10.52842/conf.caadria.2023.1.373
+  image: images/papers/stones.png
+
+
+
+- id: doi:10.1177/14780771241253440
+  tags:
+   - chatbot
+
+- id: doi:10.2139/ssrn.5036299
+  tags:
+   - urbanAI
+
+- id: doi:10.1017/S0890060424000027
+  tags:
+   - chatbot 
+
+- id: doi:10.52842/conf.ecaade.2024.1.529
+  tags:
+   - urbanAI
+
+
+- id: doi:10.25442/hku.29350478
+  title: "Quantifying Architectural Experience Using Visual Language Models: Does AI Dream of Rendered Spaces?"
+  authors:
+    - Gal Guz
+    - Nikolas Martelaro
+    - Gerhard Schubert
+    - Jonathan Dortheimer 
+  publisher: CAAD Futures 2025 – Catalytic Interfaces
+  date: 2025-01-01
+  link: https://doi.org/10.25442/hku.29350478
+  tags:
+    - designAI
+  
+- id: CAADRIA_95
+  title: AI-Driven Recommendations for Strategic Urban Renewal
+  authors:
+  - Haya Brama
+  - Tal Grinshpoun
+  - Oded Landau
+  - Jonathan Dortheimer
+  date: 2025-01-01
+  publisher: CAADRIA 2025
+  link: https://papers.cumincad.org/data/works/att/caadria2025_95.pdf
+  tags:
+    - urbanAI
+
+- id: CAADRIA_51
+  title: Addressing Religious Architectural Restrictions with Computer Code
+  authors:
+  - Jonathan Dortheimer
+  - Gaya Bitman
+  date: 2025-01-01
+  publisher: CAADRIA 2025
+  link: https://papers.cumincad.org/data/works/att/caadria2025_51.pdf
+  tags:
+    - designAI
