@@ -91,7 +91,7 @@ module Jekyll
     priority = Jekyll::Hooks::PRIORITY_MAP[:high] + 1000
 
     Jekyll::Hooks.register(:site, :post_write, priority: priority) do |site|
-      if not site.config["proofer"] == false
+      if site.config["proofer"] != false
         options = {
           allow_missing_href: true,
           enforce_https: false,
@@ -100,6 +100,9 @@ module Jekyll
             /fonts\.gstatic\.com/,
             /localhost:/,
             /0\.0\.0\.0:/,
+            # These paths are excluded from localization and only exist at root, not under /he/
+            /\/_scripts\//,
+            /\/images\//,
           ],
         }
 

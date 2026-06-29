@@ -1,3 +1,4 @@
+{% assign t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
 {% assign citation = site.data.citations
 | where_exp: "citation",
 "citation.id == include.lookup or citation.title contains include.lookup"
@@ -41,7 +42,7 @@
 
     <ul class="paper_meta">
       <li>
-        <span class="paper_meta_label">Venue</span>
+        <span class="paper_meta_label">{{ t.citation_venue }}</span>
         <span>{{ citation.publisher | default: "[no publisher info]" }}</span>
       </li>
     </ul>
@@ -59,7 +60,7 @@
   {% if citation.link %}
     <div class="paper_action">
       <a class="paper_link" href="{{ citation.link }}" aria-label="Open {{ citation.title | default: "paper" }}">
-        Open paper
+        {{ t.citation_open }}
         <i class="far fa-long-arrow-right"></i>
       </a>
     </div>

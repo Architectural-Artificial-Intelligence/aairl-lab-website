@@ -4,11 +4,12 @@ nav:
   order: 4
   tooltip: Latest updates
 ---
+{% assign t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
 
 <section class="page_banner decoration_wrap">
   <div class="container">
-    <h1 class="page_heading">Latest News</h1>
-    <p>Lab announcements, research milestones, publications, collaborations, and events.</p>
+    <h1 class="page_heading">{{ t.news_page_heading }}</h1>
+    <p>{{ t.news_page_body }}</p>
   </div>
   <div class="deco_item deco_img_1" data-parallax='{"y" : -200, "smoothness": 6}'>
     <img src="/images/shapes/line_shape_1.png" alt="Line Shape Image">

@@ -1,12 +1,15 @@
+{% assign _t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
+{% assign _ci_i18n = nil %}
+{% if include.collection and include.key %}
+  {% assign _ci_i18n = _t[include.collection][include.key] %}
+{% endif %}
+{% assign _ci_title = _ci_i18n.title | default: include.title %}
 <div class="col col-lg-3 col-md-6 col-sm-6">
     <div class="course_item{% if include.url contains '/projects/' %} project_course_item{% endif %}{% if include.url contains '/jobs/' %} job_course_item{% endif %}">
         <div class="item_image">
-            <!-- <ul class="badge_group unordered_list">
-                <li><a class="badge badge_warning" href="#!">New</a></li>
-            </ul> -->
             <a class="image_wrap" href="{{include.url}}">
                 <img src="{{include.image | relative_url }}"
-                    alt="{{include.title}}"
+                    alt="{{ _ci_title }}"
                     {% include fallback.html %}
                     >
             </a>
@@ -17,10 +20,9 @@
             {% endif %}
             <h3 class="item_title">
                 <a href="{{include.url}}">
-                    {{include.title}}
+                    {{ _ci_title }}
                 </a>
             </h3>
-           
         </div>
     </div>
 </div>

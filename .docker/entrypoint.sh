@@ -1,5 +1,9 @@
 #! /bin/bash
 
+# ensure jekyll output directories are writable
+mkdir -p /usr/src/app/_site /usr/src/app/.jekyll-cache
+chmod -R 777 /usr/src/app/_site /usr/src/app/.jekyll-cache
+
 # print folder contents for debugging
 printf "\n\nContents:\n\n"
 ls

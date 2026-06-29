@@ -1,0 +1,480 @@
+# German UI strings
+lang_toggle: "English"
+lang_toggle_label: "Zu Englisch wechseln"
+
+# Navigation
+nav_research: "Forschung"
+nav_news: "Neuigkeiten"
+nav_publications: "Publikationen"
+nav_team: "Team"
+nav_jobs: "Stellen"
+nav_contact: "Kontakt"
+
+# Homepage
+home_banner_title: "KI-Forschung für Architektur und Stadtplanung"
+home_banner_body: "Das Architectural Artificial Intelligence Research Lab entwickelt und evaluiert computergestützte Methoden für architektonisches Design, städtische Analyse und partizipative Planung. Wir verbinden maschinelles Lernen, Mensch-Computer-Interaktion und Stadtforschung, um Werkzeuge zu entwickeln, die empirisch validiert, interpretierbar und in realen Planungskontexten verankert sind."
+home_banner_cta: "Forschungsthemen erkunden"
+home_research_topics: "Forschungs-"
+home_research_topics_focus: "themen"
+home_news_heading: "Neuigkeiten aus dem"
+home_news_focus: "Labor"
+home_partners_heading: "Förderinstitutionen und"
+home_partners_focus: "Partner"
+partners:
+  israel-science-foundation:
+    name: "Israel Science Foundation"
+    kind: "Forschungsförderinstitution"
+  ministry-of-science-and-technology:
+    name: "Ministerium für Wissenschaft und Technologie"
+    kind: "Forschungsförderinstitution"
+  ministry-of-construction-and-housing:
+    name: "Ministerium für Bauwesen und Wohnungswesen"
+    kind: "Regierungspartner"
+  israel-planning-administration:
+    name: "Israel Planning Administration"
+    kind: "Regierungspartner"
+  green-group:
+    name: "Green Group Ltd."
+    kind: "Industriepartner"
+  tel-aviv-municipality:
+    name: "Stadtverwaltung Tel Aviv"
+    kind: "Forschungskooperation"
+  rehovot-municipality:
+    name: "Stadtverwaltung Rehovot"
+    kind: "Forschungskooperation"
+  hadera-economy-development-company:
+    name: "Hadera Economy Development Company"
+    kind: "Forschungskooperation"
+  ariel-university:
+    name: "Ariel-Universität"
+    kind: "Akademische Einrichtung"
+home_topic_projects_label: "Projekte"
+home_topic_research_label: "Forschungsthema"
+topics:
+  design-ai:
+    title: "KI im Design"
+    intro: "Wir untersuchen, wie künstliche Intelligenz menschliche Kreativität, Zusammenarbeit und Urteilsvermögen im architektonischen Design und in der Planung erweitern kann — und wo sie an ihre Grenzen stößt."
+    body: |
+      Design ist eine iterative, situierte und hochgradig visuelle Form des Denkens. Unsere Arbeit im Bereich KI-Design fragt, wie computergestützte Systeme diesen Prozess unterstützen können, ohne ihn auf Prompt-Schreiben oder automatisierte Bildgenerierung zu reduzieren.
+
+      Wir untersuchen KI als Kollaborateur in der frühen Ideenfindung, der Designkommunikation, der öffentlichen Beteiligung und der Bewertung. Dazu gehören Konversationssysteme für partizipatives Design, visuelle Chatbots, die mit Diagrammen und räumlichen Darstellungen arbeiten können, sowie Methoden zur Annäherung an ausgewählte Dimensionen menschlicher Reaktion auf architektonische Räume.
+
+      Unser wissenschaftlicher Fokus liegt darauf, wann diese Systeme nützlich sind, wann sie versagen und wie sie die Beziehung zwischen Designenden, Stakeholdern und Designbelegen verändern. Wir kombinieren Prototypentwicklung mit empirischer Evaluation — Nutzerstudien, Designexperimente und Vergleiche mit etablierten Beteiligungs- und Bewertungsmethoden.
+
+      Das langfristige Ziel ist nicht, Designende zu ersetzen, sondern verantwortungsvolle KI-Werkzeuge zu entwickeln, die die Arten von Feedback, Darstellung und Reflexion erweitern, die beim Design verfügbar sind — während das menschliche Urteil im Mittelpunkt des Prozesses bleibt.
+  smart-cities:
+    title: "Smart Cities"
+    intro: "Sinnvolle computergestützte Werkzeuge erfordern ein fundiertes Verständnis der Städte und Gemeinschaften, für die sie entwickelt werden."
+    body: |
+      Nützliche computergestützte Werkzeuge für Städte zu entwickeln erfordert ein Verständnis dafür, wie Städte tatsächlich funktionieren — sozial, räumlich und politisch. Ein wesentlicher Teil unserer Forschung ist daher dem Studium des städtischen Lebens gewidmet, nicht nur seiner Modellierung.
+
+      Unsere stadtforscherische Arbeit untersucht mehrere miteinander verbundene Themen: die Governance-Implikationen von Smart-City-Technologien; die sozialen und räumlichen Dynamiken der städtischen Erneuerung in Israel, einschließlich Verdrängung, Verdichtung und ungleicher Nutzenverteilung; die räumliche Organisation religiöser und Minderheitengemeinschaften; und die politische Ökonomie von Planungsinstitutionen.
+
+      Diese Forschung ist kein Umweg von unserer computergestützten Arbeit — sie ist deren Grundlage. Empirisches Wissen über städtische Prozesse hilft uns zu erkennen, wo KI-Werkzeuge gebraucht werden, was sie leisten sollen und welche Risiken sie managen müssen. Es hilft uns auch zu bewerten, ob die von uns entwickelten Werkzeuge die Komplexität und Gerechtigkeitsanliegen widerspiegeln, die in realer Planungspraxis wichtig sind.
+  urban-ai:
+    title: "Urban AI"
+    intro: "Wir entwickeln und evaluieren KI-Methoden zur Analyse städtischer Dynamiken, zur Vorhersage sozioökonomischer Ergebnisse und zur Unterstützung von Planungsentscheidungen — mit besonderem Augenmerk auf Modellgrenzen, Interpretierbarkeit und Validierung in der Praxis."
+    body: |
+      Stadtplanerische Entscheidungen werden zunehmend durch Daten, Modelle und digitale Plattformen geprägt. Unsere Urban-AI-Forschung untersucht, wie diese Technologien so gestaltet, evaluiert und gesteuert werden können, dass sie die Planungspraxis unterstützen und nicht verschleiern.
+
+      Wir entwickeln Machine-Learning-Modelle, Entscheidungsunterstützungssysteme und urbane Digital-Twin-Methoden für Probleme wie städtische Erneuerung, sozioökonomische Folgenabschätzung, Parzellenaggregation und multidisziplinäre Stadtsimulation. Diese Projekte kombinieren Raumdaten, Planungswissen und computergestütztes Modellieren, um Planenden zu helfen, Alternativen zu vergleichen, bevor Maßnahmen umgesetzt werden.
+
+      Wir untersuchen auch die bekannten Grenzen von Urban AI: fragmentierte und heterogene Daten, Modellverzerrungen, schlechte Übertragbarkeit auf andere Städte und die Schwierigkeit, technische Outputs in verwertbare Planungsbelege zu übersetzen. Unsere Arbeit betont daher Interpretierbarkeit, rigoroses Benchmarking und Validierung in realen Planungskontexten gemeinsam mit Partnerinstitutionen.
+
+      Das Ziel ist, Urban AI als zuverlässige, überprüfbare Forschungs- und Planungsinfrastruktur zu etablieren — eine, die nicht nur unter idealen Bedingungen nützlich ist, sondern auch in den datenschwachen, komplexen Umgebungen, in denen die meiste reale Planung stattfindet.
+projects:
+  chatbots:
+    title: "Chatbots für das Design"
+    intro: "Dieses Projekt entwickelt und evaluiert konversationelle KI-Systeme für die öffentliche Beteiligung an architektonischem Design und Stadtplanung."
+    body: |
+      Chatbots für das Design untersucht, wie konversationelle KI die öffentliche Beteiligung an Architektur, Stadtgestaltung und Planung unterstützen kann. Das Projekt entwickelt und evaluiert Prototypsysteme, die Planungsteams dabei helfen, reichhaltigere Beiträge zu sammeln, den Dialog mit einem breiteren Publikum aufrechtzuerhalten und kommunales Wissen in strukturierte Planungsbelege zu übersetzen.
+
+      Die zentrale Herausforderung ist die Skalierbarkeit. Öffentliche Sitzungen, Workshops und Umfragen schließen Menschen aufgrund von Zeit, Sprache, Selbstvertrauen, Fachkenntnissen oder physischem Zugang aus. Konversationssysteme bieten einen anderen Beteiligungskanal: einen, der asynchron verfügbar ist, sich an verschiedene Nutzende anpassen kann und durchdachtere Antworten hervorrufen kann als konventionelle Instrumente.
+
+      Unsere Forschung ist empirisch: Wir testen, wo Chatbots im Vergleich zu etablierten Beteiligungsmethoden gut funktionieren, wo sie versagen und wie sie mit menschlicher Moderation integriert werden sollten. Wir interessieren uns besonders für hybride Modelle, bei denen KI-Werkzeuge die Reichweite erweitern, während persönliche Workshops weiterhin Vertrauen, Deliberation und kollektive Entscheidungsfindung unterstützen.
+
+      Die aktuelle Arbeit konzentriert sich auf visuelle Chatbots, die durch Text, Diagramme und räumliche Darstellungen kommunizieren. Diese Systeme ermöglichen es Teilnehmenden und Planenden, Vorschläge anhand konkreter räumlicher Informationen zu besprechen, anstatt abstrakte Beschreibungen zu verwenden. Das Ziel ist nicht, den öffentlichen Dialog zu ersetzen, sondern die Schnittstellen zwischen Gemeinschaften, Planungsteams und den komplexen Informationen in Planungsprozessen zu verbessern.
+  synthetic-humans:
+    title: "Synthetische Menschen"
+    intro: "Dieses Projekt untersucht, ob KI-Modelle ausgewählte Dimensionen menschlicher räumlicher Erfahrung annähern können, um frühzeitiges Designfeedback zu liefern — und identifiziert rigoros, wo sie es nicht können."
+    body: |
+      Synthetische Menschen stellt eine präzise Frage: Können computergestützte Modelle ausgewählte Aspekte menschlicher räumlicher Erfahrung so annähern, dass sie für die frühe architektonische Designbewertung nützlich sind?
+
+      Mit „synthetischen Menschen" meinen wir KI-Systeme — insbesondere Sprachmodelle und Vision-Language-Modelle —, die auf ihre Fähigkeit hin evaluiert werden, begrenzte Aspekte menschlicher Reaktionen zu simulieren: Aufmerksamkeitsmuster, affektive Bewertungen, Präferenzurteile und Beurteilungen der räumlichen Lesbarkeit. Die Behauptung ist nicht, dass diese Modelle Raum verstehen. Die Behauptung ist, dass ihre Ausgaben möglicherweise ausreichend mit menschlichen Reaktionen korrelieren, um als kostengünstige, skalierbare Bewertungssignale an Punkten im Designprozess nützlich zu sein, an denen menschliches Feedback nicht verfügbar oder teuer ist.
+
+      Das Projekt ist durch eine reale Lücke in der Architekturpraxis motiviert. In frühen Designphasen stützt sich die Bewertung stark auf Intuition und Präzedenzfälle. Physische Modelle und Nutzerstudien sind ressourcenintensiv. KI-Modelle, sorgfältig eingesetzt, können Designern helfen, Alternativen zu vergleichen, wahrscheinliche Erfahrungsmuster zu identifizieren und Fragen zu erkennen, die eine menschliche Validierung erfordern.
+
+      Die aktuelle Arbeit benchmarkt, wie große Vision-Language-Modelle Architekturbilder anhand affektiver Dimensionen bewerten, und vergleicht diese Bewertungen mit menschlichen Teilnehmerdaten. Wir untersuchen die Korrelationsstärke, Fehlermodi und den Einfluss des Darstellungsstils — einschließlich der Erkenntnis, dass die Modell-Mensch-Übereinstimmung bei negativen emotionalen Reaktionen deutlich stärker ist als bei positiven. Diese Unterschiede sind für einen verantwortungsvollen Einsatz wichtig. Unser Ziel ist es, genau zu identifizieren, wo KI die Designbewertung erweitern kann und wo sie nicht das Urteil des Designers oder die Stimme des Nutzers ersetzen kann.
+  urban-digital-twin:
+    title: "METROPOLIS: Urbaner Digitaler Zwilling"
+    intro: "Ein offenes, interoperables urbanes Digital-Twin-Framework zur Integration von Stadtdaten, Bereitstellung urbaner KI-Modelle und Unterstützung evidenzbasierter Planung."
+    body: |
+      METROPOLIS entwickelt ein offenes, interoperables urbanes Digital-Twin-Framework für Planung, Simulation und Entscheidungsunterstützung. Das Projekt reagiert auf eine strukturelle Lücke: Städte müssen zunehmend die Konsequenzen wichtiger Planungsentscheidungen vor der Umsetzung bewerten, aber die technische Infrastruktur dafür existiert noch nicht zuverlässig im großen Maßstab.
+
+      Urbane digitale Zwillinge können im Prinzip räumliche Daten, Echtzeit-Feeds, historische Aufzeichnungen und Vorhersagemodelle in eine einheitliche analytische Umgebung verbinden. In der Praxis sind diese Systeme jedoch schwer aufzubauen und zu pflegen. Stadtdaten sind über Behörden und Anbieter fragmentiert, in inkompatiblen Formaten gespeichert und nach unterschiedlichen institutionellen Standards verwaltet. KI-Modelle erfordern heterogene Eingaben, die selten in kompatiblen Formen verfügbar sind, und Städten fehlen die Workflow-Orchestrierungs- und Benchmarking-Tools, die erforderlich sind, um Modelle zu kohärenten Planungsprozessen zu kombinieren.
+
+      METROPOLIS adressiert diese Herausforderungen durch spezifische technische Infrastruktur: eine Daten-Interoperabilitätsschicht, eine modulare Schnittstelle zur Bereitstellung urbaner KI-Modelle, Szenario-Generierungs-Pipelines zur Orchestrierung mehrerer Modelle und vergleichende Evaluierungs-Benchmarks zur Bewertung der Modellleistung über Städte und Planungskontexte hinweg. Das Framework wird durch ein Pilotprojekt mit Tel Aviv validiert.
+
+      Der Beitrag des Projekts ist Infrastruktur, kein einzelnes Modell oder eine einzelne Vorhersage. Indem METROPOLIS die urbane Digital-Twin-Technologie modular, dokumentiert und replizierbar macht, zielt es darauf ab, die Hürde für Forschende und Kommunen zu senken, auf der Arbeit der anderen aufzubauen und praktische Standards für die urbane KI-Integration zu etablieren.
+  urban-social-prediction:
+    title: "Urbane Sozialprognose"
+    intro: "Dieses Projekt entwickelt und validiert maschinelle Lernmodelle zur Antizipation der sozialen und wirtschaftlichen Folgen urbaner Erneuerung und übersetzt diese Modelle in interpretierbare Planungswerkzeuge."
+    body: |
+      Urbane Sozialprognose entwickelt Modelle des maschinellen Lernens und Entscheidungsunterstützungswerkzeuge zur Antizipation der sozialen und wirtschaftlichen Folgen urbaner Erneuerung. Das Projekt adressiert ein praktisches Planungsproblem: Erneuerungsentscheidungen haben langanhaltende Auswirkungen auf Wohnraum, Verdrängung und Resilienz von Gemeinschaften, aber diese Konsequenzen sind für Planer zum Zeitpunkt der Entscheidungsfindung selten sichtbar.
+
+      Urbane Erneuerung erzeugt Druck auf Wohnungsangebot, Infrastrukturkapazität, Dienstleistungen und soziale Netzwerke. Sie kann Investitionen und verbesserte Lebensbedingungen bringen, kann aber auch Verdrängung, ungleiche Nutzenverteilung und lokal konzentrierten Schaden verursachen. Dieses Projekt nutzt datengetriebene Methoden, um diese Dynamiken sichtbar zu machen, bevor Interventionen festgelegt werden.
+
+      Unsere technische Arbeit kombiniert Vorhersagemodellierung, räumliche Analyse und interpretierbare Schnittstellen, die für den Einsatz durch Planungspraktiker konzipiert sind. Wir untersuchen, welche sozioräumlichen Faktoren Erneuerungsergebnisse prägen, wie Modelle über verschiedene städtische Kontexte hinweg verallgemeinern und wie Vorhersagen an Planungsteams kommuniziert werden sollten, damit sie Entscheidungen informieren, ohne als Vorschriften missverstanden zu werden.
+
+      Das Projekt entwickelt auch Empfehlungswerkzeuge für strategische Stadtentwicklungsplanung. Diese Werkzeuge helfen Interessengruppen, Parzellenaggregationsoptionen zu vergleichen, Machbarkeitsbeschränkungen zu bewerten, Entwicklungspotenziale einzuschätzen und über Priorisierungskriterien nachzudenken. Alle Ausgaben sind darauf ausgelegt, Deliberation zu unterstützen, nicht zu ersetzen — soziale Gerechtigkeit, lokaler Kontext und das Urteil der Planer bleiben im Mittelpunkt des Prozesses.
+
+# Contact page
+contact_page_title: "Kontakt"
+contact_phone: "Rufen Sie uns an"
+contact_email: "Schreiben Sie uns"
+contact_visit: "Besuchen Sie uns"
+contact_address: "Raum 3.3.55, Gebäude 55"
+contact_school: "Architekturschule"
+contact_university: "Ariel University, Israel"
+contact_hours: "So–Do, 9:00–17:00 IST"
+contact_lab_workspace: "Arbeitsraum des AAIRL"
+contact_lab_meeting: "Besprechungs- und Seminarraum des AAIRL"
+
+# News page
+news_page_heading: "Aktuelle Neuigkeiten"
+news_page_body: "Laborankündigungen, Forschungsmeilensteine, Publikationen, Kooperationen und Veranstaltungen."
+
+# Publications page
+publications_page_heading: "Forschungspublikationen"
+publications_page_body: "Begutachtete Arbeiten des Architectural Artificial Intelligence Research Lab."
+publications_all: "Alle Publikationen"
+
+# Post navigation
+post_nav_previous: "Vorheriger"
+post_nav_next: "Nächster"
+
+# Citation / paper card
+citation_venue: "Zeitschrift / Konferenz"
+citation_open: "Artikel öffnen"
+
+# Post excerpt
+post_read_more: "Weiterlesen"
+
+# Paper list
+paper_list_heading: "Publikationen"
+
+# Footer
+footer_disclaimer: "Das Labor ist eine Forschungseinheit der Ariel University, aber dies ist eine persönliche Website und vertritt nicht die offizielle Position der Universität zu irgendeinem Thema."
+footer_latest_news: "Aktuelle Neuigkeiten"
+footer_projects: "Projekte"
+footer_school: "Architekturschule"
+footer_university: "Ariel University"
+footer_copyright: "© 2023"
+footer_rights: "Alle Rechte vorbehalten."
+footer_ai_translation: "Hebräische und deutsche Übersetzungen wurden von KI generiert."
+
+# Member layout
+member_heading_team: "Forschungsteam"
+member_heading_partners: "Forschungspartner"
+member_nav_home: "Startseite"
+member_nav_team: "Team"
+member_about: "Über"
+member_projects: "Projekte"
+member_papers: "Publikationen"
+
+# Project / Topic layout
+label_about: "Über"
+label_news: "Neuigkeiten"
+label_funding: "Förderung"
+label_team: "Team"
+label_contact: "Kontaktinformationen"
+label_lab_name: "AAIRL — Forschungslabor für Architektur und Künstliche Intelligenz"
+label_related_projects: "Verwandte Projekte"
+label_view_project: "Projekt ansehen"
+label_papers: "Publikationen"
+
+# Join us / CTA
+join_title: "Echte städtische Probleme mit KI lösen?"
+join_body: "Wir begrüßen Bewerbungen von Forschenden, Designern und Praktikern aus verschiedenen disziplinären Hintergründen. Wenn Sie daran interessiert sind, zur Forschung an der Schnittstelle von KI, Design und Stadtforschung beizutragen, ermutigen wir Sie, sich zu bewerben und unserem Team beizutreten."
+join_cta: "Offene Stellen!"
+
+# Listing pages
+team_page_title: "Team"
+news_page_title: "Neuigkeiten"
+publications_page_title: "Publikationen"
+topics_page_title: "Forschungsthemen"
+topics_page_banner_title: "Unsere Forschungsprojekte"
+topics_page_banner_body: "Unsere Forschung fördert die Schnittstelle von künstlicher Intelligenz, Design und urbanen Systemen. Wir untersuchen, wie rechnergestützte Methoden und datengetriebene Technologien widerstandsfähigere, inklusivere und anpassungsfähigere urbane Umgebungen unterstützen können."
+topics_page_products_heading: "Unsere"
+topics_page_products_heading_focus: "Produkte"
+topics_page_products_body: "Wir übersetzen unsere Forschungsergebnisse in praktische Werkzeuge, die partizipatives und inklusives Stadtdesign unterstützen."
+jobs_page_title: "Offene Stellen"
+
+# Jobs layout
+jobs_about_position: "Über diese Stelle"
+jobs_what_we_do: "Was wir tun"
+jobs_what_we_do_body: "AAIRL konzentriert sich auf konkrete Probleme in Stadtgestaltung und Planung, bei denen KI menschliche Fähigkeiten erweitern kann. Unsere zentralen Forschungsrichtungen umfassen:"
+jobs_what_we_do_items:
+  - "Mensch-KI-Interaktion im Design"
+  - "Generatives architektonisches und urbanes Design"
+  - "Analyse der gebauten Umwelt"
+  - "Simulationen der gebauten Umwelt"
+jobs_what_we_do_footer: "Ein Großteil unserer Arbeit wird mit Industrie- und Regierungspartnern durchgeführt, sodass Forschung an realen Einschränkungen getestet wird: unvollständige Daten, widersprüchliche Ziele, Vorschriften und Implementierungsrealitäten."
+jobs_what_we_look_for: "Wen wir suchen"
+jobs_funding: "Fördermöglichkeiten"
+jobs_applying: "Bewerbung für diese Stelle"
+
+# Study (jobs landing) layout
+study_banner_title: "Fördern Sie Ihre Karriere im Labor"
+study_banner_body: "Wir begrüßen Bewerberinnen und Bewerber, die an Forschungsabschlüssen (MSc, PhD) und Postdoc-Stellen interessiert sind."
+study_opportunities_heading: "Offene Forschungswege"
+study_opportunities_body: "Wählen Sie den Weg, der Ihrer Phase, Ihren Forschungszielen und Ihrem gewünschten Grad an Unabhängigkeit entspricht."
+
+# Team page
+team_page_banner_heading: "Unser Forschungsteam"
+team_page_banner_body: "Forschende, Studierende, Designer und Ingenieure, die an KI für Architektur, Städte und partizipative Planung arbeiten."
+team_page_current_heading: "Aktuelles Team"
+team_page_alumni_heading: "Alumni"
+
+# Member roles
+roles:
+  pi: "Hauptforscher/in"
+  lab-manager: "Laborleiter/in"
+  postdoc: "Postdoktorand/in"
+  phd: "Doktorand/in"
+  phd-candidate: "Doktoratskandidat/in"
+  assistant: "Forschungsassistent/in"
+  master: "Masterstudent/in"
+  research-lead: "Forschungsleiter/in"
+  mascot: "Maskottchen"
+
+# Products UI strings
+products_overview_heading: "Kurzübersicht"
+products_benefits_heading: "Vorteile"
+products_demo_cta: "Demo anfragen"
+products_kind_label: "Art"
+products_kind_value: "Schlüsselfertige Lösung"
+products_adaptability_label: "Anpassbarkeit"
+products_adaptability_value: "Auf Ihre Bedürfnisse zugeschnitten"
+products_operated_label: "Betrieben von"
+products_operated_value: "Unserem Team"
+
+# Products
+products:
+  chatbot-participatory-design:
+    title: "Chatbot-Software für partizipatives Design"
+    headline: "KI-gestützte Gespräche für partizipative Planung"
+    intro: "Sammeln, strukturieren und analysieren Sie Stakeholder-Input in Design- und Planungsprozessen."
+    description: "Dieser Forschungsprototyp unterstützt partizipative Prozesse in der Stadtgestaltung und Architektur durch strukturierte Gespräche mit Bewohnern und Stakeholdern."
+    benefits:
+      - "Verbesserte öffentliche Beteiligung an Planungsentscheidungen."
+      - "Stärkere Zusammenarbeit zwischen Gemeinschaft und Planenden"
+      - "Gestärktes Vertrauen zwischen Behörden und Bürgerinnen und Bürgern"
+      - "Schnellere und effizientere Planungsprozesse"
+      - "Automatisierte Kommunikation mit der Gemeinschaft"
+      - "Bessere Designlösungen, die auf die Bedürfnisse der Gemeinschaft zugeschnitten sind"
+      - "Zugänglich für Menschen mit Behinderungen und Menschen, die verschiedene Sprachen sprechen"
+      - "Reduzierte Bürokratie und Kosten im Zusammenhang mit öffentlicher Beteiligung"
+  crowdsourcing-participatory-design:
+    title: "Crowdsourcing-Software für partizipatives Design"
+    headline: "Architasker unterstützt strukturierte Gemeinschaftsbeteiligung im Design"
+    intro: "Binden Sie Bewohner ein, nutzen Sie die kollektive Intelligenz und investieren Sie in eine Gemeinschaft."
+    description: "Architasker ist eine Design-Management- und Beteiligungsplattform für Architektur- und Stadtgestaltungsprojekte."
+    benefits:
+      - "Verbesserte öffentliche Beteiligung an Planungsentscheidungen."
+      - "Stärkere Zusammenarbeit zwischen Gemeinschaft und Planenden"
+      - "Gestärktes Vertrauen zwischen Behörden und Bürgerinnen und Bürgern"
+      - "Schnellere und effizientere Planungsprozesse"
+      - "Automatisierte Kommunikation mit der Gemeinschaft"
+      - "Bessere Designlösungen, die auf die Bedürfnisse der Gemeinschaft zugeschnitten sind"
+      - "Zugänglich für Menschen mit Behinderungen und Menschen, die verschiedene Sprachen sprechen"
+      - "Reduzierte Bürokratie und Kosten im Zusammenhang mit öffentlicher Beteiligung"
+
+# Members
+members:
+  jonathan-dortheimer:
+    name: "Jonathan Dortheimer"
+    description: "Laborleiter"
+    bio: |
+      Jonathan Dortheimer ist Architekt, Pädagoge, Forscher und Gründer des Architectural Artificial Intelligence Research Lab an der Ariel University. Seine Arbeit untersucht, wie künstliche Intelligenz, computergestützte Methoden und partizipative Technologien architektonisches Design, Stadtplanung und transparentere Entscheidungsfindung unterstützen können.
+
+      Jonathan ist Senior Lecturer an der [Ariel University School of Architecture](https://www.ariel.ac.il/wp/architecture/en/) und Gastwissenschaftler am [Lehrstuhl für Architekturinformatik der Technischen Universität München](https://www.arc.ed.tum.de/ai/team/jonathan-dortheimer/) in Deutschland.
+
+      Er schloss sein Doktoratsstudium 2021 an der Tel Aviv University unter der Betreuung von Prof. [Eran Neuman](https://english.tau.ac.il/profile/eneuman) und Prof. [Tova Milo](https://english.tau.ac.il/profile/milo) ab. Anschließend arbeitete er als Postdoc-Forscher am Material Topology Research Lab am Technion in Zusammenarbeit mit dem Future Automation Lab an der Cornell Tech unter der Betreuung von Prof. [Aaron Sprecher](https://architecture.technion.ac.il/members/aaron-sprecher/) und Prof. [Wendy Ju](https://tech.cornell.edu/people/wendy-ju/).
+
+      Jonathans Forschung entwickelt und evaluiert computergestützte Werkzeuge für partizipatives Design, urbane KI und urbane digitale Zwillinge. In all diesen Bereichen fragt seine Arbeit, wie KI architektonische und planerische Praxis sinnvoll unterstützen kann, ohne professionelle Verantwortung, öffentliche Deliberation oder lokales Wissen zu verdrängen.
+
+      Neben seiner akademischen Arbeit hat Jonathan mehrere Technologieinitiativen gegründet und [Meirim](https://meirim.org/) mitgegründet, eine Plattform zur Förderung demokratischer Beteiligung an der Stadtplanung in Israel. Als seit 2008 eingetragener Architekt hat er gebaute Projekte entworfen, an Architekturwettbewerben teilgenommen und Design, Forschungsmethoden und Programmierung an der Tel Aviv University, dem Technion, der Ariel University, der TU München und der Cornell Tech gelehrt.
+  haya-brama:
+    name: "Haya Brama"
+    bio: |
+      Dr. Haya Brama ist Forscherin und Labormanagerin bei AAIRL und spezialisiert auf Deep Learning, maschinelles Lernen und KI-Anwendungen für architektonische und urbane Systeme.
+
+      Sie schloss ihren Ph.D. in Neurowissenschaften an der Bar-Ilan University ab, wo sie biologische neuronale Netzwerke mit Populationsdynamik-Modellierung und In-vivo-elektrophysiologischen Aufzeichnungen untersuchte. Ihre Postdoc-Forschung an der Ariel University im Fachbereich Industrieingenieurwesen und Management erweiterte diese computergestützte Grundlage auf künstliche neuronale Netzwerke, Cybersicherheitsanwendungen und metaheuristische Suche.
+
+      Von 2000 bis 2023 war Haya Chief Scientific Officer bei ARK, einem Startup, das KI-basierte Werkzeuge für automatisiertes architektonisches Design entwickelt. Diese Laufbahn — von der Systemneurowissenschaft zum angewandten maschinellen Lernen in der gebauten Umwelt — informiert ihre aktuelle Arbeit, die rigorose computergestützte Modellierung mit praktischen Planungs- und Designproblemen verbindet.
+  orly-moas-cohen:
+    name: "Orly Moas-Cohen"
+    bio: |
+      Orly Moas-Cohen ist Architektin, Stadtplanerin und Ph.D.-Forscherin bei AAIRL. Sie bringt umfangreiche Erfahrung in komplexen Planungsprozessen, städtischer und industrieller Erneuerung, Denkmalpflege, öffentlichem Dienst, Management und strategischer Beratung mit.
+
+      Sie hat einen M.Arch. vom Technion und einen B.Arch. von der Ariel University. In über zwei Jahrzehnten Berufspraxis hat Orly Planungsteams geleitet, großangelegte Stadtprojekte vorangetrieben und in Planungsausschüssen mitgewirkt, darunter nationale und Bezirksausschüsse in Israel.
+
+      Orly lehrt Architektur an der Ariel University und hält Vorlesungen über Architektur, Stadtentwicklung, Denkmalpflege und strategische Planung. Ihre Forschung verbindet professionelles Planungswissen mit dem Interesse des Labors an resilienter, sozial bewusster und evidenzbasierter Stadtentwicklung.
+
+      In all ihrer Arbeit betont Orly menschenzentrierte Planung, städtische Lebensqualität und die langfristigen sozialen und ökologischen Folgen von Planungsentscheidungen.
+  shay-skital:
+    name: "Shay Skital"
+    bio: |
+      Shay Skital ist Architekt, Stadtplaner und Ph.D.-Forscher bei AAIRL. Er hat einen B.Arch. von der Ariel University und einen M.A. in Geografie und menschlicher Umwelt mit Spezialisierung auf Stadt- und Regionalplanung und -gestaltung von der Tel Aviv University.
+
+      Vor seinem Eintritt in das Labor bekleidete Shay leitende Planungspositionen im öffentlichen Sektor, darunter Stadtarchitekt und Leiter der Planungsabteilung in mehreren Kommunen in Israel. Seine Berufsarbeit umfasste komplexe Planungsprozesse, Neuquartierplanung, Denkmalpflege, städtische Erneuerung, Gewerbe- und Beschäftigungszonen, touristisch orientierte Planung, öffentliche Gebäude und Gestaltung des öffentlichen Raums.
+
+      Bei AAIRL verbindet Shays Forschung städtische Planungspraxis mit digitalen Werkzeugen für Stadtanalyse und Entscheidungsunterstützung. Seine Arbeit betont ortssensible Planung, lokale Identität und den Einsatz von Stadtdaten zur Verbesserung der Erfahrung und des Wertes, den Städte Bewohnern und Besuchern bieten.
+  hila-david:
+    name: "Hila David"
+    bio: |
+      Hila David ist Architektin und Masterstudentin bei AAIRL. Sie schloss ihren Bachelor an der Ariel University ab, wo ihr Abschlussprojekt den Azrieli-Preis für herausragende Abschlussprojekte erhielt.
+
+      Vor ihrem Eintritt in das Labor arbeitete Hila als Architektin an Stadtplanungs-, öffentlichen Gebäude- und Wohnprojekten. Ihre Forschung konzentriert sich auf visuelle architektonische Kommunikation, einschließlich Diagramme, Darstellungstypen und deren Rolle in der Mensch-KI-Interaktion für das Design.
+  adiya-karmon:
+    name: "Adiya Karmon"
+    bio: |
+      Adiya Karmon ist Architekturstudentin an der Ariel University und Masterstudentin in nachhaltiger Architektur. Ihre Forschung bei AAIRL untersucht parametrische Stadtplanung als Methode zur Unterstützung einer informierteren und umweltbewussteren Stadtplanung.
+
+      Ihre Arbeit verbindet architektonisches Design, computergestützte Methoden und nachhaltige Stadtentwicklung mit dem Schwerpunkt darauf, wie Planungswerkzeuge helfen können, Alternativen zu bewerten und die Qualität der gebauten Umwelt zu verbessern.
+  bnaya-unger:
+    name: "Bnaya Unger"
+    bio: |
+      Bnaya Unger ist B.Sc.-Student in Industrieingenieurwesen und Management sowie Honors-Track M.Sc.-Student in Industrieingenieurwesen und Management. Seine Forschung bei AAIRL konzentriert sich auf Entscheidungsunterstützung bei der städtischen Erneuerung.
+
+      Als Teil eines kollaborativen Projekts mit Green Group untersucht Bnaya die Parzellenaggregation für städtische Erneuerung. Seine Arbeit wendet maschinelles Lernen und Deep-Learning-Methoden an, um vielversprechende Parzellenverbindungen zu identifizieren und transparentere, evidenzbasierte Planungsentscheidungen zu unterstützen.
+  elior-dahan:
+    name: "Elior Dahan"
+    bio: |
+      Elior Dahan ist B.Sc.-Student in Industrieingenieurwesen und Management sowie Honors-Track M.Sc.-Student in Industrieingenieurwesen und Management. Seine Arbeit bei AAIRL trägt zur Urban-Digital-Twin-Forschung des Labors bei.
+
+      Elior untersucht, wie Stadtdaten, computergestützte Modelle und KI-basierte Analysen transparentere und evidenzbasierte Planungsprozesse unterstützen können. Seine Arbeit ist mit dem Bestreben des Labors verbunden, interoperable digitale Infrastruktur für urbane Simulation, Entscheidungsunterstützung und Modellevaluierung zu entwickeln.
+  gaya-bitman:
+    name: "Gaya Bitman"
+    bio: |
+      Gaya Bitman ist Architekturstudentin an der Ariel School of Architecture und Masterstudentin bei AAIRL. Ihre Forschung untersucht computergestützte Designmethoden für architektonische Probleme, die durch kulturelle, religiöse und räumliche Einschränkungen geprägt sind.
+
+      Ihre aktuelle Arbeit untersucht den Einsatz genetischer Algorithmen im Design religiöser Architektur. Die Forschung verbindet regelbasiertes Design, Optimierung und architektonisches Denken und zeigt, wie computergestützte Methoden Designern helfen können, eingeschränkte Entwurfsräume systematischer zu erkunden.
+  michael-sharon:
+    name: "Michael Sharon"
+    bio: |
+      Michael Sharon ist Architekturstudent an der Ariel School of Architecture und Forschungsassistent bei AAIRL. Seine Arbeit erforscht fortgeschrittene computergestützte Methoden für architektonisches Design.
+
+      Michaels aktuelle Forschung konzentriert sich darauf, wie Quantencomputing und verwandte computergestützte Ansätze komplexe Designprobleme unterstützen können. Seine Arbeit verbindet architektonisches Denken, computergestütztes Design und aufkommende Technologien zur Erkundung neuer Arten der Designsuche und -bewertung.
+  ofir-glassman:
+    name: "Ofir Glassman"
+    bio: |
+      Ofir Glassman ist Architekturstudentin an der Ariel School of Architecture und Forschungsassistentin bei AAIRL. Ihre Arbeit konzentriert sich auf die Schnittstelle von architektonischem Design, KI und menschlicher Erfahrung in gebauten Umgebungen.
+
+      Ofirs Forschung untersucht, wie KI Aspekte menschlichen Verhaltens und räumlicher Reaktion annähern kann und Designern hilft, gebaute Umgebungen über konventionelle Leistungskennzahlen hinaus zu bewerten. Ihre Arbeit trägt zu den Synthetic-Humans- und Design-AI-Forschungsrichtungen des Labors bei.
+  gal-gendler:
+    name: "Gal Gendler"
+    bio: |
+      Gal Gendler ist ein multidisziplinärer Forscher mit Expertise in Software-Engineering, öffentlicher Politik und Stadtplanung. Er hat einen B.Sc. in Informatik, einen M.A. in öffentlicher Politik und einen M.Sc. mit Auszeichnung vom UCL in Transport- und Stadtplanung.
+
+      Vor seinem Eintritt bei AAIRL arbeitete Gal im Technologiesektor als Software-Engineer mit Spezialisierung auf geografische Informationssysteme, Big Data und Transportplanung. Dieser Hintergrund informiert seine Forschung zu urbanen KI-Plattformen, räumlicher Dateninfrastruktur und Planungsentscheidungsunterstützungssystemen.
+
+      Gals Arbeit bei AAIRL konzentrierte sich auf die Politik der städtischen Erneuerung und die Entwicklung einer urbanen KI-Plattform für das Hosting von maschinellen Lernmodellen für die gebaute Umwelt. Seine Forschung trug zu dem umfassenderen Bemühen des Labors bei, urbane Analytik interoperabler, transparenter und für die Planungspraxis nützlicher zu machen.
+  gal-guz:
+    name: "Gal Guz"
+    bio: |
+      Gal Guz ist Architekturstudent, UX/UI-Designer und Alumnus von AAIRL. Seine Arbeit kombiniert architektonisches Design, Interface-Design und Software-Entwicklung für komplexe Forschungssysteme.
+
+      Bei AAIRL trug Gal zu Projekten zur KI-gestützten architektonischen Bewertung und zur Entscheidungsunterstützung in der Stadtplanung bei. Seine Arbeit umfasste Interface-Design für Systeme zur Vorhersage sozialer Auswirkungen der städtischen Erneuerung und Forschung darüber, ob KI-Werkzeuge menschliche Reaktionen auf gebaute Räume annähern können.
+
+      Gals Designpraxis umfasst Nutzeranforderungen, Entwicklung von Betriebskonzepten, Prototyping, Nutzertests, Design-Systeme und Entwicklungs-Handoff. Er arbeitet hauptsächlich mit dem React-Ökosystem und 3D-Web-Technologien wie Three.js.
+  ela-moyal:
+    name: "Ela Moyal"
+    bio: |
+      Ela Moyal ist Architektin und Alumna von AAIRL. Ihre Forschung untersuchte die Politik der städtischen Erneuerung in Israel mit dem Schwerpunkt auf Fassadenrenovierungsprogrammen in Tel Aviv und deren Auswirkungen auf Stadtgestaltung, Wohnqualität und das gelebte Erleben der Bewohner.
+
+      Ihre Arbeit trug zur Stadtforschung des Labors bei, die untersucht, wie Planungspolitik und Entwicklungsmechanismen gebaute Umgebungen und Gemeinschaften prägen.
+  gilad-chalfon:
+    name: "Gilad Chalfon"
+    bio: |
+      Gilad Chalfon ist Architekt und Alumnus von AAIRL. Seine Forschung untersuchte die politischen und sozialen Implikationen von Smart-City-Anwendungen mit dem Schwerpunkt darauf, wie Parktechnologien als Instrumente der Privatisierung und Governance in israelischen Städten fungieren.
+
+      Seine Arbeit trug zur kritischen Stadtforschung des Labors bei, die die Machtverhältnisse und institutionellen Verantwortlichkeiten in digitalen Systemen für Städte untersucht.
+  lielle-brenner:
+    name: "Lielle Brenner"
+    bio: |
+      Lielle Brenner ist Alumna von AAIRL. Ihre Arbeit trug zur Design-AI-Forschung des Labors bei, die untersucht, wie KI architektonische Kreativität, Designkommunikation und empirische Bewertung gebauter Umgebungen unterstützen kann.
+
+jobs:
+  phd:
+    title: "Doktorat"
+    intro: "Wir begrüßen Doktoratskandidaten, die rigorose Forschung an der Schnittstelle von KI und architektonischer oder urbaner Planungspraxis betreiben möchten, verankert in realen Anforderungen und entwickelt in Zusammenarbeit mit kommunalen und Industriepartnern."
+    about:
+      - "Entwicklung einer Forschungsagenda rund um ein reales Planungs- und Designproblem"
+      - "Entwicklung von Methoden oder Werkzeugen und empirische Validierung"
+      - "Arbeit mit realen Daten und in vielen Fällen Partner-Feedbackschleifen"
+      - "Publizieren während des gesamten Doktorats, oft als Erstautor"
+      - "Beitrag zur Laborinfrastruktur (Datensätze, Benchmarks, Werkzeuge)"
+      - "Vollständig finanzierte projektbasierte Stellen"
+    look:
+      - "Starke Motivation für Forschung und Schreiben"
+      - "Quantitative oder computationelle Fähigkeiten (ML, Statistik, Simulation, Optimierung)"
+      - "Fähigkeit, selbständig zu arbeiten und gleichzeitig mit der Gruppe zusammenzuarbeiten"
+      - "Hintergründe aus Architektur, Informatik, Ingenieurwesen, Stadtforschung willkommen"
+    body: |
+      **Unser Labor hat projektfinanzierte Doktorandenstellen.** Um Interesse zu bekunden, senden Sie eine E-Mail an [Dr. Haya Brama](mailto:hayab@ariel.ac.il) mit dem Betreff „PhD inquiry" und fügen Sie bei:
+
+      * Lebenslauf
+      * Zeugnisse
+      * Ein kurzer Absatz, der Ihre Interessen und relevante Erfahrungen beschreibt
+      * (Optional) Schreibprobe / Portfolio / GitHub / frühere Abschlussarbeit
+
+      Weitere Details finden Sie auf der [PhD-Website der Ariel University](https://www.ariel.ac.il/wp/graduate-school/en/applicants/).
+  master:
+    title: "Master-Thesis-Track"
+    intro: "Wir nehmen MSc-Studierende nur im Thesis-Track auf. Dieser Track eignet sich am besten für Studierende, die einen Doktorat in Betracht ziehen oder eine tiefere Forschungsausbildung wünschen. Im Labor arbeiten die Studierenden praktisch mit echten Datensätzen und Forschungsfragen aus laufenden Laborprojekten."
+    about:
+      - "Erwerb von Forschungskompetenz, starkem Portfolio und realistischem Blick auf akademische und angewandte Forschung"
+      - "Durchführung eines Forschungsprojekts"
+      - "Entwicklung von Methoden oder Werkzeugen und empirische Validierung"
+      - "Eine schriftliche Abschlussarbeit mit klarem Beitrag"
+      - "Oft Einreichung bei einer Konferenz oder einem Journal"
+    look:
+      - "Starke Motivation für Forschung und Schreiben"
+      - "Interesse an computergestützter, empirischer oder designorientierter Forschung"
+      - "Fähigkeit, selbständig zu arbeiten und enge Betreuung zu erhalten"
+      - "Relevante Kenntnisse in Design, Planung, Datenanalyse, Programmierung oder räumlichen Werkzeugen"
+      - "Verfügbarkeit für nachhaltige Abschlussarbeit in laufenden Laborprojekten"
+    body: |
+      Senden Sie eine E-Mail an [Dr. Haya Brama](mailto:hayab@ariel.ac.il) mit Lebenslauf und Zeugnissen, mit dem Betreff „Master's Thesis Application".
+      Fügen Sie im E-Mail-Text bei:
+
+      * Ihr Studiengang und Jahrgang
+      * Eine kurze Beschreibung Ihrer Interessen (2–3 Themen)
+      * Relevante Fähigkeiten (Software/Werkzeuge/Kurse) und wöchentliche Verfügbarkeit
+
+      Weitere Details finden Sie auf der [MSc-Architektur-Website der Ariel University](https://www.ariel.ac.il/wp/architecture/m-d/).
+  postdoc:
+    title: "Postdoktoranden"
+    intro: "Wir suchen Postdoktoranden mit einem starken quantitativen oder computationellen Hintergrund, die hochimpaktive Arbeit in Urban AI, computergestütztem Design, räumlicher Analyse oder datengesteuerter Planung leisten möchten."
+    about:
+      - "Entwicklung einer Forschungsagenda rund um ein reales Planungs- und Designproblem"
+      - "Entwicklung von Methoden oder Werkzeugen und empirische Validierung"
+      - "Arbeit mit realen Daten und in vielen Fällen Partner-Feedbackschleifen"
+      - "Veröffentlichung hochwertiger Journal- und Konferenzartikel"
+      - "Beitrag zur Laborinfrastruktur (Datensätze, Benchmarks, Werkzeuge)"
+      - "Vollständig finanzierte projektbasierte Stellen"
+    look:
+      - "Urban AI und ML für Design-/Planungsentscheidungsunterstützung"
+      - "Mensch–KI-Interaktion für Design-Werkzeuge"
+      - "Räumliche Analyse, Simulation und Benchmarking"
+      - "Angewandte Forschung mit öffentlichen/privaten Partnern"
+    body: |
+      **Unser Labor hat projektfinanzierte Postdoktorandenstellen.** Senden Sie ein PDF-Dokument (max. 10 MB) an [Dr. Haya Brama](mailto:hayab@ariel.ac.il) mit dem Betreff „Postdoctoral application". Das PDF sollte enthalten:
+
+      * Lebenslauf
+      * Motivationsschreiben, das Ihre Forschungsinteressen und die Eignung für AAIRL beschreibt
+      * Bis zu 3 Publikationen oder Arbeitsproben
+
+      Weitere Details finden Sie auf der [Postdoc-Website der Ariel University](https://www.ariel.ac.il/wp/postdocs/).

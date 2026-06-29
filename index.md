@@ -1,5 +1,7 @@
 ---
 ---
+{% assign t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
+{% assign lp = site.base_url %}
 
 <section class="banner_section banner_style_3">
   <div class="container">
@@ -12,15 +14,15 @@
       <div class="col col-lg-5">
         <div class="banner_content">
           <h1 class="banner_title">
-            AI Research for Architecture and Urban Planning
+            {{ t.home_banner_title }}
           </h1>
           <p>
-            The Architectural Artificial Intelligence Research Lab develops and evaluates computational methods for design, urban analytics, and participatory planning. Our work combines artificial intelligence, human-computer interaction, and urban research to support more transparent, inclusive, and evidence-based planning processes.
+            {{ t.home_banner_body }}
           </p>
-          <a class="btn btn_default" href="/topics/">
+          <a class="btn btn_default" href="{{ lp }}/topics/">
             <span>
-              <small>Explore research topics</small>
-              <small>Explore research topics</small>
+              <small>{{ t.home_banner_cta }}</small>
+              <small>{{ t.home_banner_cta }}</small>
             </span>
             <i class="far fa-long-arrow-right ms-1"></i>
           </a>
@@ -34,8 +36,8 @@
   <div class="container">
     <div class="section_heading text-center">
       <h2 class="heading_text mb-0">
-        Research
-        <span class="heading_focus_text">Topics</span>
+        {{ t.home_research_topics }}
+        <span class="heading_focus_text">{{ t.home_research_topics_focus }}</span>
       </h2>
     </div>
     <div class="category2_items_wrapper row justify-content-center">
@@ -47,19 +49,9 @@
               <i class="far fa-project-diagram"></i>
             </span>
             <span class="item_content">
-              <strong class="item_title d-block">{{ topic.title }}</strong>
+              <strong class="item_title d-block">{% include t_field.html obj=topic field="title" %}</strong>
               {% assign topic_project_count = topic.projects | size %}
-              <small class="item_counter d-block">{% if topic_project_count > 0 %}{{ topic_project_count }} projects{% else %}Research topic{% endif %}</small>
-              {% if topic_project_count > 0 %}
-              <span class="topic_project_list">
-                {% for project_tag in topic.projects %}
-                  {% assign topic_project = site.projects | where: "tag", project_tag | first %}
-                  {% if topic_project %}
-                  <span>{{ topic_project.title }}</span>
-                  {% endif %}
-                {% endfor %}
-              </span>
-              {% endif %}
+              <small class="item_counter d-block">{{ t.home_topic_research_label }}</small>
             </span>
           </a>
         </div>
@@ -75,8 +67,8 @@
       <div class="row align-items-center">
         <div class="col col-lg-6">
           <h2 class="heading_text mb-0">
-            Latest Lab
-            <span class="heading_focus_text">News</span>
+            {{ t.home_news_heading }}
+            <span class="heading_focus_text">{{ t.home_news_focus }}</span>
           </h2>
         </div>
       </div>
@@ -95,8 +87,8 @@
       <div class="row align-items-center">
         <div class="col col-lg-6">
           <h2 class="heading_text mb-0">
-            Funding Agencies and
-            <span class="heading_focus_text">Partners</span>
+            {{ t.home_partners_heading }}
+            <span class="heading_focus_text">{{ t.home_partners_focus }}</span>
           </h2>
         </div>
       </div>
@@ -107,17 +99,19 @@
         <div class="course_item">
           <div class="item_image">
             <a class="image_wrap" href="{{ partner.url }}">
-              <img src="{{ partner.icon }}" alt="{{ partner.name }}" />
+              {% assign pt = t.partners[partner.key] %}
+              <img src="{{ partner.icon }}" alt="{{ pt.name | default: partner.key }}" />
             </a>
           </div>
           <div class="item_content">
+            {% assign pt = t.partners[partner.key] %}
             <h3 class="item_title">
               <a href="{{ partner.url }}">
-                {{ partner.name }}
+                {{ pt.name }}
               </a>
             </h3>
             <ul class="course_meta unordered_list">
-              <li><a href="{{ partner.url }}"><i class="fal fa-bars me-1"></i>{{ partner.kind }}</a></li>
+              <li><a href="{{ partner.url }}"><i class="fal fa-bars me-1"></i>{{ pt.kind }}</a></li>
             </ul>
           </div>
         </div>

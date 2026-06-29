@@ -1,0 +1,79 @@
+---
+---
+/* RTL overrides — only applied when <html dir="rtl"> */
+
+[dir="rtl"] {
+  font-family: 'Heebo', 'Assistant', 'Arial Hebrew', sans-serif;
+
+  /* Text alignment */
+  body,
+  p,
+  li,
+  h1, h2, h3, h4, h5, h6 {
+    text-align: right;
+  }
+
+  /* Navigation */
+  .main_menu_list {
+    direction: rtl;
+  }
+
+  .header_btns_group,
+  .social_icon {
+    direction: rtl;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb_nav li::before {
+    transform: scaleX(-1);
+  }
+
+  /* Flex row reversal for key layout components */
+  .row.align-items-center.justify-content-lg-between {
+    flex-direction: row-reverse;
+  }
+
+  .banner_content {
+    text-align: right;
+  }
+
+  /* Footer */
+  .footer_bottom {
+    flex-direction: row-reverse;
+  }
+
+  .page_list.unordered_list {
+    direction: rtl;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    direction: rtl;
+  }
+
+  .cart_info_list li span:first-child {
+    margin-left: 0.25rem;
+    margin-right: 0;
+  }
+
+  /* Arrow icons — flip for RTL */
+  .fa-long-arrow-right::before {
+    content: "\f30a"; /* fa-long-arrow-left */
+  }
+
+  /* Member page */
+  .admin_name,
+  .admin_image {
+    text-align: center;
+  }
+
+  /* Buttons */
+  .btn span small {
+    text-align: center;
+  }
+
+  /* Language switcher */
+  .lang-switcher {
+    direction: ltr;
+  }
+}
