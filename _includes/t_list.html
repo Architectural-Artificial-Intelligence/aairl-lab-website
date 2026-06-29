@@ -1,0 +1,23 @@
+{% comment %}
+  Usage: {% include t_list.html field="about" tag="li" class="far fa-check" %}
+  Iterates page[field_he] when active_lang is 'he' and the field exists, otherwise page[field].
+  tag: the HTML tag to wrap each item (default: li)
+  icon: optional Font Awesome class to prepend as <i class="..."></i>
+{% endcomment %}
+{% assign _tl_t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
+{% assign _tl_collection = page.collection %}
+{% assign _tl_key = page.key | default: page.slug %}
+{% assign _tl_i18n_entry = _tl_t[_tl_collection][_tl_key] %}
+{% if _tl_i18n_entry and _tl_i18n_entry[include.field] %}
+  {% assign _t_list = _tl_i18n_entry[include.field] %}
+{% else %}
+  {% assign _list_field_he = include.field | append: '_he' %}
+  {% if site.active_lang == 'he' and page[_list_field_he] %}
+    {% assign _t_list = page[_list_field_he] %}
+  {% else %}
+    {% assign _t_list = page[include.field] %}
+  {% endif %}
+{% endif %}
+{% for _item in _t_list %}
+  <li>{% if include.icon %}<i class="{{ include.icon }}"></i> {% endif %}{{ _item }}</li>
+{% endfor %}

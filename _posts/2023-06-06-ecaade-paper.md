@@ -6,6 +6,7 @@ tags:
 
 project: UrbanAI
 image: /images/news/Graz_Kunsthaus_vom_Schlossberg_20061126.jpg
+lang: he
 ---
 
 The AAIRL is so happy to announce that our paper “Think AI-side the Box” has been accepted to the 41st eCAADe conference in Graz, Austria!

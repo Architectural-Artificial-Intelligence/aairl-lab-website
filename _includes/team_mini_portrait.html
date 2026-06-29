@@ -4,15 +4,20 @@
 | default: include
 %}
 
-<div class="post_admin d-flex align-items-center">
-    <span class="thumbnail_wrap">
-        <img src="{{ member.image | relative_url }}" alt="member portrait"  {% include fallback.html %}>
-    </span>
-    <span class="meta_info">
-        <a href="{{ member.url | relative_url }}"><span class="d-block">{{ member.name }}</span>
-            <small class="d-block">
-                {% assign type = site.data.types[member.role] %}
-                {{ type.description }}
-            </small></a>
-    </span>
+<div class="d-flex align-items-center mb-3" style="gap:12px;">
+  <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" loading="lazy"
+       style="width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;"
+       {% include fallback.html %}>
+  <div>
+    <a href="{{ member.url | relative_url }}" class="d-block fw-semibold" style="line-height:1.2;">{{ member.name }}</a>
+    <small class="text-muted">
+      {% assign _t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
+      {% assign _member_i18n = _t.members[member.key] %}
+      {% if member.description or _member_i18n.description %}
+        {% include t_field.html obj=member field="description" %}
+      {% else %}
+        {{ _t.roles[member.role] | default: site.data.types[member.role].description }}
+      {% endif %}
+    </small>
+  </div>
 </div>

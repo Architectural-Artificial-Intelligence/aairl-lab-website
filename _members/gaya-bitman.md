@@ -1,11 +1,13 @@
 ---
 name: Gaya Bitman
-image: images/people/gaya.jpg
+image: /images/people/gaya.jpg
 role: master
 group: team
 tags:
     - urban
     - designAI
+key: gaya-bitman
+collection: members
 ---
 
 Gaya Bitman is an architecture student at the Ariel School of Architecture and a master's student at AAIRL. Her research explores computational design methods for architectural problems shaped by cultural, religious, and spatial constraints.

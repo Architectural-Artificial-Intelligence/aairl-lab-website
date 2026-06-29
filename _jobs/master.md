@@ -1,8 +1,12 @@
 --- 
 layout: jobs
+key: master
+collection: jobs
 title: Master's Thesis Track
+title_he: תואר שני במסלול תזה
 intro: We host MSc students only within a thesis track. This track is best for students who may consider a PhD or want deeper research training. In the lab, students do hands-on work on real datasets and research questions connected to ongoing lab projects and partners.
-image: images/meta/master.png
+intro_he: אנחנו מקבלים סטודנטים לתואר שני במסלול תזה בלבד. המסלול הזה מתאים במיוחד לסטודנטים שמתכננים להמשיך לדוקטורט או שרוצים הכשרת מחקר רצינית. אצלנו במעבדה עובדים על מערכי נתונים אמיתיים ושאלות מחקר שנובעות ישירות מהפרויקטים הפעילים.
+image: /images/meta/master.png
 
 about:
 - Gain research skills, strong portfolio, and a realistic view of academic and applied research
@@ -17,7 +21,6 @@ look:
 - Ability to work independently while receiving close supervision
 - Relevant skills in design, planning, data analysis, programming, or spatial tools
 - Availability for sustained thesis work within ongoing lab projects
-
 ---
 
 Email [Dr. Haya Brama](mailto:hayab@ariel.ac.il) with your CV and transcripts, using the subject line “Master’s Thesis Application”.

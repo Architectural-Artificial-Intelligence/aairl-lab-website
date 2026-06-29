@@ -5,8 +5,10 @@ role: assistant
 group: alumni
 tags:
     - urban
+key: gilad-chalfon
+collection: members
 ---
 
-Gilad Chalfon is an architecture student at the Ariel School of Architecture and an alumnus of AAIRL. His research examined the political and social implications of smart city applications, with attention to how digital urban technologies reshape governance, access, and public space.
+Gilad Chalfon is an architect and alumnus of AAIRL. His research examined the political and social implications of smart city applications, with a focus on how parking technologies function as instruments of privatization and governance in Israeli cities.
 
-His work contributed to the lab's critical urban technologies research, which studies the power relations and institutional responsibilities embedded in computational systems for cities.
+His work contributed to the lab's critical urban studies research, which investigates the power relations and institutional responsibilities embedded in digital systems for cities.

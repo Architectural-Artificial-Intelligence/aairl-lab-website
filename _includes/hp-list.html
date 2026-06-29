@@ -1,7 +1,7 @@
 
-{% assign posts = site.posts | where: "category", "featured"%}
+{% assign posts = site.posts %}
 
-{% for d in posts %}
+{% for d in posts limit: 4 %}
 
 {% assign published = d.date | date: "%B %d, %Y" %}
 {% assign member = site.members
@@ -9,7 +9,7 @@
   | first
 %}
   <div class="col col-md-6 col-lg-3">
-    <div class="blog_item">
+    <div class="blog_item hp_news_item">
       <a class="item_image" href="{{ d.url }}">
         <img src="{{ d.image }}" 
         alt="{{ include.title | default: "feature image" }}"

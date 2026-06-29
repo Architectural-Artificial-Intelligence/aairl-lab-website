@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" data-dark="false">
+<html lang="{{ site.active_lang | default: 'en' }}" dir="{% assign _rtl_langs = 'he,ar,fa,ur' | split: ',' %}{% if _rtl_langs contains site.active_lang %}rtl{% else %}ltr{% endif %}" data-dark="false">
   {% include head.html %}
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <!-- Body Wrap - Start -->
     <div class="page_wrapper">
 
       <!-- Back To Top - Start -->
       <div class="backtotop">
-        <a href="#" class="scroll">
-          <i class="far fa-arrow-up"></i>
-          <i class="far fa-arrow-up"></i>
+        <a href="#" class="scroll" aria-label="Back to top">
+          <i class="far fa-arrow-up" aria-hidden="true"></i>
         </a>
       </div>
     {% include header.html %}
-    <main class="page_content">
+    <main id="main-content" class="page_content">
       {% include content.html content=content %}
     </main>
     {% include footer.html %}

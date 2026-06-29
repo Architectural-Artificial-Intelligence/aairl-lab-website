@@ -7,6 +7,7 @@ tags:
   - AI
   - participatory design
 project: PD
+lang: he
 ---
 
 The conference “The second conference of the Israel Urban Studies Community” will take place on the 27th of October at the Open University campus. I have worked on this project with Nikolas Martelaro, Gerhard Schubert, and Aaron Sprecher. Here is the abstract of my talk:

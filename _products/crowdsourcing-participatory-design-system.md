@@ -1,5 +1,7 @@
 ---
 title: Crowdsourcing Participatory Design Software
+collection: products
+key: crowdsourcing-participatory-design
 headline: Architasker supports structured community participation in design
 into: Get residents engaged, leverage the collective intelligence, and invest in a community.
 image: /images/papers/architasker.jpg

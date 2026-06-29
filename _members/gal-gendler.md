@@ -1,14 +1,17 @@
 ---
 name: Gal Gendler
-image: images/people/galg.jpg
+image: /images/people/galg.jpg
 role: research-lead
 group: alumni
 tags:
     - UDT
     - urban
     - urbanAI
+
 links:
   "fa-solid fa-envelope": mailto:galge@ariel.ac.il
+key: gal-gendler
+collection: members
 ---
 
 Gal Gendler is a multidisciplinary researcher with expertise in software engineering, public policy, and city planning. He holds a B.Sc. in Computer Science, an M.A. in Public Policy, and an M.Sc. with distinction from UCL in Transport and City Planning.

@@ -1,13 +1,16 @@
 ---
 name: Michael Sharon
-image: images/people/michael.jpg
+image: /images/people/michael.jpg
 role: assistant
 group: team
 
 tags:
   - designAI
   - UDT
-
+projects:
+  - UDT
+key: michael-sharon
+collection: members
 ---
 
 Michael Sharon is an architecture student at the Ariel School of Architecture and a research assistant at AAIRL. His work explores advanced computational methods for architectural design.

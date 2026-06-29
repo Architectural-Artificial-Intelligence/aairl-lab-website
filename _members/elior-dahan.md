@@ -1,11 +1,14 @@
 ---
 name: Elior Dahan
-image: images/people/elior.jpg
+image: /images/people/elior.jpg
 role: master
 group: team
 tags:
     - UDT
-
+projects:
+  - UDT
+key: elior-dahan
+collection: members
 ---
 
 Elior Dahan is a B.Sc. student in Industrial Engineering and Management and an honors-track M.Sc. student in Industrial Engineering and Management. His work at AAIRL contributes to the lab's Urban Digital Twin research.

@@ -1,23 +1,26 @@
 --- 
 title: Urban Social Prediction
 layout: project
+key: urban-social-prediction
+collection: projects
 group: featured
 image: /images/projects/social_prediction.jpg
 tag: socialPrediction
-intro: This project develops predictive models and decision-support tools for anticipating the social and economic impacts of urban renewal.
+intro: This project develops and validates machine-learning models for anticipating the social and economic consequences of urban renewal, and translates these models into interpretable planning tools.
 
 funding:
-    - Ministry of Science and Technology
+    - ministry-of-science-and-technology
+    - green-group
 papers:
     - Brama2025
     - Brama2024
     - Boim2021
 ---
 
-Urban Social Prediction develops machine-learning models and decision-support tools for anticipating the social and economic impacts of urban renewal. The project helps municipalities and planners explore how redevelopment may affect communities before decisions become difficult to reverse.
+Urban Social Prediction develops machine-learning models and decision-support tools for anticipating the social and economic consequences of urban renewal. The project addresses a practical planning problem: renewal decisions have long-lasting effects on housing, displacement, and community resilience, but these consequences are rarely visible to planners at the time decisions are made.
 
-Urban growth creates pressure on housing, infrastructure, services, mobility, and social resilience. Renewal projects can bring investment and improved living conditions, but they can also produce displacement, uneven benefits, and unexpected local consequences. This project uses data-driven methods to make those risks and opportunities more visible during planning.
+Urban renewal creates pressure on housing supply, infrastructure capacity, services, and social networks. It can bring investment and improved living conditions, but it can also produce displacement, unequal benefit distribution, and locally concentrated harm. This project uses data-driven methods to surface these dynamics before interventions are locked in.
 
-Our work combines predictive modeling, spatial analysis, and interpretable planning interfaces. We study which factors shape renewal outcomes, how models can be validated across different urban contexts, and how planning teams can use predictions without treating them as automatic decisions.
+Our technical work combines predictive modeling, spatial analysis, and interpretable interfaces designed for use by planning practitioners. We study which socio-spatial factors shape renewal outcomes, how models generalize across different urban contexts, and how predictions should be communicated to planning teams so they inform decisions without being mistaken for prescriptions.
 
-The project also develops recommendation tools for strategic urban renewal. These tools help stakeholders compare parcel combinations, feasibility constraints, redevelopment potential, and prioritization criteria. The aim is to support evidence-based decisions while keeping social equity, transparency, and local context at the center of the process.
+The project also develops recommendation tools for strategic urban renewal planning. These tools help stakeholders compare parcel aggregation options, evaluate feasibility constraints, assess redevelopment potential, and reason about prioritization criteria. All outputs are designed to support deliberation rather than replace it — keeping social equity, local context, and planner judgment at the center of the process.

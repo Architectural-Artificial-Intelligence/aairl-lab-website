@@ -1,10 +1,14 @@
 ---
 name: Shay Skital
-image: images/people/shay-skital.jpg
+image: /images/people/shay-skital.jpg
 role: phd
 group: team
 tags:
   - UDT
+projects:
+  - UDT
+key: shay-skital
+collection: members
 ---
 
 Shay Skital is an architect, urban planner, and Ph.D. researcher at AAIRL. He holds a B.Arch. from Ariel University and an M.A. in Geography and the Human Environment, with a specialization in Urban and Regional Planning and Design, from Tel Aviv University.

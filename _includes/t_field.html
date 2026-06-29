@@ -1,0 +1,27 @@
+{% comment %}
+  Usage: {% include t_field.html field="title" %}
+  For non-page objects: {% include t_field.html obj=proj field="title" %}
+  For markdownify output: {% include t_field.html field="bio" markdownify=true %}
+  Looks up translation in site.data.i18n[active_lang][collection][key][field] first,
+  then falls back to _he front matter fields, then to the base field.
+  For field="body" or field="bio" on page objects, falls back to page.content (rendered markdown).
+{% endcomment %}
+{% assign _tf_obj = include.obj | default: page %}
+{% assign _t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
+{% assign _tf_collection = _tf_obj.collection %}
+{% assign _tf_key = _tf_obj.key | default: _tf_obj.slug %}
+{% assign _tf_i18n_entry = _t[_tf_collection][_tf_key] %}
+{% if _tf_i18n_entry and _tf_i18n_entry[include.field] %}
+  {% assign _t_value = _tf_i18n_entry[include.field] %}
+  {% if include.markdownify %}{{ _t_value | markdownify }}{% else %}{{ _t_value }}{% endif %}
+{% elsif include.field == 'body' or include.field == 'bio' %}{% if _tf_obj == page and include.obj == nil %}
+  {{ content }}{% endif %}
+{% else %}
+  {% assign _field_he = include.field | append: '_he' %}
+  {% if site.active_lang == 'he' and _tf_obj[_field_he] %}
+    {% assign _t_value = _tf_obj[_field_he] %}
+  {% else %}
+    {% assign _t_value = _tf_obj[include.field] %}
+  {% endif %}
+  {% if include.markdownify %}{{ _t_value | markdownify }}{% else %}{{ _t_value }}{% endif %}
+{% endif %}

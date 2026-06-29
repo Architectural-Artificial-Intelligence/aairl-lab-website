@@ -13,6 +13,7 @@ tags:
   - workshop
 project: UrbanAI
 image: /images/news/uni_tokyo.png
+lang: he
 ---
 
 **Two AAIRL Papers Accepted at CAADRIA 2025 in Tokyo**

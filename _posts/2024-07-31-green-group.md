@@ -10,6 +10,7 @@ tags:
 image: /images/news/greengroup.png
 
 project: UrbanAI
+lang: he
 ---
 
 

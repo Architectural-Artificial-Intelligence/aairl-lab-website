@@ -1,12 +1,14 @@
 ---
 name: Orly Moas-Cohen
-image: images/people/orly.png
+image: /images/people/orly.png
 role: phd
 group: team
 aliases:
   - Orly
 tags:
   - resilience
+key: orly-moas-cohen
+collection: members
 ---
 
 Orly Moas-Cohen is an architect, urban planner, and Ph.D. researcher at AAIRL. She brings extensive experience in complex planning processes, urban and industrial renewal, heritage preservation, public service, management, and strategic consulting.

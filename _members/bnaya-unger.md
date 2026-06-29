@@ -1,11 +1,14 @@
 ---
 name: Bnaya Unger
-image: images/people/bnaya.jpg
+image: /images/people/bnaya.jpg
 role: master
 group: team
 tags:
     - urbanAI
-
+projects:
+  - socialPrediction
+key: bnaya-unger
+collection: members
 ---
 Bnaya Unger is a B.Sc. student in Industrial Engineering and Management and an honors-track M.Sc. student in Industrial Engineering and Management. His research at AAIRL focuses on urban renewal decision support.
 

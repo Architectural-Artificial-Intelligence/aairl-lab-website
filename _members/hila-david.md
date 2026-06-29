@@ -1,12 +1,16 @@
 ---
 name: Hila David
-image: images/people/hila-david.jpg
+image: /images/people/hila-david.jpg
 role: master
 group: team
 tags:
     - chatbot
     - designAI
     - UDT
+projects:
+  - chatbot
+key: hila-david
+collection: members
 ---
 
 

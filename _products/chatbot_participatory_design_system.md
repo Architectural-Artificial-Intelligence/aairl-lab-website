@@ -1,5 +1,7 @@
 ---
 title: Chatbot Participatory Design Software
+collection: products
+key: chatbot-participatory-design
 headline: AI-supported conversations for participatory planning
 into: Collect, structure, and analyze stakeholder input during design and planning processes.
 image: /images/projects/chatbot.png

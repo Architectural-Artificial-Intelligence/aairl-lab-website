@@ -9,7 +9,8 @@ tags:
   - confernecees 
   - DesignAI
 project: SyntheticHumans
-image: images/news/sythetichumans.png
+image: /images/news/sythetichumans.png
+lang: he
 ---
 
 Have you ever wondered why some spaces feel immediately inviting, while others leave us cold or even uneasy? 

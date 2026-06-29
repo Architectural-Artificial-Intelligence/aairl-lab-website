@@ -1,25 +1,27 @@
 ---
 layout: default
 ---
+{% assign t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
+{% if site.active_lang == site.default_lang %}{% assign lp = '' %}{% else %}{% assign lp = '/' | append: site.active_lang %}{% endif %}
 
 <section class="page_banner decoration_wrap">
   <div class="container">
     {% if page.group!="partners" %}
-    <h1 class="page_heading">Research Team</h1>
+    <h1 class="page_heading">{{ t.member_heading_team }}</h1>
     {% endif %}
     {% if page.group=="partners" %}
-    <h1 class="page_heading">Research Partners</h1>
+    <h1 class="page_heading">{{ t.member_heading_partners }}</h1>
     {% endif %}
     <ul class="breadcrumb_nav unordered_list_center">
-      <li><a href="/">Home</a></li>
-      <li><a href="/team">Team</a></li>
+      <li><a href="{{ lp }}/">{{ t.member_nav_home }}</a></li>
+      <li><a href="{{ lp }}/team">{{ t.member_nav_team }}</a></li>
     </ul>
   </div>
   <div class="deco_item deco_img_1" data-parallax='{"y" : -200, "smoothness": 6}'>
-    <img src="/images/shapes/line_shape_1.png" alt="Line Shape Image">
+    <img src="/images/shapes/line_shape_1.png" alt="" aria-hidden="true">
   </div>
   <div class="deco_item deco_img_2" data-parallax='{"y" : 200, "smoothness": 6}'>
-    <img src="/images/shapes/dot_shape_2.png" alt="Line Shape Image">
+    <img src="/images/shapes/dot_shape_2.png" alt="" aria-hidden="true">
   </div>
 </section>
 
@@ -33,7 +35,7 @@ layout: default
           </div>
           <h3 class="admin_name">{{page.name}}</h3>
           <p>
-            {{page.description}}
+            {% include t_field.html field="description" %}
           </p>
           <ul class="social_icon unordered_list_center">
             {% for link in page.links %}
@@ -50,10 +52,30 @@ layout: default
         </div>
       </div>
       <div class="col col-lg-8">
-        <h3 class="details_item_title">About</h3>
-        {{ content }}
+        <h3 class="details_item_title">{{ t.member_about }}</h3>
+        {% include t_field.html field="bio" markdownify=true %}
 
-        {% include paper-list.html match="members" heading="Papers" show_tag_matches=false %}
+        {% if page.projects and page.projects.size > 0 %}
+        <h3 class="details_item_title">{{ t.member_projects }}</h3>
+        <div class="row">
+          {% for project_tag in page.projects %}
+            {% assign proj = site.projects | where: "tag", project_tag | first %}
+            {% if proj %}
+            <div class="col col-sm-6" style="margin-bottom: 1rem;">
+              <a href="{{ proj.url | relative_url }}" class="d-flex align-items-start gap-2 text-decoration-none">
+                <img src="{{ proj.image | relative_url }}" alt="{{ proj.title }}" style="width:64px;height:64px;object-fit:cover;border-radius:6px;flex-shrink:0;">
+                <span>
+                  <strong class="d-block" style="font-size:0.95rem;">{% include t_field.html obj=proj field="title" %}</strong>
+                  <small class="text-muted">{% include t_field.html obj=proj field="intro" %}</small>
+                </span>
+              </a>
+            </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        {% include paper-list.html match="members" heading=t.member_papers show_tag_matches=false %}
 
       </div>
 

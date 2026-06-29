@@ -1,3 +1,5 @@
+{% assign t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
+{% if site.active_lang == site.default_lang %}{% assign lp = '' %}{% else %}{% assign lp = '/' | append: site.active_lang %}{% endif %}
 
 <header class="site_header header_style_3">
   <div class="header_top text-center">
@@ -6,33 +8,46 @@
         <div class="col col-lg-9">
           <ul class="icon_list unordered_list">
             <li>
-              <a href="/">
+              <a href="{{ lp }}/">
                 Architectural Artificial Intelligence Research Laboratory
               </a>
             </li>
           </ul>
         </div>
-        <div class="col col-lg-3 d-lg-flex align-items-center justify-content-lg-end justify-content-between">
-          <ul class="social_icon unordered_list">
+        <div class="col col-lg-3 d-lg-flex align-items-center justify-content-lg-end justify-content-between gap-3">
+          <ul class="social_icon unordered_list" style="flex-wrap: nowrap;">
             <li>
-              <a href="https://www.linkedin.com/company/aairl/">
-                <i class="fab fa-linkedin-in"></i>
-                <i class="fab fa-linkedin-in"></i>
+              <a href="https://www.linkedin.com/company/aairl/" aria-label="LinkedIn" title="LinkedIn">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
               </a>
             </li>
             <li>
-              <a href="https://open.spotify.com/show/0U2d0q6ISem3DAGthiFdrq">
-                <i class="fab fa-spotify"></i>
-                <i class="fab fa-spotify"></i>
+              <a href="https://open.spotify.com/show/0U2d0q6ISem3DAGthiFdrq" aria-label="Podcast on Spotify" title="Podcast on Spotify">
+                <i class="fab fa-spotify" aria-hidden="true"></i>
               </a>
             </li>
             <li>
-              <a href="https://github.com/Architectural-Artificial-Intelligence">
-                <i class="fab fa-github"></i>
-                <i class="fab fa-github"></i>
+              <a href="https://github.com/Architectural-Artificial-Intelligence" aria-label="GitHub" title="GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
+          <nav class="lang-switcher" aria-label="Language selector">
+            {% assign _base_url = page.url | remove_first: '/he' | remove_first: '/de' %}
+            {% if site.active_lang == 'en' %}
+              <span class="lang-flag lang-active" aria-current="true" lang="en">English</span>
+              <a href="/he{{ _base_url }}" class="lang-flag" lang="he" hreflang="he">עברית <sup>AI</sup></a>
+              <a href="/de{{ _base_url }}" class="lang-flag" lang="de" hreflang="de">Deutsch <sup>AI</sup></a>
+            {% elsif site.active_lang == 'he' %}
+              <a {% static_href %}href="{{ _base_url }}"{% endstatic_href %} class="lang-flag" lang="en" hreflang="en">English</a>
+              <span class="lang-flag lang-active" aria-current="true" lang="he">עברית <sup>AI</sup></span>
+              <a href="/de{{ _base_url }}" class="lang-flag" lang="de" hreflang="de">Deutsch <sup>AI</sup></a>
+            {% else %}
+              <a {% static_href %}href="{{ _base_url }}"{% endstatic_href %} class="lang-flag" lang="en" hreflang="en">English</a>
+              <a href="/he{{ _base_url }}" class="lang-flag" lang="he" hreflang="he">עברית <sup>AI</sup></a>
+              <span class="lang-flag lang-active" aria-current="true" lang="de">Deutsch <sup>AI</sup></span>
+            {% endif %}
+          </nav>
         </div>
       </div>
     </div>
@@ -42,7 +57,7 @@
       <div class="row align-items-center">
         <div class="col col-lg-3">
           <div class="site_logo">
-            <a class="site_link" href="/">
+            <a class="site_link" href="{{ lp }}/">
               <img src="/images/logo/site_logo.png" alt="Architectural Artificial Intelligence Research Lab">
             </a>
           </div>
@@ -51,30 +66,38 @@
           <nav class="main_menu navbar navbar-expand-lg">
             <div class="main_menu_inner collapse navbar-collapse justify-content-center" id="main_menu_dropdown">
               <ul class="main_menu_list unordered_list_center">
-
-                <li><a class="nav-link {% if page.url == '/topics/' or page.collection == 'topics' or page.collection == 'projects' %}active{% endif %}" href="/topics/">Research</a></li>
-                <li><a class="nav-link {% if page.url contains '/news/' or page.collection == 'posts' %}active{% endif %}" href="/news/">News</a></li>
-                <li><a class="nav-link {% if page.url == '/publications/' %}active{% endif %}" href="/publications/">Publications</a></li>
-                <li><a class="nav-link {% if page.url == '/team/' or page.collection == 'members' %}active{% endif %}" href="/team/">Team</a></li>
-                <li><a class="nav-link {% if page.url == '/jobs/' or page.collection == 'jobs' %}active{% endif %}" href="/jobs/">Jobs</a></li>
+                <li><a class="nav-link {% if page.url contains '/topics/' or page.collection == 'topics' or page.collection == 'projects' %}active{% endif %}" href="{{ lp }}/topics/" {% if page.url contains '/topics/' or page.collection == 'topics' or page.collection == 'projects' %}aria-current="page"{% endif %}>{{ t.nav_research }}</a></li>
+                <li><a class="nav-link {% if page.url contains '/news/' or page.collection == 'posts' %}active{% endif %}" href="{{ lp }}/news/" {% if page.url contains '/news/' or page.collection == 'posts' %}aria-current="page"{% endif %}>{{ t.nav_news }}</a></li>
+                <li><a class="nav-link {% if page.url == '/publications/' %}active{% endif %}" href="{{ lp }}/publications/" {% if page.url == '/publications/' %}aria-current="page"{% endif %}>{{ t.nav_publications }}</a></li>
+                <li><a class="nav-link {% if page.url == '/team/' or page.collection == 'members' %}active{% endif %}" href="{{ lp }}/team/" {% if page.url == '/team/' or page.collection == 'members' %}aria-current="page"{% endif %}>{{ t.nav_team }}</a></li>
+                <li><a class="nav-link {% if page.url == '/jobs/' or page.collection == 'jobs' %}active{% endif %}" href="{{ lp }}/jobs/" {% if page.url == '/jobs/' or page.collection == 'jobs' %}aria-current="page"{% endif %}>{{ t.nav_jobs }}</a></li>
               </ul>
             </div>
           </nav>
         </div>
         <div class="col col-lg-3">
           <ul class="header_btns_group unordered_list_end">
-            <li>
-              <button data-magnetic data-cursor="-opaque" class="mobile_menu_btn" type="button" data-bs-toggle="collapse" data-bs-target="#main_menu_dropdown" aria-controls="main_menu_dropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="far fa-bars"></i>
-              </button>
+            <li class="d-lg-none">
+              <nav class="lang-switcher" aria-label="Language selector">
+                {% if site.active_lang == 'en' %}
+                  <span class="lang-flag lang-active" aria-current="true" lang="en">EN</span>
+                  <a href="/he{{ _base_url }}" class="lang-flag" lang="he" hreflang="he">HE <sup>AI</sup></a>
+                  <a href="/de{{ _base_url }}" class="lang-flag" lang="de" hreflang="de">DE <sup>AI</sup></a>
+                {% elsif site.active_lang == 'he' %}
+                  <a {% static_href %}href="{{ _base_url }}"{% endstatic_href %} class="lang-flag" lang="en" hreflang="en">EN</a>
+                  <span class="lang-flag lang-active" aria-current="true" lang="he">HE <sup>AI</sup></span>
+                  <a href="/de{{ _base_url }}" class="lang-flag" lang="de" hreflang="de">DE <sup>AI</sup></a>
+                {% else %}
+                  <a {% static_href %}href="{{ _base_url }}"{% endstatic_href %} class="lang-flag" lang="en" hreflang="en">EN</a>
+                  <a href="/he{{ _base_url }}" class="lang-flag" lang="he" hreflang="he">HE <sup>AI</sup></a>
+                  <span class="lang-flag lang-active" aria-current="true" lang="de">DE <sup>AI</sup></span>
+                {% endif %}
+              </nav>
             </li>
             <li>
-              <a class="btn btn_primary header_contact_btn" href="/contact/">
-                <span>
-                  <small>Contact Us</small>
-                  <small>Contact Us</small>
-                </span>
-              </a>
+              <button data-magnetic data-cursor="-opaque" class="mobile_menu_btn" type="button" data-bs-toggle="collapse" data-bs-target="#main_menu_dropdown" aria-controls="main_menu_dropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="far fa-bars" aria-hidden="true"></i>
+              </button>
             </li>
           </ul>
         </div>

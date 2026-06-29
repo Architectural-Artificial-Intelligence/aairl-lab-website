@@ -5,6 +5,7 @@ image: /images/schubert.png
 tags:
   - designAI
 project: UrbanAI
+lang: he
 ---
 Imagine a future where architects can design the way they are used
 to today but get additional expert support from computational

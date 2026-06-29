@@ -1,12 +1,16 @@
 ---
 name: Ofir Glassman
-image: images/people/ofir.jpg
+image: /images/people/ofir.jpg
 role: assistant
 group: team
 tags:
   - designAI
   - urbanAI
-
+projects:
+  - synthetic
+  - UDT
+key: ofir-glassman
+collection: members
 ---
 
 Ofir Glassman is an architecture student at the Ariel School of Architecture and a research assistant at AAIRL. Her work focuses on the intersection of architectural design, AI, and human experience in built environments.

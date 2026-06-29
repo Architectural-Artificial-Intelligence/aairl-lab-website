@@ -1,4 +1,5 @@
-{% assign post = site.posts 
+{% assign t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
+{% assign post = site.posts
   | where_exp: "post", "post.slug == include.lookup"
   | first
   | default: include
@@ -44,9 +45,9 @@
       <p>
         {{excerpt}}
       </p>
-      <a class="btn_unfill" href="{{ url | relative_url }}">
-        Read More
-        <i class="far fa-angle-double-right"></i>
+      <a class="btn_unfill" href="{{ url | relative_url }}" aria-label="{{ t.post_read_more }}: {{ title }}">
+        {{ t.post_read_more }}
+        <i class="far fa-angle-double-right" aria-hidden="true"></i>
       </a>
     </div>
   </div>

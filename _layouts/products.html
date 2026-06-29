@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{% assign t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
+{% if site.active_lang == site.default_lang %}{% assign lp = '' %}{% else %}{% assign lp = '/' | append: site.active_lang %}{% endif %}
 
 <!-- Details Section - Start
 ================================================== -->
@@ -11,25 +13,25 @@ layout: default
       <div class="col col-lg-6">
           <div class="content_wrap">
           <h1 class="details_item_title">
-              {{page.headline}}
+              {% include t_field.html field="headline" %}
           </h1>
           <p>
-              {{page.into}}
+              {% include t_field.html field="intro" %}
           </p>
           </div>
       </div>
       <div class="col col-lg-4">
           <div class="course_details_video">
-          <img src=" {{page.image}}" alt="{{page.title}}">
+          <img src=" {{page.image}}" alt="{% include t_field.html field="title" %}">
           </div>
       </div>
       </div>
   </div>
   <div class="deco_item deco_img_1" data-parallax='{"y" : -200, "smoothness": 6}'>
-      <img src="/images/shapes/line_shape_1.png" alt="Line Shape Image">
+      <img src="/images/shapes/line_shape_1.png" alt="" aria-hidden="true">
   </div>
   <div class="deco_item deco_img_2" data-parallax='{"y" : 200, "smoothness": 6}'>
-      <img src="/images/shapes/dot_shape_2.png" alt="Line Shape Image">
+      <img src="/images/shapes/dot_shape_2.png" alt="" aria-hidden="true">
   </div>
   </div>
   <div class="details_info_tab section_space_lg pt-0">
@@ -37,14 +39,16 @@ layout: default
       <div class="row justify-content-lg-between">
       <div class="col col-lg-7">
           <div class="section_space_lg">
-              <h3 class="details_info_title">Short Overview</h3>
-              {{ page.description }}
-              <p>{{ page.content }}</p>
-              <h3 class="details_info_title">Benefits</h3>
+              <h3 class="details_info_title">{{ t.products_overview_heading | default: "Short Overview" }}</h3>
+              {% include t_field.html field="description" markdownify=true %}
+              {% include t_field.html field="body" markdownify=true %}
+              <h3 class="details_info_title">{{ t.products_benefits_heading | default: "Benefits" }}</h3>
               <div class="row">
               <div class="col col-md-12">
                   <ul class="icon_list unordered_list_block">
-                  {% for b in page.benefits %}
+                  {% assign _tf_products_t = site.data.i18n[site.active_lang].products[page.key] | default: site.data.i18n.en.products[page.key] %}
+                  {% assign _benefits = _tf_products_t.benefits | default: page.benefits %}
+                  {% for b in _benefits %}
                   <li>
                       <i class="far fa-check"></i>
                       <span>{{ b }}</span>
@@ -58,25 +62,25 @@ layout: default
       <div class="col col-lg-4">
           <aside class="sidebar">
           <div class="widget course_cart_info">
-              <a class="btn btn_warning" href="/contact/">
+              <a class="btn btn_warning" href="{{ lp }}/contact/">
               <i class="fas fa-laptop me-1"></i>
               <span>
-                  <small>Request a Demo</small>
-                  <small>Request a Demo</small>
+                  <small>{{ t.products_demo_cta | default: "Request a Demo" }}</small>
+                  <small>{{ t.products_demo_cta | default: "Request a Demo" }}</small>
               </span>
               </a>
               <ul class="cart_info_list unordered_list_block">
               <li>
-                  <span><i class="far fa-clock me-1"></i> Kind</span>
-                  <span>Turn-key solution</span>
+                  <span><i class="far fa-clock me-1"></i> {{ t.products_kind_label | default: "Kind" }}</span>
+                  <span>{{ t.products_kind_value | default: "Turn-key solution" }}</span>
               </li>
               <li>
-                  <span><i class="fal fa-file-alt me-1"></i> Adaptability</span>
-                  <span>Tailored to your needs</span>
+                  <span><i class="fal fa-file-alt me-1"></i> {{ t.products_adaptability_label | default: "Adaptability" }}</span>
+                  <span>{{ t.products_adaptability_value | default: "Tailored to your needs" }}</span>
               </li>
               <li>
-                  <span><i class="far fa-user me-1"></i> Operated by</span>
-                  <span>Our team</span>
+                  <span><i class="far fa-user me-1"></i> {{ t.products_operated_label | default: "Operated by" }}</span>
+                  <span>{{ t.products_operated_value | default: "Our team" }}</span>
               </li>
               </ul>
           </div>
@@ -86,7 +90,3 @@ layout: default
   </div>
   </div>
 </section>
-
-
-
-

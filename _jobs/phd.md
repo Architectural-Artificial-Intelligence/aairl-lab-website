@@ -1,8 +1,12 @@
 --- 
 layout: jobs
+key: phd
+collection: jobs
 title: PhD Studies
-intro: We welcome PhD candidates who want to do deep research at the intersection of urban design/planning and AI, with a strong emphasis on projects that connect to real urban constraints and partner needs.
-image: images/meta/phd.png
+title_he: דוקטורט
+intro: We welcome PhD candidates who want to pursue rigorous research at the intersection of AI and architectural or urban planning practice, grounded in real constraints and developed in collaboration with municipal and industry partners.
+intro_he: אנחנו מקבלים מועמדים לדוקטורט שרוצים לעשות מחקר רציני בצומת שבין AI לאדריכלות ותכנון עירוני — מחקר שמושרש בבעיות אמיתיות ומתפתח בשיתוף שותפים מהעירייה ומהתעשייה.
+image: /images/meta/phd.png
 about:
 - Develop a research agenda around a real planning and design problem
 - Build methods or tools and validate them empirically

@@ -1,9 +1,13 @@
 --- 
 layout: jobs
+key: postdoc
+collection: jobs
 title: Postdoctoral Fellows
-intro: We seek postdoctoral fellows interested in conducting high-impact research in urban AI, computational design, spatial analytics, and data-driven planning with experience in quantitative methods and implementation.
+title_he: פוסט-דוקטורט
+intro: We seek postdoctoral researchers with a strong quantitative or computational background who want to conduct high-impact work in urban AI, computational design, spatial analytics, or data-driven planning.
+intro_he: אנחנו מחפשים חוקרים פוסט-דוקטורנטים עם רקע כמותי או חישובי חזק, שרוצים לעשות עבודה בעלת השפעה אמיתית ב-AI עירוני, עיצוב חישובי, אנליטיקה מרחבית או תכנון מונחה-נתונים.
 
-image: images/meta/postdoc.png
+image: /images/meta/postdoc.png
 about:
 - Develop a research agenda around a real planning and design problem
 - Build methods or tools and validate them empirically

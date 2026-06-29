@@ -1,10 +1,14 @@
 ---
 name: Adiya Karmon
-image: images/people/adiya.jpg
+image: /images/people/adiya.jpg
 role: master
 group: team
 tags:
     - designAI
+projects:
+    - synthetic
+key: adiya-karmon
+collection: members
 ---
 
 Adiya Karmon is an architecture student at Ariel University and a master's student in sustainable architecture. Her research at AAIRL explores parametric urban planning as a method for supporting more informed and environmentally responsive city planning.

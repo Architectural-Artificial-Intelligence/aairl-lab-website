@@ -1,22 +1,22 @@
 ---
 layout: default
 ---
-
+{% assign t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
+{% if site.active_lang == site.default_lang %}{% assign lp = '' %}{% else %}{% assign lp = '/' | append: site.active_lang %}{% endif %}
 
 <section class="page_banner decoration_wrap">
   <div class="container">
     <h1 class="page_heading">{{ page.title }}</h1>
     <ul class="breadcrumb_nav unordered_list_center">
-      <li><a href="/">Home</a></li>
-      <li><a href="/news">News</a></li>
-      <li>Story</li>
+      <li><a href="{{ lp }}/">{{ t.member_nav_home }}</a></li>
+      <li><a href="{{ lp }}/news">{{ t.nav_news }}</a></li>
     </ul>
   </div>
   <div class="deco_item deco_img_1" data-parallax='{"y" : -200, "smoothness": 6}'>
-    <img src="/images/shapes/line_shape_1.png" alt="Line Shape Image">
+    <img src="/images/shapes/line_shape_1.png" alt="" aria-hidden="true">
   </div>
   <div class="deco_item deco_img_2" data-parallax='{"y" : 200, "smoothness": 6}'>
-    <img src="/images/shapes/dot_shape_2.png" alt="Line Shape Image">
+    <img src="/images/shapes/dot_shape_2.png" alt="" aria-hidden="true">
   </div>
 </section>
 
@@ -41,21 +41,21 @@ layout: default
             tags=page.tags
           %}
 
-          <p>   
+          <p>
             {{ content }}
           </p>
 
           <hr>
 
           {% include post-nav.html post=page %}
-          
+
         </div>
       </div>
 
       <div class="col col-lg-3">
         <aside class="sidebar">
           <div class="widget category_list">
-            <h3 class="widget_title">Categories</h3>
+            <h3 class="widget_title">{{ t.nav_research }}</h3>
             <ul class="unordered_list_block">
 
               {% assign tags = page.tags
@@ -67,11 +67,11 @@ layout: default
               %}
               {% assign link = include.link | default: page.dir | absolute_url %}
 
-                
+
               {% for tag in tags %}
               {% assign tag_label = site.data.tag_labels[tag] | default: tag %}
               <li> <a
-                  href="/news/?search=&quot;tag: {{ tag }}&quot;">
+                  href="{{ lp }}/news/?search=&quot;tag: {{ tag }}&quot;">
                 <span>{{ tag_label }}</span>
 
                 </a>
@@ -82,7 +82,7 @@ layout: default
           </div>
 
           <div class="widget recent_post">
-            <h3 class="widget_title">Latest Stories</h3>
+            <h3 class="widget_title">{{ t.footer_latest_news }}</h3>
             <ul class="unordered_list_block">
 
               {% include list_small.html data="posts" component="post-short" %}
@@ -94,7 +94,3 @@ layout: default
     </div>
   </div>
 </section>
-
-
-
-

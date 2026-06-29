@@ -1,3 +1,4 @@
+{% assign t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
 {% assign source_papers = include.papers | default: site.data.papers %}
 {% assign page_tag = include.tag | default: page.tag %}
 {% assign page_tags = include.tags | default: page.tags %}
@@ -75,7 +76,7 @@
     {% if include.heading %}
       <h4 class="details_info_title">{{ include.heading }}</h4>
     {% else %}
-      <h4 class="details_info_title">Papers</h4>
+      <h4 class="details_info_title">{{ t.paper_list_heading }}</h4>
     {% endif %}
   {% endif %}
   <div class="paper_list">

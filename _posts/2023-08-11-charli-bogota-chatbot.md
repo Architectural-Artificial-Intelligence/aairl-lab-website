@@ -5,7 +5,7 @@ image: /images/news/charli.webp
 project: PD
 tags:
  - chatbot
-
+lang: he
 ---
 
 

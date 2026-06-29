@@ -1,34 +1,27 @@
 ---
 layout: default
 ---
-
+{% assign t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
 
 <section class="page_banner jobs_banner decoration_wrap">
     <div class="container">
-        <h1 class="page_heading">Advance Your Career at the Lab</h1>
-        <p>We welcome applicants interested in research degrees (MSc, PhD), and postdoctoral positions.</p>
-        <!-- <ul class="breadcrumb_nav unordered_list_center">
-      <li><a href="index.html">Home</a></li>
-      <li>Projects</li>
-    </ul> -->
+        <h1 class="page_heading">{{ t.study_banner_title }}</h1>
+        <p>{{ t.study_banner_body }}</p>
     </div>
     <div class="deco_item deco_img_1" data-parallax='{"y" : -200, "smoothness": 6}'>
-        <img src="/images/shapes/line_shape_1.png" alt="Line Shape Image">
+        <img src="/images/shapes/line_shape_1.png" alt="" aria-hidden="true">
     </div>
     <div class="deco_item deco_img_2" data-parallax='{"y" : 200, "smoothness": 6}'>
-        <img src="/images/shapes/dot_shape_2.png" alt="Line Shape Image">
+        <img src="/images/shapes/dot_shape_2.png" alt="" aria-hidden="true">
     </div>
 </section>
 
 
-<!-- Course Section - Start
-================================================== -->
 <section class="course_section jobs_landing_section section_space_lg">
     <div class="container">
         <div class="team_section_heading">
-            <span class="publication_eyebrow">Opportunities</span>
-            <h2>Open Research Paths</h2>
-            <p>Choose the route that matches your stage, research goals, and desired level of independence.</p>
+            <h2>{{ t.study_opportunities_heading }}</h2>
+            <p>{{ t.study_opportunities_body }}</p>
         </div>
         <div class="tab-content">
             <div class="row">

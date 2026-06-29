@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% assign t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
 
 <!-- Details Section - Start
 ================================================== -->
@@ -11,10 +12,10 @@ layout: default
                 <div class="col col-lg-7">
                     <div class="content_wrap">
                         <h1 class="details_item_title">
-                            {{page.title}}
+                            {% include t_field.html field="title" %}
                         </h1>
                         <p>
-                            {{page.intro}}
+                            {% include t_field.html field="intro" %}
                         </p>
                         {% if page.tag %}
                           {% assign topic_tag = page.tag | downcase %}
@@ -43,10 +44,10 @@ layout: default
             </div>
         </div>
         <div class="deco_item deco_img_1" data-parallax='{"y" : -200, "smoothness": 6}'>
-            <img src="/images/shapes/line_shape_1.png" alt="Line Shape Image">
+            <img src="/images/shapes/line_shape_1.png" alt="" aria-hidden="true">
         </div>
         <div class="deco_item deco_img_2" data-parallax='{"y" : 200, "smoothness": 6}'>
-            <img src="/images/shapes/dot_shape_2.png" alt="Line Shape Image">
+            <img src="/images/shapes/dot_shape_2.png" alt="" aria-hidden="true">
         </div>
     </div>
     <div class="details_section details_info_tab section_space_lg pt-0">
@@ -54,54 +55,53 @@ layout: default
             <div class="row justify-content-lg-between">
                 <div class="col col-lg-8">
                     <div class="details_section section_wrapper">
-                        <h4 class="details_info_title">About</h4>
-                        {{ content }}
+                        <h4 class="details_info_title">{{ t.label_about }}</h4>
+                        {% include t_field.html field="body" markdownify=true %}
                     </div>
                     {% if page.posts %}
                     <div class="details_section section_wrapper">
-                        <h4 class="details_info_title">News</h4>
+                        <h4 class="details_info_title">{{ t.label_news }}</h4>
                         <div class="row">
                         {% include list_small.html data="posts" component="post-excerpt-shorter" filter=filter_news %}
                         </div>
                     </div>
                     {% endif %}
-                    <div class="details_section section_wrapper">
-                        <h4 class="details_info_title">Funding</h4>
-                        <div>
-                            <ul>
-                                {% for fund in page.funding %}
-                                <li>{{ fund }}</li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    </div>
-                    {% include paper-list.html match="projects" heading="Papers" %}
+                    {% include paper-list.html match="projects" heading=t.label_papers %}
                 </div>
                 <div class="col col-lg-4">
                     <aside class="sidebar">
                         <div class="widget course_cart_info">
-                            <h3>Contact Information</h3>
-                            <h6>Architectural AI Research Laboratory</h6>
+                            {% assign project_tag = page.tag %}
+                            {% assign project_members = site.members | where_exp: "m", "m.projects contains project_tag" %}
+                            {% if project_members.size > 0 %}
+                            <h3 class="details_info_title">{{ t.label_team }}</h3>
+                            {% for m in project_members %}
+                            {% include team_mini_portrait.html lookup=m.slug %}
+                            {% endfor %}
+                            {% endif %}
+                            {% if page.funding %}
+                            <h3 class="details_info_title" {% if project_members.size > 0 %}style="margin-top:24px;"{% endif %}>{{ t.label_funding }}</h3>
                             <ul class="cart_info_list unordered_list_block">
+                                {% for fund_key in page.funding %}
+                                {% assign partner = site.data.partners | where: "key", fund_key | first %}
+                                {% assign partner_t = t.partners[fund_key] %}
                                 <li>
-                                    <span><i class="fal fa-map-marker  me-1"></i></span>
-                                    <span>Suite 3.3.55,
-                                        Ariel University</span>
+                                    {% if partner %}
+                                        {% assign display_name = partner_t.name | default: fund_key %}
+                                        {% if partner.url %}
+                                            <a href="{{ partner.url }}" target="_blank" rel="noopener">{{ display_name }}</a>
+                                        {% else %}
+                                            {{ display_name }}
+                                        {% endif %}
+                                    {% else %}
+                                        {{ fund_key }}
+                                    {% endif %}
                                 </li>
-                                <li>
-                                    <span><i class="far fa-phone me-1"></i></span>
-                                    <span>+972 (0)54-457-7442</span>
-                                </li>
-
-                                <li>
-                                    <span><i class="far fa-envelope me-1"></i></span>
-                                    <span><a href="mailto:jonathand@ariel.ac.il">jonathand@ariel.ac.il</a></span>
-
-                                </li>
+                                {% endfor %}
                             </ul>
+                            {% endif %}
                         </div>
                     </aside>
-
                 </div>
             </div>
 
