@@ -2,6 +2,7 @@
 <html lang="{{ site.active_lang | default: 'en' }}" dir="{% assign _rtl_langs = 'he,ar,fa,ur' | split: ',' %}{% if _rtl_langs contains site.active_lang %}rtl{% else %}ltr{% endif %}" data-dark="false">
   {% include head.html %}
   <body>
+  {% include scripts.html %}
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <!-- Body Wrap - Start -->
     <div class="page_wrapper">

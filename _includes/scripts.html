@@ -3,8 +3,17 @@
 <script src="https://unpkg.com/tippy.js@6" defer></script>
 <script src="https://unpkg.com/mark.js@8" defer></script>
 
-<!-- include all js in scripts folder -->
-{% assign scripts = site.static_files | where_exp: "file", "file.path contains '/_scripts'" %}
-{% for script in scripts %}
-  <script src="{{ script.path | relative_url }}"></script>
-{% endfor %}
+<!-- scripts -->
+<script src="/_scripts/0_jquery.min.js"></script>
+<script src="/_scripts/1_bootstrap.min.js"></script>
+<script src="/_scripts/bootstrap-dropdown-ml-hack.js"></script>
+<script src="/_scripts/parallax.min.js"></script>
+<script src="/_scripts/parallax-scroll.js"></script>
+<script src="/_scripts/popper.min.js"></script>
+<script src="/_scripts/slick.min.js"></script>
+<script src="/_scripts/table-wrap.js"></script>
+<script src="/_scripts/tilt.min.js"></script>
+<script src="/_scripts/tooltip.js"></script>
+<script src="/_scripts/waypoint.js"></script>
+<script src="/_scripts/wow.min.js"></script>
+<script src="/_scripts/zzz_main.js"></script>
