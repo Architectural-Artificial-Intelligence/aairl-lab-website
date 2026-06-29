@@ -20,6 +20,21 @@
   --overlay: #ffffff10;
 }
 
+@media screen and (max-width: 991px) {
+  .header_style_3 .main_menu_inner {
+    left: 0;
+    right: 0;
+    top: 100%;
+    position: absolute;
+    z-index: 999;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+  }
+  .header_style_3 .header_bottom {
+    position: relative;
+  }
+}
 :root {
   --title: "Nunito", sans-serif;
   --heading: "Nunito", sans-serif;

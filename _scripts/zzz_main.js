@@ -10,6 +10,16 @@
 (function($) {
   "use strict";
 
+  // Mobile menu toggle - Start
+  // --------------------------------------------------
+  $(document).on('click', '.mobile_menu_btn', function() {
+    var $target = $($(this).data('bs-target'));
+    $target.toggleClass('show');
+    $(this).attr('aria-expanded', $target.hasClass('show'));
+  });
+  // Mobile menu toggle - End
+  // --------------------------------------------------
+
   // Back To Top - Start
   // --------------------------------------------------
   $(window).scroll(function() {
@@ -117,98 +127,12 @@
   // Dropdown - End
   // --------------------------------------------------
 
-  // Counter Up - Start
-  // --------------------------------------------------
-  $('.value_text').counterUp({
-    delay: 10,
-    time: 1000
-  });
+ 
   // Counter Up - End
   // --------------------------------------------------
 
-  // Sponsors Carousel - Start
-  // --------------------------------------------------
-  $('.sponsors_logo_wrap').slick({
-    speed: 2000,
-    autoplaySpeed: 0,
-    dots: false,
-    arrows: false,
-    autoplay: true,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    cssEase: 'linear',
-    pauseOnHover: true,
-    responsive: [
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 1,
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-      }
-    },
-    {
-      breakpoint: 576,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-      }
-    }
-    ]
-  });
-  // Sponsors Carousel - End
-  // --------------------------------------------------
-
-  // Testimonial Carousel - Start
-  // --------------------------------------------------
-  $('.testimonial_carousel').slick({
-    dots: true,
-    speed: 1000,
-    arrows: false,
-    autoplay: true,
-    infinite: true,
-    slidesToShow: 1,
-    pauseOnHover: true,
-    autoplaySpeed: 4000,
-    prevArrow: ".tc_arrow_left",
-    nextArrow: ".tc_arrow_right"
-  });
-  // Testimonial Carousel - End
-  // --------------------------------------------------
-
-  // Videos & Images popup - Start
-  // --------------------------------------------------
-  $('.popup_video').magnificPopup({
-    type: 'iframe',
-    preloader: false,
-    removalDelay: 160,
-    mainClass: 'mfp-fade',
-    fixedContentPos: false
-  });
-
-  $('.zoom-gallery').magnificPopup({
-    delegate: '.popup_image',
-    type: 'image',
-    closeOnContentClick: false,
-    closeBtnInside: false,
-    mainClass: 'mfp-with-zoom mfp-img-mobile',
-    gallery: {
-      enabled: true
-    },
-    zoom: {
-      enabled: true,
-      duration: 300,
-      opener: function(element) {
-        return element.find('img');
-      }
-    }
-  });
+  
+  
   // Videos & Images popup - End
   // --------------------------------------------------
 
