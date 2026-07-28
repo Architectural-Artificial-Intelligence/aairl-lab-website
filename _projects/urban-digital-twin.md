@@ -12,6 +12,7 @@ funding:
     - ministry-of-science-and-technology
 
 papers:
+    - Kiros2026
     - dortheimer2025
     - Boim2021
 ---

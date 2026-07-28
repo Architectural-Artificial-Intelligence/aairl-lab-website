@@ -20,7 +20,7 @@
 <article class="paper publication_item" {% if citation.id %}id="{{ citation.id }}"{% endif %}>
   <div class="paper_year">
     <span class="badge badge_primary">{{ citation.date | default: "[no date info]" | date: "%Y" }}</span>
-    <small>{{ citation.type | default: "Publication" | capitalize }}</small>
+    <small>{{ citation.type | default: t.citation_type_publication | capitalize }}</small>
   </div>
 
   <div class="paper_body">
