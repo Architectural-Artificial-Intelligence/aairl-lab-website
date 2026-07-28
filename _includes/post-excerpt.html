@@ -27,7 +27,7 @@
   <div class="blog_item">
     {% if post.image %}
     <a class="item_image" href="{{ url | relative_url }}">
-      <img src="{{post.image | relative_url}}" alt="{{ title }}">
+      <img src="{{post.image | relative_url}}" alt="{{ title | xml_escape }}">
     </a>
     {% endif  %}
     <div class="item_content">
@@ -45,7 +45,7 @@
       <p>
         {{excerpt}}
       </p>
-      <a class="btn_unfill" href="{{ url | relative_url }}" aria-label="{{ t.post_read_more }}: {{ title }}">
+      <a class="btn_unfill" href="{{ url | relative_url }}" aria-label="{{ t.post_read_more }}: {{ title | xml_escape }}">
         {{ t.post_read_more }}
         <i class="far fa-angle-double-right" aria-hidden="true"></i>
       </a>

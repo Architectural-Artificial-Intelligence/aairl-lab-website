@@ -27,7 +27,7 @@
           <li><a href="{{member.url}}">
             
             {% if member %}
-              {{ member.name }}
+              {% include t_field.html obj=member field="name" %}
             {% endif %}
           </a></li>
           <li>{{ published }}</li>

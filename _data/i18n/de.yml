@@ -246,6 +246,7 @@ roles:
   phd-candidate: "Doktoratskandidat/in"
   assistant: "Forschungsassistent/in"
   master: "Masterstudent/in"
+  msc: "M.Sc.-Student/in"
   research-lead: "Forschungsleiter/in"
   mascot: "Maskottchen"
 
@@ -327,11 +328,11 @@ members:
   shay-skital:
     name: "Shay Skital"
     bio: |
-      Shay Skital ist Architekt, Stadtplaner und Ph.D.-Forscher bei AAIRL. Er hat einen B.Arch. von der Ariel University und einen M.A. in Geografie und menschlicher Umwelt mit Spezialisierung auf Stadt- und Regionalplanung und -gestaltung von der Tel Aviv University.
+      Shay Skital, Architekt und Stadtplaner, hat einen B.Arch. von der Ariel University und einen M.A. in Städtebau- und Umweltdesign von der Tel Aviv University.
 
-      Vor seinem Eintritt in das Labor bekleidete Shay leitende Planungspositionen im öffentlichen Sektor, darunter Stadtarchitekt und Leiter der Planungsabteilung in mehreren Kommunen in Israel. Seine Berufsarbeit umfasste komplexe Planungsprozesse, Neuquartierplanung, Denkmalpflege, städtische Erneuerung, Gewerbe- und Beschäftigungszonen, touristisch orientierte Planung, öffentliche Gebäude und Gestaltung des öffentlichen Raums.
+      Während seiner Tätigkeit in leitenden Positionen im öffentlichen Sektor war Shay als Stadtarchitekt und Leiter der Planungsabteilung in mehreren Kommunen tätig. In diesen Funktionen befasste er sich mit einer Vielzahl von Themen, darunter: die Leitung von Planungsprozessen, die Planung neuer Wohnviertel, die Erhaltung historischer Gebäude und Gebiete, städtische Erneuerung, die Planung von Gewerbe- und Handelszonen, tourismusorientierte Planung sowie die Planung öffentlicher Gebäude und öffentlicher Räume in der Stadt.
 
-      Bei AAIRL verbindet Shays Forschung städtische Planungspraxis mit digitalen Werkzeugen für Stadtanalyse und Entscheidungsunterstützung. Seine Arbeit betont ortssensible Planung, lokale Identität und den Einsatz von Stadtdaten zur Verbesserung der Erfahrung und des Wertes, den Städte Bewohnern und Besuchern bieten.
+      In seiner Arbeit legt Shay einen zentralen Schwerpunkt auf Stadtplanung, die die Verbindung zum Ort und seiner Umgebung berücksichtigt, durch eine eingehende Untersuchung des Charakters der Kommune, die Verbesserung des städtischen Erlebnisses und dessen, was die Stadt den Menschen bieten kann, die sich dort aufhalten.
   hila-david:
     name: "Hila David"
     bio: |
@@ -367,7 +368,7 @@ members:
     bio: |
       Michael Sharon ist Architekturstudent an der Ariel School of Architecture und Forschungsassistent bei AAIRL. Seine Arbeit erforscht fortgeschrittene computergestützte Methoden für architektonisches Design.
 
-      Michaels aktuelle Forschung konzentriert sich darauf, wie Quantencomputing und verwandte computergestützte Ansätze komplexe Designprobleme unterstützen können. Seine Arbeit verbindet architektonisches Denken, computergestütztes Design und aufkommende Technologien zur Erkundung neuer Arten der Designsuche und -bewertung.
+      Seine aktuelle Forschung konzentriert sich darauf, wie fortschrittliche, KI-basierte Planungswerkzeuge auch nicht-technischen Stadtingenieuren zugänglich gemacht werden können, indem künstliche Intelligenz in digitale Zwillinge integriert wird.
   ofir-glassman:
     name: "Ofir Glassman"
     bio: |

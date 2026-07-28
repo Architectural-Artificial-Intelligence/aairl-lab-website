@@ -59,7 +59,7 @@
 
   {% if citation.link %}
     <div class="paper_action">
-      <a class="paper_link" href="{{ citation.link }}" aria-label="Open {{ citation.title | default: "paper" }}">
+      <a class="paper_link" href="{{ citation.link }}" aria-label="Open {{ citation.title | default: "paper" | xml_escape }}">
         {{ t.citation_open }}
         <i class="far fa-long-arrow-right"></i>
       </a>

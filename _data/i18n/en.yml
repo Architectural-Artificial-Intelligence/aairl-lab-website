@@ -227,7 +227,7 @@ jobs_applying: "Applying for This Position"
 
 # Study (jobs landing) layout
 study_banner_title: "Advance Your Career at the Lab"
-study_banner_body: "We welcome applicants interested in research degrees (MSc, PhD), and postdoctoral positions."
+study_banner_body: "We welcome applicants interested in research degrees (M.Sc., Ph.D.), and postdoctoral positions."
 study_opportunities_heading: "Open Research Paths"
 study_opportunities_body: "Choose the route that matches your stage, research goals, and desired level of independence."
 
@@ -242,10 +242,11 @@ roles:
   pi: "Principal Investigator"
   lab-manager: "Lab Manager"
   postdoc: "Postdoctoral Researcher"
-  phd: "PhD Student"
-  phd-candidate: "PhD Candidate"
+  phd: "Ph.D. Student"
+  phd-candidate: "Ph.D. Candidate"
   assistant: "Research Assistant"
   master: "MA Student"
+  msc: "M.Sc. Student"
   research-lead: "Research Leader"
   mascot: "Mascot"
 
@@ -327,11 +328,11 @@ members:
   shay-skital:
     name: "Shay Skital"
     bio: |
-      Shay Skital is an architect, urban planner, and Ph.D. researcher at AAIRL. He holds a B.Arch. from Ariel University and an M.A. in Geography and the Human Environment, with a specialization in Urban and Regional Planning and Design, from Tel Aviv University.
+      Shay Skital, an architect and urban planner, holds a B.Arch. from Ariel University and an M.A. in Urban-Environmental Design from Tel Aviv University.
 
-      Before joining the lab, Shay served in senior public-sector planning roles, including City Architect and Head of Planning Department in several local authorities in Israel. His professional work included complex planning processes, new neighborhood planning, heritage preservation, urban renewal, commercial and employment zones, tourism-oriented planning, public buildings, and public space design.
+      During his service in senior public-sector roles, Shay served as City Architect and Head of the Planning Department in several local authorities. In these roles, he worked on a wide range of subjects, including: managing planning processes, planning new neighborhoods, preserving historic buildings and areas, urban renewal, planning commercial and employment zones, tourism-oriented planning, and planning public buildings and public spaces in the city.
 
-      At AAIRL, Shay's research connects urban planning practice with digital tools for city analysis and decision support. His work emphasizes place-sensitive planning, local identity, and the use of urban data to improve the experience and value cities offer to residents and visitors.
+      In his work, Shay places a central emphasis on urban planning that connects to place and its surroundings, through an in-depth examination of the character of the local authority, improving the urban experience, and what the city can offer those within it.
   hila-david:
     name: "Hila David"
     bio: |
@@ -367,7 +368,7 @@ members:
     bio: |
       Michael Sharon is an architecture student at the Ariel School of Architecture and a research assistant at AAIRL. His work explores advanced computational methods for architectural design.
 
-      Michael's current research focuses on how quantum computing and related computational approaches may support complex design problems. His work connects architectural reasoning, computational design, and emerging technologies for exploring new kinds of design search and evaluation.
+      His current research focuses on how advanced, AI-based design tools can be made accessible to urban engineers, including non-technical ones, by integrating artificial intelligence within digital twins.
   ofir-glassman:
     name: "Ofir Glassman"
     bio: |
@@ -409,13 +410,13 @@ members:
 
 jobs:
   phd:
-    title: "PhD Studies"
-    intro: "We welcome PhD candidates who want to pursue rigorous research at the intersection of AI and architectural or urban planning practice, grounded in real constraints and developed in collaboration with municipal and industry partners."
+    title: "Ph.D. Studies"
+    intro: "We welcome Ph.D. candidates who want to pursue rigorous research at the intersection of AI and architectural or urban planning practice, grounded in real constraints and developed in collaboration with municipal and industry partners."
     about:
       - "Develop a research agenda around a real planning and design problem"
       - "Build methods or tools and validate them empirically"
       - "Work with real-world data and, in many cases, partner feedback loops"
-      - "Publish throughout the PhD, often as first author"
+      - "Publish throughout the Ph.D., often as first author"
       - "Contribute to lab infrastructure when relevant (datasets, benchmarks, tools)"
       - "Fully funded project-based positions"
     look:
@@ -424,17 +425,17 @@ jobs:
       - "Ability to work independently while collaborating with the group"
       - "Backgrounds welcome from architecture, CS, engineering, urban studies, etc."
     body: |
-      **Our lab has project-funded PhD student positions.** To express interest, email [Dr. Haya Brama](mailto:hayab@ariel.ac.il) with the subject line "PhD inquiry" and include:
+      **Our lab has project-funded Ph.D. student positions.** To express interest, email [Dr. Haya Brama](mailto:hayab@ariel.ac.il) with the subject line "Ph.D. inquiry" and include:
 
       * CV
       * Transcripts
       * A short paragraph describing your interests and relevant experience
       * (Optional) writing sample / portfolio / GitHub / previous thesis
 
-      More details are available on Ariel University's [PhD website](https://www.ariel.ac.il/wp/graduate-school/en/applicants/).
+      More details are available on Ariel University's [Ph.D. website](https://www.ariel.ac.il/wp/graduate-school/en/applicants/).
   master:
     title: "Master's Thesis Track"
-    intro: "We host MSc students only within a thesis track. This track is best for students who may consider a PhD or want deeper research training. In the lab, students do hands-on work on real datasets and research questions connected to ongoing lab projects and partners."
+    intro: "We host M.Sc. students only within a thesis track. This track is best for students who may consider a Ph.D. or want deeper research training. In the lab, students do hands-on work on real datasets and research questions connected to ongoing lab projects and partners."
     about:
       - "Gain research skills, strong portfolio, and a realistic view of academic and applied research"
       - "Complete a research project"

@@ -33,7 +33,7 @@ layout: default
           <div class="admin_image">
             <img src="{{ page.image | relative_url }}" alt="member portrait" loading="lazy" {% include fallback.html %}>
           </div>
-          <h3 class="admin_name">{{page.name}}</h3>
+          <h3 class="admin_name">{% include t_field.html field="name" %}</h3>
           <p>
             {% include t_field.html field="description" %}
           </p>

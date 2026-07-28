@@ -7,6 +7,6 @@
 %}
 
 <ul class="post_meta unordered_list">
-  <li>{{ member.name }}</li>
+  <li>{% include t_field.html obj=member field="name" %}</li>
   <li>{{published}}</li>
 </ul>

@@ -12,8 +12,8 @@
     <div class="item_image">
 
       <a class="image_wrap" {% if citation.link %} href="{{ citation.link | relative_url }}" {% endif %}
-        class="citation-image" aria-label="{{ citation.title | default: " citation link" }}">
-        <img src="{{ citation.image | relative_url }}" alt="{{ citation.title | default: " citation image" }}"
+        class="citation-image" aria-label="{{ citation.title | default: "citation link" | xml_escape }}">
+        <img src="{{ citation.image | relative_url }}" alt="{{ citation.title | default: "citation image" | xml_escape }}"
           loading="lazy" {% include fallback.html %}>
       </a>
     </div>

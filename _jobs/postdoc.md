@@ -39,11 +39,3 @@ funding:
     url: "https://isf.org.il/#/support-channels/36/14"
     note: "for Social Science research"
 ---
-
-**Our lab has project-funded postdoctoral positions.** To apply, send one PDF document (max 10MB) to [Dr. Haya Brama](mailto:hayab@ariel.ac.il) with the subject line “Postdoctoral application”. The PDF should include:
-
-* CV
-* Cover letter describing your research interests and fit with the AAIRL
-* Up to 3 publications or work samples
-
-More details are available on Ariel University's [Postdocs website](https://www.ariel.ac.il/wp/postdocs/).

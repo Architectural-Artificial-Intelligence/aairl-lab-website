@@ -3,16 +3,18 @@
 | first
 | default: include
 %}
+{% capture _member_name %}{% include t_field.html obj=member field="name" %}{% endcapture %}
+{% assign _member_name = _member_name | strip %}
 <div class="instructor_item team_member_card" style="background-image: url('/images/shapes/dot_shape_3.png');">
   <div class="inner_wrap" data-magnetic>
     <div class="item_image">
-      <img src="{{ member.image | relative_url }}" alt="{% include t_field.html obj=member field="name" %}" loading="lazy" {% include fallback.html %}>
+      <img src="{{ member.image | relative_url }}" alt="{{ _member_name | xml_escape }}" loading="lazy" {% include fallback.html %}>
     </div>
     <div class="item_content">
-    
+
       <h3 class="instructor_name">
-        <a href="{{ member.url | relative_url }}" class="portrait" aria-label="{% include t_field.html obj=member field="name" %}">
-          {% include t_field.html obj=member field="name" %}
+        <a href="{{ member.url | relative_url }}" class="portrait" aria-label="{{ _member_name | xml_escape }}">
+          {{ _member_name }}
         </a>
       </h3>
 

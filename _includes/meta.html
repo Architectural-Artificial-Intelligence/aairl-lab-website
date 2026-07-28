@@ -1,6 +1,7 @@
 {% assign filename = page.path | split: "/" | last %}
 {% if page.name and page.name != filename %}
-  {% assign title = page.name %}
+  {% capture title %}{% include t_field.html field="name" %}{% endcapture %}
+  {% assign title = title | strip %}
 {% elsif page.title %}
   {% assign title = page.title %}
 {% else %}

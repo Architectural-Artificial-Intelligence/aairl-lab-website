@@ -5,11 +5,13 @@
 %}
 
 <div class="d-flex align-items-center mb-3" style="gap:12px;">
-  <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" loading="lazy"
+  {% capture _member_name %}{% include t_field.html obj=member field="name" %}{% endcapture %}
+  {% assign _member_name = _member_name | strip %}
+  <img src="{{ member.image | relative_url }}" alt="{{ _member_name | xml_escape }}" loading="lazy"
        style="width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0;"
        {% include fallback.html %}>
   <div>
-    <a href="{{ member.url | relative_url }}" class="d-block fw-semibold" style="line-height:1.2;">{{ member.name }}</a>
+    <a href="{{ member.url | relative_url }}" class="d-block fw-semibold" style="line-height:1.2;">{% include t_field.html obj=member field="name" %}</a>
     <small class="text-muted">
       {% assign _t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
       {% assign _member_i18n = _t.members[member.key] %}

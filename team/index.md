@@ -33,6 +33,7 @@ nav:
 
 {% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'phd'" %}
 {% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'master'" %}
+{% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'msc'" %}
 {% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'assistant'" %}
     </div>
   </div>
