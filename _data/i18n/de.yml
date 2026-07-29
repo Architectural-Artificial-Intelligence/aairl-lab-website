@@ -369,6 +369,12 @@ members:
       Michael Sharon ist Architekturstudent an der Ariel School of Architecture und Forschungsassistent bei AAIRL. Seine Arbeit erforscht fortgeschrittene computergestützte Methoden für architektonisches Design.
 
       Im Rahmen des METROPOLIS-Projekts untersucht Michael, wie auf natürlicher Sprache basierende Designschnittstellen genutzt werden können, um die Planung urbaner Szenarien auf digitalen Zwillingsplattformen zu steuern.
+  maya-milovidov:
+    name: "Maya Milovidov"
+    bio: |
+      Maya Milovidov ist Dekans-Bestlisten-Studentin an der Ariel School of Architecture der Ariel University und Forschungsassistentin am AAIRL-Labor.
+
+      Ihre berufliche und wissenschaftliche Arbeit konzentriert sich auf die Integration künstlicher Intelligenz in die physische Welt. In diesem Rahmen ist Maya an der Forschung „Physische KI: Ein lebendiges Labor im Gebäude" beteiligt, die untersucht, wie intelligente Gebäude, Roboter und Menschen sicher und effizient miteinander kommunizieren und zusammenarbeiten können, mit dem Ziel, die Lebensqualität für alle zu verbessern.
   ofir-glassman:
     name: "Ofir Glassman"
     bio: |
@@ -386,7 +392,7 @@ members:
   gal-guz:
     name: "Gal Guz"
     bio: |
-      Gal Guz ist Architekturstudent, UX/UI-Designer und Alumnus von AAIRL. Seine Arbeit kombiniert architektonisches Design, Interface-Design und Software-Entwicklung für komplexe Forschungssysteme.
+      Gal Guz ist UX/UI-Designer und Alumnus von AAIRL, wo er Architekturstudent war. Seine Arbeit kombiniert architektonisches Design, Interface-Design und Software-Entwicklung für komplexe Forschungssysteme.
 
       Bei AAIRL trug Gal zu Projekten zur KI-gestützten architektonischen Bewertung und zur Entscheidungsunterstützung in der Stadtplanung bei. Seine Arbeit umfasste Interface-Design für Systeme zur Vorhersage sozialer Auswirkungen der städtischen Erneuerung und Forschung darüber, ob KI-Werkzeuge menschliche Reaktionen auf gebaute Räume annähern können.
 
