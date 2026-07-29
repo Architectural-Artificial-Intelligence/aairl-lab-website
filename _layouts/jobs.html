@@ -77,8 +77,8 @@ layout: default
                                 <ul>
                                     {% for item in page.funding %}
                                     <li>
-                                        <a href="{{ item.url | escape }}">{{ item.name }}</a>
-                                        {% if item.note %} — {{ item.note }}{% endif %}
+                                        <a href="{{ item.url | escape }}">{% include t_field.html obj=item field="name" %}</a>
+                                        {% if item.note %} — {% include t_field.html obj=item field="note" %}{% endif %}
                                     </li>
                                     {% endfor %}
                                 </ul>

@@ -212,24 +212,24 @@ topics_page_products_body: "Wir übersetzen unsere Forschungsergebnisse in prakt
 jobs_page_title: "Offene Stellen"
 
 # Jobs layout
-jobs_about_position: "Über diese Stelle"
+jobs_about_position: "Über diese Position"
 jobs_what_we_do: "Was wir tun"
-jobs_what_we_do_body: "AAIRL konzentriert sich auf konkrete Probleme in Stadtgestaltung und Planung, bei denen KI menschliche Fähigkeiten erweitern kann. Unsere zentralen Forschungsrichtungen umfassen:"
+jobs_what_we_do_body: "AAIRL widmet sich konkreten Herausforderungen in der Stadtgestaltung und Planung, bei denen künstliche Intelligenz menschliche Fähigkeiten erweitern kann. Unsere zentralen Forschungsrichtungen:"
 jobs_what_we_do_items:
   - "Mensch-KI-Interaktion im Design"
   - "Generatives architektonisches und urbanes Design"
   - "Analyse der gebauten Umwelt"
-  - "Simulationen der gebauten Umwelt"
-jobs_what_we_do_footer: "Ein Großteil unserer Arbeit wird mit Industrie- und Regierungspartnern durchgeführt, sodass Forschung an realen Einschränkungen getestet wird: unvollständige Daten, widersprüchliche Ziele, Vorschriften und Implementierungsrealitäten."
+  - "Simulation der gebauten Umwelt"
+jobs_what_we_do_footer: "Ein Großteil unserer Arbeit entsteht in Zusammenarbeit mit Industrie- und Regierungspartnern — unsere Forschung wird daher an realen Rahmenbedingungen geprüft: unvollständigen Daten, widersprüchlichen Zielen, regulatorischen Vorgaben und den Realitäten der Umsetzung."
 jobs_what_we_look_for: "Wen wir suchen"
 jobs_funding: "Fördermöglichkeiten"
-jobs_applying: "Bewerbung für diese Stelle"
+jobs_applying: "So bewerben Sie sich"
 
 # Study (jobs landing) layout
-study_banner_title: "Fördern Sie Ihre Karriere im Labor"
-study_banner_body: "Wir begrüßen Bewerberinnen und Bewerber, die an Forschungsabschlüssen (MSc, PhD) und Postdoc-Stellen interessiert sind."
+study_banner_title: "Gestalten Sie Ihre Forschungskarriere bei AAIRL"
+study_banner_body: "Wir freuen uns über Bewerbungen für Forschungsabschlüsse (M.Sc., Ph.D.) sowie Postdoc-Stellen."
 study_opportunities_heading: "Offene Forschungswege"
-study_opportunities_body: "Wählen Sie den Weg, der Ihrer Phase, Ihren Forschungszielen und Ihrem gewünschten Grad an Unabhängigkeit entspricht."
+study_opportunities_body: "Wählen Sie den Weg, der zu Ihrer aktuellen Phase, Ihren Forschungsinteressen und dem gewünschten Grad an Eigenständigkeit passt."
 
 # Team page
 team_page_banner_heading: "Unser Forschungsteam"
@@ -453,72 +453,72 @@ members:
 jobs:
   phd:
     title: "Doktorat"
-    intro: "Wir begrüßen Doktoratskandidaten, die rigorose Forschung an der Schnittstelle von KI und architektonischer oder urbaner Planungspraxis betreiben möchten, verankert in realen Anforderungen und entwickelt in Zusammenarbeit mit kommunalen und Industriepartnern."
+    intro: "Wir freuen uns über Promovierende, die fundierte Forschung an der Schnittstelle von KI und architektonischer bzw. städtebaulicher Praxis betreiben möchten — verankert in realen Rahmenbedingungen und entwickelt in Zusammenarbeit mit kommunalen und industriellen Partnern."
     about:
-      - "Entwicklung einer Forschungsagenda rund um ein reales Planungs- und Designproblem"
-      - "Entwicklung von Methoden oder Werkzeugen und empirische Validierung"
-      - "Arbeit mit realen Daten und in vielen Fällen Partner-Feedbackschleifen"
-      - "Publizieren während des gesamten Doktorats, oft als Erstautor"
-      - "Beitrag zur Laborinfrastruktur (Datensätze, Benchmarks, Werkzeuge)"
-      - "Vollständig finanzierte projektbasierte Stellen"
+      - "Entwicklung einer Forschungsagenda rund um ein reales Planungs- oder Designproblem"
+      - "Entwicklung und empirische Validierung von Methoden und Werkzeugen"
+      - "Arbeit mit realen Daten, häufig im Austausch mit unseren Partnern"
+      - "Publikationen während der gesamten Promotion, häufig als Erstautor:in"
+      - "Beitrag zur Laborinfrastruktur, wo relevant (Datensätze, Benchmarks, Werkzeuge)"
+      - "Vollständig finanzierte, projektgebundene Stelle"
     look:
-      - "Starke Motivation für Forschung und Schreiben"
-      - "Quantitative oder computationelle Fähigkeiten (ML, Statistik, Simulation, Optimierung)"
-      - "Fähigkeit, selbständig zu arbeiten und gleichzeitig mit der Gruppe zusammenzuarbeiten"
-      - "Hintergründe aus Architektur, Informatik, Ingenieurwesen, Stadtforschung willkommen"
+      - "Ausgeprägte Motivation für Forschung und wissenschaftliches Schreiben"
+      - "Quantitative oder computergestützte Fähigkeiten (maschinelles Lernen, Statistik, Simulation, Optimierung — jede Kombination ist willkommen)"
+      - "Fähigkeit, eigenständig zu arbeiten und dabei eng mit dem Team zusammenzuarbeiten"
+      - "Wir begrüßen Bewerbungen aus Architektur, Informatik, Ingenieurwesen, Stadtforschung und verwandten Bereichen"
     body: |
-      **Unser Labor hat projektfinanzierte Doktorandenstellen.** Um Interesse zu bekunden, senden Sie eine E-Mail an [Dr. Haya Brama](mailto:hayab@ariel.ac.il) mit dem Betreff „PhD inquiry" und fügen Sie bei:
+      **Unser Labor bietet projektfinanzierte Promotionsstellen.** Bei Interesse senden Sie bitte eine E-Mail an [Dr. Haya Brama](mailto:hayab@ariel.ac.il) mit dem Betreff „PhD inquiry" und folgenden Unterlagen:
 
       * Lebenslauf
       * Zeugnisse
-      * Ein kurzer Absatz, der Ihre Interessen und relevante Erfahrungen beschreibt
-      * (Optional) Schreibprobe / Portfolio / GitHub / frühere Abschlussarbeit
+      * Ein kurzer Absatz zu Ihren Interessen und relevanter Erfahrung
+      * (Optional) Schreibprobe, Portfolio, GitHub-Profil oder frühere Abschlussarbeit
 
-      Weitere Details finden Sie auf der [PhD-Website der Ariel University](https://www.ariel.ac.il/wp/graduate-school/en/applicants/).
+      Weitere Informationen finden Sie auf der [PhD-Website der Ariel University](https://www.ariel.ac.il/wp/graduate-school/en/applicants/).
   master:
     title: "Master-Thesis-Track"
-    intro: "Wir nehmen MSc-Studierende nur im Thesis-Track auf. Dieser Track eignet sich am besten für Studierende, die einen Doktorat in Betracht ziehen oder eine tiefere Forschungsausbildung wünschen. Im Labor arbeiten die Studierenden praktisch mit echten Datensätzen und Forschungsfragen aus laufenden Laborprojekten."
+    intro: "Wir nehmen M.Sc.-Studierende ausschließlich im Thesis-Track auf — dieser eignet sich besonders für Studierende, die eine Promotion in Erwägung ziehen oder eine fundierte Forschungsausbildung suchen. Im Labor arbeiten Studierende praxisnah mit realen Datensätzen und Forschungsfragen, die unmittelbar mit laufenden Projekten und Partnern verbunden sind."
     about:
-      - "Erwerb von Forschungskompetenz, starkem Portfolio und realistischem Blick auf akademische und angewandte Forschung"
-      - "Durchführung eines Forschungsprojekts"
-      - "Entwicklung von Methoden oder Werkzeugen und empirische Validierung"
-      - "Eine schriftliche Abschlussarbeit mit klarem Beitrag"
-      - "Oft Einreichung bei einer Konferenz oder einem Journal"
+      - "Aufbau von Forschungskompetenzen, eines aussagekräftigen Portfolios und eines realistischen Einblicks in akademische und angewandte Forschung"
+      - "Durchführung eines eigenständigen Forschungsprojekts"
+      - "Entwicklung und empirische Validierung von Methoden und Werkzeugen"
+      - "Verfassen einer Abschlussarbeit mit klarem wissenschaftlichem Beitrag"
+      - "Häufig Einreichung der Ergebnisse bei einer Konferenz oder einem Journal"
     look:
-      - "Starke Motivation für Forschung und Schreiben"
+      - "Ausgeprägte Motivation für Forschung und wissenschaftliches Schreiben"
       - "Interesse an computergestützter, empirischer oder designorientierter Forschung"
-      - "Fähigkeit, selbständig zu arbeiten und enge Betreuung zu erhalten"
+      - "Fähigkeit, eigenständig zu arbeiten und dabei eng betreut zu werden"
       - "Relevante Kenntnisse in Design, Planung, Datenanalyse, Programmierung oder räumlichen Werkzeugen"
-      - "Verfügbarkeit für nachhaltige Abschlussarbeit in laufenden Laborprojekten"
+      - "Verfügbarkeit für kontinuierliche Abschlussarbeit im Rahmen eines laufenden Laborprojekts"
     body: |
-      Senden Sie eine E-Mail an [Dr. Haya Brama](mailto:hayab@ariel.ac.il) mit Lebenslauf und Zeugnissen, mit dem Betreff „Master's Thesis Application".
-      Fügen Sie im E-Mail-Text bei:
+      Senden Sie eine E-Mail mit Lebenslauf und Zeugnissen an [Dr. Haya Brama](mailto:hayab@ariel.ac.il), Betreff „Master's Thesis Application".
+      Bitte geben Sie im Text der E-Mail an:
 
-      * Ihr Studiengang und Jahrgang
+      * Ihr Studienprogramm und Studienjahr
       * Eine kurze Beschreibung Ihrer Interessen (2–3 Themen)
-      * Relevante Fähigkeiten (Software/Werkzeuge/Kurse) und wöchentliche Verfügbarkeit
+      * Relevante Kenntnisse (Software, Werkzeuge, Kurse) und Ihre wöchentliche Verfügbarkeit
 
-      Weitere Details finden Sie auf der [MSc-Architektur-Website der Ariel University](https://www.ariel.ac.il/wp/architecture/m-d/).
+      Weitere Informationen finden Sie auf der [Website des M.Sc.-Studiengangs Architektur der Ariel University](https://www.ariel.ac.il/wp/architecture/m-d/).
   postdoc:
     title: "Postdoktoranden"
-    intro: "Wir suchen Postdoktoranden mit einem starken quantitativen oder computationellen Hintergrund, die hochimpaktive Arbeit in Urban AI, computergestütztem Design, räumlicher Analyse oder datengesteuerter Planung leisten möchten."
+    intro: "Wir freuen uns über Bewerbungen aus einem breiten Spektrum an Fachrichtungen — Architektur, Design, Geografie, Stadtplanung und darüber hinaus — nicht nur aus stark quantitativen oder computergestützten Bereichen. Entscheidend sind Neugier, wissenschaftliche Sorgfalt und ein echtes Interesse an wirkungsvoller Forschung in den Bereichen Urban AI, computergestütztes Design, räumliche Analytik oder datengetriebene Planung."
     about:
-      - "Entwicklung einer Forschungsagenda rund um ein reales Planungs- und Designproblem"
-      - "Entwicklung von Methoden oder Werkzeugen und empirische Validierung"
-      - "Arbeit mit realen Daten und in vielen Fällen Partner-Feedbackschleifen"
-      - "Veröffentlichung hochwertiger Journal- und Konferenzartikel"
-      - "Beitrag zur Laborinfrastruktur (Datensätze, Benchmarks, Werkzeuge)"
-      - "Vollständig finanzierte projektbasierte Stellen"
+      - "Entwicklung einer Forschungsagenda rund um ein reales Planungs- oder Designproblem"
+      - "Entwicklung und empirische Validierung von Methoden und Werkzeugen"
+      - "Arbeit mit realen Daten, häufig im Austausch mit unseren Partnern"
+      - "Veröffentlichung in hochwertigen Fachzeitschriften und auf Konferenzen"
+      - "Beitrag zur Laborinfrastruktur, wo relevant (Datensätze, Benchmarks, Werkzeuge)"
+      - "Vollständig finanzierte, projektgebundene Stelle"
     look:
-      - "Urban AI und ML für Design-/Planungsentscheidungsunterstützung"
-      - "Mensch–KI-Interaktion für Design-Werkzeuge"
-      - "Räumliche Analyse, Simulation und Benchmarking"
-      - "Angewandte Forschung mit öffentlichen/privaten Partnern"
+      - "Urban AI und maschinelles Lernen zur Unterstützung von Design- und Planungsentscheidungen"
+      - "Mensch-KI-Interaktion für Design-Werkzeuge"
+      - "Räumliche Analytik, Simulation und Benchmarking"
+      - "Angewandte Forschung mit öffentlichen und privaten Partnern"
     body: |
-      **Unser Labor hat projektfinanzierte Postdoktorandenstellen.** Senden Sie ein PDF-Dokument (max. 10 MB) an [Dr. Haya Brama](mailto:hayab@ariel.ac.il) mit dem Betreff „Postdoctoral application". Das PDF sollte enthalten:
+      **Unser Labor bietet projektfinanzierte Postdoc-Stellen.** Für Ihre Bewerbung senden Sie bitte ein einzelnes PDF-Dokument (max. 10 MB) an [Dr. Haya Brama](mailto:hayab@ariel.ac.il) mit dem Betreff „Postdoctoral application". Das PDF sollte enthalten:
 
       * Lebenslauf
-      * Motivationsschreiben, das Ihre Forschungsinteressen und die Eignung für AAIRL beschreibt
-      * Bis zu 3 Publikationen oder Arbeitsproben
+      * Ein Motivationsschreiben zu Ihren Forschungsinteressen und Ihrer Eignung für AAIRL
+      * Bis zu drei Publikationen oder Arbeitsproben
 
-      Weitere Details finden Sie auf der [Postdoc-Website der Ariel University](https://www.ariel.ac.il/wp/postdocs/).
+      Weitere Informationen finden Sie auf der [Postdoc-Website der Ariel University](https://www.ariel.ac.il/wp/postdocs/).
