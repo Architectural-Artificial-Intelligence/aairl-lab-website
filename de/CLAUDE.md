@@ -66,6 +66,17 @@ translation:
   `site.data.i18n.he.members.<key>.bio` (etc.) or a `bio_he:` front-matter field — not a separate
   Markdown file per language. `key`/`collection` on each document (set in front matter, e.g. see
   `_members/*.md`) is what ties a document to its i18n entry.
+- **Convention: all prose content — including the default English — lives in `_data/i18n/en.yml`
+  under `members.<key>`, not in front matter or the Markdown body.** Nearly every member's `bio` (and,
+  for the structured About fields described below, `research_focus`/`current_work`/`background`/
+  `interests`) is defined this way; `he.yml`/`de.yml` mirror the same keys with translations. Front
+  matter should only hold structural/enum fields (`name`, `image`, `role`, `group`, `tags`, `projects`,
+  `links`, `orcid`, `key`, `collection`) — never hand-written paragraphs, since anything placed directly
+  in front matter or the Markdown body renders as-is on every language version of the page (see
+  `footer_ai_translation` in `en.yml`: translations are AI-generated, so English is the only version a
+  human should be editing directly). A one-off shared string used across many members (e.g. the lab's
+  university affiliation) should be a single top-level i18n key (see `lab_university`) rather than
+  repeated per-member front matter.
 - `exclude_from_localization` in `_config.yaml` lists paths (images, `_scripts`, `_styles`, assets)
   that exist only at the site root and are not duplicated per-language.
 
@@ -85,7 +96,33 @@ day-level precision when `year`/`month` alone aren't specific enough (e.g. to ma
 date). Publisher/venue is read from `booktitle`, `journal`, `school`, `institution`, or `publisher`,
 whichever is present. jekyll-scholar itself (configured via `scholar:` in `_config.yaml`) is otherwise
 unused — no template calls its `{% bibliography %}` tag. Citation counts/data live in `_data/citations.yaml`.
-`_data/-orcid.yaml` also feeds into the publications list.
+
+Each `_members/*.md` may also set a top-level `orcid:` field (a bare ORCID iD, e.g.
+`0000-0002-7464-8526`). `bin/fetch_orcid_works.rb` is a standalone script (not run during the Jekyll
+build; run manually or via the `refresh-orcid` scheduled GitHub Action) that calls the public ORCID API
+for each such member and writes `_data/orcid_works/<member-key>.yml` (works/employment/education).
+`_plugins/papers.rb` merges each member's ORCID works into `site.data.papers`, skipping any whose DOI
+already matches a `references.bib` entry, **or whose normalized title matches a bib entry's title when
+the ORCID record has no DOI** (ORCID conference-paper records often lack one) — either check avoids
+listing the same paper twice. Surviving ORCID-only works are tagged `lab: false` with an `owner_key` of
+that member — vs. `lab: true` for every bib-derived paper. `_layouts/member.html` renders bib papers
+under "Papers" (`paper-list.html match="members"`) and the member's non-lab ORCID works under "Other
+Publications" (`match="orcid_other"`, rendered `compact=true` and `collapse_after=5` — see below), plus
+Education/Employment sections read directly from `site.data.orcid_works[page.key]`.
+`publications/index.md` (the site-wide list) filters to `lab: true` only.
+
+ORCID `start`/`end` dates are plain strings and are sometimes year-only (`"2017"`) rather than full
+`YYYY-MM-DD`, since ORCID doesn't always have month/day precision. Liquid's `date` filter misparses a
+bare 4-digit year as a Unix timestamp (e.g. `"2017" | date: "%b %Y"` → `"Jan 1970"`), so always format
+ORCID dates through `_includes/friendly_date.html` (`{% include friendly_date.html value=edu.start %}`)
+instead of piping directly through `| date:`.
+
+`_includes/paper-list.html` supports `compact=true` (passed through to `citation.html`, adds a
+`paper-compact` CSS class for a denser card) and `collapse_after=<n>` (wraps everything past the first
+`n` matched papers in a native `<details>`/`<summary>` "show more" toggle, no JS). `citation.html` also
+turns a paper's tag pills into links whenever a `_topics/*.md` entry's `tag` matches (case-sensitive),
+falling back to a plain unlinked pill otherwise — most raw tags currently have no corresponding topic
+page, so this is a partial/best-effort feature, not full tag-based browsing.
 
 **Reusable page components** live in `_includes/` (e.g. `card.html`, `list.html`, `list_small.html`,
 `grid.html`, `feature.html`, `cols.html`, `paper-list.html`, `post-list.html`) and are composed from
@@ -96,11 +133,28 @@ check `_includes/` first for an existing component before writing new HTML.
 **Static assets**: `_styles/` (Sass, compiled via Jekyll's `sass_dir`) and `_scripts/` (vendored JS —
 jQuery, Bootstrap, Slick, parallax, tilt, wow.js — plus `zzz_main.js`, the site's own init code, named
 to load last). Both are force-included in the build (`include:` in `_config.yaml`) and excluded from
-per-language duplication.
+per-language duplication. Custom page-specific CSS (as opposed to the vendored `style.css`) belongs in
+`_styles/-theme.scss`; RTL-only overrides belong in `_styles/_rtl.scss` under the `[dir="rtl"]` selector.
+
+**Member profile page** (`_layouts/member.html`): left column is a sticky quick-facts card (photo,
+name, optional `tagline` i18n field, role via `roles:` lookup, optional `department` i18n field, shared
+`lab_university` string, social links from `page.links`). Right column's About section checks
+`site.data.i18n.en.members[page.key]` for `research_focus`/`current_work`/`background`/`interests` — if
+any are present it renders four labeled sub-blocks (via `t_field.html`, so each resolves per-language),
+otherwise it falls back to the single plain `bio` field/body. Projects render as a `member_project_grid`
+CSS grid (auto-fit columns, so a lone trailing card stretches instead of leaving a gap) with a clickable
+topic pill when `proj.tag` matches a `_topics/*` page. Education/Employment render as a CSS-only
+timeline (`edu_timeline`) fed by `site.data.orcid_works[page.key]` — see the ORCID date-formatting note
+above. A Prev/Next nav at the bottom walks `site.members` filtered to the same `group`, sorted by name.
 
 ## Adding a new lab member
 
-Add a file to `_members/` (copy an existing one, e.g. `_members/jonathan-dortheimer.md`) with front
-matter: `name`, `image`, `description`, `role`, `group`, `page: true`, `tags`, `projects`, `links`,
-`key` (must match the filename slug), `collection: members`. The `_layouts/member.html` layout and
-`team/index.md` listing pick it up automatically via the collection.
+Add a file to `_members/` (copy an existing one, e.g. `_members/haya-brama.md`) with front matter:
+`name`, `image`, `description`, `role`, `group`, `page: true`, `tags`, `projects`, `links`, `orcid`
+(optional), `key` (must match the filename slug), `collection: members`. The `_layouts/member.html`
+layout and `team/index.md` listing pick it up automatically via the collection.
+
+Do **not** put a hand-written bio, tagline, or department in the front matter or the Markdown body —
+per the i18n convention above, add it under `members.<key>` in `_data/i18n/en.yml` instead (a plain
+`bio` field, or the four structured `research_focus`/`current_work`/`background`/`interests` fields for
+the redesigned About section), so it can be localized like every other member's content.
