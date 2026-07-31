@@ -6102,3 +6102,10 @@ Responsive For Mobile & Tablet Devices
 .footer_contact_cta {
   margin-top: 24px;
 }
+
+/* Keep inline text links inside content prose (post bodies, bios, job/project
+   descriptions, etc.) flowing as normal inline text rather than inline-block,
+   which is the theme's default for all <a> tags. */
+.details_content p a {
+  display: inline;
+}

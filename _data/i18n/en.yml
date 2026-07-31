@@ -375,6 +375,12 @@ members:
       Maya Milovidov is a Dean's List student at the Ariel School of Architecture at Ariel University and a research assistant at the AAIRL lab.
 
       Her professional and research work focuses on integrating artificial intelligence into the physical world. As part of this, Maya is a partner in the research project "Physical AI: A Living Lab in a Building," which examines how smart buildings, robots, and humans can communicate and act together safely and efficiently, with the goal of improving quality of life for everyone.
+  libby-orlov:
+    name: "Libby Orlov"
+    bio: |
+      Libby Orlov is an architecture student at the Ariel School of Architecture and a research assistant at AAIRL. Her work focuses on decision-making in urban renewal, integrating tools from the field of behavioral economics.
+
+      Libby's research aims to identify existing cognitive biases and barriers that influence property owners during urban renewal decision-making processes, with the goal of characterizing them to significantly streamline decision-making and advance future urban renewal projects.
   neta-ben-david:
     name: "Neta Ben David"
     bio: |
