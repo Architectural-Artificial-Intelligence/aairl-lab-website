@@ -151,8 +151,20 @@ above. A Prev/Next nav at the bottom walks `site.members` filtered to the same `
 
 Add a file to `_members/` (copy an existing one, e.g. `_members/haya-brama.md`) with front matter:
 `name`, `image`, `description`, `role`, `group`, `page: true`, `tags`, `projects`, `links`, `orcid`
-(optional), `key` (must match the filename slug), `collection: members`. The `_layouts/member.html`
-layout and `team/index.md` listing pick it up automatically via the collection.
+(optional), `degree` (optional), `key` (must match the filename slug), `collection: members`. The
+`_layouts/member.html` layout and `team/index.md` listing pick it up automatically via the collection.
+
+`degree` is independent of `role` — `role` is the member's current status/position at the lab
+(`msc`, `postdoc`, `pi`, ...), while `degree` is a list of completed academic degrees/titles/
+professional credentials to display next to their name (e.g. `degree: [arch, phd]`) and should
+only include what's actually earned (an in-progress M.Sc. student should leave it unset). It is
+always an array, even for a single value (e.g. `degree: [arch]`), since a member can hold more
+than one (e.g. an architect who also holds a Ph.D.). Each key must match an entry in the
+`degree_titles` (rendered as a prefix, e.g. `arch` → "Arch. Name") or `degree_suffixes` (rendered as
+a suffix, comma-joined if multiple, e.g. `phd` → "Name, Ph.D.") maps in
+`_data/i18n/{en,he,de}.yml`; `_includes/member_name.html` does the lookup and is used everywhere a
+member's name renders (profile heading, team-grid cards, prev/next nav, post author bylines) instead
+of calling `t_field.html field="name"` directly.
 
 Do **not** put a hand-written bio, tagline, or department in the front matter or the Markdown body —
 per the i18n convention above, add it under `members.<key>` in `_data/i18n/en.yml` instead (a plain
