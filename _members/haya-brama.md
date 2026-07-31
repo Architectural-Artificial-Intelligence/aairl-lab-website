@@ -2,6 +2,7 @@
 name: Haya Brama
 image: /images/people/haya.jpeg
 role: lab-manager
+degree: [phd]
 group: team
 tags:
     - urbanAI

@@ -2,6 +2,7 @@
 name: Yaswanth Alla
 image: images/people/yaswanth-alla.jpeg
 role: phd
+degree: [msc]
 group: team
 tags:
     - designAI

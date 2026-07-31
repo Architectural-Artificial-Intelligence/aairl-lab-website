@@ -2,6 +2,7 @@
 name: Hila David
 image: /images/people/hila-david.jpg
 role: msc
+degree: [arch]
 group: team
 tags:
     - chatbot

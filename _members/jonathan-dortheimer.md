@@ -3,6 +3,7 @@ name: Jonathan Dortheimer
 image: /images/people/dortheimer.jpg
 description: Head of Lab
 role: pi
+degree: [arch, phd]
 group: team
 page: true
 aliases:

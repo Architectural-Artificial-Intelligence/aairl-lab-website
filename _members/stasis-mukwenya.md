@@ -2,6 +2,7 @@
 name: Stasis Mukwenya
 image: /images/people/stasis_mukwenya.jpeg
 role: phd
+degree: [msc]
 group: team
 tags:
   - UDT

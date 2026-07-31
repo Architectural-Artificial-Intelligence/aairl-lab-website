@@ -1,0 +1,21 @@
+{% comment %}
+  degree (front matter) is always an array of enum keys, e.g. degree: [dr, architect],
+  looked up against degree_titles (rendered as a prefix) / degree_suffixes (rendered as a
+  suffix, comma-joined) in _data/i18n/{en,he,de}.yml. A member can hold both (e.g. a doctor
+  who is also an architect).
+{% endcomment %}
+{% assign _t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
+{% assign _obj = include.obj | default: page %}
+{% capture _name %}{% include t_field.html obj=include.obj field="name" %}{% endcapture %}
+{% assign _name = _name | strip %}
+{% assign _degrees = _obj.degree %}
+{% assign _prefix = "" %}
+{% for d in _degrees %}{% if _t.degree_titles[d] %}{% assign _prefix = _prefix | append: _t.degree_titles[d] | append: " " %}{% endif %}{% endfor %}
+{% assign _suffix_list = "" %}
+{% for d in _degrees %}{% if _t.degree_suffixes[d] %}{% assign _suffix_list = _suffix_list | append: _t.degree_suffixes[d] | append: "|" %}{% endif %}{% endfor %}
+{% assign _suffix_text = _suffix_list | split: "|" | join: ", " %}
+{% if _suffix_text != "" %}
+{{ _prefix }}{{ _name }}, {{ _suffix_text }}
+{% else %}
+{{ _prefix }}{{ _name }}
+{% endif %}

@@ -262,6 +262,19 @@ roles:
   research-lead: "Forschungsleiter/in"
   mascot: "Maskottchen"
 
+degree_titles:      # rendered as a prefix: "{title} {name}"
+  dr: "Dr."
+  prof: "Prof."
+  arch: "Arch."
+
+degree_suffixes:    # rendered as a suffix: "{name}, {suffix}"
+  phd: "Ph.D."
+  march: "M.Arch."
+  barch: "B.Arch."
+  msc: "M.Sc."
+  ma: "M.A."
+  ba: "B.A."
+
 # Products UI strings
 products_overview_heading: "Kurzübersicht"
 products_benefits_heading: "Vorteile"

@@ -2,6 +2,7 @@
 name: Atakilti Brhanu Kiros
 image: /images/people/atakilti_brhanu_kiros.jpeg
 role: phd
+degree: [msc]
 group: team
 tags:
   - UDT

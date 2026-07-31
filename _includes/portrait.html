@@ -3,7 +3,7 @@
 | first
 | default: include
 %}
-{% capture _member_name %}{% include t_field.html obj=member field="name" %}{% endcapture %}
+{% capture _member_name %}{% include member_name.html obj=member %}{% endcapture %}
 {% assign _member_name = _member_name | strip %}
 <div class="instructor_item team_member_card" style="background-image: url('/images/shapes/dot_shape_3.png');">
   <div class="inner_wrap" data-magnetic>

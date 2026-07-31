@@ -34,7 +34,7 @@ layout: default
             <div class="admin_image">
               <img src="{{ page.image | relative_url }}" alt="member portrait" loading="lazy" {% include fallback.html %}>
             </div>
-            <h3 class="admin_name">{% include t_field.html field="name" %}</h3>
+            <h3 class="admin_name">{% include member_name.html %}</h3>
 
             {% assign tagline = page.tagline %}
             {% if tagline %}
@@ -208,7 +208,7 @@ layout: default
           {% if prev_member %}
           <a href="{{ prev_member.url | relative_url }}">
             <span class="member_nav_label"><span class="member_nav_arrow">&larr;</span> {{ t.member_prev }}</span>
-            <span class="member_nav_name">{% include t_field.html obj=prev_member field="name" %}</span>
+            <span class="member_nav_name">{% include member_name.html obj=prev_member %}</span>
           </a>
           {% endif %}
         </div>
@@ -216,7 +216,7 @@ layout: default
           {% if next_member %}
           <a href="{{ next_member.url | relative_url }}">
             <span class="member_nav_label">{{ t.member_next }} <span class="member_nav_arrow">&rarr;</span></span>
-            <span class="member_nav_name">{% include t_field.html obj=next_member field="name" %}</span>
+            <span class="member_nav_name">{% include member_name.html obj=next_member %}</span>
           </a>
           {% endif %}
         </div>
