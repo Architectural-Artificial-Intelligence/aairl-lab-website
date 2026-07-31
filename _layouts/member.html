@@ -6,12 +6,12 @@ layout: default
 
 <section class="page_banner decoration_wrap">
   <div class="container">
-    {% if page.group!="partners" %}
-    <h1 class="page_heading">{{ t.member_heading_team }}</h1>
-    {% endif %}
-    {% if page.group=="partners" %}
-    <h1 class="page_heading">{{ t.member_heading_partners }}</h1>
-    {% endif %}
+        {% if page.group!="partners" %}
+        <h1 class="page_heading">{{ t.member_heading_team }}</h1>
+        {% endif %}
+        {% if page.group=="partners" %}
+        <h1 class="page_heading">{{ t.member_heading_partners }}</h1>
+        {% endif %}
     <ul class="breadcrumb_nav unordered_list_center">
       <li><a href="{{ lp }}/">{{ t.member_nav_home }}</a></li>
       <li><a href="{{ lp }}/team">{{ t.member_nav_team }}</a></li>
@@ -29,45 +29,107 @@ layout: default
   <div class="container">
     <div class="row justify-content-lg-between">
       <div class="col col-lg-3">
-        <div class=" sidebar_post_admin text-center">
-          <div class="admin_image">
-            <img src="{{ page.image | relative_url }}" alt="member portrait" loading="lazy" {% include fallback.html %}>
+        <div class="member_sidebar">
+          <div class="sidebar_post_admin text-center">
+            <div class="admin_image">
+              <img src="{{ page.image | relative_url }}" alt="member portrait" loading="lazy" {% include fallback.html %}>
+            </div>
+            <h3 class="admin_name">{% include t_field.html field="name" %}</h3>
+
+            {% assign tagline = page.tagline %}
+            {% if tagline %}
+            <p class="member_tagline">{% include t_field.html field="tagline" %}</p>
+            {% endif %}
+
+            <p>
+              {% include t_field.html field="description" %}
+            </p>
+
+            {% if page.role or page.department or page.group != "partners" %}
+            <ul class="member_quick_facts unordered_list">
+              {% if page.role %}
+              <li><i class="far fa-user"></i> {{ t.roles[page.role] | default: site.data.types[page.role].description }}</li>
+              {% endif %}
+              {% if page.department %}
+              <li><i class="far fa-building"></i> {% include t_field.html field="department" %}</li>
+              {% endif %}
+              {% if page.group != "partners" %}
+              <li><i class="far fa-university"></i> {{ t.lab_university }}</li>
+              {% endif %}
+            </ul>
+            {% endif %}
+
+            <ul class="social_icon unordered_list_center">
+              {% for link in page.links %}
+              {% assign key = link[0] %}
+              {% assign value = link[1] %}
+              <li>
+                <a href="{{value}}">
+                  <i class="{{key}}"></i>
+                  <i class="{{key}}"></i>
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
           </div>
-          <h3 class="admin_name">{% include t_field.html field="name" %}</h3>
-          <p>
-            {% include t_field.html field="description" %}
-          </p>
-          <ul class="social_icon unordered_list_center">
-            {% for link in page.links %}
-            {% assign key = link[0] %}
-            {% assign value = link[1] %}
-            <li>
-              <a href="{{value}}">
-                <i class="{{key}}"></i>
-                <i class="{{key}}"></i>
-              </a>
-            </li>
-            {% endfor %}
-          </ul>
         </div>
       </div>
       <div class="col col-lg-8">
+
         <h3 class="details_item_title">{{ t.member_about }}</h3>
-        {% include t_field.html field="bio" markdownify=true %}
+        {% assign _en_member = site.data.i18n.en.members[page.key] %}
+        {% if _en_member.research_focus or _en_member.current_work or _en_member.background or _en_member.interests %}
+          <div class="about_blocks">
+            {% if _en_member.research_focus %}
+            <div class="about_block">
+              <h4 class="about_block_title">{{ t.member_research_focus }}</h4>
+              {% include t_field.html field="research_focus" markdownify=true %}
+            </div>
+            {% endif %}
+            {% if _en_member.current_work %}
+            <div class="about_block">
+              <h4 class="about_block_title">{{ t.member_current_work }}</h4>
+              {% include t_field.html field="current_work" markdownify=true %}
+            </div>
+            {% endif %}
+            {% if _en_member.background %}
+            <div class="about_block">
+              <h4 class="about_block_title">{{ t.member_background }}</h4>
+              {% include t_field.html field="background" markdownify=true %}
+            </div>
+            {% endif %}
+            {% if _en_member.interests %}
+            <div class="about_block">
+              <h4 class="about_block_title">{{ t.member_interests }}</h4>
+              {% include t_field.html field="interests" markdownify=true %}
+            </div>
+            {% endif %}
+          </div>
+        {% else %}
+          {% include t_field.html field="bio" markdownify=true %}
+        {% endif %}
 
         {% if page.projects and page.projects.size > 0 %}
         <h3 class="details_item_title">{{ t.member_projects }}</h3>
-        <div class="row">
+        <div class="member_project_grid">
           {% for project_tag in page.projects %}
             {% assign proj = site.projects | where: "tag", project_tag | first %}
             {% if proj %}
-            <div class="col col-sm-6" style="margin-bottom: 1rem;">
-              <a href="{{ proj.url | relative_url }}" class="d-flex align-items-start gap-2 text-decoration-none">
-                <img src="{{ proj.image | relative_url }}" alt="{{ proj.title }}" style="width:64px;height:64px;object-fit:cover;border-radius:6px;flex-shrink:0;">
-                <span>
-                  <strong class="d-block" style="font-size:0.95rem;">{% include t_field.html obj=proj field="title" %}</strong>
+            <div class="member_project_col">
+              <a href="{{ proj.url | relative_url }}" class="member_project_card">
+                <img src="{{ proj.image | relative_url }}" alt="{{ proj.title }}" loading="lazy" {% include fallback.html %}>
+                <div class="member_project_card_body">
+                  <strong class="member_project_card_title">{% include t_field.html obj=proj field="title" %}</strong>
                   <small class="text-muted">{% include t_field.html obj=proj field="intro" %}</small>
-                </span>
+                  {% if proj.tag %}
+                    {% assign proj_topic = site.topics | where_exp: "topic", "topic.tag == proj.tag" | first %}
+                    {% if proj_topic %}
+                    <span class="tags_list unordered_list member_project_tag">
+                      <a href="{{ proj_topic.url | relative_url }}">{{ proj_topic.title }}</a>
+                    </span>
+                    {% endif %}
+                  {% endif %}
+                </div>
               </a>
             </div>
             {% endif %}
@@ -75,12 +137,93 @@ layout: default
         </div>
         {% endif %}
 
+        {% if page.orcid %}
+          {% assign orcid_data = site.data.orcid_works[page.key] %}
+          {% if orcid_data.education.size > 0 %}
+          <h3 class="details_item_title">{{ t.member_education }}</h3>
+          <ul class="edu_timeline">
+            {% assign education = orcid_data.education | sort: "start" | reverse %}
+            {% for edu in education %}
+              <li>
+                <span class="timeline_role_org">
+                  {% if edu.role %}<strong class="timeline_role">{{ edu.role }}</strong>{% endif %}
+                  <span class="timeline_org">{{ edu.org }}</span>
+                </span>
+                <span class="timeline_dates">
+                  {% include friendly_date.html value=edu.start %} –
+                  {% if edu.end %}{% include friendly_date.html value=edu.end %}{% else %}{{ t.present }}{% endif %}
+                </span>
+              </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+
+          {% if orcid_data.employment.size > 0 %}
+          <h3 class="details_item_title">{{ t.member_employment }}</h3>
+          <ul class="edu_timeline">
+            {% assign employment = orcid_data.employment | sort: "start" | reverse %}
+            {% for job in employment %}
+              <li>
+                <span class="timeline_role_org">
+                  {% if job.role %}<strong class="timeline_role">{{ job.role }}</strong>{% endif %}
+                  <span class="timeline_org">{{ job.org }}</span>
+                </span>
+                <span class="timeline_dates">
+                  {% include friendly_date.html value=job.start %} –
+                  {% if job.end %}{% include friendly_date.html value=job.end %}{% else %}{{ t.present }}{% endif %}
+                </span>
+              </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        {% endif %}
+
         {% include paper-list.html match="members" heading=t.member_papers show_tag_matches=false %}
+
+        {% if page.orcid %}
+          {% include paper-list.html match="orcid_other" heading=t.member_other_papers show_tag_matches=false compact=true collapse_after=5 %}
+        {% endif %}
 
       </div>
 
 
     </div>
+
+    {% assign siblings = site.members | where: "group", page.group | sort: "name" %}
+    {% assign sibling_index = -1 %}
+    {% for m in siblings %}
+      {% if m.key == page.key %}{% assign sibling_index = forloop.index0 %}{% endif %}
+    {% endfor %}
+    {% if sibling_index > -1 %}
+      {% assign prev_member = nil %}
+      {% assign next_member = nil %}
+      {% assign prev_index = sibling_index | minus: 1 %}
+      {% assign next_index = sibling_index | plus: 1 %}
+      {% assign last_index = siblings.size | minus: 1 %}
+      {% if sibling_index > 0 %}{% assign prev_member = siblings[prev_index] %}{% endif %}
+      {% if sibling_index < last_index %}{% assign next_member = siblings[next_index] %}{% endif %}
+      {% if prev_member or next_member %}
+      <nav class="member_nav row justify-content-lg-between">
+        <div class="col col-6 member_nav_prev">
+          {% if prev_member %}
+          <a href="{{ prev_member.url | relative_url }}">
+            <span class="member_nav_label"><span class="member_nav_arrow">&larr;</span> {{ t.member_prev }}</span>
+            <span class="member_nav_name">{% include t_field.html obj=prev_member field="name" %}</span>
+          </a>
+          {% endif %}
+        </div>
+        <div class="col col-6 member_nav_next text-right">
+          {% if next_member %}
+          <a href="{{ next_member.url | relative_url }}">
+            <span class="member_nav_label">{{ t.member_next }} <span class="member_nav_arrow">&rarr;</span></span>
+            <span class="member_nav_name">{% include t_field.html obj=next_member field="name" %}</span>
+          </a>
+          {% endif %}
+        </div>
+      </nav>
+      {% endif %}
+    {% endif %}
+
   </div>
 </section>
 

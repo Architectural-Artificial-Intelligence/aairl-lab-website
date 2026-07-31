@@ -109,3 +109,4 @@ exclude:
   - LICENSE.md
   - CITATION.cff
   - .history
+  - bin

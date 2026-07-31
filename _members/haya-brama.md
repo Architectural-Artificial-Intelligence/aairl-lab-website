@@ -17,4 +17,5 @@ links:
   "fa-solid fa-envelope": mailto:hayabr@ariel.ac.il
 key: haya-brama
 collection: members
+orcid: 0000-0002-3250-7207
 ---

@@ -163,6 +163,7 @@ post_read_more: "Read More"
 
 # Paper list
 paper_list_heading: "Papers"
+paper_list_show_more: "Show %d more"
 
 # Footer
 footer_disclaimer: "The lab is a research unit at Ariel University, but this is a personal website and does not represent the university's official position on any topic."
@@ -182,6 +183,17 @@ member_nav_team: "Team"
 member_about: "About"
 member_projects: "Projects"
 member_papers: "Papers"
+member_other_papers: "Other Publications"
+member_education: "Education"
+member_employment: "Employment"
+present: "Present"
+member_research_focus: "Research Focus"
+member_current_work: "Current Work"
+member_background: "Background"
+member_interests: "Interests"
+member_prev: "Previous"
+member_next: "Next"
+lab_university: "Ariel University"
 
 # Project / Topic layout
 label_about: "About"
@@ -425,6 +437,34 @@ members:
     name: "Lielle Brenner"
     bio: |
       Lielle Brenner is an alumna of AAIRL. Her work contributed to the lab's Design AI research, which studies how AI can support architectural creativity, design communication, and empirical evaluation of built environments.
+  atakilti-brhanu-kiros:
+    name: "Atakilti Brhanu Kiros"
+    research_focus: |
+      Atakilti Brhanu Kiros is a PhD researcher in Civil Engineering at Ariel University, specialising in GeoAI, geospatial data science, and intelligent mobility systems. His research examines how multimodal urban data, machine learning, Earth observation, and urban digital twins can support pedestrian-mobility forecasting, accessibility analysis, and evidence-based urban planning. Atakilti contributes to the METROPOLIS Urban Digital Twin project at the Architectural Artificial Intelligence Research Lab.
+    current_work: |
+      His doctoral research focuses on developing transferable and explainable GeoAI models to predict pedestrian activity across cities with diverse urban structures, climates, sensor networks, and levels of data availability. His work integrates pedestrian sensor observations with urban morphology, transportation networks, accessibility, socioeconomic indicators, weather, remote sensing, and other geospatial information. His work also explores scenario-based pedestrian forecasting under urban growth and climate change conditions, as well as the development of interpretable digital tools for researchers, urban planners, municipalities, and decision-makers.
+    background: |
+      Before beginning his doctoral studies, Atakilti worked as a lecturer, researcher, and academic leader in computer science and information technology in Mekelle University, Ethiopia.
+    interests: |
+      His broader interests include spatiotemporal machine learning, explainable AI, multimodal geospatial data fusion, inclusive mobility, and responsible urban artificial intelligence.
+  stasis-mukwenya:
+    name: "Stasis Mukwenya"
+    research_focus: |
+      Stasis Mukwenya is a PhD researcher in Civil Engineering at Ariel University, specializing in urban geospatial data science, semantic interoperability, and human-centric urban digital twins. His research examines how urban domain models that are built and run separately, for energy, climate, mobility, and urban form, can share meaning rather than only data, and predict more accurately as a result. Stasis contributes to the METROPOLIS Urban Digital Twin project at the Architectural Artificial Intelligence Research Lab, a platform on which planners run simulations against a shared model of a city, test proposed developments as separate scenarios, and compare the outcomes before any decision is committed.
+    current_work: |
+      His doctoral research develops ontologies for cognitive urban digital twins, shared semantic structures through which independently built models exchange typed, physically grounded information at inference time without retraining. The work introduces measures of how complete such a shared language is, separating what a twin can name from what it can relate, and tests them on pedestrian flow prediction under both routine and extreme urban conditions, where models that rely only on historical trends are least reliable. He also works on the infrastructure beneath this: how city data is stored and organised, how simulation models are supplied with what they need, and how new data sources and models are added without the system being rebuilt.
+    background: |
+      Before beginning his doctoral studies, Stasis earned a BSc in Electronics and Telecommunications Engineering and an MSc in Mechatronics and Artificial Intelligence.
+    interests: |
+      His broader interests include knowledge representation, physics-informed machine learning, cross-domain reasoning, inclusive mobility, and responsible urban artificial intelligence.
+  yaswanth-alla:
+    name: "Yaswanth Alla"
+    research_focus: |
+      Yaswanth Alla is a Ph.D. student at the AAIRL, applying his expertise in Generative AI and immersive technologies to current research on visual chatbots and synthetic humans.
+    current_work: |
+      His work aims to enhance how users interact with complex simulated environments, directly contributing to the lab's broader mission of exploring AI-driven architectural design, urban renewal, and human-centric spatial development.
+    background: |
+      He holds an M.Sc. in Computer Science from Wright State University, a Post Graduate Diploma in Artificial Intelligence and Machine Learning from the National Institute of Technology (NIT) Warangal, and a B.Tech. in Electronics and Communication Engineering from JNTUK. Before joining the lab, Yaswanth developed intelligent and interactive systems as a Developer at Tata Consultancy Services (TCS), working across multiple domains of AI and spatial computing.
 
 jobs:
   phd:

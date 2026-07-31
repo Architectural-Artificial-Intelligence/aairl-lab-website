@@ -1,4 +1,7 @@
 require 'bibtex'
+require 'set'
+require 'yaml'
+require 'date'
 
 module Jekyll
   # Populates site.data.papers from the BibTeX bibliography so the publications
@@ -20,6 +23,9 @@ module Jekyll
 
       papers = bibliography.select { |item| item.is_a?(BibTeX::Entry) }
                             .map { |entry| paper_from_entry(entry) }
+
+      papers.concat(orcid_only_papers(site, papers))
+
       papers.sort_by! { |paper| paper['date'] }
       papers.reverse!
 
@@ -37,7 +43,39 @@ module Jekyll
         'publisher' => clean(entry.booktitle || entry.journal || entry.school || entry.institution || entry.publisher),
         'link' => paper_link(entry),
         'tags' => format_tags(entry),
+        'doi' => entry.field?('doi') ? clean(entry.doi) : nil,
+        'lab' => true,
       }
+    end
+
+    # Supplements the bib-derived (lab) papers with each member's other ORCID
+    # works -- excluding anything whose DOI already matches a lab paper, so a
+    # paper never shows up twice. These are tagged `lab: false` and scoped to
+    # a single member via `owner_key`, so they never enter lab-wide listings.
+    def orcid_only_papers(site, lab_papers)
+      lab_dois = lab_papers.filter_map { |p| p['doi']&.downcase }.to_set
+      lab_titles = lab_papers.filter_map { |p| normalize_title(p['title']) }.to_set
+
+      orcid_dir = File.join(site.source, '_data', 'orcid_works')
+      return [] unless Dir.exist?(orcid_dir)
+
+      Dir.glob(File.join(orcid_dir, '*.yml')).flat_map do |path|
+        member_key = File.basename(path, '.yml')
+        works = (YAML.safe_load_file(path, permitted_classes: [Date]) || {})['works'] || []
+
+        # A lab paper and an ORCID-fetched work can be the same publication even
+        # when the ORCID record lacks a DOI (common for conference papers), so
+        # fall back to a normalized title match to avoid listing it twice.
+        works.reject do |w|
+          (w['doi'] && lab_dois.include?(w['doi'].downcase)) ||
+            lab_titles.include?(normalize_title(w['title']))
+        end.map { |w| w.merge('date' => w['date'] || '0000-01-01', 'lab' => false, 'owner_key' => member_key) }
+      end
+    end
+
+    def normalize_title(title)
+      return nil if title.nil?
+      title.to_s.downcase.gsub(/[^a-z0-9]+/, ' ').strip
     end
 
     def clean(value)

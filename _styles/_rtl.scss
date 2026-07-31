@@ -67,6 +67,28 @@
     text-align: center;
   }
 
+  .member_quick_facts li {
+    text-align: right;
+  }
+
+  .edu_timeline li {
+    padding: 12px 24px 12px 0;
+    border-left: none;
+    border-right: 2px solid #ebebeb;
+  }
+  .edu_timeline li:last-child {
+    border-right-color: transparent;
+  }
+  .edu_timeline li::before {
+    left: auto;
+    right: -6px;
+  }
+
+  .member_nav_arrow {
+    display: inline-block;
+    transform: scaleX(-1);
+  }
+
   /* Buttons */
   .btn span small {
     text-align: center;

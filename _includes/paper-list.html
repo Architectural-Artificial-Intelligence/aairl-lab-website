@@ -19,29 +19,50 @@
   {% capture author_lookup %}{{ author_lookup }}{{ alias | downcase }}|{% endcapture %}
 {% endfor %}
 
-{% capture papers_html %}
-  {% for paper in source_papers %}
-    {% assign include_paper = false %}
-    {% capture paper_key %}|{{ paper.id | downcase }}|{% endcapture %}
+{% comment %}
+  First pass: figure out which papers match (same rules as the render pass
+  below) and collect their ids in a delimited lookup string, so the render
+  pass can cheaply test membership without duplicating this logic twice.
+{% endcomment %}
+{% assign matched_ids = "|" %}
+{% assign matched_count = 0 %}
+{% for paper in source_papers %}
+  {% assign include_paper = false %}
+  {% capture paper_key %}|{{ paper.id | downcase }}|{% endcapture %}
 
-    {% if match_mode == "all" %}
-      {% assign include_paper = true %}
-    {% endif %}
+  {% if match_mode == "all" %}
+    {% assign include_paper = true %}
+  {% endif %}
 
-    {% if explicit_lookup contains paper_key %}
-      {% assign include_paper = true %}
-    {% endif %}
+  {% if explicit_lookup contains paper_key %}
+    {% assign include_paper = true %}
+  {% endif %}
 
-    {% if include_paper == false and match_mode == "members" %}
-      {% for author in paper.authors %}
-        {% capture author_key %}|{{ author | downcase }}|{% endcapture %}
-        {% if author_lookup contains author_key %}
-          {% assign include_paper = true %}
-        {% endif %}
-      {% endfor %}
-    {% endif %}
+  {% if include_paper == false and match_mode == "members" and paper.lab != false %}
+    {% for author in paper.authors %}
+      {% capture author_key %}|{{ author | downcase }}|{% endcapture %}
+      {% if author_lookup contains author_key %}
+        {% assign include_paper = true %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
 
-    {% if include_paper == false and show_tag_matches and page_tag and paper.tags %}
+  {% if include_paper == false and match_mode == "orcid_other" and paper.lab == false and paper.owner_key == page.key %}
+    {% assign include_paper = true %}
+  {% endif %}
+
+  {% if include_paper == false and show_tag_matches and page_tag and paper.tags %}
+    {% assign normalized_page_tag = page_tag | downcase %}
+    {% for paper_tag in paper.tags %}
+      {% assign normalized_paper_tag = paper_tag | downcase %}
+      {% if normalized_page_tag == normalized_paper_tag %}
+        {% assign include_paper = true %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% if include_paper == false and show_tag_matches and page_tags and paper.tags %}
+    {% for page_tag in page_tags %}
       {% assign normalized_page_tag = page_tag | downcase %}
       {% for paper_tag in paper.tags %}
         {% assign normalized_paper_tag = paper_tag | downcase %}
@@ -49,24 +70,38 @@
           {% assign include_paper = true %}
         {% endif %}
       {% endfor %}
-    {% endif %}
+    {% endfor %}
+  {% endif %}
 
-    {% if include_paper == false and show_tag_matches and page_tags and paper.tags %}
-      {% for page_tag in page_tags %}
-        {% assign normalized_page_tag = page_tag | downcase %}
-        {% for paper_tag in paper.tags %}
-          {% assign normalized_paper_tag = paper_tag | downcase %}
-          {% if normalized_page_tag == normalized_paper_tag %}
-            {% assign include_paper = true %}
-          {% endif %}
-        {% endfor %}
-      {% endfor %}
-    {% endif %}
+  {% if include_paper %}
+    {% assign matched_ids = matched_ids | append: paper.id | downcase | append: "|" %}
+    {% assign matched_count = matched_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
 
-    {% if include_paper %}
-      {% include citation.html lookup=paper.id %}
+{% assign collapse_after = include.collapse_after %}
+{% assign hidden_count = 0 %}
+{% if collapse_after and matched_count > collapse_after %}
+  {% assign hidden_count = matched_count | minus: collapse_after %}
+{% endif %}
+
+{% assign rendered_count = 0 %}
+{% assign collapse_opened = false %}
+{% assign collapse_threshold = collapse_after | plus: 1 %}
+{% capture papers_html %}
+  {% for paper in source_papers %}
+    {% capture paper_key %}|{{ paper.id | downcase }}|{% endcapture %}
+    {% if matched_ids contains paper_key %}
+      {% assign rendered_count = rendered_count | plus: 1 %}
+      {% if hidden_count > 0 and rendered_count == collapse_threshold %}
+        <details class="paper_list_collapse">
+        <summary>{{ t.paper_list_show_more | replace: "%d", hidden_count }}</summary>
+        {% assign collapse_opened = true %}
+      {% endif %}
+      {% include citation.html lookup=paper.id compact=include.compact %}
     {% endif %}
   {% endfor %}
+  {% if collapse_opened %}</details>{% endif %}
 {% endcapture %}
 
 {% assign papers_html = papers_html | strip %}

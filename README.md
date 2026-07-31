@@ -14,3 +14,21 @@ Spend less time worrying about managing a website and citations, and more time r
 
 ## Key Features
 ./.docker/run.sh
+
+## Refreshing member ORCID data
+
+Member publications/education/employment pulled from ORCID (`_data/orcid_works/*.yml`) are refreshed
+weekly by the `refresh-orcid` GitHub Action, which commits the updated files back to the repo. To run
+it manually:
+
+```bash
+gh workflow run refresh-orcid.yaml
+```
+
+Or fetch locally and commit yourself:
+
+```bash
+ruby bin/fetch_orcid_works.rb
+git add _data/orcid_works
+git commit -m "Refresh member ORCID data"
+```

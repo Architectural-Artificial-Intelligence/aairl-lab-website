@@ -1,0 +1,37 @@
+name: refresh-orcid
+run-name: refresh member ORCID data
+
+on:
+  schedule:
+    - cron: "0 3 * * 1" # weekly, Monday 03:00 UTC
+
+  # run if user manually requests it
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-orcid:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout branch contents
+        uses: actions/checkout@v4
+
+      - name: Install Ruby packages
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1"
+          bundler-cache: true
+
+      - name: Fetch ORCID data for members
+        run: ruby bin/fetch_orcid_works.rb
+
+      - name: Commit updated ORCID data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _data/orcid_works
+          git diff --cached --quiet || git commit -m "Refresh member ORCID data"
+          git push

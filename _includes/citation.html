@@ -17,7 +17,7 @@
 
 
 
-<article class="paper publication_item" {% if citation.id %}id="{{ citation.id }}"{% endif %}>
+<article class="paper publication_item{% if include.compact %} paper-compact{% endif %}" {% if citation.id %}id="{{ citation.id }}"{% endif %}>
   <div class="paper_year">
     <span class="badge badge_primary">{{ citation.date | default: "[no date info]" | date: "%Y" }}</span>
     <small>{{ citation.type | default: t.citation_type_publication | capitalize }}</small>
@@ -51,7 +51,8 @@
       <ul class="tags_list unordered_list paper_tags">
         {% for tag in citation.tags %}
           {% assign tag_label = site.data.tag_labels[tag] | default: tag %}
-          <li><span>{{ tag_label }}</span></li>
+          {% assign tag_topic = site.topics | where_exp: "topic", "topic.tag == tag" | first %}
+          <li>{% if tag_topic %}<a href="{{ tag_topic.url | relative_url }}">{{ tag_label }}</a>{% else %}<span>{{ tag_label }}</span>{% endif %}</li>
         {% endfor %}
       </ul>
     {% endif %}

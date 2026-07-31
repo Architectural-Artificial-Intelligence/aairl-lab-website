@@ -22,11 +22,12 @@ nav:
   <div class="container">
     <div class="row justify-content-center">
       <div class="col col-lg-10">
-        {% assign latest_paper = site.data.papers | first %}
-        {% assign earliest_paper = site.data.papers | last %}
+        {% assign lab_papers = site.data.papers | where: "lab", true %}
+        {% assign latest_paper = lab_papers | first %}
+        {% assign earliest_paper = lab_papers | last %}
         <div class="publication_project_list publication_chronology">
           <h3 class="publication_group_title">{{ t.publications_all }}</h3>
-          {% assign chronological_papers = site.data.papers | sort: "date" | reverse %}
+          {% assign chronological_papers = lab_papers | sort: "date" | reverse %}
           {% include paper-list.html papers=chronological_papers match="all" show_heading=false show_tag_matches=false %}
         </div>
       </div>

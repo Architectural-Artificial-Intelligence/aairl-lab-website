@@ -163,6 +163,7 @@ post_read_more: "Weiterlesen"
 
 # Paper list
 paper_list_heading: "Publikationen"
+paper_list_show_more: "%d weitere anzeigen"
 
 # Footer
 footer_disclaimer: "Das Labor ist eine Forschungseinheit der Ariel University, aber dies ist eine persönliche Website und vertritt nicht die offizielle Position der Universität zu irgendeinem Thema."
@@ -182,6 +183,17 @@ member_nav_team: "Team"
 member_about: "Über"
 member_projects: "Projekte"
 member_papers: "Publikationen"
+member_other_papers: "Weitere Publikationen"
+member_education: "Ausbildung"
+member_employment: "Beschäftigung"
+member_research_focus: "Forschungsschwerpunkt"
+member_current_work: "Aktuelle Arbeit"
+member_background: "Hintergrund"
+member_interests: "Interessen"
+member_prev: "Zurück"
+member_next: "Weiter"
+lab_university: "Ariel University"
+present: "Heute"
 
 # Project / Topic layout
 label_about: "Über"
@@ -433,6 +445,12 @@ members:
       Bevor er sich dem Labor anschloss, entwickelte Yaswanth intelligente und interaktive Systeme als Entwickler bei Tata Consultancy Services (TCS). Seine früheren Projekte erstrecken sich über mehrere Bereiche der KI und des räumlichen Computings. Er entwickelte eine optimierte Computer-Vision-Pipeline für das Einfügen von Augmented-Reality-Werbung in Echtzeit in Videoströme und baute „Vibe", einen autonomen Agenten, der Android-Anwendungen navigieren und bedienen kann, um menschliches Verhalten nachzuahmen. Zudem trug er zu „Xperi" bei, wo er KI und verteiltes Rechnen nutzte, um browserbasierte AR-Erfahrungen für die Bildung bereitzustellen, und integrierte Large Language Models mit Unity XR, um anpassbare virtuelle Welten und intelligente NPC-Avatare ohne vorskriptete Verhaltensbäume zu erzeugen.
 
       Bei AAIRL wendet Yaswanth seine Expertise in generativer KI und immersiven Technologien auf seine aktuelle Forschung zu visuellen Chatbots und synthetischen Menschen an. Seine Arbeit zielt darauf ab, zu verbessern, wie Nutzer mit komplexen simulierten Umgebungen interagieren, und trägt direkt zur umfassenderen Mission des Labors bei, KI-gestütztes architektonisches Design, städtische Erneuerung und menschzentrierte räumliche Entwicklung zu erforschen.
+    research_focus: |
+      Yaswanth Alla ist Doktorand bei AAIRL und wendet seine Expertise in generativer KI und immersiven Technologien auf seine aktuelle Forschung zu visuellen Chatbots und synthetischen Menschen an.
+    current_work: |
+      Seine Arbeit zielt darauf ab, zu verbessern, wie Nutzer mit komplexen simulierten Umgebungen interagieren, und trägt direkt zur umfassenderen Mission des Labors bei, KI-gestütztes architektonisches Design, städtische Erneuerung und menschzentrierte räumliche Entwicklung zu erforschen.
+    background: |
+      Er hat einen M.Sc. in Informatik von der Wright State University, ein Postgraduiertendiplom in Künstlicher Intelligenz und maschinellem Lernen vom National Institute of Technology (NIT) Warangal sowie einen B.Tech. in Elektronik- und Kommunikationstechnik von der JNTUK. Bevor er sich dem Labor anschloss, entwickelte Yaswanth intelligente und interaktive Systeme als Entwickler bei Tata Consultancy Services (TCS) und arbeitete dabei über mehrere Bereiche der KI und des räumlichen Computings hinweg.
   atakilti-brhanu-kiros:
     name: "Atakilti Brhanu Kiros"
     description: "Doktorand"
@@ -444,6 +462,14 @@ members:
       Atakilti trägt zum METROPOLIS-Projekt für urbane digitale Zwillinge am Architectural Artificial Intelligence Research Lab bei. Seine Arbeit untersucht szenariobasierte Fußgängervorhersagen unter Bedingungen des städtischen Wachstums und des Klimawandels sowie die Entwicklung interpretierbarer digitaler Werkzeuge für Forscher, Stadtplaner, Kommunen und Entscheidungsträger.
 
       Vor Beginn seines Promotionsstudiums arbeitete Atakilti als Dozent, Forscher und akademische Führungskraft in Informatik und Informationstechnologie an der Mekelle University, Äthiopien. Zu seinen breiteren Interessen zählen räumlich-zeitliches maschinelles Lernen, erklärbare KI, multimodale Fusion geospatialer Daten, inklusive Mobilität und verantwortungsvolle urbane künstliche Intelligenz.
+    research_focus: |
+      Atakilti Brhanu Kiros ist Doktorand im Bauingenieurwesen an der Ariel University, spezialisiert auf GeoAI, Geodatenwissenschaft und intelligente Mobilitätssysteme. Seine Forschung untersucht, wie multimodale Stadtdaten, maschinelles Lernen, Erdbeobachtung und urbane digitale Zwillinge die Vorhersage der Fußgängermobilität, Zugänglichkeitsanalysen und evidenzbasierte Stadtplanung unterstützen können. Atakilti trägt zum METROPOLIS-Projekt für urbane digitale Zwillinge am Architectural Artificial Intelligence Research Lab bei.
+    current_work: |
+      Seine Doktorarbeit konzentriert sich auf die Entwicklung übertragbarer und erklärbarer GeoAI-Modelle zur Vorhersage der Fußgängeraktivität in Städten mit unterschiedlichen urbanen Strukturen, Klimazonen, Sensornetzwerken und Datenverfügbarkeit. Seine Arbeit integriert Fußgänger-Sensordaten mit urbaner Morphologie, Verkehrsnetzen, Zugänglichkeit, sozioökonomischen Indikatoren, Wetter, Fernerkundung und weiteren geospatialen Informationen. Seine Arbeit untersucht szenariobasierte Fußgängervorhersagen unter Bedingungen des städtischen Wachstums und des Klimawandels sowie die Entwicklung interpretierbarer digitaler Werkzeuge für Forscher, Stadtplaner, Kommunen und Entscheidungsträger.
+    background: |
+      Vor Beginn seines Promotionsstudiums arbeitete Atakilti als Dozent, Forscher und akademische Führungskraft in Informatik und Informationstechnologie an der Mekelle University, Äthiopien.
+    interests: |
+      Zu seinen breiteren Interessen zählen räumlich-zeitliches maschinelles Lernen, erklärbare KI, multimodale Fusion geospatialer Daten, inklusive Mobilität und verantwortungsvolle urbane künstliche Intelligenz.
   stasis-mukwenya:
     name: "Stasis Mukwenya"
     description: "Doktorand"
@@ -455,6 +481,14 @@ members:
       Stasis trägt zum METROPOLIS-Projekt für urbane digitale Zwillinge am Architectural Artificial Intelligence Research Lab bei, einer Plattform, auf der Planer Simulationen gegen ein gemeinsames Modell einer Stadt durchführen, vorgeschlagene Entwicklungen als separate Szenarien testen und die Ergebnisse vor jeder Entscheidung vergleichen. Er arbeitet an der Infrastruktur dahinter: wie Stadtdaten gespeichert und organisiert werden, wie Simulationsmodelle mit dem versorgt werden, was sie benötigen, und wie neue Datenquellen und Modelle hinzugefügt werden, ohne das System neu aufzubauen.
 
       Vor Beginn seines Promotionsstudiums erwarb Stasis einen B.Sc. in Elektronik- und Telekommunikationstechnik sowie einen M.Sc. in Mechatronik und Künstlicher Intelligenz. Zu seinen breiteren Interessen zählen Wissensrepräsentation, physikinformiertes maschinelles Lernen, domänenübergreifendes Schließen, inklusive Mobilität und verantwortungsvolle urbane künstliche Intelligenz.
+    research_focus: |
+      Stasis Mukwenya ist Doktorand im Bauingenieurwesen an der Ariel University, spezialisiert auf urbane Geodatenwissenschaft, semantische Interoperabilität und menschzentrierte urbane digitale Zwillinge. Seine Forschung untersucht, wie urbane Fachmodelle, die getrennt für Energie, Klima, Mobilität und Stadtform entwickelt und betrieben werden, Bedeutung statt nur Daten teilen können und dadurch genauer vorhersagen. Stasis trägt zum METROPOLIS-Projekt für urbane digitale Zwillinge am Architectural Artificial Intelligence Research Lab bei, einer Plattform, auf der Planer Simulationen gegen ein gemeinsames Modell einer Stadt durchführen, vorgeschlagene Entwicklungen als separate Szenarien testen und die Ergebnisse vor jeder Entscheidung vergleichen.
+    current_work: |
+      Seine Doktorarbeit entwickelt Ontologien für kognitive urbane digitale Zwillinge — gemeinsame semantische Strukturen, über die unabhängig entwickelte Modelle zur Inferenzzeit typisierte, physikalisch fundierte Informationen austauschen, ohne neu trainiert werden zu müssen. Die Arbeit führt Maße dafür ein, wie vollständig eine solche gemeinsame Sprache ist, indem sie unterscheidet, was ein Zwilling benennen kann von dem, was er in Beziehung setzen kann, und testet sie an der Vorhersage von Fußgängerströmen unter sowohl routinemäßigen als auch extremen städtischen Bedingungen, unter denen Modelle, die sich nur auf historische Trends stützen, am wenigsten zuverlässig sind. Er arbeitet an der Infrastruktur dahinter: wie Stadtdaten gespeichert und organisiert werden, wie Simulationsmodelle mit dem versorgt werden, was sie benötigen, und wie neue Datenquellen und Modelle hinzugefügt werden, ohne das System neu aufzubauen.
+    background: |
+      Vor Beginn seines Promotionsstudiums erwarb Stasis einen B.Sc. in Elektronik- und Telekommunikationstechnik sowie einen M.Sc. in Mechatronik und Künstlicher Intelligenz.
+    interests: |
+      Zu seinen breiteren Interessen zählen Wissensrepräsentation, physikinformiertes maschinelles Lernen, domänenübergreifendes Schließen, inklusive Mobilität und verantwortungsvolle urbane künstliche Intelligenz.
 
 jobs:
   phd:

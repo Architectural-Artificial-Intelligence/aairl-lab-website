@@ -1,0 +1,13 @@
+{% comment %}
+  Usage: {% include friendly_date.html value=edu.start %}
+  Formats an ISO date string ("2013-11-07") as "Nov 2013". Bare-year strings
+  ("2017", as ORCID sometimes returns for year-only precision) are printed
+  as-is, since Liquid's date filter misparses them as a Unix timestamp
+  (e.g. "2017" -> Jan 1970) rather than the year 2017.
+{% endcomment %}
+{% assign _fd_value = include.value %}
+{% if _fd_value and _fd_value.size == 4 %}
+  {{ _fd_value }}
+{% elsif _fd_value %}
+  {{ _fd_value | date: "%b %Y" }}
+{% endif %}
