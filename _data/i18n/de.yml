@@ -246,7 +246,10 @@ study_opportunities_body: "Wählen Sie den Weg, der zu Ihrer aktuellen Phase, Ih
 # Team page
 team_page_banner_heading: "Unser Forschungsteam"
 team_page_banner_body: "Forschende, Studierende, Designer und Ingenieure, die an KI für Architektur, Städte und partizipative Planung arbeiten."
-team_page_current_heading: "Aktuelles Team"
+team_page_leadership_heading: "Leitung"
+team_page_research_students_heading: "Forschungsstudierende"
+team_page_guest_researcher_heading: "Gastforscher"
+team_page_research_assistants_heading: "Forschungsassistenz"
 team_page_alumni_heading: "Alumni"
 
 # Member roles
@@ -261,6 +264,7 @@ roles:
   msc: "M.Sc.-Student/in"
   research-lead: "Forschungsleiter/in"
   mascot: "Maskottchen"
+  guest-researcher: "Gastforscher/in"
 
 degree_titles:      # rendered as a prefix: "{title} {name}"
   dr: "Dr."
@@ -502,6 +506,12 @@ members:
       Vor Beginn seines Promotionsstudiums erwarb Stasis einen B.Sc. in Elektronik- und Telekommunikationstechnik sowie einen M.Sc. in Mechatronik und Künstlicher Intelligenz.
     interests: |
       Zu seinen breiteren Interessen zählen Wissensrepräsentation, physikinformiertes maschinelles Lernen, domänenübergreifendes Schließen, inklusive Mobilität und verantwortungsvolle urbane künstliche Intelligenz.
+  doron-greenberg:
+    name: "Doron Greenberg"
+    bio: |
+      Dr. Doron Greenberg besitzt einen Ph.D. in Wirtschaftswissenschaften von der University of Houston. Zuvor war er als Senior Lecturer in der Abteilung für Wirtschaftswissenschaften und Betriebswirtschaftslehre an der Ariel University tätig, wo er heute weiterhin als Research Fellow arbeitet. Als erfahrener Dozent für Wirtschaft und Finanzen hat er Dutzende wissenschaftliche Forschungsarbeiten veröffentlicht und sich zudem in lokalen Medien zu Themen wie persönlicher Finanzplanung und öffentlichem Wohlstand geäußert.
+
+      Sein Forschungsschwerpunkt liegt auf Verhaltensökonomie und -finanzierung (Behavioral Economics and Finance). Er wurde zum Gründungsdirektor des israelischen Hochschul-Chapters der Global Association of Risk Professionals (GARP) an der Ariel University ernannt. Seit 2024 konzentriert sich seine Forschung am AAIRL auf die verhaltensökonomischen Aspekte der Stadterneuerung.
 
 jobs:
   phd:

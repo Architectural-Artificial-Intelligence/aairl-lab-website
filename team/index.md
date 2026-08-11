@@ -22,19 +22,45 @@ nav:
 <section class="instructor_section team_section section_space_lg pt-0">
   <div class="container">
     <div class="team_section_heading">
-      <h2>{{ t.team_page_current_heading }}</h2>
+      <h2>{{ t.team_page_leadership_heading }}</h2>
     </div>
     <div class="instructor_wrapper row">
 {% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'pi'" %}
 {% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'lab-manager'" %}
 {% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'postdoc'" %}
-
 {% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'research-lead'" %}
-
+    </div>
+  </div>
+</section>
+<section class="instructor_section team_section section_space_lg pt-0">
+  <div class="container">
+    <div class="team_section_heading">
+      <h2>{{ t.team_page_research_students_heading }}</h2>
+    </div>
+    <div class="instructor_wrapper row">
 {% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'phd'" %}
 {% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'master'" %}
 {% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'msc'" %}
-{% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'assistant'" %}
+    </div>
+  </div>
+</section>
+<section class="instructor_section team_section section_space_lg pt-0">
+  <div class="container">
+    <div class="team_section_heading">
+      <h2>{{ t.team_page_guest_researcher_heading }}</h2>
+    </div>
+    <div class="instructor_wrapper row">
+      {% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'guest-researcher'" %}
+    </div>
+  </div>
+</section>
+<section class="instructor_section team_section section_space_lg pt-0">
+  <div class="container">
+    <div class="team_section_heading">
+      <h2>{{ t.team_page_research_assistants_heading }}</h2>
+    </div>
+    <div class="instructor_wrapper row">
+      {% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'assistant'" %}
     </div>
   </div>
 </section>

@@ -246,7 +246,10 @@ study_opportunities_body: "Choose the path that matches your stage, research int
 # Team page
 team_page_banner_heading: "Our Research Team"
 team_page_banner_body: "Researchers, students, designers, and engineers working on AI for architecture, cities, and participatory planning."
-team_page_current_heading: "Current Team"
+team_page_leadership_heading: "Leadership"
+team_page_research_students_heading: "Research Students"
+team_page_guest_researcher_heading: "Guest Researchers"
+team_page_research_assistants_heading: "Research Assistants"
 team_page_alumni_heading: "Alumni"
 
 # Member roles
@@ -261,6 +264,7 @@ roles:
   msc: "M.Sc. Student"
   research-lead: "Research Leader"
   mascot: "Mascot"
+  guest-researcher: "Guest Researcher"
 
 degree_titles:      # rendered as a prefix: "{title} {name}"
   dr: "Dr."
@@ -478,6 +482,12 @@ members:
       His work aims to enhance how users interact with complex simulated environments, directly contributing to the lab's broader mission of exploring AI-driven architectural design, urban renewal, and human-centric spatial development.
     background: |
       He holds an M.Sc. in Computer Science from Wright State University, a Post Graduate Diploma in Artificial Intelligence and Machine Learning from the National Institute of Technology (NIT) Warangal, and a B.Tech. in Electronics and Communication Engineering from JNTUK. Before joining the lab, Yaswanth developed intelligent and interactive systems as a Developer at Tata Consultancy Services (TCS), working across multiple domains of AI and spatial computing.
+  doron-greenberg:
+    name: "Doron Greenberg"
+    bio: |
+      Dr. Doron Greenberg holds a Ph.D. in Economics from the University of Houston. He previously served as a Senior Lecturer in the Department of Economics and Business Administration at Ariel University, where he continues his work today as a Research Fellow. An experienced educator in economics and finance, he has published dozens of academic papers alongside public commentary on personal finance and public wealth in local media.
+
+      His primary research focuses on behavioral economics and finance. He was appointed the founding director of the Israeli college chapter of the Global Association of Risk Professionals (GARP) at Ariel University. Since 2024, his research at AAIRL has focused on the behavioral economic aspects of urban renewal.
 
 jobs:
   phd:
