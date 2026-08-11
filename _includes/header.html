@@ -36,16 +36,16 @@
             {% assign _base_url = page.url | remove_first: '/he' | remove_first: '/de' %}
             {% if site.active_lang == 'en' %}
               <span class="lang-flag lang-active" aria-current="true" lang="en">English</span>
-              <a href="/he{{ _base_url }}" class="lang-flag" lang="he" hreflang="he">עברית <sup>AI</sup></a>
-              <a href="/de{{ _base_url }}" class="lang-flag" lang="de" hreflang="de">Deutsch <sup>AI</sup></a>
+              <a href="/he{{ _base_url }}" class="lang-flag" lang="he" hreflang="he">עברית</a>
+              <a href="/de{{ _base_url }}" class="lang-flag" lang="de" hreflang="de">Deutsch</a>
             {% elsif site.active_lang == 'he' %}
               <a {% static_href %}href="{{ _base_url }}"{% endstatic_href %} class="lang-flag" lang="en" hreflang="en">English</a>
-              <span class="lang-flag lang-active" aria-current="true" lang="he">עברית <sup>AI</sup></span>
-              <a href="/de{{ _base_url }}" class="lang-flag" lang="de" hreflang="de">Deutsch <sup>AI</sup></a>
+              <span class="lang-flag lang-active" aria-current="true" lang="he">עברית</span>
+              <a href="/de{{ _base_url }}" class="lang-flag" lang="de" hreflang="de">Deutsch</a>
             {% else %}
               <a {% static_href %}href="{{ _base_url }}"{% endstatic_href %} class="lang-flag" lang="en" hreflang="en">English</a>
-              <a href="/he{{ _base_url }}" class="lang-flag" lang="he" hreflang="he">עברית <sup>AI</sup></a>
-              <span class="lang-flag lang-active" aria-current="true" lang="de">Deutsch <sup>AI</sup></span>
+              <a href="/he{{ _base_url }}" class="lang-flag" lang="he" hreflang="he">עברית</a>
+              <span class="lang-flag lang-active" aria-current="true" lang="de">Deutsch</span>
             {% endif %}
           </nav>
         </div>
@@ -81,16 +81,16 @@
               <nav class="lang-switcher" aria-label="Language selector">
                 {% if site.active_lang == 'en' %}
                   <span class="lang-flag lang-active" aria-current="true" lang="en">EN</span>
-                  <a href="/he{{ _base_url }}" class="lang-flag" lang="he" hreflang="he">HE <sup>AI</sup></a>
-                  <a href="/de{{ _base_url }}" class="lang-flag" lang="de" hreflang="de">DE <sup>AI</sup></a>
+                  <a href="/he{{ _base_url }}" class="lang-flag" lang="he" hreflang="he">HE</a>
+                  <a href="/de{{ _base_url }}" class="lang-flag" lang="de" hreflang="de">DE</a>
                 {% elsif site.active_lang == 'he' %}
                   <a {% static_href %}href="{{ _base_url }}"{% endstatic_href %} class="lang-flag" lang="en" hreflang="en">EN</a>
-                  <span class="lang-flag lang-active" aria-current="true" lang="he">HE <sup>AI</sup></span>
-                  <a href="/de{{ _base_url }}" class="lang-flag" lang="de" hreflang="de">DE <sup>AI</sup></a>
+                  <span class="lang-flag lang-active" aria-current="true" lang="he">HE</span>
+                  <a href="/de{{ _base_url }}" class="lang-flag" lang="de" hreflang="de">DE</a>
                 {% else %}
                   <a {% static_href %}href="{{ _base_url }}"{% endstatic_href %} class="lang-flag" lang="en" hreflang="en">EN</a>
-                  <a href="/he{{ _base_url }}" class="lang-flag" lang="he" hreflang="he">HE <sup>AI</sup></a>
-                  <span class="lang-flag lang-active" aria-current="true" lang="de">DE <sup>AI</sup></span>
+                  <a href="/he{{ _base_url }}" class="lang-flag" lang="he" hreflang="he">HE</a>
+                  <span class="lang-flag lang-active" aria-current="true" lang="de">DE</span>
                 {% endif %}
               </nav>
             </li>
