@@ -117,6 +117,23 @@
   // Tilt - End
   // --------------------------------------------------
 
+  // Testimonial Carousel - Start
+  // --------------------------------------------------
+  $(function() {
+    $('.testimonial_carousel').slick({
+      dots: true,
+      speed: 1000,
+      arrows: false,
+      autoplay: true,
+      infinite: true,
+      slidesToShow: 1,
+      pauseOnHover: true,
+      autoplaySpeed: 4000
+    });
+  });
+  // Testimonial Carousel - End
+  // --------------------------------------------------
+
   // Dropdown - Start
   // --------------------------------------------------
   $('.dropdown').hover(function() {

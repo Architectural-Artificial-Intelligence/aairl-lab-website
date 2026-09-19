@@ -45,13 +45,16 @@ There's no manual deploy step — merging to `main` triggers the live rebuild.
 ## Architecture
 
 **Collections drive the content model.** Each content type is a Jekyll collection defined in
-`_config.yaml` (`members`, `posts`, `topics`, `jobs`, `projects`, `products`), backed by a directory
-prefixed with `_` (`_members/`, `_posts/`, `_topics/`, `_jobs/`, `_projects/`, `_products/`) and a
-layout in `_layouts/` (`member.html`, `post.html`, `topic.html`, `jobs.html`, `project.html`). Front
+`_config.yaml` (`members`, `posts`, `topics`, `projects`, `products`), backed by a directory
+prefixed with `_` (`_members/`, `_posts/`, `_topics/`, `_projects/`, `_products/`) and a
+layout in `_layouts/` (`member.html`, `post.html`, `topic.html`, `project.html`). Front
 matter defaults map collection type → layout (see the `defaults:` block in `_config.yaml`). Adding a
 new item of an existing type is almost always just adding a new Markdown file to the matching `_x/`
 folder with the right front matter (copy a sibling file as a template) — the corresponding public page
-under `members/`, `news/`, `topics/`, `jobs/`, `publications/`, etc. is generated automatically.
+under `members/`, `news/`, `publications/`, etc. is generated automatically. The `topics` collection is
+the exception: its public pages are served under `/agenda/` (branded "Research Agenda" in the UI) via a
+`permalink:` override on the collection in `_config.yaml` — the source directory, `_topics/`, and the
+Liquid collection accessor, `site.topics`, keep their original names.
 
 **Multilingual (i18n) via jekyll-polyglot**, three languages: `en` (default), `he`, `de`
 (`languages:` / `default_lang:` in `_config.yaml`). Translated UI strings live in `_data/i18n/{en,he,de}.yml`.
