@@ -1,10 +1,30 @@
 ---
 title: Team
+meta_key: team
 nav:
   order: 3
   tooltip: About our team
 ---
 {% assign t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
+{% if site.active_lang == site.default_lang %}{% assign lp = '' %}{% else %}{% assign lp = '/' | append: site.active_lang %}{% endif %}
+
+{% assign _team_members = site.members | where: "group", "team" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": {{ t.team_page_banner_heading | strip_html | jsonify }},
+  "itemListElement": [
+    {% for m in _team_members %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "item": { "@type": "Person", "name": {{ m.name | jsonify }}, "url": "{{ site.url }}{{ lp }}{{ m.url }}" }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
 
 <section class="page_banner team_banner decoration_wrap">
   <div class="container">
@@ -47,20 +67,20 @@ nav:
 <section class="instructor_section team_section section_space_lg pt-0">
   <div class="container">
     <div class="team_section_heading">
-      <h2>{{ t.team_page_guest_researcher_heading }}</h2>
+      <h2>{{ t.team_page_research_assistants_heading }}</h2>
     </div>
     <div class="instructor_wrapper row">
-      {% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'guest-researcher'" %}
+      {% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'assistant'" %}
     </div>
   </div>
 </section>
 <section class="instructor_section team_section section_space_lg pt-0">
   <div class="container">
     <div class="team_section_heading">
-      <h2>{{ t.team_page_research_assistants_heading }}</h2>
+      <h2>{{ t.team_page_guest_researcher_heading }}</h2>
     </div>
     <div class="instructor_wrapper row">
-      {% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'assistant'" %}
+      {% include list.html data="members" component="team_portrait" filter="group == 'team' and role == 'guest-researcher'" %}
     </div>
   </div>
 </section>

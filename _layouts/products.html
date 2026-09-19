@@ -4,6 +4,26 @@ layout: default
 {% assign t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
 {% if site.active_lang == site.default_lang %}{% assign lp = '' %}{% else %}{% assign lp = '/' | append: site.active_lang %}{% endif %}
 
+{% capture _product_name %}{% include t_field.html field="title" %}{% endcapture %}
+{% assign _product_name = _product_name | strip %}
+{% capture _product_description %}{% include t_field.html field="description" %}{% endcapture %}
+{% assign _product_description = _product_description | strip %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": {{ _product_name | jsonify }},
+  "description": {{ _product_description | jsonify }},
+  "url": "{{ site.url }}{{ lp }}{{ page.url }}",
+  {% if page.image %}"image": "{{ site.url }}{{ page.image }}",{% endif %}
+  "creator": { "@id": "{{ site.url }}/#organization" }
+}
+</script>
+{% assign _home_url = lp | append: "/" %}
+{% assign _topics_url = lp | append: "/agenda/" %}
+{% include schema_breadcrumb.html item1_name=t.member_nav_home item1_url=_home_url item2_name=t.nav_research item2_url=_topics_url item3_name=_product_name %}
+
 <!-- Details Section - Start
 ================================================== -->
 <section class="details_section course_details_section">

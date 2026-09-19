@@ -4,6 +4,43 @@ layout: default
 {% assign t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
 {% if site.active_lang == site.default_lang %}{% assign lp = '' %}{% else %}{% assign lp = '/' | append: site.active_lang %}{% endif %}
 
+{% assign _post_author = site.members
+  | where_exp: "member", "member.slug == page.author"
+  | first
+%}
+{% assign _post_published = page.date | date_to_xmlschema %}
+{% assign _post_updated = page.last_modified_at | date_to_xmlschema | default: _post_published %}
+{% assign _post_tags = page.tags
+  | object_items
+  | join: ","
+  | split: ","
+  | array_filter
+  | uniq
+%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | strip_html | jsonify }},
+  "url": "{{ site.url }}{{ lp }}{{ page.url }}",
+  "datePublished": "{{ _post_published }}",
+  "dateModified": "{{ _post_updated }}",
+  {% if page.image %}"image": "{{ site.url }}{{ page.image }}",{% endif %}
+  {% if page.tags %}"keywords": {{ page.tags | join: ', ' | jsonify }},{% endif %}
+  "author": {
+    "@type": "Person",
+    "name": {{ _post_author.name | default: page.author | jsonify }}{% if _post_author %},
+    "url": "{{ site.url }}{{ lp }}{{ _post_author.url }}"{% endif %}
+  },
+  "publisher": { "@id": "{{ site.url }}/#organization" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ site.url }}{{ lp }}{{ page.url }}" }
+}
+</script>
+{% assign _home_url = lp | append: "/" %}
+{% assign _news_url = lp | append: "/news/" %}
+{% include schema_breadcrumb.html item1_name=t.member_nav_home item1_url=_home_url item2_name=t.nav_news item2_url=_news_url item3_name=page.title %}
+
 <section class="page_banner decoration_wrap">
   <div class="container">
     <h1 class="page_heading">{{ page.title }}</h1>
@@ -41,11 +78,52 @@ layout: default
             tags=page.tags
           %}
 
-          <p>
-            {{ content }}
-          </p>
+          {{ content }}
 
           <hr>
+
+          <div class="social_activity_links">
+            {% if _post_tags.size > 0 %}
+            <div class="item_tags">
+              <span class="wrap_title">{{ t.post_tags_label }}</span>
+              <ul class="tags_list unordered_list">
+                {% for tag in _post_tags %}
+                {% assign tag_label = site.data.tag_labels[tag] | default: tag %}
+                <li><a href="{{ lp }}/news/?search=&quot;tag: {{ tag }}&quot;">{{ tag_label }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+            <div class="item_social_share">
+              <span class="wrap_title">{{ t.post_share_label }}</span>
+              <ul class="social_icon unordered_list">
+                <li>
+                  <a class="bg_facebook" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ lp }}{{ page.url | url_encode }}">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="bg_twitter" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ lp }}{{ page.url | url_encode }}&text={{ page.title | url_encode }}">
+                    <i class="fab fa-x-twitter"></i>
+                    <i class="fab fa-x-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="bg_linkedin" target="_blank" rel="noopener" href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ lp }}{{ page.url | url_encode }}">
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="bg_whatsapp" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?text={{ page.title | url_encode }}%20{{ site.url }}{{ lp }}{{ page.url | url_encode }}">
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
           {% include post-nav.html post=page %}
 
@@ -54,32 +132,31 @@ layout: default
 
       <div class="col col-lg-3">
         <aside class="sidebar">
-          <div class="widget category_list">
-            <h3 class="widget_title">{{ t.nav_research }}</h3>
-            <ul class="unordered_list_block">
-
-              {% assign tags = page.tags
-                | object_items
-                | join: ","
-                | split: ","
-                | array_filter
-                | uniq
-              %}
-              {% assign link = include.link | default: page.dir | absolute_url %}
-
-
-              {% for tag in tags %}
-              {% assign tag_label = site.data.tag_labels[tag] | default: tag %}
-              <li> <a
-                  href="{{ lp }}/news/?search=&quot;tag: {{ tag }}&quot;">
-                <span>{{ tag_label }}</span>
-
+          {% if _post_author %}
+          {% capture _post_author_name %}{% include member_name.html obj=_post_author %}{% endcapture %}
+          {% assign _post_author_name = _post_author_name | strip %}
+          <div class="widget sidebar_post_admin text-center">
+            <div class="admin_image">
+              <img src="{{ _post_author.image | relative_url }}" alt="{{ _post_author_name | xml_escape }}">
+            </div>
+            <h3 class="admin_name">{{ _post_author_name }}</h3>
+            <p>{{ t.roles[_post_author.role] }}</p>
+            {% if _post_author.links %}
+            <ul class="social_icon unordered_list_center">
+              {% for link in _post_author.links %}
+              {% assign key = link[0] %}
+              {% assign value = link[1] %}
+              <li>
+                <a href="{{ value }}">
+                  <i class="{{ key }}"></i>
+                  <i class="{{ key }}"></i>
                 </a>
               </li>
               {% endfor %}
-
             </ul>
+            {% endif %}
           </div>
+          {% endif %}
 
           <div class="widget recent_post">
             <h3 class="widget_title">{{ t.footer_latest_news }}</h3>

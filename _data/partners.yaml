@@ -3,7 +3,7 @@
   url: https://isf.org.il
 
 - key: ministry-of-science-and-technology
-  icon: /images/partners/most.jpg
+  icon: /images/partners/most.png
   url: https://most.gov.il
 
 - key: ministry-of-construction-and-housing
@@ -11,11 +11,11 @@
   url: https://moch.gov.il
 
 - key: israel-planning-administration
-  icon: /images/partners/planningauthority.jpg
+  icon: /images/partners/planningauthority.png
   url: https://www.gov.il/en/departments/iplan/govil-landing-page
 
 - key: green-group
-  icon: /images/partners/grengroup.jpeg
+  icon: /images/partners/grengroup.png
   url: https://www.green-group.co.il/
 
 - key: tel-aviv-municipality

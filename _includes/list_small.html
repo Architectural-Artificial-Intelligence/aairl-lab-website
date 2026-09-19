@@ -4,6 +4,8 @@
   | default: emptyarray
   | data_filter: include.filter
 %}
+{% assign limit = include.limit | default: 6 %}
+{% assign data = data | slice: 0, limit %}
 
 {% for d in data %}
   {% assign style = d.style | default: include.style %}

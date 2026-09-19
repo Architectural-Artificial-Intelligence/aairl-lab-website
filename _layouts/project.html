@@ -2,6 +2,38 @@
 layout: default
 ---
 {% assign t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
+{% if site.active_lang == site.default_lang %}{% assign lp = '' %}{% else %}{% assign lp = '/' | append: site.active_lang %}{% endif %}
+
+{% assign _proj_topic = site.topics | where_exp: "topic", "topic.projects contains page.tag" | first %}
+{% capture _proj_name %}{% include t_field.html field="title" %}{% endcapture %}
+{% assign _proj_name = _proj_name | strip %}
+{% capture _proj_description %}{% include t_field.html field="intro" %}{% endcapture %}
+{% assign _proj_description = _proj_description | strip %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": {{ _proj_name | jsonify }},
+  "description": {{ _proj_description | jsonify }},
+  "url": "{{ site.url }}{{ lp }}{{ page.url }}",
+  {% if page.image %}"image": "{{ site.url }}{{ page.image }}",{% endif %}
+  {% if _proj_topic %}"about": {{ _proj_topic.title | jsonify }},{% endif %}
+  "creator": { "@id": "{{ site.url }}/#organization" }
+  {% if page.funding.size > 0 %},
+  "funder": [
+    {% for fund_key in page.funding %}
+    {% assign partner = site.data.partners | where: "key", fund_key | first %}
+    {% assign partner_t = t.partners[fund_key] %}
+    { "@type": "Organization", "name": {{ partner_t.name | default: fund_key | jsonify }} }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+  {% endif %}
+}
+</script>
+{% assign _home_url = lp | append: "/" %}
+{% assign _topics_url = lp | append: "/agenda/" %}
+{% include schema_breadcrumb.html item1_name=t.member_nav_home item1_url=_home_url item2_name=t.nav_research item2_url=_topics_url item3_name=_proj_name %}
 
 <!-- Details Section - Start
 ================================================== -->
@@ -66,7 +98,7 @@ layout: default
                         </div>
                     </div>
                     {% endif %}
-                    {% include paper-list.html match="projects" heading=t.label_papers %}
+                    {% include paper-list.html match="projects" heading=t.label_papers show_tag_matches=false %}
                 </div>
                 <div class="col col-lg-4">
                     <aside class="sidebar">

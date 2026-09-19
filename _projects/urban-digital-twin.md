@@ -13,6 +13,9 @@ funding:
 
 papers:
     - Kiros2026
-    - dortheimer2025
     - Boim2021
+    - Brama2024
+    - Brama2025
+    - ecaade2026_268
+    - Brama2024ecaade
 ---

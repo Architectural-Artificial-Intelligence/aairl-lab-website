@@ -1,5 +1,3 @@
----
----
 /* RTL overrides — only applied when <html dir="rtl"> */
 
 [dir="rtl"] {
@@ -56,9 +54,68 @@
     margin-right: 0;
   }
 
+  .course_cart_info .item_price .remove_price {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  /* Icon + text rows (checkmark lists, policy items, testimonials) — the icon
+     is the first DOM child, so it lands on the visual right in RTL and its
+     LTR-authored margin-right ends up on the outer edge instead of between
+     icon and text, leaving them glued together (or, for the wider testimonial
+     photo, overlapping the quote text). */
+  .icon_list > li i,
+  .icon_list > li > a i {
+    margin-right: 0;
+    margin-left: 8px;
+  }
+  .icon_list strong {
+    margin-right: 0;
+    margin-left: 5px;
+  }
+  .policy_item .item_icon {
+    margin-right: 0;
+    margin-left: 32px;
+  }
+  .testimonial_item .item_image {
+    margin-right: 0;
+    margin-left: 64px;
+    padding-right: 0;
+    padding-left: 76px;
+    background-position: left bottom;
+  }
+
   /* Arrow icons — flip for RTL */
   .fa-long-arrow-right::before {
     content: "\f30a"; /* fa-long-arrow-left */
+  }
+  .fa-angle-double-right::before {
+    content: "\f100"; /* fa-angle-double-left */
+  }
+
+  /* Research agenda / project topic cards (agenda, projects pages) — icon is
+     the first DOM child so it lands on the visual right in RTL; its
+     LTR-authored margin-right needs to move to the inner edge (left). */
+  .category_item_2 .item_icon {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+  /* Ph.D./Master's hero "fun fact" icon rows — same icon-first flex issue. */
+  .banner_funfact_list .item_icon {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+
+  /* Related-project feature cards (agenda topic pages): a 2-col grid with
+     image first — grid columns already mirror in RTL, but the text block's
+     physical padding (authored for image-on-left) needs to flip so the gap
+     stays against the image instead of collapsing to the outer edge. */
+  .topic_project_feature .feature_text {
+    padding: 14px 0 14px 16px;
+  }
+  .topic_project_feature:hover .feature_link i {
+    transform: translateX(-4px);
   }
 
   /* Member page */
@@ -97,5 +154,17 @@
   /* Language switcher */
   .lang-switcher {
     direction: ltr;
+  }
+
+  /* Project/product cards (agenda, projects, masters pages) — badge pill and
+     hover-overlay arrow are authored for a left-aligned/rightward layout. */
+  .course_item .badge_group {
+    left: auto;
+    right: 18px;
+  }
+  .course_item .image_wrap:after {
+    content: "\f177"; /* fa-long-arrow-left */
+    padding-right: 0;
+    padding-left: 30px;
   }
 }

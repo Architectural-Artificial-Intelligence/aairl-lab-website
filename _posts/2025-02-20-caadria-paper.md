@@ -6,7 +6,7 @@ category: featured
 caption: AAIRL research on AI-driven urban renewal and genetic algorithm-based architectural design will be presented at CAADRIA 2025 in Tokyo.
 
 tags:
-  - confernecees 
+  - conference
   - DesignAI
   - Tokyo 
   - UrbanAI

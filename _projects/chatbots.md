@@ -20,4 +20,9 @@ papers:
     - yang2024
     - Dortheimer2022b
     - David2026
+    - dortheimer2026b
+    - math10040539
+    - buildings13010222
+    - Dortheimer2020b
+    - Dortheimer2021
 ---

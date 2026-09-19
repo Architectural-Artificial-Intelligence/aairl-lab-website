@@ -51,8 +51,23 @@
       <ul class="tags_list unordered_list paper_tags">
         {% for tag in citation.tags %}
           {% assign tag_label = site.data.tag_labels[tag] | default: tag %}
-          {% assign tag_topic = site.topics | where_exp: "topic", "topic.tag == tag" | first %}
-          <li>{% if tag_topic %}<a href="{{ tag_topic.url | relative_url }}">{{ tag_label }}</a>{% else %}<span>{{ tag_label }}</span>{% endif %}</li>
+          {% assign normalized_tag = tag | downcase %}
+          {% assign tag_url = "" %}
+          {% for topic in site.topics %}
+            {% assign normalized_topic_tag = topic.tag | downcase %}
+            {% if normalized_topic_tag == normalized_tag %}
+              {% assign tag_url = topic.url %}
+            {% endif %}
+          {% endfor %}
+          {% if tag_url == "" %}
+            {% for project in site.projects %}
+              {% assign normalized_project_tag = project.tag | downcase %}
+              {% if normalized_project_tag == normalized_tag %}
+                {% assign tag_url = project.url %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+          <li>{% if tag_url != "" %}<a href="{{ tag_url | relative_url }}">{{ tag_label }}</a>{% else %}<span>{{ tag_label }}</span>{% endif %}</li>
         {% endfor %}
       </ul>
     {% endif %}

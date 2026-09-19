@@ -55,27 +55,28 @@
   <div class="container">
     <div class="header_bottom">
       <div class="row align-items-center">
-        <div class="col col-lg-3">
+        <div class="col col-lg-2">
           <div class="site_logo">
             <a class="site_link" href="{{ lp }}/">
               <img src="/images/logo/site_logo.png" alt="Architectural Artificial Intelligence Research Lab">
             </a>
           </div>
         </div>
-        <div class="col col-lg-6">
+        <div class="col col-lg-8">
           <nav class="main_menu navbar navbar-expand-lg">
             <div class="main_menu_inner collapse navbar-collapse justify-content-center" id="main_menu_dropdown">
               <ul class="main_menu_list unordered_list_center">
-                <li><a class="nav-link {% if page.url contains '/topics/' or page.collection == 'topics' or page.collection == 'projects' %}active{% endif %}" href="{{ lp }}/topics/" {% if page.url contains '/topics/' or page.collection == 'topics' or page.collection == 'projects' %}aria-current="page"{% endif %}>{{ t.nav_research }}</a></li>
+                <li><a class="nav-link {% if page.url contains '/agenda/' or page.collection == 'topics' or page.collection == 'projects' %}active{% endif %}" href="{{ lp }}/agenda/" {% if page.url contains '/agenda/' or page.collection == 'topics' or page.collection == 'projects' %}aria-current="page"{% endif %}>{{ t.nav_research }}</a></li>
                 <li><a class="nav-link {% if page.url contains '/news/' or page.collection == 'posts' %}active{% endif %}" href="{{ lp }}/news/" {% if page.url contains '/news/' or page.collection == 'posts' %}aria-current="page"{% endif %}>{{ t.nav_news }}</a></li>
                 <li><a class="nav-link {% if page.url == '/publications/' %}active{% endif %}" href="{{ lp }}/publications/" {% if page.url == '/publications/' %}aria-current="page"{% endif %}>{{ t.nav_publications }}</a></li>
                 <li><a class="nav-link {% if page.url == '/team/' or page.collection == 'members' %}active{% endif %}" href="{{ lp }}/team/" {% if page.url == '/team/' or page.collection == 'members' %}aria-current="page"{% endif %}>{{ t.nav_team }}</a></li>
-                <li><a class="nav-link {% if page.url == '/jobs/' or page.collection == 'jobs' %}active{% endif %}" href="{{ lp }}/jobs/" {% if page.url == '/jobs/' or page.collection == 'jobs' %}aria-current="page"{% endif %}>{{ t.nav_jobs }}</a></li>
+                <li><a class="nav-link {% if page.url == '/masters/' %}active{% endif %}" href="{{ lp }}/masters/" {% if page.url == '/masters/' %}aria-current="page"{% endif %}>{{ t.nav_masters }}</a></li>
+                <li><a class="nav-link {% if page.url == '/phd/' %}active{% endif %}" href="{{ lp }}/phd/" {% if page.url == '/phd/' %}aria-current="page"{% endif %}>{{ t.nav_phd }}</a></li>
               </ul>
             </div>
           </nav>
         </div>
-        <div class="col col-lg-3">
+        <div class="col col-lg-2">
           <ul class="header_btns_group unordered_list_end">
             <li class="d-lg-none">
               <nav class="lang-switcher" aria-label="Language selector">

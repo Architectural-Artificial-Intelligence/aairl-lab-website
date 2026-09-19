@@ -1,10 +1,39 @@
 ---
 title: Research
+meta_key: publications
 nav:
   order: 2
   tooltip: Published works
 ---
 {% assign t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
+
+{% assign _pub_papers = site.data.papers | where: "lab", true | sort: "date" | reverse %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": {{ t.publications_page_heading | strip_html | jsonify }},
+  "itemListElement": [
+    {% for paper in _pub_papers %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "item": {
+        "@type": "ScholarlyArticle",
+        "name": {{ paper.title | strip_html | jsonify }},
+        "author": {{ paper.authors | strip_html | jsonify }},
+        "datePublished": "{{ paper.date }}"
+        {% if paper.publisher %},"isPartOf": { "@type": "Periodical", "name": {{ paper.publisher | strip_html | jsonify }} }{% endif %}
+        {% if paper.link %},"url": "{{ paper.link }}"{% endif %}
+        {% if paper.doi %},"identifier": "https://doi.org/{{ paper.doi }}"{% endif %}
+        {% if paper.tags %},"keywords": {{ paper.tags | join: ', ' | jsonify }}{% endif %}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
 
 <section class="page_banner decoration_wrap">
   <div class="container">

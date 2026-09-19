@@ -5,16 +5,17 @@
   rel="stylesheet"
 />
 
+{% assign _v = site.time | date: '%s' %}
 <!-- include all sass in styles folder -->
-  <link href="/_styles/-theme.css" rel="stylesheet" />
+  <link href="/_styles/-theme.css?v={{ _v }}" rel="stylesheet" />
 
 <!-- include all css in styles folder -->
-  <link href="/_styles/animate.css" rel="stylesheet" />
-  <link href="/_styles/bootstrap.min.css" rel="stylesheet" />
-  <link href="/_styles/fontawesome.css" rel="stylesheet" />
-  <link href="/_styles/magnific-popup.css" rel="stylesheet" />
-  <link href="/_styles/slick.css" rel="stylesheet" />
-  <link href="/_styles/style.css" rel="stylesheet" />
+  <link href="/_styles/animate.css?v={{ _v }}" rel="stylesheet" />
+  <link href="/_styles/bootstrap.min.css?v={{ _v }}" rel="stylesheet" />
+  <link href="/_styles/fontawesome.css?v={{ _v }}" rel="stylesheet" />
+  <link href="/_styles/magnific-popup.css?v={{ _v }}" rel="stylesheet" />
+  <link href="/_styles/slick.css?v={{ _v }}" rel="stylesheet" />
+  <link href="/_styles/style.css?v={{ _v }}" rel="stylesheet" />
 
 
 

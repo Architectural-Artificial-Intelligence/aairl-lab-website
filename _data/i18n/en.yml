@@ -7,15 +7,28 @@ nav_research: "Research"
 nav_news: "News"
 nav_publications: "Publications"
 nav_team: "Team"
-nav_jobs: "Jobs"
+nav_masters: "Master's"
+nav_phd: "Ph.D."
 nav_contact: "Contact Us"
+
+# Per-page <meta name="description"> fallbacks, used by _includes/meta.html when a page
+# (via its `meta_key` front matter) and its own collection/front-matter fields don't
+# already supply one. meta_site_description is the final sitewide fallback.
+meta_site_description: "AAIRL combines AI, architecture, and urban planning research to create more sustainable and equitable cities."
+meta:
+  home: "AAIRL develops and evaluates computational methods for architectural design, urban analytics, and participatory planning using AI and machine learning."
+  topics: "AAIRL's research projects explore how AI and computational methods can support more resilient, inclusive, and adaptive urban design and planning."
+  team: "Researchers, students, designers, and engineers working on AI for architecture, cities, and participatory planning."
+  news: "Lab announcements, research milestones, publications, collaborations, and events."
+  publications: "Peer-reviewed work from the Architectural Artificial Intelligence Research Lab."
+  contact: "Get in touch with the Architectural AI Research Lab at Ariel University — email, phone, and location."
 
 # Homepage
 home_banner_title: "AI Research for Architecture and Urban Planning"
 home_banner_body: "The Architectural Artificial Intelligence Research Lab develops and evaluates computational methods for architectural design, urban analytics, and participatory planning. We combine machine learning, human-computer interaction, and urban research to build tools that are empirically validated, interpretable, and grounded in real planning contexts."
-home_banner_cta: "Explore research topics"
+home_banner_cta: "Explore our research agenda"
 home_research_topics: "Research"
-home_research_topics_focus: "Topics"
+home_research_topics_focus: "Agenda"
 home_news_heading: "Latest Lab"
 home_news_focus: "News"
 home_partners_heading: "Funding Agencies and"
@@ -49,7 +62,7 @@ partners:
     name: "Ariel University"
     kind: "Academic institution"
 home_topic_projects_label: "projects"
-home_topic_research_label: "Research topic"
+home_topic_research_label: "Agenda item"
 topics:
   design-ai:
     title: "AI Design"
@@ -152,6 +165,8 @@ publications_all: "All publications"
 # Post navigation
 post_nav_previous: "Previous"
 post_nav_next: "Next"
+post_tags_label: "Tags:"
+post_share_label: "Share:"
 
 # Citation / paper card
 citation_venue: "Venue"
@@ -209,7 +224,6 @@ label_papers: "Papers"
 # Join us / CTA
 join_title: "Want to solve real urban problems with AI?"
 join_body: "We welcome applications from researchers, designers, and practitioners from diverse disciplinary backgrounds. If you are interested in contributing to research at the intersection of AI, design, and urban studies, we encourage you to apply and join our team."
-join_cta: "Open positions!"
 
 # Listing pages
 team_page_title: "Team"
@@ -218,31 +232,11 @@ publications_page_title: "Publications"
 topics_page_title: "Research Topics"
 topics_page_banner_title: "Our Research Projects"
 topics_page_banner_body: "Our research advances the intersection of artificial intelligence, design, and urban systems. We investigate how computational methods and data-driven technologies can support more resilient, inclusive, and adaptive urban environments."
+topics_page_projects_heading: "Research"
+topics_page_projects_heading_focus: "Projects"
 topics_page_products_heading: "Our"
 topics_page_products_heading_focus: "Products"
 topics_page_products_body: "We translate our research outcomes into practical tools that support participatory and inclusive urban design."
-jobs_page_title: "Open Positions"
-
-# Jobs layout
-jobs_about_position: "About This Position"
-jobs_what_we_do: "What We Do"
-jobs_what_we_do_body: "AAIRL focuses on concrete challenges in urban design and planning where AI can extend human capability. Our core research directions include:"
-jobs_what_we_do_items:
-  - "Human–AI interaction in design"
-  - "Generative architectural and urban design"
-  - "Built-environment analysis"
-  - "Built-environment simulation"
-jobs_what_we_do_footer: "Much of our work is carried out with industry and government partners, so our research is tested against real-world constraints: incomplete data, competing objectives, regulation, and the realities of implementation."
-jobs_what_we_look_for: "What We Look For"
-jobs_funding: "Funding Opportunities"
-jobs_applying: "How to Apply"
-
-# Study (jobs landing) layout
-study_banner_title: "Advance Your Research Career at AAIRL"
-study_banner_body: "We welcome applicants for research degrees (M.Sc., Ph.D.) and postdoctoral positions."
-study_opportunities_heading: "Open Research Paths"
-study_opportunities_body: "Choose the path that matches your stage, research interests, and desired level of independence."
-
 # Team page
 team_page_banner_heading: "Our Research Team"
 team_page_banner_body: "Researchers, students, designers, and engineers working on AI for architecture, cities, and participatory planning."
@@ -494,6 +488,12 @@ members:
       Osher Cohen is an architect and an M.Sc. student at AAIRL. Her research explores the intersection of artificial intelligence, urban design, and human experience in public space.
 
       Her current work investigates how AI-based methods can be used to evaluate urban environments and identify spatial qualities that support human interaction and meaningful encounters, particularly in the context of increasingly technology-mediated everyday life.
+  hanan-peretz:
+    name: "Hanan Peretz"
+    bio: |
+      Dr. Hanan Peretz is an architect, researcher, and educator. He is a faculty member at Ariel University, where he coordinates the second-year design studios. His architectural practice spans all scales and a wide range of project types, from interior design, architecture, and lighting design to urban planning and public-space design. Among his projects, he developed the urban design guidelines for Tel Aviv's Florentin neighborhood.
+
+      Alongside his professional practice and teaching, his research focuses on urban street lighting and the relationships between light, architecture, and the experience of public space after dark, with Florentin serving as a central case study in his doctoral research. His work brings together a diverse architectural practice, design education, and research, driven by an ongoing interest in how architecture, light, and planning shape urban space and everyday life.
 
 jobs:
   phd:
@@ -567,3 +567,209 @@ jobs:
       * Up to 3 publications or work samples
 
       More details are available on Ariel University's [postdoc website](https://www.ariel.ac.il/wp/postdocs/).
+
+# Master's landing page
+masters:
+  banner_title: "Master's Degree in AI, Architecture, and Urban Planning"
+  banner_title_accent: "Master's Degree"
+  banner_title_rest: " in AI, Architecture, and Urban Planning"
+  banner_intro: "AAIRL, part of the School of Architecture at Ariel University, offers a research-focused M.Sc. thesis track for architecture graduates and, subject to some additional coursework, students from other related fields. Depending on the topic, students may also be co-advised jointly with faculty from other relevant university faculties. The program runs two years and is a strong fit for students considering a Ph.D. or seeking hands-on research training grounded in real datasets and ongoing lab projects and partners."
+  cta_apply: "How to apply"
+  cta_team: "Meet the team"
+
+  policy_items:
+    - icon: "far fa-flask"
+      title: "Real research projects"
+      body: "Work with real urban data on active lab projects"
+    - icon: "far fa-chalkboard-teacher"
+      title: "Close mentorship"
+      body: "Direct supervision from active researchers"
+    - icon: "far fa-award"
+      title: "Publish your work"
+      body: "Submit to leading journals and conferences"
+
+  nav_program: "Program"
+  nav_research_link: "Research"
+  nav_projects_link: "Projects"
+  nav_partners_link: "Partners"
+  nav_funding_link: "Funding"
+  nav_faq_link: "FAQ"
+  nav_apply_link: "Apply"
+
+  stats:
+    - value: "9"
+      label: "Partner organizations"
+      icon: "far fa-handshake"
+    - value: "4"
+      label: "Active research projects"
+      icon: "far fa-flask"
+    - value: "GoSmart Award 2024"
+      label: "Chatbots for Design project"
+      icon: "far fa-trophy"
+    - value: "M.Sc."
+      label: "Thesis-track research degree"
+      icon: "far fa-graduation-cap"
+
+  about_title: "About the lab"
+  about_body: "AAIRL (Architectural Artificial Intelligence Research Laboratory) is a research unit within Ariel University's School of Architecture, led by Dr. Jonathan Dortheimer. The lab develops computational methods for architectural design, urban analysis, and participatory planning, combining machine learning, human-computer interaction, and urban research."
+
+  program_heading: "Who the"
+  program_focus: "Program Is For"
+  program_intro: "The program runs 2 years as thesis research and is part-time compatible, so it works alongside a job or other commitments. The lab accepts M.Sc. students exclusively through the thesis track — a good fit for students considering a Ph.D. or seeking serious, hands-on research training grounded in real datasets and questions tied to ongoing lab projects and partners."
+  program_points:
+    - "Duration: 2 years, thesis research"
+    - "The M.Sc. is in Architecture, open to architecture graduates as well as graduates of urban planning, engineering, computer science, or a related field, subject to some additional coursework"
+    - "Depending on the topic, students may also be co-advised jointly with faculty from other relevant university faculties or departments — such as Civil Engineering, Industrial Engineering and Management, or Public Health"
+    - "Thesis-track only — this program does not offer a non-thesis / final-project route"
+    - "Close supervision within an active, funded research project"
+
+  pillars_title: "Research agenda"
+  pillars_intro: "AAIRL focuses on concrete challenges in urban design and planning where AI can extend human capability. Thesis topics are typically drawn from one of these directions:"
+
+  projects_title: "Selected research projects"
+  projects_intro: "A look at what the lab is working on right now — most M.Sc. theses connect to one of these ongoing projects."
+
+  testimonials_heading: "What Our"
+  testimonials_focus: "Students Say"
+  testimonials:
+    - quote: "I've been working at the AAIRL research lab for over two years now, and during this time I've learned a huge amount — academically, and also through working together with my labmates. Working in the lab opened up opportunities for me to take part in interesting conferences and events in Israel and abroad, and to be exposed to the worlds of research, academic writing, and publishing. The lab strongly encourages curiosity, independent thinking, and high-level research work. There's a lot of encouragement to initiate ideas, develop them into studies and papers, and submit them to leading journals and international conferences."
+      name: "Gaya Bitman"
+      role: "M.Sc. student at AAIRL"
+      image: "/images/people/gaya.jpg"
+    - quote: "Pursuing my master's degree through the lab gave me meaningful support the whole way through, and the lab truly became a second home. It connected my research to practice and gave me the tools to develop and sharpen my thesis. Along the way, I also had the chance to work with other researchers and take part in experiments and research projects. The lab connected me to what's happening today in the research world, through meeting and collaborating with researchers from Israel and abroad. For me, this turned the degree from a personal process into a much more collaborative, active experience — grounded in real research work."
+      name: "Hila David"
+      role: "Architect, M.Sc. student at AAIRL"
+      image: "/images/people/hila-david.jpg"
+  podcast_cta: "Hear more from the lab on our podcast"
+
+  partners_heading: "Funding Agencies and"
+  partners_focus: "Partners"
+  partners_intro: "Lab projects are funded and supported by research foundations, government ministries, and local authorities."
+
+  apply_heading: "How to"
+  apply_focus: "Apply"
+  apply_steps:
+    - "Check that you meet the university's general M.Sc. admission requirements, listed on Ariel University's [M.Sc. in Architecture website](https://www.ariel.ac.il/wp/architecture/m-d/)"
+    - "Browse the lab's research directions and projects for context — you don't need a finalized thesis idea in advance, we're happy to help you develop one together"
+    - "Email Dr. Jonathan Dortheimer or Dr. Haya Brama with your CV and transcripts, subject line \"Master's Thesis Application\""
+    - "In your email, include your degree program and year, any topics of interest, relevant skills, and your weekly availability"
+
+  faq:
+    - q: "Who is this master's track for?"
+      a: "The M.Sc. is in Architecture, open to architecture graduates as well as graduates of urban planning, engineering, computer science, or a related field, subject to some additional coursework — particularly those considering a Ph.D. afterward or seeking hands-on research experience at the intersection of AI and the built environment."
+    - q: "How long does it take?"
+      a: "2 years of thesis research."
+    - q: "Is there a non-thesis (project-only) option?"
+      a: "No. AAIRL accepts M.Sc. students exclusively through the thesis track, which includes an original, supervised research project."
+    - q: "How do I apply?"
+      a: "Email Dr. Jonathan Dortheimer or Dr. Haya Brama with your CV and transcripts (subject line \"Master's Thesis Application\"), including your degree program and year, topics of interest, relevant skills, and your weekly availability. You don't need a finalized thesis idea beforehand — we're happy to help you develop one. Make sure you meet the university's general M.Sc. admission requirements first; see the How to Apply section above."
+    - q: "What does the program cost, and is funding available?"
+      a: "Tuition follows the standard, nationally set (CHE-regulated) rate for university graduate studies in Israel. Scholarships from the university's School of Advanced Studies are available to both M.Sc. and Ph.D. students, and the lab offers additional scholarships to students who take part in its ongoing research projects. The lab also occasionally employs students in paid research roles as part of funded projects, subject to availability."
+    - q: "What happens after the thesis?"
+      a: "Many students go on to Ph.D. studies — including continuing at AAIRL, which also hosts postdoctoral researchers — while others move into computational design, urban-tech, or data-driven planning roles."
+
+  cta_title: "Interested in more details?"
+  cta_body: "If a research-focused master's grounded in real projects and real partners sounds like the right fit, we'd like to hear from you."
+  cta_contact: "Contact us"
+
+phd:
+  banner_title: "Ph.D. Studies in AI, Architecture, and Urban Planning"
+  banner_title_accent: "Ph.D. Studies"
+  banner_title_rest: " in AI, Architecture, and Urban Planning"
+  banner_intro: "AAIRL, based in the School of Architecture at Ariel University, hosts full-time doctoral research at the intersection of AI, architectural design, and urban planning. Ph.D. candidates work on funded, real-world projects alongside municipal, government, and industry partners, and are registered through Ariel University's School of Advanced Studies in coordination with the relevant engineering department."
+  cta_apply: "How to apply"
+  cta_team: "Meet the team"
+  hero_facts:
+    - icon: "far fa-clock"
+      text: "3–4 years, full-time"
+    - icon: "far fa-hand-holding-usd"
+      text: "Funded, real-world projects"
+    - icon: "far fa-user-graduate"
+      text: "Close research mentorship"
+  hero_big_text: "Ph.D."
+
+  nav_program: "Program"
+  nav_research_link: "Research"
+  nav_projects_link: "Projects"
+  nav_partners_link: "Partners"
+  nav_funding_link: "Funding"
+  nav_faq_link: "FAQ"
+  nav_apply_link: "Apply"
+
+  stats_heading: "The program"
+  stats_focus: "in numbers"
+  stats:
+    - value: "9"
+      label: "Partner organizations"
+      icon: "far fa-handshake"
+    - value: "4"
+      label: "Active research projects"
+      icon: "far fa-flask"
+    - value: "GoSmart Award 2024"
+      label: "Chatbots for Design project"
+      icon: "far fa-trophy"
+    - value: "Ph.D."
+      label: "Full-time doctoral research degree"
+      icon: "far fa-graduation-cap"
+
+  about_title: "About the lab"
+  about_body: "AAIRL (Architectural Artificial Intelligence Research Laboratory) is a research unit within Ariel University's School of Architecture, led by Dr. Jonathan Dortheimer. The lab develops computational methods for architectural design, urban analysis, and participatory planning, combining machine learning, human-computer interaction, and urban research."
+
+  program_heading: "Who the"
+  program_focus: "Program Is For"
+  program_intro: "Doctoral research at AAIRL runs full-time, typically 3–4 years. Admission requires a completed thesis-track M.Sc. or M.A. with a strong academic record."
+  program_points:
+    - "Duration: typically 3–4 years, full-time research"
+    - "Requires a completed thesis-track M.Sc. (or equivalent) with a strong academic record; exceptional candidates without one are welcome to reach out to discuss options"
+    - "Registered through Ariel University's School of Advanced Studies, the School of Architecture, with possible collaboration with the Faculty of Engineering (Industrial Engineering or Civil Engineering)."
+    - "A research proposal is developed and reviewed early in the program, ahead of the main research and dissertation-writing phase"
+    - "Cumulative, paper-based dissertations (built from published or submitted articles) can be arranged through the university's graduate authority"
+    - "Close supervision within an active, funded research project"
+
+  pillars_title: "Research agenda"
+  pillars_intro: "AAIRL focuses on concrete challenges in urban design and planning where AI can extend human capability. Dissertation topics are typically drawn from one of these directions:"
+
+  projects_title: "Selected research projects"
+  projects_intro: "A look at what the lab is working on right now — most Ph.D. dissertations build on one of these ongoing projects."
+
+  testimonials:
+    - quote: "Conducting research at the Architectural Artificial Intelligence Research Lab (AAIRL) has been an incredibly defining experience. The lab provides not only access to high-performance computing resources but also the intellectual freedom to push the boundaries of what is possible. Through the lab's mentorship, I have been able to bridge computer science with architectural theory, openly share my ideas, and develop real-world experimental frameworks. The lab provides phenomenal advocacy and consistently pushes its students to elevate their technical work into meaningful scientific contributions. What truly sets AAIRL apart is its culture: researchers are treated as partners and are fully supported in translating innovative ideas into top-tier publications. The lab has supported me through every step of my journey, and I am deeply grateful for the opportunity to work in such an exceptional environment."
+      name: "Yaswanth Alla"
+      role: "Ph.D. student at AAIRL"
+      image: "/images/people/yaswanth-alla.jpeg"
+  podcast_cta: "Hear more from the lab on our podcast"
+
+  partners_heading: "Funding Agencies and"
+  partners_focus: "Partners"
+  partners_intro: "Lab projects are funded and supported by research foundations, government ministries, and local authorities."
+
+  funding_heading: "Funding and"
+  funding_focus: "Stipend"
+  funding_body: "Scholarships from the university's School of Advanced Studies are available to both M.Sc. and Ph.D. students, and the lab offers additional scholarships to students who take part in its ongoing research projects — on top of project research stipends tied to the lab's active grants and competitive national doctoral scholarships. Funding arrangements vary by project and candidate background and are discussed individually with the advisor before admission."
+
+  apply_heading: "How to"
+  apply_focus: "Apply"
+  apply_steps:
+    - "Check that your background and completed M.Sc. fit the lab's research directions (architecture, urban planning, engineering, computer science, or a related field)"
+    - "Review the lab's research directions and current projects, and sketch a research question that builds on them"
+    - "Email Dr. Jonathan Dortheimer with your CV, M.Sc. thesis or a summary of it, and transcripts, subject line \"Ph.D. Application\""
+    - "In your email, include your research interests, relevant skills (e.g., programming, statistics, GIS, simulation), and target start date"
+
+  faq:
+    - q: "Who is this track for?"
+      a: "Graduates with a completed thesis-track M.Sc. (or equivalent) in architecture, urban planning, engineering, computer science, or a related field, who want to pursue full-time, in-depth research at the intersection of AI and the built environment."
+    - q: "How long does it take?"
+      a: "Typically 3–4 years of full-time research, following Israel's CHE framework for doctoral studies."
+    - q: "Do I need a completed M.Sc.?"
+      a: "Yes, in almost all cases — a completed thesis-track M.Sc. (or equivalent) with a strong academic record is required. If you don't have one but have an outstanding academic background, contact us to discuss whether an alternative path is possible."
+    - q: "Which department will I be registered in?"
+      a: "AAIRL is based in the School of Architecture. Ph.D. candidates are registered through Ariel University's School of Advanced Studies and the School of Architecture, with possible collaboration with the Faculty of Engineering (Industrial Engineering or Civil Engineering). Your exact registration path is confirmed with the School of Advanced Studies before admission."
+    - q: "Can the dissertation be based on published papers?"
+      a: "Yes — cumulative, paper-based dissertations are common in the lab and can be arranged through the university's graduate authority."
+    - q: "How do I apply?"
+      a: "Email Dr. Jonathan Dortheimer with your CV, M.Sc. thesis (or a summary), and transcripts (subject line \"Ph.D. Application\"), including your research interests, relevant skills, and target start date. See the How to Apply section above."
+    - q: "Is funding available?"
+      a: "Scholarships from the university's School of Advanced Studies are available to both M.Sc. and Ph.D. students, and the lab offers additional scholarships to students who take part in its ongoing research projects — on top of project research stipends tied to the lab's active grants and competitive national doctoral scholarships. Funding arrangements vary by project and candidate background and are discussed individually with the advisor before admission."
+  cta_title: "Interested in more details on doctoral research?"
+  cta_body: "If full-time, in-depth research grounded in real projects and real partners sounds like the right fit, we'd like to hear from you."
+  cta_contact: "Contact us"

@@ -1,6 +1,8 @@
 ---
 ---
 
+@import 'rtl';
+
 // colors
 [data-dark="false"] {
   --primary: #0ea5e9;
@@ -316,4 +318,345 @@
   font-size: 16px;
   font-weight: 600;
   color: var(--text);
+}
+
+// Master's landing page
+// --------------------------------------------------
+
+.masters_subnav {
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  background: var(--background);
+  border-bottom: 1px solid #ebebeb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.masters_subnav_inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  overflow-x: auto;
+  padding: 14px 24px;
+  white-space: nowrap;
+}
+.masters_subnav_inner a {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+}
+.masters_subnav_inner a:hover {
+  color: var(--primary);
+}
+.masters_subnav_cta {
+  margin-inline-start: auto;
+  color: var(--primary) !important;
+}
+
+.masters_funding_box {
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  padding: 28px 32px;
+  background: var(--background-alt);
+}
+.masters_funding_box p,
+.getstart_section_2 p,
+.banner_style_2 .banner_content p {
+  color: var(--gray);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.program_intro_text {
+  color: var(--gray);
+  font-size: 17px;
+  line-height: 1.8;
+}
+.program_points_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+@media (max-width: 767px) {
+  .program_points_grid {
+    grid-template-columns: 1fr;
+  }
+}
+.program_point_card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px 20px;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  background: var(--background-alt);
+  color: var(--gray);
+  font-size: 15px;
+  line-height: 1.65;
+}
+.program_point_icon {
+  flex: 0 0 auto;
+  width: 1.75rem;
+  height: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+  border: 1px solid var(--primary);
+  border-radius: 100%;
+  color: var(--primary);
+  font-size: 12px;
+}
+.masters_steps_list li span:last-child,
+.masters_faq_item p {
+  color: var(--gray);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.masters_steps_list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.masters_steps_list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #ebebeb;
+}
+.masters_steps_list li:last-child {
+  border-bottom: none;
+}
+.masters_step_index {
+  flex: 0 0 auto;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary);
+  border-radius: 100%;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.masters_faq_list {
+  display: grid;
+  gap: 0;
+}
+.masters_faq_item {
+  border-bottom: 1px solid #ebebeb;
+}
+.masters_faq_item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 18px 0;
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--text);
+}
+.masters_faq_item summary::-webkit-details-marker {
+  display: none;
+}
+.masters_faq_item summary::before {
+  content: "+ ";
+  color: var(--primary);
+}
+.masters_faq_item[open] summary::before {
+  content: "− ";
+}
+.masters_faq_item p {
+  padding-bottom: 18px;
+  color: var(--gray);
+}
+
+// Home page partners/sponsors strip
+// --------------------------------------------------
+
+.sponsors_logo_wrap li a img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+// Match the template demo's partner-logo treatment: greyscale + faded by
+// default, full color on hover. Our logos are full-color source files (the
+// template's placeholders are already monochrome), so the grayscale filter
+// does the desaturation the template gets for free.
+body .sponsors_logo_wrap li a img {
+  opacity: 0.6;
+  filter: grayscale(100%);
+  transition: filter 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+    opacity 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+    transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+body .sponsors_logo_wrap li a:hover img {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+// Continuously-scrolling partner logos: the group of logos is rendered
+// twice back to back, and the track is animated exactly -50% (one group's
+// width) so the loop point is invisible.
+.partners_marquee {
+  overflow: hidden;
+}
+.partners_marquee_track {
+  display: flex;
+  width: max-content;
+  animation: partners-marquee 25s linear infinite;
+}
+.partners_marquee_track:hover {
+  animation-play-state: paused;
+}
+.partners_marquee_group {
+  display: flex;
+  flex-shrink: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.partners_marquee_group li {
+  list-style: none;
+}
+@keyframes partners-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .partners_marquee_track {
+    animation: none;
+  }
+}
+
+// Home page news cards: mixing real photos with icon-style cover images
+// gives every card a different natural aspect ratio, so the row of 3 ends
+// up ragged. Force a consistent frame and crop to fill it.
+.event_section .event_item .item_image {
+  aspect-ratio: 3 / 2;
+}
+.event_section .event_item .item_image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+// Master's page hero: the template's own top padding (64px) is too shallow
+// to clear the site's absolutely-positioned header (~140px incl. the top
+// utility bar), so the banner title renders underneath it. Match the
+// clearance used by the standard interior .page_banner (185px).
+body .banner_section.banner_style_2 {
+  padding-top: 185px;
+}
+@media screen and (max-width: 991px) {
+  body .banner_section.banner_style_2 {
+    padding-top: 150px;
+  }
+}
+
+// Post share row: the template ships bg_facebook/bg_twitter/bg_linkedin/
+// bg_youtube but no WhatsApp variant, which we use in place of YouTube
+// (a "share" action, not a "follow" one) on blog post pages.
+// The template only lights up .heading_focus_text's highlight gradient inside
+// .section_heading -- the phd "Who the Program Is For" heading reuses the
+// course_details.html "Overview" style (.details_info_title) instead, so it
+// needs the same gradient scoped to that ancestor too.
+.details_info_title .heading_focus_text {
+  background-position: center bottom 2px;
+  background-image: linear-gradient(0deg, #fdd5a1 36%, transparent 0%);
+}
+
+// Slick carousel dots: the vendored style.css never got the template's
+// dot-reset styles, so without this the testimonial carousel's pager renders
+// as a bare numbered list instead of small circular dots.
+.slick-dots {
+  margin: 0;
+  display: flex;
+  position: static;
+  padding-top: 40px;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  li {
+    width: auto;
+    height: auto;
+    margin: 0 5px;
+    display: inline-block;
+    button {
+      margin: 0;
+      padding: 0;
+      opacity: .3;
+      width: 10px;
+      height: 10px;
+      display: block;
+      font-size: 0;
+      border: none;
+      border-radius: 100%;
+      background-color: #3a10e5;
+      transition: opacity .3s ease;
+      &::before {
+        display: none;
+      }
+    }
+    &:hover,
+    &.slick-active {
+      button {
+        opacity: 1;
+      }
+    }
+  }
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.bg_whatsapp {
+  background-color: #25d366;
+}
+
+// About-the-lab circle photo: .image_wrap clips to a fixed 300x300 circle,
+// but the template never constrains the <img> inside it, so lab1.png (a
+// 1149x821 landscape shot) rendered at native size and only its top-left
+// corner showed through the circle, cutting off the rest of the photo.
+.getstart_section_2 .item_image .image_wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// Master's hero: the template's .banner_image_2 caps out at 425px, sized for
+// a small decorative illustration -- the METROPOLIS screenshot is a real
+// product shot that should read as the page's centerpiece, so let it fill
+// its (widened) column instead.
+.metropolis_banner_image {
+  max-width: 100%;
+}
+.metropolis_banner_image img {
+  max-width: 100%;
+}
+
+// Research agenda / topic cards (home page + /agenda): per-topic icon
+// color comes from an inline style (topic.accent front matter), but the
+// vendored .item_icon i rule hardcodes one purple for every icon, and the
+// intro blurb has no color rule of its own so it inherits the card link's
+// blue. Let inline accent colors win and give the blurb a normal body color.
+.research_topics_template .category_item_2 .item_icon {
+  width: 60px;
+  height: 60px;
+  flex: 0 0 60px;
+}
+.research_topics_template .category_item_2 .item_icon i {
+  font-size: 22px;
+}
+.research_topics_template .category_item_2 .item_desc {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--gray);
 }

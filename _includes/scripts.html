@@ -4,16 +4,17 @@
 <script src="https://unpkg.com/mark.js@8" defer></script>
 
 <!-- scripts -->
-<script src="/_scripts/0_jquery.min.js"></script>
-<script src="/_scripts/1_bootstrap.min.js"></script>
-<script src="/_scripts/bootstrap-dropdown-ml-hack.js"></script>
-<script src="/_scripts/parallax.min.js"></script>
-<script src="/_scripts/parallax-scroll.js"></script>
-<script src="/_scripts/popper.min.js"></script>
-<script src="/_scripts/slick.min.js"></script>
-<script src="/_scripts/table-wrap.js"></script>
-<script src="/_scripts/tilt.min.js"></script>
-<script src="/_scripts/tooltip.js"></script>
-<script src="/_scripts/waypoint.js"></script>
-<script src="/_scripts/wow.min.js"></script>
-<script src="/_scripts/zzz_main.js"></script>
+{% assign _v = site.time | date: '%s' %}
+<script src="/_scripts/0_jquery.min.js?v={{ _v }}"></script>
+<script src="/_scripts/1_bootstrap.min.js?v={{ _v }}"></script>
+<script src="/_scripts/bootstrap-dropdown-ml-hack.js?v={{ _v }}"></script>
+<script src="/_scripts/parallax.min.js?v={{ _v }}"></script>
+<script src="/_scripts/parallax-scroll.js?v={{ _v }}"></script>
+<script src="/_scripts/popper.min.js?v={{ _v }}"></script>
+<script src="/_scripts/slick.min.js?v={{ _v }}"></script>
+<script src="/_scripts/table-wrap.js?v={{ _v }}"></script>
+<script src="/_scripts/tilt.min.js?v={{ _v }}"></script>
+<script src="/_scripts/tooltip.js?v={{ _v }}"></script>
+<script src="/_scripts/waypoint.js?v={{ _v }}"></script>
+<script src="/_scripts/wow.min.js?v={{ _v }}"></script>
+<script src="/_scripts/zzz_main.js?v={{ _v }}"></script>

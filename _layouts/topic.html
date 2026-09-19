@@ -2,6 +2,39 @@
 layout: default
 ---
 {% assign t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
+{% if site.active_lang == site.default_lang %}{% assign lp = '' %}{% else %}{% assign lp = '/' | append: site.active_lang %}{% endif %}
+
+{% capture _topic_name %}{% include t_field.html field="title" %}{% endcapture %}
+{% assign _topic_name = _topic_name | strip %}
+{% capture _topic_description %}{% include t_field.html field="intro" %}{% endcapture %}
+{% assign _topic_description = _topic_description | strip %}
+{% assign _topic_projects = "" | split: "," %}
+{% for project_tag in page.projects %}
+  {% assign related_project = site.projects | where: "tag", project_tag | first %}
+  {% if related_project %}{% assign _topic_projects = _topic_projects | push: related_project %}{% endif %}
+{% endfor %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": {{ _topic_name | jsonify }},
+  "description": {{ _topic_description | jsonify }},
+  "url": "{{ site.url }}{{ lp }}{{ page.url }}",
+  {% if page.image %}"image": "{{ site.url }}{{ page.image }}",{% endif %}
+  "isPartOf": { "@id": "{{ site.url }}/#organization" }
+  {% if _topic_projects.size > 0 %},
+  "hasPart": [
+    {% for proj in _topic_projects %}
+    { "@type": "CreativeWork", "name": {{ proj.title | jsonify }}, "url": "{{ site.url }}{{ lp }}{{ proj.url }}" }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+  {% endif %}
+}
+</script>
+{% assign _home_url = lp | append: "/" %}
+{% assign _topics_url = lp | append: "/agenda/" %}
+{% include schema_breadcrumb.html item1_name=t.member_nav_home item1_url=_home_url item2_name=t.nav_research item2_url=_topics_url item3_name=_topic_name %}
 
 <!-- Details Section - Start
 ================================================== -->

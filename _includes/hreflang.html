@@ -1,0 +1,14 @@
+{% comment %}
+  Machine-readable alternate-language links for search engines (distinct from the
+  visible language-switcher nav in header.html, which reuses this same _base_url logic).
+  Assumes every localized page exists at the same path under /he/ and /de/ as the
+  English version -- true for the pages jekyll-polyglot generates per-collection here.
+
+  NOT using the `absolute_url` filter: jekyll-polyglot's patched version of it is
+  unreliable when called multiple times with the same input in one render (see the
+  longer note in meta.html) -- so URLs are built by hand from site.url instead.
+{% endcomment %}
+{% assign _base_url = page.url | remove_first: '/he' | remove_first: '/de' %}
+<link rel="alternate" hreflang="en" href="{{ site.url }}{{ _base_url }}">
+<link rel="alternate" hreflang="he" href="{{ site.url }}/he{{ _base_url }}">
+<link rel="alternate" hreflang="de" href="{{ site.url }}/de{{ _base_url }}">

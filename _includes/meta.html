@@ -1,3 +1,5 @@
+{% assign t = site.data.i18n[site.active_lang] | default: site.data.i18n.en %}
+
 {% assign filename = page.path | split: "/" | last %}
 {% if page.name and page.name != filename %}
   {% capture title %}{% include t_field.html field="name" %}{% endcapture %}
@@ -17,53 +19,99 @@
 {% endif %}
 {% assign fulltitle = fulltitle | join: " | " %}
 
+{% comment %} og:title/twitter:title/meta[name=title] need a real value even on pages
+  (like the homepage) with no page.title of their own. {% endcomment %}
+{% assign meta_title = title | default: site.title %}
+
 {% assign subtitle = site.subtitle %}
 
-{% assign description = page.description | default: site.description %}
-{% if site.subtitle %}
-  {% capture description -%}
-    {{ site.subtitle }}. {{ description }}
-  {%- endcapture %}
+{% comment %}
+  Description cascade: explicit front-matter/i18n "description" for this page/object (via
+  t_field.html, which already handles the description/description_he/description_de and
+  site.data.i18n[lang][collection][key].description precedence) -> "intro" (projects/topics)
+  -> "caption" (posts) -> a per-top-level-page i18n string keyed by page.meta_key ->
+  a sitewide translated fallback -> the hardcoded site.description.
+{% endcomment %}
+{% capture description %}{% include t_field.html field="description" %}{% endcapture %}
+{% assign description = description | strip %}
+{% if description == "" %}
+  {% capture description %}{% include t_field.html field="intro" %}{% endcapture %}
+  {% assign description = description | strip %}
 {% endif %}
-{% assign url = site.location %}
+{% if description == "" %}
+  {% capture description %}{% include t_field.html field="caption" %}{% endcapture %}
+  {% assign description = description | strip %}
+{% endif %}
+{% if description == "" and page.meta_key %}
+  {% assign description = t.meta[page.meta_key] %}
+{% endif %}
+{% assign description = description | default: t.meta_site_description | default: site.description %}
+{% assign description = description | strip_newlines | strip %}
 
-{% assign png = "images/icon.png" | file_exists %}
-{% assign jpg = "images/icon.jpg" | file_exists %}
-{% assign icon = png | default: jpg | relative_url %}
+{% comment %}
+  NOT using the `absolute_url`/`relative_url` Liquid filters here: jekyll-polyglot's
+  patched versions of those filters have proven unreliable within this file (the exact
+  same `page.url | absolute_url` expression, called more than once in a single render
+  alongside other absolute_url calls, was observed returning the correct /he/ or /de/
+  -prefixed URL on some calls and the bare English path on others -- a call-order/
+  memoization issue in the plugin, not a mistake in this expression). Building the URL
+  by hand from the already-reliable `lp` prefix (used throughout header.html) sidesteps
+  the bug entirely.
+{% endcomment %}
+{% if site.active_lang == site.default_lang %}{% assign lp = '' %}{% else %}{% assign lp = '/' | append: site.active_lang %}{% endif %}
+{% assign url = site.url | append: lp | append: page.url %}
 
-{% assign jpg = "images/favicon/android-chrome-192x192.png" | file_exists %}
-{% assign png = "images/share.png" | file_exists %}
-{% assign share = jpg | default: png | relative_url %}
+{% if page.image %}
+  {% assign share_image = site.url | append: page.image %}
+{% else %}
+  {% assign share_png = "images/share.png" | file_exists %}
+  {% assign share_fallback = "images/favicon/android-chrome-192x192.png" | file_exists %}
+  {% assign _share_path = share_png | default: share_fallback %}
+  {% assign share_image = site.url | append: "/" | append: _share_path %}
+{% endif %}
+
+{% case site.active_lang %}
+  {% when 'he' %}{% assign og_locale = 'he_IL' %}
+  {% when 'de' %}{% assign og_locale = 'de_DE' %}
+  {% else %}{% assign og_locale = 'en_US' %}
+{% endcase %}
 
 {% assign published = page.date | date_to_xmlschema %}
 {% assign updated = page.last_modified_at | date_to_xmlschema %}
 
-{% assign feed = "feed.xml" | absolute_url %}
+{% assign feed = site.url | append: "/feed.xml" %}
+
+{% assign is_noindex = false %}
+{% if page.robots == "noindex" or page.url contains "/old/" %}
+  {% assign is_noindex = true %}
+{% endif %}
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>{{ fulltitle }}</title>
 
-<link rel="icon" href="{{ icon }}">
+<meta name="title" content="{{ meta_title | escape }}">
+<meta name="description" content="{{ description | escape }}">
+<link rel="canonical" href="{{ url }}">
+{% if is_noindex %}
+<meta name="robots" content="noindex,follow">
+{% endif %}
 
-<meta name="title" content="{{ title }}">
-<meta name="description" content="{{ description }}">
-
-<meta property="og:title" content="{{ title }}">
-<meta property="og:site_title" content="{{ site.title }}">
-<meta property="og:description" content="{{ description }}">
+<meta property="og:title" content="{{ meta_title | escape }}">
+<meta property="og:site_title" content="{{ site.title | escape }}">
+<meta property="og:description" content="{{ description | escape }}">
 <meta property="og:url" content="{{ url }}">
-<meta property="og:image" content="{{ share }}">
-<meta property="og:locale" content="en_US">
+<meta property="og:image" content="{{ share_image }}">
+<meta property="og:locale" content="{{ og_locale }}">
 
-<meta property="twitter:title" content="{{ title }}">
-<meta property="twitter:description" content="{{ description }}">
+<meta property="twitter:title" content="{{ meta_title | escape }}">
+<meta property="twitter:description" content="{{ description | escape }}">
 <meta property="twitter:url" content="{{ url }}">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:image" content="{{ share }}">
+<meta property="twitter:image" content="{{ share_image }}">
 
 {% if page.author %}
-  <meta name="author" content="{{ page.author }}">
+  <meta name="author" content="{{ page.author | escape }}">
   <meta property="og:type" content="article">
   <meta property="og:updated_time" content="{{ updated }}">
   <meta property="article:published_time" content="{{ published }}">
@@ -73,25 +121,38 @@
   <meta property="og:type" content="website">
 {% endif %}
 
+{% include hreflang.html %}
+
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    {% if page.author %}
-      "@type": "BlogPosting",
-      "author": { "@type": "Person", "name": "{{ title }}" },
-      "datePublished": "{{ published }}",
-      "dateModified": "{{ updated }}",
-    {% else %}
-      "@type": "WebSite",
-    {% endif %}
-    "name": "{{ title }}",
-    "description": "{{ description }}",
-    "headline": "{{ title }}",
-    "publisher": {
-      "@type": "Organization",
-      "logo": { "@type": "ImageObject", "url": "{{ icon }}" }
+    "@type": "Organization",
+    "@id": "{{ site.url }}/#organization",
+    "name": {{ site.title | jsonify }},
+    "alternateName": {{ site.subtitle | jsonify }},
+    "url": "{{ site.url }}/",
+    "description": {{ site.description | strip_newlines | jsonify }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/images/logo/site_logo.png"
     },
-    "url": "{{ url }}"
+    "email": {{ site.links.email | jsonify }},
+    "sameAs": [
+      "https://www.linkedin.com/company/aairl/",
+      "https://open.spotify.com/show/0U2d0q6ISem3DAGthiFdrq",
+      "https://github.com/{{ site.links.github }}"
+    ],
+    "parentOrganization": {
+      "@type": "CollegeOrUniversity",
+      "name": "Ariel University",
+      "sameAs": "https://www.ariel.ac.il/"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": {{ t.contact_address | append: ", " | append: t.contact_school | jsonify }},
+      "addressLocality": "Ariel",
+      "addressCountry": "IL"
+    }
   }
 </script>
 

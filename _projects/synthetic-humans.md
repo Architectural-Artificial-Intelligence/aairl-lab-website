@@ -10,4 +10,5 @@ intro: This project investigates whether AI models can approximate selected dime
 
 papers:
     - Goz2025
+    - dortheimer2026c
 ---

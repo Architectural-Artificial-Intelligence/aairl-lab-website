@@ -1,0 +1,9 @@
+---
+permalink: /robots.txt
+---
+User-agent: *
+Disallow: /old/
+Disallow: /testbed.html
+Disallow: /survey.html
+
+Sitemap: {{ site.url }}/sitemap.xml

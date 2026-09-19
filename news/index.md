@@ -1,5 +1,6 @@
 ---
 title: News
+meta_key: news
 nav:
   order: 4
   tooltip: Latest updates

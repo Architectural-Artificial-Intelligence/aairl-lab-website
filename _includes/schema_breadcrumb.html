@@ -1,0 +1,42 @@
+{% comment %}
+  Usage: {% include schema_breadcrumb.html item1_name="Home" item1_url="/" item2_name="Team" item2_url="/team/" item3_name="Jane Doe" %}
+  item1_url/item2_url/item3_url are already-language-prefixed relative paths (as built by
+  callers via their own `lp` variable) -- item3_url may be omitted, defaulting to this
+  page's own URL, the usual case for a breadcrumb's last/current item.
+
+  NOT using the `absolute_url` filter here: jekyll-polyglot's patched version of it is
+  unreliable when called multiple times with the same input in one render (see the
+  longer note in meta.html) -- so URLs are built by hand from site.url instead.
+{% endcomment %}
+{% if include.item3_url %}
+  {% assign _item3_url = include.item3_url %}
+{% else %}
+  {% if site.active_lang == site.default_lang %}{% assign _bc_lp = '' %}{% else %}{% assign _bc_lp = '/' | append: site.active_lang %}{% endif %}
+  {% assign _item3_url = _bc_lp | append: page.url %}
+{% endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": {{ include.item1_name | strip | jsonify }},
+      "item": "{{ site.url }}{{ include.item1_url }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ include.item2_name | strip | jsonify }},
+      "item": "{{ site.url }}{{ include.item2_url }}"
+    }{% if include.item3_name %},
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ include.item3_name | strip | jsonify }},
+      "item": "{{ site.url }}{{ _item3_url }}"
+    }{% endif %}
+  ]
+}
+</script>

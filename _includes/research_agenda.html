@@ -1,0 +1,17 @@
+<div class="category2_items_wrapper row justify-content-center">
+  {% for topic in site.topics %}
+  <div class="col col-lg-4 col-md-6 col-sm-6">
+    <div class="category_item_2 topic_with_projects">
+      <a href="{{ topic.url }}">
+        <span class="item_icon" style="background-color: {{ topic.accent | default: '#3a10e5' }}1a;">
+          <i class="{{ topic.icon | default: 'far fa-project-diagram' }}" style="color: {{ topic.accent | default: '#3a10e5' }};"></i>
+        </span>
+        <span class="item_content">
+          <strong class="item_title d-block">{% include t_field.html obj=topic field="title" %}</strong>
+          <p class="item_desc mb-0">{% include t_field.html obj=topic field="intro" %}</p>
+        </span>
+      </a>
+    </div>
+  </div>
+  {% endfor %}
+</div>

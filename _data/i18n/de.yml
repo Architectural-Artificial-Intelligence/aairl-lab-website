@@ -7,15 +7,25 @@ nav_research: "Forschung"
 nav_news: "Neuigkeiten"
 nav_publications: "Publikationen"
 nav_team: "Team"
-nav_jobs: "Stellen"
+nav_masters: "Master"
+nav_phd: "Promotion"
 nav_contact: "Kontakt"
+
+meta_site_description: "AAIRL verbindet KI-, Architektur- und Stadtplanungsforschung, um nachhaltigere und gerechtere Städte zu schaffen."
+meta:
+  home: "AAIRL entwickelt und evaluiert computergestützte Methoden für architektonisches Design, städtische Analyse und partizipative Planung mit KI und maschinellem Lernen."
+  topics: "Die Forschungsprojekte von AAIRL untersuchen, wie KI und rechnergestützte Methoden widerstandsfähigeres, inklusiveres und anpassungsfähigeres Städtebau und Planung unterstützen können."
+  team: "Forschende, Studierende, Designer und Ingenieure, die an KI für Architektur, Städte und partizipative Planung arbeiten."
+  news: "Laborankündigungen, Forschungsmeilensteine, Publikationen, Kooperationen und Veranstaltungen."
+  publications: "Begutachtete Arbeiten des Architectural Artificial Intelligence Research Lab."
+  contact: "Kontaktieren Sie das Architectural AI Research Lab der Ariel University — E-Mail, Telefon und Adresse."
 
 # Homepage
 home_banner_title: "KI-Forschung für Architektur und Stadtplanung"
 home_banner_body: "Das Architectural Artificial Intelligence Research Lab entwickelt und evaluiert computergestützte Methoden für architektonisches Design, städtische Analyse und partizipative Planung. Wir verbinden maschinelles Lernen, Mensch-Computer-Interaktion und Stadtforschung, um Werkzeuge zu entwickeln, die empirisch validiert, interpretierbar und in realen Planungskontexten verankert sind."
-home_banner_cta: "Forschungsthemen erkunden"
+home_banner_cta: "Forschungsagenda erkunden"
 home_research_topics: "Forschungs-"
-home_research_topics_focus: "themen"
+home_research_topics_focus: "agenda"
 home_news_heading: "Neuigkeiten aus dem"
 home_news_focus: "Labor"
 home_partners_heading: "Förderinstitutionen und"
@@ -49,7 +59,7 @@ partners:
     name: "Ariel-Universität"
     kind: "Akademische Einrichtung"
 home_topic_projects_label: "Projekte"
-home_topic_research_label: "Forschungsthema"
+home_topic_research_label: "Agenda-Punkt"
 topics:
   design-ai:
     title: "KI im Design"
@@ -152,6 +162,8 @@ publications_all: "Alle Publikationen"
 # Post navigation
 post_nav_previous: "Vorheriger"
 post_nav_next: "Nächster"
+post_tags_label: "Tags:"
+post_share_label: "Teilen:"
 
 # Citation / paper card
 citation_venue: "Zeitschrift / Konferenz"
@@ -209,7 +221,6 @@ label_papers: "Publikationen"
 # Join us / CTA
 join_title: "Echte städtische Probleme mit KI lösen?"
 join_body: "Wir begrüßen Bewerbungen von Forschenden, Designern und Praktikern aus verschiedenen disziplinären Hintergründen. Wenn Sie daran interessiert sind, zur Forschung an der Schnittstelle von KI, Design und Stadtforschung beizutragen, ermutigen wir Sie, sich zu bewerben und unserem Team beizutreten."
-join_cta: "Offene Stellen!"
 
 # Listing pages
 team_page_title: "Team"
@@ -218,31 +229,11 @@ publications_page_title: "Publikationen"
 topics_page_title: "Forschungsthemen"
 topics_page_banner_title: "Unsere Forschungsprojekte"
 topics_page_banner_body: "Unsere Forschung fördert die Schnittstelle von künstlicher Intelligenz, Design und urbanen Systemen. Wir untersuchen, wie rechnergestützte Methoden und datengetriebene Technologien widerstandsfähigere, inklusivere und anpassungsfähigere urbane Umgebungen unterstützen können."
+topics_page_projects_heading: "Forschungs-"
+topics_page_projects_heading_focus: "projekte"
 topics_page_products_heading: "Unsere"
 topics_page_products_heading_focus: "Produkte"
 topics_page_products_body: "Wir übersetzen unsere Forschungsergebnisse in praktische Werkzeuge, die partizipatives und inklusives Stadtdesign unterstützen."
-jobs_page_title: "Offene Stellen"
-
-# Jobs layout
-jobs_about_position: "Über diese Position"
-jobs_what_we_do: "Was wir tun"
-jobs_what_we_do_body: "AAIRL widmet sich konkreten Herausforderungen in der Stadtgestaltung und Planung, bei denen künstliche Intelligenz menschliche Fähigkeiten erweitern kann. Unsere zentralen Forschungsrichtungen:"
-jobs_what_we_do_items:
-  - "Mensch-KI-Interaktion im Design"
-  - "Generatives architektonisches und urbanes Design"
-  - "Analyse der gebauten Umwelt"
-  - "Simulation der gebauten Umwelt"
-jobs_what_we_do_footer: "Ein Großteil unserer Arbeit entsteht in Zusammenarbeit mit Industrie- und Regierungspartnern — unsere Forschung wird daher an realen Rahmenbedingungen geprüft: unvollständigen Daten, widersprüchlichen Zielen, regulatorischen Vorgaben und den Realitäten der Umsetzung."
-jobs_what_we_look_for: "Wen wir suchen"
-jobs_funding: "Fördermöglichkeiten"
-jobs_applying: "So bewerben Sie sich"
-
-# Study (jobs landing) layout
-study_banner_title: "Gestalten Sie Ihre Forschungskarriere bei AAIRL"
-study_banner_body: "Wir freuen uns über Bewerbungen für Forschungsabschlüsse (M.Sc., Ph.D.) sowie Postdoc-Stellen."
-study_opportunities_heading: "Offene Forschungswege"
-study_opportunities_body: "Wählen Sie den Weg, der zu Ihrer aktuellen Phase, Ihren Forschungsinteressen und dem gewünschten Grad an Eigenständigkeit passt."
-
 # Team page
 team_page_banner_heading: "Unser Forschungsteam"
 team_page_banner_body: "Forschende, Studierende, Designer und Ingenieure, die an KI für Architektur, Städte und partizipative Planung arbeiten."
@@ -518,6 +509,12 @@ members:
       Osher Cohen ist Architektin und M.Sc.-Studentin am AAIRL. Ihre Forschung untersucht die Schnittstelle zwischen künstlicher Intelligenz, Städtebau und menschlicher Erfahrung im öffentlichen Raum.
 
       Ihre aktuelle Arbeit untersucht, wie KI-basierte Methoden zur Bewertung urbaner Umgebungen und zur Identifizierung räumlicher Qualitäten eingesetzt werden können, die menschliche Interaktion und bedeutungsvolle Begegnungen fördern, insbesondere angesichts eines zunehmend technologisch vermittelten Alltags.
+  hanan-peretz:
+    name: "Hanan Peretz"
+    bio: |
+      Dr. Hanan Peretz ist Architekt, Forscher und Dozent. Er ist Fakultätsmitglied an der Ariel University, wo er die Entwurfsstudios des zweiten Studienjahrs koordiniert. Seine architektonische Praxis erstreckt sich über alle Maßstäbe und ein breites Spektrum an Projekttypen – von Innenarchitektur, Architektur und Lichtplanung bis hin zu Stadtplanung und der Gestaltung öffentlicher Räume. Zu seinen Projekten zählt die Entwicklung der städtebaulichen Gestaltungsrichtlinien für das Tel Aviver Viertel Florentin.
+
+      Neben seiner beruflichen Praxis und Lehrtätigkeit konzentriert sich seine Forschung auf urbane Straßenbeleuchtung und die Beziehungen zwischen Licht, Architektur und der Erfahrung öffentlicher Räume nach Einbruch der Dunkelheit, wobei Florentin als zentrale Fallstudie seiner Doktorarbeit diente. Seine Arbeit verbindet eine vielfältige architektonische Praxis, Ausbildung im Entwurf und Forschung, getragen von einem anhaltenden Interesse daran, wie Architektur, Licht und Planung den städtischen Raum und das Alltagsleben prägen.
 
 jobs:
   phd:
@@ -591,3 +588,209 @@ jobs:
       * Bis zu drei Publikationen oder Arbeitsproben
 
       Weitere Informationen finden Sie auf der [Postdoc-Website der Ariel University](https://www.ariel.ac.il/wp/postdocs/).
+
+# Master-Landingpage
+masters:
+  banner_title: "Masterstudium in KI, Architektur und Stadtplanung"
+  banner_title_accent: "Masterstudium"
+  banner_title_rest: " in KI, Architektur und Stadtplanung"
+  banner_intro: "AAIRL, Teil der School of Architecture der Ariel University, bietet ein forschungsorientiertes M.Sc.-Thesis-Programm für Architekturabsolventinnen und -absolventen sowie, vorbehaltlich zusätzlicher Auflagen, für Studierende verwandter Fachrichtungen. Je nach Themengebiet können Studierende auch gemeinsam von Lehrenden anderer relevanter Fakultäten der Universität betreut werden. Das Programm dauert zwei Jahre und eignet sich besonders für Studierende, die eine Promotion in Betracht ziehen oder eine praxisnahe Forschungsausbildung suchen, die auf realen Datensätzen und laufenden Laborprojekten und Partnerschaften basiert."
+  cta_apply: "So bewerben Sie sich"
+  cta_team: "Team kennenlernen"
+
+  policy_items:
+    - icon: "far fa-flask"
+      title: "Echte Forschungsprojekte"
+      body: "Arbeit mit realen urbanen Daten an aktiven Laborprojekten"
+    - icon: "far fa-chalkboard-teacher"
+      title: "Enge Betreuung"
+      body: "Direkte Betreuung durch aktive Forschende"
+    - icon: "far fa-award"
+      title: "Veröffentlichen Sie Ihre Arbeit"
+      body: "Einreichung bei führenden Fachzeitschriften und Konferenzen"
+
+  nav_program: "Programm"
+  nav_research_link: "Forschung"
+  nav_projects_link: "Projekte"
+  nav_partners_link: "Partner"
+  nav_funding_link: "Finanzierung"
+  nav_faq_link: "FAQ"
+  nav_apply_link: "Bewerben"
+
+  stats:
+    - value: "9"
+      label: "Partnerorganisationen"
+      icon: "far fa-handshake"
+    - value: "4"
+      label: "Aktive Forschungsprojekte"
+      icon: "far fa-flask"
+    - value: "GoSmart Award 2024"
+      label: "Projekt „Chatbots for Design“"
+      icon: "far fa-trophy"
+    - value: "M.Sc."
+      label: "Forschungsorientierter Thesis-Track"
+      icon: "far fa-graduation-cap"
+
+  about_title: "Über das Labor"
+  about_body: "AAIRL (Architectural Artificial Intelligence Research Laboratory) ist eine Forschungseinheit der School of Architecture der Ariel University unter der Leitung von Dr. Jonathan Dortheimer. Das Labor entwickelt computergestützte Methoden für architektonisches Design, Stadtanalyse und partizipative Planung — durch die Kombination von maschinellem Lernen, Mensch-Computer-Interaktion und Stadtforschung."
+
+  program_heading: "Für wen das Programm"
+  program_focus: "geeignet ist"
+  program_intro: "Das Programm dauert 2 Jahre Thesis-Forschung und ist teilzeitkompatibel, sodass es sich mit einer Berufstätigkeit oder anderen Verpflichtungen vereinbaren lässt. Das Labor nimmt M.Sc.-Studierende ausschließlich über den Thesis-Track auf — geeignet für Studierende, die eine Promotion in Betracht ziehen oder eine ernsthafte, praxisnahe Forschungsausbildung suchen, die auf realen Datensätzen und Fragestellungen laufender Laborprojekte und Partnerschaften basiert."
+  program_points:
+    - "Dauer: 2 Jahre Thesis-Forschung"
+    - "Der M.Sc. ist an der School of Architecture angesiedelt und offen für Architekturabsolventinnen und -absolventen sowie für Absolventinnen und Absolventen der Stadtplanung, Ingenieurwissenschaften, Informatik oder eines verwandten Fachs, vorbehaltlich zusätzlicher Auflagen"
+    - "Je nach Themengebiet können Studierende auch gemeinsam von Lehrenden anderer relevanter Fakultäten oder Fachbereiche der Universität betreut werden — etwa Bauingenieurwesen, Wirtschaftsingenieurwesen oder Public Health"
+    - "Nur Thesis-Track — dieses Programm bietet keinen Abschluss ohne Thesis / Projektarbeit"
+    - "Enge Betreuung innerhalb eines aktiven, finanzierten Forschungsprojekts"
+
+  pillars_title: "Forschungsagenda"
+  pillars_intro: "AAIRL konzentriert sich auf konkrete Herausforderungen in Städtebau und Planung, bei denen KI menschliche Fähigkeiten erweitern kann. Thesis-Themen entstammen in der Regel einem dieser Schwerpunkte:"
+
+  projects_title: "Ausgewählte Forschungsprojekte"
+  projects_intro: "Ein Einblick in die aktuelle Arbeit des Labors — die meisten M.Sc.-Arbeiten knüpfen an eines dieser laufenden Projekte an."
+
+  testimonials_heading: "Das sagen"
+  testimonials_focus: "unsere Studierenden"
+  testimonials:
+    - quote: "Ich arbeite seit über zwei Jahren am AAIRL-Forschungslabor, und in dieser Zeit habe ich enorm viel gelernt – sowohl akademisch als auch durch die Zusammenarbeit mit meinen Kolleginnen und Kollegen im Labor. Die Arbeit im Labor eröffnete mir die Möglichkeit, an interessanten Konferenzen und Veranstaltungen im In- und Ausland teilzunehmen und in die Welt von Forschung, wissenschaftlichem Schreiben und Publizieren einzutauchen. Das Labor fördert Neugier, eigenständiges Denken und Forschungsarbeit auf hohem Niveau sehr stark. Es gibt viel Ermutigung, eigene Ideen zu entwickeln, sie zu Studien und Artikeln auszuarbeiten und bei führenden Fachzeitschriften und internationalen Konferenzen einzureichen."
+      name: "Gaya Bitman"
+      role: "M.Sc.-Studentin am AAIRL"
+      image: "/images/people/gaya.jpg"
+    - quote: "Mein Masterstudium im Rahmen des Labors hat mir während des gesamten Weges einen sehr bedeutungsvollen Rückhalt gegeben, und das Labor wurde für mich wirklich zu einem zweiten Zuhause. Es hat meine Forschung mit der Praxis verbunden und mir Werkzeuge an die Hand gegeben, die mir halfen, meine These zu entwickeln und zu schärfen. Gleichzeitig hatte ich die Möglichkeit, mit anderen Forschenden zusammenzuarbeiten und an Experimenten und Forschungsprojekten teilzunehmen. Das Labor hat mich außerdem mit dem aktuellen Forschungsgeschehen verbunden, durch Begegnungen und Zusammenarbeit mit Forschenden aus Israel und dem Ausland. Für mich hat das den Studiengang von einem persönlichen Prozess in eine viel gemeinsamere, aktivere und mit echter Forschungsarbeit verbundene Erfahrung verwandelt."
+      name: "Hila David"
+      role: "Architektin, M.Sc.-Studentin am AAIRL"
+      image: "/images/people/hila-david.jpg"
+  podcast_cta: "Hören Sie mehr vom Labor in unserem Podcast"
+
+  partners_heading: "Förderorganisationen und"
+  partners_focus: "Partner"
+  partners_intro: "Laborprojekte werden von Forschungsstiftungen, Ministerien und Kommunen finanziert und begleitet."
+
+  apply_heading: "So bewerben"
+  apply_focus: "Sie sich"
+  apply_steps:
+    - "Prüfen Sie, ob Sie die allgemeinen M.Sc.-Zulassungsvoraussetzungen der Universität erfüllen, aufgeführt auf der [M.Sc.-Website der School of Architecture der Ariel University](https://www.ariel.ac.il/wp/architecture/m-d/)"
+    - "Informieren Sie sich über die Forschungsschwerpunkte und Projekte des Labors zur Orientierung — Sie brauchen im Voraus keine fertige Thesis-Idee, wir helfen Ihnen gerne, gemeinsam eine zu entwickeln"
+    - "Senden Sie eine E-Mail an Dr. Jonathan Dortheimer oder Dr. Haya Brama mit Lebenslauf und Notenübersicht, Betreff „Master's Thesis Application“"
+    - "Geben Sie in der E-Mail Ihr Studienprogramm und -jahr, etwaige Interessensthemen, relevante Fähigkeiten und Ihre wöchentliche Verfügbarkeit an"
+
+  faq:
+    - q: "Für wen ist dieser Master-Track geeignet?"
+      a: "Der M.Sc. ist an der School of Architecture angesiedelt und offen für Architekturabsolventinnen und -absolventen sowie für Absolventinnen und Absolventen der Stadtplanung, Ingenieurwissenschaften, Informatik oder eines verwandten Fachs, vorbehaltlich zusätzlicher Auflagen — insbesondere für alle, die anschließend eine Promotion in Betracht ziehen oder praxisnahe Forschungserfahrung an der Schnittstelle von KI und gebauter Umwelt sammeln möchten."
+    - q: "Wie lange dauert das Studium?"
+      a: "2 Jahre Thesis-Forschung."
+    - q: "Gibt es eine Option ohne Thesis (nur Projektarbeit)?"
+      a: "Nein. AAIRL nimmt M.Sc.-Studierende ausschließlich über den Thesis-Track auf, der ein eigenständiges, betreutes Forschungsprojekt umfasst."
+    - q: "Wie bewerbe ich mich?"
+      a: "Senden Sie eine E-Mail an Dr. Jonathan Dortheimer oder Dr. Haya Brama mit Lebenslauf und Notenübersicht (Betreff „Master's Thesis Application“) und geben Sie Studienprogramm und -jahr, Interessensthemen, relevante Fähigkeiten und Ihre wöchentliche Verfügbarkeit an. Sie brauchen im Voraus keine fertige Thesis-Idee — wir helfen Ihnen gerne, eine zu entwickeln. Stellen Sie sicher, dass Sie die allgemeinen M.Sc.-Zulassungsvoraussetzungen der Universität erfüllen; siehe Abschnitt „So bewerben Sie sich“ oben."
+    - q: "Was kostet das Programm, und gibt es Finanzierung?"
+      a: "Die Studiengebühren folgen dem landesweit einheitlichen, staatlich (CHE) festgelegten Satz für ein Graduiertenstudium in Israel. Stipendien der School of Advanced Studies der Universität stehen sowohl M.Sc.- als auch Promotionsstudierenden zur Verfügung, und das Labor bietet zusätzliche Stipendien für Studierende, die an seinen laufenden Forschungsprojekten mitwirken. Das Labor beschäftigt zudem gelegentlich Studierende in bezahlten Forschungsstellen im Rahmen finanzierter Projekte, je nach Verfügbarkeit."
+    - q: "Was passiert nach Abschluss der Thesis?"
+      a: "Viele Studierende setzen ihre Ausbildung mit einer Promotion fort — auch am AAIRL selbst, das ebenfalls Postdoktorandinnen und Postdoktoranden beherbergt — andere wechseln in Rollen im computergestützten Design, Urban-Tech oder datengestützter Planung."
+
+  cta_title: "Interessiert an weiteren Details?"
+  cta_body: "Wenn ein forschungsorientierter Master, der auf realen Projekten und Partnerschaften basiert, zu Ihnen passt, freuen wir uns, von Ihnen zu hören."
+  cta_contact: "Kontaktieren Sie uns"
+
+phd:
+  banner_title: "Promotion in KI, Architektur und Stadtplanung"
+  banner_title_accent: "Promotion"
+  banner_title_rest: " in KI, Architektur und Stadtplanung"
+  banner_intro: "AAIRL, angesiedelt an der School of Architecture der Ariel University, beheimatet Vollzeit-Promotionsforschung an der Schnittstelle von KI, architektonischem Design und Stadtplanung. Promovierende arbeiten an finanzierten, praxisnahen Projekten gemeinsam mit kommunalen, staatlichen und industriellen Partnern und sind über die School of Advanced Studies der Ariel University in Abstimmung mit der jeweils zuständigen Ingenieurfakultät eingeschrieben."
+  cta_apply: "So bewerben Sie sich"
+  cta_team: "Team kennenlernen"
+  hero_facts:
+    - icon: "far fa-clock"
+      text: "3–4 Jahre, Vollzeit"
+    - icon: "far fa-hand-holding-usd"
+      text: "Finanzierte, praxisnahe Projekte"
+    - icon: "far fa-user-graduate"
+      text: "Enge fachliche Betreuung"
+  hero_big_text: "Promotion"
+
+  nav_program: "Programm"
+  nav_research_link: "Forschung"
+  nav_projects_link: "Projekte"
+  nav_partners_link: "Partner"
+  nav_funding_link: "Finanzierung"
+  nav_faq_link: "FAQ"
+  nav_apply_link: "Bewerben"
+
+  stats_heading: "Das Programm"
+  stats_focus: "in Zahlen"
+  stats:
+    - value: "9"
+      label: "Partnerorganisationen"
+      icon: "far fa-handshake"
+    - value: "4"
+      label: "Aktive Forschungsprojekte"
+      icon: "far fa-flask"
+    - value: "GoSmart Award 2024"
+      label: "Projekt „Chatbots for Design“"
+      icon: "far fa-trophy"
+    - value: "Promotion"
+      label: "Vollzeit-Forschungsprogramm"
+      icon: "far fa-graduation-cap"
+
+  about_title: "Über das Labor"
+  about_body: "AAIRL (Architectural Artificial Intelligence Research Laboratory) ist eine Forschungseinheit der School of Architecture der Ariel University unter der Leitung von Dr. Jonathan Dortheimer. Das Labor entwickelt computergestützte Methoden für architektonisches Design, Stadtanalyse und partizipative Planung — durch die Kombination von maschinellem Lernen, Mensch-Computer-Interaktion und Stadtforschung."
+
+  program_heading: "Für wen das Programm"
+  program_focus: "geeignet ist"
+  program_intro: "Die Promotionsforschung bei AAIRL erfolgt in Vollzeit und dauert in der Regel 3–4 Jahre. Voraussetzung ist ein abgeschlossener M.Sc. oder M.A. im Thesis-Track mit starkem akademischem Hintergrund."
+  program_points:
+    - "Dauer: in der Regel 3–4 Jahre, Vollzeitforschung"
+    - "Erfordert einen abgeschlossenen M.Sc. im Thesis-Track (oder gleichwertig) mit starkem akademischem Hintergrund; außergewöhnliche Kandidatinnen und Kandidaten ohne einen solchen Abschluss können sich gerne melden, um Optionen zu besprechen"
+    - "Einschreibung über die School of Advanced Studies der Ariel University und die School of Architecture, mit möglicher Zusammenarbeit mit der Ingenieurfakultät (Wirtschaftsingenieurwesen oder Bauingenieurwesen)."
+    - "Ein Forschungsvorschlag wird früh im Programm entwickelt und geprüft, vor der Hauptforschungs- und Schreibphase der Dissertation"
+    - "Kumulative, publikationsbasierte Dissertationen (aus veröffentlichten oder eingereichten Artikeln) können über die Graduiertenbehörde der Universität arrangiert werden"
+    - "Enge Betreuung innerhalb eines aktiven, finanzierten Forschungsprojekts"
+
+  pillars_title: "Forschungsagenda"
+  pillars_intro: "AAIRL konzentriert sich auf konkrete Herausforderungen in Städtebau und Planung, bei denen KI menschliche Fähigkeiten erweitern kann. Dissertationsthemen entstammen in der Regel einem dieser Schwerpunkte:"
+
+  projects_title: "Ausgewählte Forschungsprojekte"
+  projects_intro: "Ein Einblick in die aktuelle Arbeit des Labors — die meisten Promotionsarbeiten knüpfen an eines dieser laufenden Projekte an."
+
+  testimonials:
+    - quote: "Am Architectural Artificial Intelligence Research Lab (AAIRL) zu forschen, war eine unglaublich prägende Erfahrung. Das Labor bietet nicht nur Zugang zu leistungsstarken Rechenressourcen, sondern auch die intellektuelle Freiheit, die Grenzen des Möglichen zu verschieben. Durch die Betreuung im Labor konnte ich Informatik mit architektonischer Theorie verbinden, meine Ideen offen teilen und reale experimentelle Frameworks entwickeln. Das Labor setzt sich außergewöhnlich für seine Studierenden ein und ermutigt sie konsequent, ihre technische Arbeit zu bedeutsamen wissenschaftlichen Beiträgen weiterzuentwickeln. Was AAIRL wirklich auszeichnet, ist seine Kultur: Forschende werden als Partner behandelt und erhalten volle Unterstützung dabei, innovative Ideen in erstklassige Publikationen zu übersetzen. Das Labor hat mich auf jedem Schritt meines Weges unterstützt, und ich bin zutiefst dankbar für die Gelegenheit, in einem so außergewöhnlichen Umfeld zu arbeiten."
+      name: "Yaswanth Alla"
+      role: "Doktorand am AAIRL"
+      image: "/images/people/yaswanth-alla.jpeg"
+  podcast_cta: "Hören Sie mehr vom Labor in unserem Podcast"
+
+  partners_heading: "Förderorganisationen und"
+  partners_focus: "Partner"
+  partners_intro: "Laborprojekte werden von Forschungsstiftungen, Ministerien und Kommunen finanziert und begleitet."
+
+  funding_heading: "Finanzierung und"
+  funding_focus: "Stipendium"
+  funding_body: "Stipendien der School of Advanced Studies der Universität stehen sowohl M.Sc.- als auch Promotionsstudierenden zur Verfügung, und das Labor bietet zusätzliche Stipendien für Studierende, die an seinen laufenden Forschungsprojekten mitwirken — zusätzlich zu projektbezogenen Forschungsstipendien, die auf die aktiven Fördermittel des Labors gestützt sind, sowie kompetitiven nationalen Promotionsstipendien. Die genauen Finanzierungsregelungen variieren je nach Projekt und Hintergrund der Kandidatin bzw. des Kandidaten und werden individuell mit der Betreuung vor der Zulassung besprochen."
+
+  apply_heading: "So bewerben"
+  apply_focus: "Sie sich"
+  apply_steps:
+    - "Prüfen Sie, ob Ihr Hintergrund und Ihr abgeschlossener M.Sc. zu den Forschungsschwerpunkten des Labors passen (Architektur, Stadtplanung, Ingenieurwissenschaften, Informatik oder ein verwandtes Fach)"
+    - "Informieren Sie sich über die Forschungsschwerpunkte und laufenden Projekte des Labors und skizzieren Sie eine darauf aufbauende Forschungsfrage"
+    - "Senden Sie eine E-Mail an Dr. Jonathan Dortheimer mit Lebenslauf, Ihrer M.Sc.-Thesis oder einer Zusammenfassung davon sowie Notenübersicht, Betreff „Ph.D. Application“"
+    - "Geben Sie in der E-Mail Ihre Forschungsinteressen, relevante Fähigkeiten (z. B. Programmierung, Statistik, GIS, Simulation) und Ihren angestrebten Startzeitpunkt an"
+
+  faq:
+    - q: "Für wen ist dieser Track geeignet?"
+      a: "Für Absolventinnen und Absolventen mit abgeschlossenem M.Sc. im Thesis-Track (oder gleichwertig) in Architektur, Stadtplanung, Ingenieurwissenschaften, Informatik oder einem verwandten Fach, die vertiefte Vollzeitforschung an der Schnittstelle von KI und gebauter Umwelt betreiben möchten."
+    - q: "Wie lange dauert das Studium?"
+      a: "In der Regel 3–4 Jahre Vollzeitforschung, gemäß dem CHE-Rahmen für Promotionsstudien."
+    - q: "Brauche ich einen abgeschlossenen M.Sc.?"
+      a: "Ja, in fast allen Fällen — erforderlich ist ein abgeschlossener M.Sc. im Thesis-Track (oder gleichwertig) mit starkem akademischem Hintergrund. Falls Sie keinen solchen Abschluss haben, aber über einen außergewöhnlichen akademischen Hintergrund verfügen, kontaktieren Sie uns, um mögliche Alternativen zu besprechen."
+    - q: "In welcher Fakultät werde ich eingeschrieben?"
+      a: "AAIRL ist an der School of Architecture angesiedelt. Promotionskandidatinnen und -kandidaten werden über die School of Advanced Studies und die School of Architecture der Ariel University eingeschrieben, mit möglicher Zusammenarbeit mit der Ingenieurfakultät (Wirtschaftsingenieurwesen oder Bauingenieurwesen). Ihr genauer Einschreibungsweg wird vor der Zulassung mit der School of Advanced Studies abgestimmt."
+    - q: "Kann die Dissertation auf veröffentlichten Artikeln basieren?"
+      a: "Ja — kumulative, publikationsbasierte Dissertationen sind im Labor üblich und können über die Graduiertenbehörde der Universität arrangiert werden."
+    - q: "Wie bewerbe ich mich?"
+      a: "Senden Sie eine E-Mail an Dr. Jonathan Dortheimer mit Lebenslauf, Ihrer M.Sc.-Thesis (oder einer Zusammenfassung) und Notenübersicht (Betreff „Ph.D. Application“) und geben Sie Ihre Forschungsinteressen, relevante Fähigkeiten und Ihren angestrebten Startzeitpunkt an. Siehe Abschnitt „So bewerben Sie sich“ oben."
+    - q: "Gibt es Finanzierung?"
+      a: "Stipendien der School of Advanced Studies der Universität stehen sowohl M.Sc.- als auch Promotionsstudierenden zur Verfügung, und das Labor bietet zusätzliche Stipendien für Studierende, die an seinen laufenden Forschungsprojekten mitwirken — zusätzlich zu projektbezogenen Forschungsstipendien, die auf die aktiven Fördermittel des Labors gestützt sind, sowie kompetitiven nationalen Promotionsstipendien. Die genauen Finanzierungsregelungen variieren je nach Projekt und Hintergrund der Kandidatin bzw. des Kandidaten und werden individuell mit der Betreuung vor der Zulassung besprochen."
+  cta_title: "Interessiert an weiteren Details zur Promotionsforschung?"
+  cta_body: "Wenn vertiefte Vollzeitforschung, die auf realen Projekten und Partnerschaften basiert, zu Ihnen passt, freuen wir uns, von Ihnen zu hören."
+  cta_contact: "Kontaktieren Sie uns"

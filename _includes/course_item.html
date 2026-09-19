@@ -5,7 +5,7 @@
 {% endif %}
 {% assign _ci_title = _ci_i18n.title | default: include.title %}
 <div class="col col-lg-3 col-md-6 col-sm-6">
-    <div class="course_item{% if include.url contains '/projects/' %} project_course_item{% endif %}{% if include.url contains '/jobs/' %} job_course_item{% endif %}">
+    <div class="course_item{% if include.url contains '/projects/' %} project_course_item{% endif %}">
         <div class="item_image">
             <a class="image_wrap" href="{{include.url}}">
                 <img src="{{include.image | relative_url }}"

@@ -1,10 +1,10 @@
 #! /bin/bash
 
 # name of image
-IMAGE=lab-website-renderer:latest
+IMAGE=aairl-website:latest
 
 # name of running container
-CONTAINER=lab-website-renderer
+CONTAINER=aairl-website
 
 # choose platform flag
 PLATFORM=""

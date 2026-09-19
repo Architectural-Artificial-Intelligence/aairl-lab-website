@@ -4,6 +4,7 @@ author: jonathan-dortheimer
 tags:
   - UrbanAI
   - smart cities
+image: /images/news/parking_apps_ethics.png
 caption: A new study finds that Israel's mobile parking apps generated soaring revenues without cutting parking violations — and traces how private software companies ended up with more power over public infrastructure than the municipalities they serve.
 ---
 

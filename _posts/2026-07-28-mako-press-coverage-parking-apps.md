@@ -4,6 +4,7 @@ author: jonathan-dortheimer
 tags:
   - UrbanAI
   - smart cities
+image: /images/news/mako_press_coverage.png
 caption: Millions of Israelis use parking apps every day. Mako just told them what our research found underneath the convenience — and it's not flattering.
 ---
 
@@ -16,5 +17,7 @@ The number that grabbed the headline is the one that surprised us too: the apps'
 Mako's coverage zeroed in on the part of our findings that hits closest to home for ordinary drivers: the "dark patterns" baked into these apps, like premium "fine protection" subscriptions marketed by preying on the exact fear of getting ticketed that the apps themselves helped create. It's a strange business model — using the government's own punitive power as a sales funnel.
 
 *[ICE](https://www.ice.co.il/auto/news/article/1122978)*, another major Israeli outlet, picked up the story as well, bringing our findings to its own readership of drivers navigating the same apps every day.
+
+*Mako* followed up with a video piece, ["We Paid Hundreds of Shekels Without Knowing": Pango's Method for Stopping You From Cancelling a Subscription You Never Asked For](https://www.mako.co.il/finances-consumer/Article-165e973649000a1027.htm) (Hebrew), documenting drivers who say they were enrolled in Pango's "Simple" and "Smart" subscription tiers without ever intending to — a pop-up with a large, attractive "yes" button and a tiny, hidden "no" appears every time they open the app to pay for routine parking. Customers report struggling to cancel both through phone support and buried deep in the app itself. The piece cites our research by name, with Pango responding that it "enables cancellation through a variety of channels and continuously works to improve and simplify the process."
 
 Seeing this research land in a national outlet, read by the very people who feel these design choices every time they park a car, is exactly why we did this work. Academic papers ask big questions about power, platforms, and public infrastructure — it's a rare and welcome thing when the answer reaches the people living the question.

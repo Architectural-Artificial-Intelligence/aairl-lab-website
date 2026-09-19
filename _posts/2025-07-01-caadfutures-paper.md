@@ -6,7 +6,7 @@ category: featured
 caption: 
 
 tags:
-  - confernecees 
+  - conference
   - DesignAI
 project: SyntheticHumans
 image: /images/news/sythetichumans.png

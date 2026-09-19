@@ -1,5 +1,6 @@
 ---
 title: Contact
+meta_key: contact
 nav:
 order: 5
 tooltip: Email, address, and location
