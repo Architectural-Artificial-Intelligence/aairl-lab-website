@@ -26,6 +26,19 @@ works:
   link: https://doi.org/10.20944/preprints202602.0673.v1
   doi: 10.20944/preprints202602.0673.v1
   tags: []
+- id: orcid-227457781
+  title: 'From Feature Attribution to Spatial Information Structure: Interpreting
+    Urban Pedestrian Flows with Explainable AI (Short Paper)'
+  authors:
+  - Atakilti Kiros
+  - Achituv Cohen
+  - Yuri Ribakov
+  - Israel Klein
+  date: '2026-01-01'
+  publisher: LIPIcs, Volume 393, COSIT 2026
+  link: https://doi.org/10.4230/LIPICS.COSIT.2026.30
+  doi: 10.4230/LIPICS.COSIT.2026.30
+  tags: []
 - id: orcid-210516460
   title: 'GeoAI and Multimodal Geospatial Data Fusion for Inclusive Urban Mobility:
     Methods, Applications, and Future Directions'
@@ -67,7 +80,7 @@ works:
   link: https://doi.org/10.1109/GlobalAISummit62156.2024.10947842
   doi: 10.1109/GlobalAISummit62156.2024.10947842
   tags: []
-- id: orcid-195706639
+- id: orcid-195706640
   title: Tigrigna language spellchecker and correction system for mobile phone devices
   authors:
   - A.B. Kiros
